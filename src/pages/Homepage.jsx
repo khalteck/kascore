@@ -1,8 +1,16 @@
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+
 const Homepage = () => {
   return (
-    <div className="w-full h-screen bg-green-500">
-      <h1>The homepage</h1>
-    </div>
+    <>
+      <Header />
+      <div className="w-full h-screen bg-green-500">
+        <h1>The homepage</h1>
+      </div>
+
+      <Footer />
+    </>
   );
 };
 
