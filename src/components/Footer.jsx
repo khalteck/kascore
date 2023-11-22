@@ -20,22 +20,22 @@ const Footer = () => {
       <div className=" w-4/5 lg:w-[20%] mx-auto my-10 lg:mx-0 lg:my-0 flex items-center justify-between">
         <div className=" w-[15%] lg:w-1/4 ">
           <a href="#">
-            <img src="./icon-facebook.svg" className=" m-auto lg:m-0 " alt="" />
+            <img src="/images/icon-facebook.svg" className=" m-auto lg:m-0 " alt="" />
           </a>
         </div>
         <div className=" w-[15%] lg:w-1/4 ">
           <a href="#">
-            <img src="./icon-instagram.svg" className=" m-auto lg:m-0" alt="" />
+            <img src="/images/icon-twitter.svg" className=" m-auto lg:m-0" alt="" />
           </a>
         </div>
         <div className=" w-[15%] lg:w-1/4 ">
           <a href="#">
-            <img src="./icon-twitter.svg" className=" m-auto lg:m-0" alt="" />
+            <img src="/images/icon-instagram.svg" className=" m-auto lg:m-0" alt="" />
           </a>
         </div>
         <div className=" w-[15%] lg:w-1/4 ">
           <a href="#">
-            <img src="./icon-youtube.svg" className=" m-auto lg:m-0" alt="" />{" "}
+            <img src="/images/icon-youtube.svg" className=" m-auto lg:m-0" alt="" />{" "}
           </a>
         </div>
       </div>
