@@ -103,10 +103,10 @@ const Header = () => {
           </div>
         </div>
 
-        <ul className="bg-[#5a636b] w-full pl-[120px] md:pl-0 lg:px-[10%] h-[50px] md:h-[60px] gap-3 md:gap-6 items-center justify-center flex overflow-x-auto whitespace-nowrap">
+        <ul className="bg-[#5a636b] w-full pl-[120px] md:pl-0 lg:px-[10%] md:h-[60px] gap-3 md:gap-6 items-center justify-center flex overflow-x-auto whitespace-nowrap">
           <li
             // onClick={() => navigate("/")}
-            className={`w-fit cursor-pointer hover:bg-[#2a3543] hover:text-white  lg:bg-white/20 transition-all duration-300 text-[.8rem] md:text-[.9rem] px-3 py-[6px] rounded-md flex lg:flex-row flex-col lg:gap-2 items-center `}
+            className={`w-fit cursor-pointer hover:bg-[#2a3543] hover:text-white  lg:bg-[#2a3543] bg-[#2a3543] transition-all duration-300 text-[.8rem] md:text-[.9rem] px-3 py-[6px] lg:rounded-md flex lg:flex-row flex-col lg:gap-2 items-center `}
           >
             <img
               alt=""
@@ -117,7 +117,7 @@ const Header = () => {
           </li>
           <li
             // onClick={() => navigate("/")}
-            className={`w-fit cursor-pointer hover:bg-[#2a3543] hover:text-white  lg:bg-white/20 transition-all duration-300 text-[.8rem] md:text-[.9rem] px-3 py-[6px] rounded-md flex lg:flex-row flex-col lg:gap-2 items-center `}
+            className={`w-fit cursor-pointer hover:bg-[#2a3543] hover:text-white  lg:bg-white/20 transition-all duration-300 text-[.8rem] md:text-[.9rem] px-3 py-[6px] lg:rounded-md flex lg:flex-row flex-col lg:gap-2 items-center `}
           >
             <img
               alt=""
@@ -128,7 +128,7 @@ const Header = () => {
           </li>
           <li
             // onClick={() => navigate("/")}
-            className={`w-fit cursor-pointer hover:bg-[#2a3543] hover:text-white  lg:bg-white/20 transition-all duration-300 text-[.8rem] md:text-[.9rem] px-3 py-[6px] rounded-md flex lg:flex-row flex-col lg:gap-2 items-center `}
+            className={`w-fit cursor-pointer hover:bg-[#2a3543] hover:text-white  lg:bg-white/20 transition-all duration-300 text-[.8rem] md:text-[.9rem] px-3 py-[6px] lg:rounded-md flex lg:flex-row flex-col lg:gap-2 items-center `}
           >
             <img
               alt=""
@@ -139,7 +139,7 @@ const Header = () => {
           </li>
           <li
             // onClick={() => navigate("/")}
-            className={`w-fit cursor-pointer hover:bg-[#2a3543] hover:text-white  lg:bg-white/20 transition-all duration-300 text-[.8rem] md:text-[.9rem] px-3 py-[6px] rounded-md flex lg:flex-row flex-col lg:gap-2 items-center `}
+            className={`w-fit cursor-pointer hover:bg-[#2a3543] hover:text-white  lg:bg-white/20 transition-all duration-300 text-[.8rem] md:text-[.9rem] px-3 py-[6px] lg:rounded-md flex lg:flex-row flex-col lg:gap-2 items-center `}
           >
             <img
               alt=""
@@ -150,7 +150,7 @@ const Header = () => {
           </li>
           <li
             // onClick={() => navigate("/")}
-            className={`w-fit cursor-pointer hover:bg-[#2a3543] hover:text-white  lg:bg-white/20 transition-all duration-300 text-[.8rem] md:text-[.9rem] px-3 py-[6px] rounded-md flex lg:flex-row flex-col lg:gap-2 items-center `}
+            className={`w-fit cursor-pointer hover:bg-[#2a3543] hover:text-white  lg:bg-white/20 transition-all duration-300 text-[.8rem] md:text-[.9rem] px-3 py-[6px] lg:rounded-md flex lg:flex-row flex-col lg:gap-2 items-center `}
           >
             <img
               alt=""
@@ -162,7 +162,7 @@ const Header = () => {
 
           <li
             // onClick={() => navigate("/")}
-            className={`w-fit cursor-pointer hover:bg-[#2a3543] hover:text-white  lg:bg-white/20 transition-all duration-300 text-[.8rem] md:text-[.9rem] px-3 py-[6px] rounded-md flex lg:flex-row flex-col lg:gap-2 items-center `}
+            className={`w-fit cursor-pointer hover:bg-[#2a3543] hover:text-white  lg:bg-white/20 transition-all duration-300 text-[.8rem] md:text-[.9rem] px-3 py-[6px] lg:rounded-md flex lg:flex-row flex-col lg:gap-2 items-center `}
           >
             <img
               alt=""
