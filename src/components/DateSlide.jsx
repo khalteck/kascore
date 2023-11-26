@@ -7,32 +7,32 @@ const DateSlide = () => {
         </button>
       </li>
       <li>
-        <ul className="w-full flex gap-3 md:gap-1 justify-between items-center border-x border-neutral-100/30 px-2 md:px-4 text-neutral-100/80">
-          <li className="flex flex-col items-center justify-center text-[.7em] md:text-[.75rem] md:bg-neutral-100/10 md:px-3 rounded-md cursor-pointer">
+        <ul className="w-full flex gap-3 md:gap-2 justify-between items-center border-x border-neutral-100/30 px-2 md:px-4 text-neutral-100/80">
+          <li className="flex flex-col items-center justify-center text-[.7em] md:text-[.75rem] md:bg-neutral-100/10 md:px-2 rounded-md cursor-pointer">
             <p>FRI</p>
             <p className="text-[.85em] md:text-[.7rem] whitespace-nowrap">
               24 NOV
             </p>
           </li>
-          <li className="flex flex-col items-center justify-center text-[.7em] md:text-[.75rem] md:bg-neutral-100/10 md:px-3 rounded-md cursor-pointer">
+          <li className="flex flex-col items-center justify-center text-[.7em] md:text-[.75rem] md:bg-neutral-100/10 md:px-2 rounded-md cursor-pointer">
             <p>SAT</p>
             <p className="text-[.85em] md:text-[.7rem] whitespace-nowrap">
               25 NOV
             </p>
           </li>
-          <li className="flex flex-col items-center justify-center text-[.7em] md:text-[.75rem] md:px-3 rounded-md text-orange-500 cursor-pointer">
+          <li className="flex flex-col items-center justify-center text-[.7em] md:text-[.75rem] md:px-2 rounded-md text-orange-500 cursor-pointer">
             <p>TODAY</p>
             <p className="text-[.85em] md:text-[.7rem] whitespace-nowrap">
               26 NOV
             </p>
           </li>
-          <li className="flex flex-col items-center justify-center text-[.7em] md:text-[.75rem] md:bg-neutral-100/10 md:px-3 rounded-md cursor-pointer">
+          <li className="flex flex-col items-center justify-center text-[.7em] md:text-[.75rem] md:bg-neutral-100/10 md:px-2 rounded-md cursor-pointer">
             <p>MON</p>
             <p className="text-[.85em] md:text-[.7rem] whitespace-nowrap">
               27 NOV
             </p>
           </li>
-          <li className="flex flex-col items-center justify-center text-[.7em] md:text-[.75rem] md:bg-neutral-100/10 md:px-3 rounded-md cursor-pointer">
+          <li className="flex flex-col items-center justify-center text-[.7em] md:text-[.75rem] md:bg-neutral-100/10 md:px-2 rounded-md cursor-pointer">
             <p>TUE</p>
             <p className="text-[.85em] md:text-[.7rem] whitespace-nowrap">
               28 NOV

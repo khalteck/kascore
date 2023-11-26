@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="h-auto w-full block bg-gradient-to-r from-[#5a636b] to-[#2a3543] text-white py-5 px-5 lg:py-10 lg:px-32 lg:flex items-center justify-between ">
+    <footer className="h-auto w-full block bg-[#2a3543] md:bg-gradient-to-r from-[#5a636b] to-[#2a3543] text-white mb-[60px] md:mb-0 py-5 px-5 lg:py-10 lg:px-32 lg:flex items-center justify-between ">
       <div className=" w-full lg:w-1/3 my-10 lg:my-0 ">
         <a href="#">
           <img
@@ -20,22 +20,38 @@ const Footer = () => {
       <div className=" w-4/5 lg:w-[20%] mx-auto my-10 lg:mx-0 lg:my-0 flex items-center justify-between">
         <div className=" w-[15%] lg:w-1/4 ">
           <a href="#">
-            <img src="/images/icon-facebook.svg" className=" m-auto lg:m-0 " alt="" />
+            <img
+              src="/images/icon-facebook.svg"
+              className=" m-auto lg:m-0 "
+              alt=""
+            />
           </a>
         </div>
         <div className=" w-[15%] lg:w-1/4 ">
           <a href="#">
-            <img src="/images/icon-twitter.svg" className=" m-auto lg:m-0" alt="" />
+            <img
+              src="/images/icon-twitter.svg"
+              className=" m-auto lg:m-0"
+              alt=""
+            />
           </a>
         </div>
         <div className=" w-[15%] lg:w-1/4 ">
           <a href="#">
-            <img src="/images/icon-instagram.svg" className=" m-auto lg:m-0" alt="" />
+            <img
+              src="/images/icon-instagram.svg"
+              className=" m-auto lg:m-0"
+              alt=""
+            />
           </a>
         </div>
         <div className=" w-[15%] lg:w-1/4 ">
           <a href="#">
-            <img src="/images/icon-youtube.svg" className=" m-auto lg:m-0" alt="" />{" "}
+            <img
+              src="/images/icon-youtube.svg"
+              className=" m-auto lg:m-0"
+              alt=""
+            />{" "}
           </a>
         </div>
       </div>

@@ -2,3 +2,9 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 /* Your custom styles can go here */
+
+@layer utilities {
+  .top-shadow {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+  }
+}
