@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import CountryCard from "./CountryCard";
+import CountriesSkeleton from "./CountriesSkeleton";
 
 const CountriesTray = () => {
   const [countries, setCountries] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    setLoading(true);
     fetch("https://restcountries.com/v3.1/all")
       .then((response) => response.json())
       .then((data) => {
@@ -38,6 +41,7 @@ const CountriesTray = () => {
           flagImageUrl: "/images/icons8-england-48.png",
         });
         setCountries(filteredCountries?.slice(0, 51));
+        setLoading(false);
       })
       .catch((error) => {
         console.error("Error fetching country data:", error);
@@ -62,6 +66,8 @@ const CountriesTray = () => {
       {countries?.map((item, index) => {
         return <CountryCard key={index} item={item} />;
       })}
+
+      {loading && <CountriesSkeleton />}
     </div>
   );
 };
