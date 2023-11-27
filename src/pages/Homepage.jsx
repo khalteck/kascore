@@ -8,43 +8,43 @@ const Homepage = () => {
       <div className="w-full pt-[130px] md:pt-[170px] pb-12 px-5 lg:px-[12%] h-[2000px] bg-[#121a20] text-white">
         <div className="w-full h-full flex gap-8">
           <div className="w-[25%] bg-[#1d2732] h-[70%] rounded-lg hidden md:flex flex-col">
-            <div className=" flex items-center gap-7 mx-5 my-2 cursor-pointer hover ">
+            <div className=" flex items-center gap-7 mx-5 my-2 cursor-pointe hover:bg-[#2a3543] ">
               <img src="/images/icons8-england-48.png" alt="" className=" w-6 h-5" />
               <p className=" text-base">England</p>
             </div>
-            <div className=" flex items-center gap-7 mx-5 mb-3 cursor-pointer hover ">
+            <div className=" flex items-center gap-7 mx-5 mb-3 cursor-pointe hover:bg-[#2a3543] ">
               <img src="/images/icons8-england-48.png" alt="" className=" w-6 h-5" />
               <p className=" text-base">England</p>
             </div>
-            <div className=" flex items-center gap-7 mx-5 mb-3 cursor-pointer hover ">
+            <div className=" flex items-center gap-7 mx-5 mb-3 cursor-pointe hover:bg-[#2a3543] ">
               <img src="/images/icons8-england-48.png" alt="" className=" w-6 h-5" />
               <p className=" text-base">England</p>
             </div>
-            <div className=" flex items-center gap-7 mx-5 mb-3 cursor-pointer hover ">
+            <div className=" flex items-center gap-7 mx-5 mb-3 cursor-pointe hover:bg-[#2a3543] ">
               <img src="/images/icons8-england-48.png" alt="" className=" w-6 h-5" />
               <p className=" text-base">England</p>
             </div>
-            <div className=" flex items-center gap-7 mx-5 mb-3 cursor-pointer hover ">
+            <div className=" flex items-center gap-7 mx-5 mb-3 cursor-pointe hover:bg-[#2a3543] ">
               <img src="/images/icons8-england-48.png" alt="" className=" w-6 h-5" />
               <p className=" text-base">England</p>
             </div>
-            <div className=" flex items-center gap-7 mx-5 mb-3 cursor-pointer hover ">
+            <div className=" flex items-center gap-7 mx-5 mb-3 cursor-pointe hover:bg-[#2a3543] ">
               <img src="/images/icons8-england-48.png" alt="" className=" w-6 h-5" />
               <p className=" text-base">England</p>
             </div>
-            <div className=" flex items-center gap-7 mx-5 mb-3 cursor-pointer hover ">
+            <div className=" flex items-center gap-7 mx-5 mb-3 cursor-pointe hover:bg-[#2a3543] ">
               <img src="/images/icons8-england-48.png" alt="" className=" w-6 h-5" />
               <p className=" text-base">England</p>
             </div>
-            <div className=" flex items-center gap-7 mx-5 mb-3 cursor-pointer hover ">
+            <div className=" flex items-center gap-7 mx-5 mb-3 cursor-pointe hover:bg-[#2a3543] ">
               <img src="/images/icons8-england-48.png" alt="" className=" w-6 h-5" />
               <p className=" text-base">England</p>
             </div>
-            <div className=" flex items-center gap-7 mx-5 mb-3 cursor-pointer hover ">
+            <div className=" flex items-center gap-7 mx-5 mb-3 cursor-pointe hover:bg-[#2a3543] ">
               <img src="/images/icons8-england-48.png" alt="" className=" w-6 h-5" />
               <p className=" text-base">England</p>
             </div>
-            <div className=" flex items-center gap-7 mx-5 mb-3 cursor-pointer hover ">
+            <div className=" flex items-center gap-7 mx-5 mb-3 cursor-pointe hover:bg-[#2a3543] ">
               <img src="/images/icons8-england-48.png" alt="" className=" w-6 h-5" />
               <p className=" text-base">England</p>
             </div>
