@@ -1,6 +1,12 @@
+import { useNavigate } from "react-router-dom";
+
 const MatchCard = () => {
+  const navigate = useNavigate();
   return (
-    <div className="flex gap-3 py-2 mb-2 pr-3 hover:bg-black/20 cursor-pointer">
+    <div
+      onClick={() => navigate("/details")}
+      className="flex gap-3 py-2 mb-2 pr-3 hover:bg-black/20 cursor-pointer"
+    >
       <div className="w-[60px] text-[.85rem] text-neutral-100/50 border-r border-neutral-100/30 flex flex-col justify-center items-center">
         <p>13:00</p>
         <p>-</p>
