@@ -67,7 +67,7 @@ const MatchDetails = () => {
                   <div className=" ">
                     <p className=" w-full m-auto font-bold text-[1.5rem] text-white flex justify-center  ">
                       {" "}
-                      0 - 10{" "}
+                      4 - 1{" "}
                     </p>
                     <p className=" text-neutral-100/50 text-[.85rem] mt-3 ">
                       Full Time
@@ -105,18 +105,150 @@ const MatchDetails = () => {
                 </button>
               </div>
 
-              <div className=" w-full border border-neutral-100/50 my-4 ">
-                <div>
-                  <div>
-                    <p></p>
+              <div className=" w-full my-4 border border-neutral-100/20 rounded-lg ">
+                <div className=" w-full border  px-5 py-4 flex rounded-t-lg border-neutral-100/20">
+                  <div className=" w-full flex justify-between ">
+                    <div className=" w-full ">
+                      <p className=" text-neutral-100/50 text-[1rem] ">6'</p>
+                    </div>
+
+                    <div className=" w-full flex gap-3 items-center ">
+                      <p className=" text-white text-[1rem] font-medium ">Drey</p>
+                      <img src="images/icons8-football-orange.png" alt="owngoal" className=" w-5 h-5 " />
+                    </div>
                   </div>
-                  <div></div>
+                  <div className=" w-full flex gap-10 ">
+                    <div>
+                      <p className=" text-white text[1rem] font-medium ">0 - 1</p>
+                    </div>
+                    <div>
+                      <div className=" w-full flex gap-3 items-center ">
+                        <img src="images/icons8-football-50.png" alt="goal" className=" w-5 h-5 " />
+                        <p className=" text-white text-[1rem] font-medium ">Khalid</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+
+                <div className=" w-full border  px-5 py-4 flex border-neutral-100/20">
+                  <div className=" w-full flex justify-between ">
+                    <div className=" w-full ">
+                      <p className=" text-neutral-100/50 text-[1rem] ">HT</p>
+                    </div>
+
+                    <div className=" w-full flex gap-3 items-center ">
+                      <p className=" text-white text-[1rem] font-medium ">Drey</p>
+                      <img src="images/icons8-football-orange.png" alt="owngoal" className=" w-5 h-5 " />
+                    </div>
+                  </div>
+                  <div className=" w-full flex gap-10 ">
+                    <div>
+                      <p className=" text-white text[1rem] font-medium ">0 - 1</p>
+                    </div>
+                    <div>
+                      <div className=" w-full flex gap-3 items-center ">
+                        <img src="images/icons8-football-50.png" alt="goal" className=" w-5 h-5 " />
+                        <p className=" text-white text-[1rem] font-medium ">Khalid</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className=" w-full border  px-5 py-4 flex border-neutral-100/20">
+                  <div className=" w-full flex justify-between ">
+                    <div className=" w-full ">
+                      <p className=" text-neutral-100/50 text-[1rem] ">55'</p>
+                    </div>
+
+                    <div className=" w-full flex gap-3 items-center ">
+                      <p className=" text-white text-[1rem] font-medium ">Drey</p>
+                      <img src="images/icons8-football-orange.png" alt="owngoal" className=" w-5 h-5 " />
+                    </div>
+                  </div>
+                  <div className=" w-full flex gap-10 ">
+                    <div>
+                      <p className=" text-white text[1rem] font-medium ">1 - 1</p>
+                    </div>
+                    <div>
+                      <div className=" w-full flex gap-3 items-center ">
+                        <img src="images/icons8-football-50.png" alt="goal" className=" w-5 h-5 " />
+                        <p className=" text-white text-[1rem] font-medium ">Khalid</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className=" w-full border  px-5 py-4 flex border-neutral-100/20">
+                  <div className=" w-full flex justify-between ">
+                    <div className=" w-full ">
+                      <p className=" text-neutral-100/50 text-[1rem] ">78'</p>
+                    </div>
+
+                    <div className=" w-full flex gap-3 items-center ">
+                      <p className=" text-white text-[1rem] font-medium ">Drey</p>
+                      <img src="images/icons8-football-orange.png" alt="owngoal" className=" w-5 h-5 " />
+                    </div>
+                  </div>
+                  <div className=" w-full flex gap-10 ">
+                    <div>
+                      <p className=" text-white text[1rem] font-medium ">2 - 1</p>
+                    </div>
+                    <div>
+                      <div className=" w-full flex gap-3 items-center ">
+                        <img src="images/icons8-football-50.png" alt="goal" className=" w-5 h-5 " />
+                        <p className=" text-white text-[1rem] font-medium ">Khalid</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className=" w-full border  px-5 py-4 flex border-neutral-100/20">
+                  <div className=" w-full flex justify-between ">
+                    <div className=" w-full ">
+                      <p className=" text-neutral-100/50 text-[1rem] ">90'</p>
+                    </div>
+
+                    <div className=" w-full flex gap-3 items-center ">
+                      <p className=" text-white text-[1rem] font-medium ">Drey</p>
+                      <img src="images/icons8-football-orange.png" alt="owngoal" className=" w-5 h-5 " />
+                    </div>
+                  </div>
+                  <div className=" w-full flex gap-10 ">
+                    <div>
+                      <p className=" text-white text[1rem] font-medium ">3 - 1</p>
+                    </div>
+                    <div>
+                      <div className=" w-full flex gap-3 items-center ">
+                        <img src="images/icons8-football-50.png" alt="goal" className=" w-5 h-5 " />
+                        <p className=" text-white text-[1rem] font-medium ">Khalid</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className=" w-full border  px-5 py-4 flex rounded-b-lg border-neutral-100/20">
+                  <div className=" w-full flex justify-between ">
+                    <div className=" w-full ">
+                      <p className=" text-neutral-100/50 text-[1rem] ">FT</p>
+                    </div>
+
+                    <div className=" w-full flex gap-3 items-center ">
+                      <p className=" text-white text-[1rem] font-medium ">Drey</p>
+                      <img src="images/icons8-football-orange.png" alt="owngoal" className=" w-5 h-5 " />
+                    </div>
+                  </div>
+                  <div className=" w-full flex gap-10 ">
+                    <div>
+                      <p className=" text-white text[1rem] font-medium ">4 - 1</p>
+                    </div>
+                    <div>
+                      <div className=" w-full flex gap-3 items-center ">
+                        <img src="images/icons8-football-50.png" alt="goal" className=" w-5 h-5 " />
+                        <p className=" text-white text-[1rem] font-medium ">Khalid</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               {/* <div className="w-full flex flex-col text-neutral-100">
