@@ -45,7 +45,7 @@ const MatchDetails = () => {
                     </div>
 
                     <div className=" ">
-                      <p className=" w-full m-auto font-bold text-[1.5rem] text-white flex justify-center  "> 1 - 1 </p>
+                      <p className=" w-full m-auto font-bold text-[1.5rem] text-white flex justify-center  "> 5 - 0 </p>
                       <p className=" text-neutral-100/50 text-[.85rem] mt-3 ">Full Time</p>
                     </div>
 
