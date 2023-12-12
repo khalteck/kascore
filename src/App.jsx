@@ -5,6 +5,8 @@ import Loader from "./components/Loader";
 
 const Homepage = lazy(() => import("./pages/Homepage"));
 const Fixtures = lazy(() => import("./pages/Fixtures"));
+const MatchDetails = lazy(() => import("./pages/MatchDetails"));
+
 // const Contact = lazy(() => import("./pages/Contact"));
 // const Service = lazy(() => import("./pages/Service"));
 // const ServiceDetails = lazy(() => import("./pages/ServiceDetails"));
@@ -16,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/fixtures" element={<Fixtures />} />
+        <Route path="/details" element={<MatchDetails />} />
 
         {/* <Route path="/about" element={<About />} />
         <Route path="/service" element={<Service />} />
