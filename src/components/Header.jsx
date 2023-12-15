@@ -43,7 +43,7 @@ const Header = () => {
         } flex justify-between items-center transition-all duration-700 fixed top-0 left-0 z-30 font-mont`}
       >
         <div className="w-full flex flex-col items-center justify-center">
-          <div className="w-full h-[60px] md:h-[80px] flex gap-12 items-center justify-center sm:text-[.8rem] lg:text-[.9rem]">
+          <div className="w-full flex justify-between items-center gap-5 h-[60px] md:h-[70px] md:px-[10%] px-3">
             <div
               onClick={() => navigate("/")}
               className="flex gap-3 items-center cursor-pointer"
@@ -54,6 +54,49 @@ const Header = () => {
                 className="w-[150px] md:w-[200px] h-auto"
               />
             </div>
+
+            <div className="hidden md:flex items-center bg-black/30 px-2 rounded-md">
+              <img
+                src="/images/icons8-search-64.png"
+                alt=""
+                className="w-7 h-7 opacity-70"
+              />
+              <input
+                type="text"
+                className="w-[300px] bg-transparent py-2 px-3 outline-none"
+                placeholder="Search"
+              />
+            </div>
+
+            <ul className="hidden md:flex gap-5 items-center">
+              <li
+                onClick={() => navigate("/favorites")}
+                className="flex gap-2 items-center hover:text-white cursor-pointer"
+              >
+                <img
+                  alt=""
+                  src="/images/icons8-basketball-50.png"
+                  className="w-5 h-auto"
+                />
+                <p>Favorites</p>
+              </li>
+              <li className="flex gap-2 items-center">
+                <img
+                  alt=""
+                  src="/images/icons8-basketball-50.png"
+                  className="w-5 h-auto"
+                />
+                <p className="whitespace-nowrap">Get the app</p>
+              </li>
+              <li className="ml-8 border border-orange-500 rounded-md px-3 py-1 md:flex gap-2 items-center cursor-pointer hidden">
+                <img
+                  alt="calendar"
+                  src="/images/icons8-great-britain-48.png"
+                  className="w-6 h-auto"
+                />
+                <p>EN</p>
+              </li>
+            </ul>
           </div>
 
           <img

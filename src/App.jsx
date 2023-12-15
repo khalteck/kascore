@@ -4,7 +4,7 @@ import { lazy, Suspense } from "react";
 import Loader from "./components/Loader";
 
 const Homepage = lazy(() => import("./pages/Homepage"));
-const Fixtures = lazy(() => import("./pages/Fixtures"));
+const Favorites = lazy(() => import("./pages/Favorites"));
 const MatchDetails = lazy(() => import("./pages/MatchDetails"));
 
 // const Contact = lazy(() => import("./pages/Contact"));
@@ -17,7 +17,7 @@ function App() {
     <Suspense fallback={<Loader />}>
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/fixtures" element={<Fixtures />} />
+        <Route path="/favorites" element={<Favorites />} />
         <Route path="/details" element={<MatchDetails />} />
 
         {/* <Route path="/about" element={<About />} />

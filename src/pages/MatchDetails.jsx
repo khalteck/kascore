@@ -9,8 +9,8 @@ const MatchDetails = () => {
   return (
     <>
       <Header />
-      <div className="w-full pt-[105px] md:pt-[170px] md:pb-12 md:px-5 bg-[#121a20] text-neutral-100/80">
-        <div className="w-full md:w-[80%] mx-auto h-full flex gap-8">
+      <div className="w-full pt-[120px] md:pt-[170px] md:pb-12 px-3 md:px-[10%] pb-10 bg-[#121a20] text-neutral-100/80">
+        <div className="w-full h-full flex gap-8">
           <div className="w-[20%] min-w-[200px] hidden md:block">
             <CountriesTray />
           </div>
@@ -86,25 +86,46 @@ const MatchDetails = () => {
               </div>
 
               <div className=" w-full my-4 pb-3 flex gap-2 md:gap-5 border-b border-neutral-100/50 ">
-                <a href="#" className=" hover:text-white text-[0.8rem] md:text-[1rem] ">
+                <a
+                  href="#"
+                  className=" hover:text-white text-[0.8rem] md:text-[1rem] "
+                >
                   Info
                 </a>
-                <a href="#" className=" hover:text-white text-[0.8rem] md:text-[1rem] ">
+                <a
+                  href="#"
+                  className=" hover:text-white text-[0.8rem] md:text-[1rem] "
+                >
                   Summary
                 </a>
-                <a href="#" className=" hover:text-white text-[0.8rem] md:text-[1rem] ">
+                <a
+                  href="#"
+                  className=" hover:text-white text-[0.8rem] md:text-[1rem] "
+                >
                   Line-ups
                 </a>
-                <a href="#" className=" hidden md:block hover:text-white text-[0.8rem] md:text-[1rem] ">
+                <a
+                  href="#"
+                  className=" hidden md:block hover:text-white text-[0.8rem] md:text-[1rem] "
+                >
                   Statistics
                 </a>
-                <a href="#" className=" md:hidden text-[0.8rem] md:text-[1rem] ">
+                <a
+                  href="#"
+                  className=" md:hidden text-[0.8rem] md:text-[1rem] "
+                >
                   Stats
                 </a>
-                <a href="#" className=" hover:text-white text-[0.8rem] md:text-[1rem] ">
+                <a
+                  href="#"
+                  className=" hover:text-white text-[0.8rem] md:text-[1rem] "
+                >
                   Standings
                 </a>
-                <a href="#" className=" hover:text-white text-[0.8rem] md:text-[1rem] ">
+                <a
+                  href="#"
+                  className=" hover:text-white text-[0.8rem] md:text-[1rem] "
+                >
                   Matches
                 </a>
               </div>
@@ -122,22 +143,38 @@ const MatchDetails = () => {
                 <div className=" w-full border px-3 py-2 md:px-5 md:py-4 flex rounded-t-lg border-neutral-100/20">
                   <div className=" w-full flex justify-between ">
                     <div className="  w-full flex items-center ">
-                      <p className=" text-neutral-100/50 text-[0.85rem] md:text-[1rem] ">6'</p>
+                      <p className=" text-neutral-100/50 text-[0.85rem] md:text-[1rem] ">
+                        6'
+                      </p>
                     </div>
 
                     <div className=" w-full flex gap-2 md:gap-3 items-center ">
-                      <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">Drey</p>
-                      <img src="images/icons8-football-orange.png" alt="owngoal" className=" w-4 h-4 md:w-5 md:h-5 " />
+                      <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">
+                        Drey
+                      </p>
+                      <img
+                        src="images/icons8-football-orange.png"
+                        alt="owngoal"
+                        className=" w-4 h-4 md:w-5 md:h-5 "
+                      />
                     </div>
                   </div>
                   <div className=" w-full flex gap-5 md:gap-10 ">
                     <div>
-                      <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">0 - 1</p>
+                      <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">
+                        0 - 1
+                      </p>
                     </div>
                     <div>
                       <div className=" w-full flex gap-2 md:gap-3 items-center ">
-                        <img src="images/icons8-football-50.png" alt="goal" className=" w-4 h-4 md:w-5 md:h-5 " />
-                        <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">Khalid</p>
+                        <img
+                          src="images/icons8-football-50.png"
+                          alt="goal"
+                          className=" w-4 h-4 md:w-5 md:h-5 "
+                        />
+                        <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">
+                          Khalid
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -146,22 +183,38 @@ const MatchDetails = () => {
                 <div className=" w-full border px-3 py-2 md:px-5 md:py-4 flex border-neutral-100/20">
                   <div className=" w-full flex justify-between ">
                     <div className=" w-full flex items-center ">
-                      <p className=" text-neutral-100/50 text-[0.85rem] md:text-[1rem] ">HT</p>
+                      <p className=" text-neutral-100/50 text-[0.85rem] md:text-[1rem] ">
+                        HT
+                      </p>
                     </div>
 
                     <div className=" w-full flex gap-2 md:gap-3 items-center ">
-                      <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">Drey</p>
-                      <img src="images/icons8-football-orange.png" alt="owngoal" className=" w-4 h-4 md:w-5 md:h-5 " />
+                      <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">
+                        Drey
+                      </p>
+                      <img
+                        src="images/icons8-football-orange.png"
+                        alt="owngoal"
+                        className=" w-4 h-4 md:w-5 md:h-5 "
+                      />
                     </div>
                   </div>
                   <div className=" w-full flex gap-5 md:gap-10 ">
                     <div>
-                      <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">0 - 1</p>
+                      <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">
+                        0 - 1
+                      </p>
                     </div>
                     <div>
                       <div className=" w-full flex gap-2 md:gap-3 items-center ">
-                        <img src="images/icons8-football-50.png" alt="goal" className=" w-4 h-4 md:w-5 md:h-5 " />
-                        <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">Khalid</p>
+                        <img
+                          src="images/icons8-football-50.png"
+                          alt="goal"
+                          className=" w-4 h-4 md:w-5 md:h-5 "
+                        />
+                        <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">
+                          Khalid
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -170,22 +223,38 @@ const MatchDetails = () => {
                 <div className=" w-full border px-3 py-2 md:px-5 md:py-4 flex border-neutral-100/20">
                   <div className=" w-full flex justify-between ">
                     <div className=" w-full flex items-center ">
-                      <p className=" text-neutral-100/50 text-[0.85rem] md:text-[1rem] ">55'</p>
+                      <p className=" text-neutral-100/50 text-[0.85rem] md:text-[1rem] ">
+                        55'
+                      </p>
                     </div>
 
                     <div className=" w-full flex gap-2 md:gap-3 items-center ">
-                      <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">Drey</p>
-                      <img src="images/icons8-football-orange.png" alt="owngoal" className=" w-4 h-4 md:w-5 md:h-5 " />
+                      <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">
+                        Drey
+                      </p>
+                      <img
+                        src="images/icons8-football-orange.png"
+                        alt="owngoal"
+                        className=" w-4 h-4 md:w-5 md:h-5 "
+                      />
                     </div>
                   </div>
                   <div className=" w-full flex gap-5 md:gap-10 ">
                     <div>
-                      <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">1 - 1</p>
+                      <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">
+                        1 - 1
+                      </p>
                     </div>
                     <div>
                       <div className=" w-full flex gap-2 md:gap-3 items-center ">
-                        <img src="images/icons8-football-50.png" alt="goal" className=" w-4 h-4 md:w-5 md:h-5 " />
-                        <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">Khalid</p>
+                        <img
+                          src="images/icons8-football-50.png"
+                          alt="goal"
+                          className=" w-4 h-4 md:w-5 md:h-5 "
+                        />
+                        <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">
+                          Khalid
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -194,22 +263,38 @@ const MatchDetails = () => {
                 <div className=" w-full border px-3 py-2 md:px-5 md:py-4 flex border-neutral-100/20">
                   <div className=" w-full flex justify-between ">
                     <div className=" w-full flex items-center ">
-                      <p className=" text-neutral-100/50 text-[0.85rem] md:text-[1rem] ">78'</p>
+                      <p className=" text-neutral-100/50 text-[0.85rem] md:text-[1rem] ">
+                        78'
+                      </p>
                     </div>
 
                     <div className=" w-full flex gap-2 md:gap-3 items-center ">
-                      <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">Drey</p>
-                      <img src="images/icons8-football-orange.png" alt="owngoal" className=" w-4 h-4 md:w-5 md:h-5 " />
+                      <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">
+                        Drey
+                      </p>
+                      <img
+                        src="images/icons8-football-orange.png"
+                        alt="owngoal"
+                        className=" w-4 h-4 md:w-5 md:h-5 "
+                      />
                     </div>
                   </div>
                   <div className=" w-full flex gap-5 md:gap-10 ">
                     <div>
-                      <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">2 - 1</p>
+                      <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">
+                        2 - 1
+                      </p>
                     </div>
                     <div>
                       <div className=" w-full flex gap-2 md:gap-3 items-center ">
-                        <img src="images/icons8-football-50.png" alt="goal" className=" w-4 h-4 md:w-5 md:h-5 " />
-                        <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">Khalid</p>
+                        <img
+                          src="images/icons8-football-50.png"
+                          alt="goal"
+                          className=" w-4 h-4 md:w-5 md:h-5 "
+                        />
+                        <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">
+                          Khalid
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -218,22 +303,38 @@ const MatchDetails = () => {
                 <div className=" w-full border px-3 py-2 md:px-5 md:py-4 flex border-neutral-100/20">
                   <div className=" w-full flex justify-between ">
                     <div className=" w-full flex items-center ">
-                      <p className=" text-neutral-100/50 text-[0.85rem] md:text-[1rem] ">90</p>
+                      <p className=" text-neutral-100/50 text-[0.85rem] md:text-[1rem] ">
+                        90
+                      </p>
                     </div>
 
                     <div className=" w-full flex gap-2 md:gap-3 items-center ">
-                      <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">Drey</p>
-                      <img src="images/icons8-football-orange.png" alt="owngoal" className=" w-4 h-4 md:w-5 md:h-5 " />
+                      <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">
+                        Drey
+                      </p>
+                      <img
+                        src="images/icons8-football-orange.png"
+                        alt="owngoal"
+                        className=" w-4 h-4 md:w-5 md:h-5 "
+                      />
                     </div>
                   </div>
                   <div className=" w-full flex gap-5 md:gap-10 ">
                     <div>
-                      <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">3 - 1</p>
+                      <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">
+                        3 - 1
+                      </p>
                     </div>
                     <div>
                       <div className=" w-full flex gap-2 md:gap-3 items-center ">
-                        <img src="images/icons8-football-50.png" alt="goal" className=" w-4 h-4 md:w-5 md:h-5 " />
-                        <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">Khalid</p>
+                        <img
+                          src="images/icons8-football-50.png"
+                          alt="goal"
+                          className=" w-4 h-4 md:w-5 md:h-5 "
+                        />
+                        <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">
+                          Khalid
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -242,28 +343,42 @@ const MatchDetails = () => {
                 <div className=" w-full border px-3 py-2 md:px-5 md:py-4 flex border-neutral-100/20">
                   <div className=" w-full flex justify-between ">
                     <div className=" w-full flex items-center ">
-                      <p className=" text-neutral-100/50 text-[0.85rem] md:text-[1rem] ">FT</p>
+                      <p className=" text-neutral-100/50 text-[0.85rem] md:text-[1rem] ">
+                        FT
+                      </p>
                     </div>
 
                     <div className=" w-full flex gap-2 md:gap-3 items-center ">
-                      <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">Drey</p>
-                      <img src="images/icons8-football-orange.png" alt="owngoal" className=" w-4 h-4 md:w-5 md:h-5 " />
+                      <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">
+                        Drey
+                      </p>
+                      <img
+                        src="images/icons8-football-orange.png"
+                        alt="owngoal"
+                        className=" w-4 h-4 md:w-5 md:h-5 "
+                      />
                     </div>
                   </div>
                   <div className=" w-full flex gap-5 md:gap-10 ">
                     <div>
-                      <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">4 - 1</p>
+                      <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">
+                        4 - 1
+                      </p>
                     </div>
                     <div>
                       <div className=" w-full flex gap-2 md:gap-3 items-center ">
-                        <img src="images/icons8-football-50.png" alt="goal" className=" w-4 h-4 md:w-5 md:h-5 " />
-                        <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">Khalid</p>
+                        <img
+                          src="images/icons8-football-50.png"
+                          alt="goal"
+                          className=" w-4 h-4 md:w-5 md:h-5 "
+                        />
+                        <p className=" text-white text-[0.85rem] md:text-[1rem] font-medium ">
+                          Khalid
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
-
-
               </div>
 
               {/* <div className="w-full flex flex-col text-neutral-100">
