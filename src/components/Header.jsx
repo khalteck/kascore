@@ -46,13 +46,14 @@ const Header = () => {
           <div className="w-full flex justify-between items-center gap-5 h-[60px] md:h-[70px] md:px-[10%] px-3">
             <div
               onClick={() => navigate("/")}
-              className="flex gap-3 items-center cursor-pointer"
+              className="flex gap-1 md:gap-2 items-center cursor-pointer"
             >
               <img
                 alt=""
-                src="/images/logo.png"
-                className="w-[150px] md:w-[200px] h-auto"
+                src="/images/K4.jpg"
+                className=" w-[40px] h-[40px] md:w-[50px] md:h-[50px] rounded-xl "
               />
+              <h1 className=" text-[2rem] font-black ">Kascore</h1>
             </div>
 
             <div className="hidden md:flex items-center bg-black/30 px-2 rounded-md">
