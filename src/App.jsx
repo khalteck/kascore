@@ -6,11 +6,8 @@ import Loader from "./components/Loader";
 const Homepage = lazy(() => import("./pages/Homepage"));
 const Favorites = lazy(() => import("./pages/Favorites"));
 const MatchDetails = lazy(() => import("./pages/MatchDetails"));
-
-// const Contact = lazy(() => import("./pages/Contact"));
-// const Service = lazy(() => import("./pages/Service"));
-// const ServiceDetails = lazy(() => import("./pages/ServiceDetails"));
-// const Construction = lazy(() => import("./pages/Construction"))
+const Leagues = lazy(() => import("./pages/Leagues"));
+const News = lazy(() => import("./pages/News"));
 
 function App() {
   return (
@@ -19,11 +16,8 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/details" element={<MatchDetails />} />
-
-        {/* <Route path="/about" element={<About />} />
-        <Route path="/service" element={<Service />} />
-        <Route path="/service/:title" element={<ServiceDetails />} />
-        <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/leagues" element={<Leagues />} />
+        <Route path="/news" element={<News />} />
       </Routes>
     </Suspense>
   );

@@ -2,13 +2,17 @@ const Footer = () => {
   return (
     <footer className="h-auto w-full block bg-[#2a3543] md:bg-gradient-to-r from-[#5a636b] to-[#2a3543] text-white mb-[60px] md:mb-0 py-5 px-5 lg:py-10 lg:px-32 lg:flex items-center justify-between ">
       <div className=" w-full lg:w-1/3 my-10 lg:my-0 ">
-        <a href="#">
+        <div
+          // onClick={() => navigate("/")}
+          className="w-full flex justify-center md:justify-start items-center cursor-pointer"
+        >
           <img
-            src="/images/logo.png"
-            className="w-[180px] h-auto mx-auto lg:m-0"
             alt=""
+            src="/images/logo-white.png"
+            className="w-8 md:w-10 h-auto"
           />
-        </a>
+          <h1 className="text-[1.75rem] md:text-[2rem] font-black">Kascore</h1>
+        </div>
       </div>
 
       <div className=" w-full lg:w-1/3 text-center lg:text-left mb-10 lg:mb-0 ">

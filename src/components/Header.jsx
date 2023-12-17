@@ -43,17 +43,19 @@ const Header = () => {
         } flex justify-between items-center transition-all duration-700 fixed top-0 left-0 z-30 font-mont`}
       >
         <div className="w-full flex flex-col items-center justify-center">
-          <div className="w-full flex justify-between items-center gap-5 h-[60px] md:h-[70px] md:px-[10%] px-3">
+          <div className="w-full flex justify-between items-center gap-5 h-[60px] md:h-[70px] lg:px-[10%] px-3">
             <div
               onClick={() => navigate("/")}
-              className="flex gap-1 md:gap-2 items-center cursor-pointer"
+              className="flex items-center cursor-pointer"
             >
               <img
                 alt=""
-                src="/images/K4.jpg"
-                className=" w-[40px] h-[40px] md:w-[50px] md:h-[50px] rounded-xl "
+                src="/images/logo-white.png"
+                className="w-8 md:w-10 h-auto"
               />
-              <h1 className=" text-[2rem] font-black ">Kascore</h1>
+              <h1 className="text-[1.75rem] md:text-[2rem] font-black">
+                Kascore
+              </h1>
             </div>
 
             <div className="hidden md:flex items-center bg-black/30 px-2 rounded-md">
@@ -89,7 +91,15 @@ const Header = () => {
                 />
                 <p className="whitespace-nowrap">Get the app</p>
               </li>
-              <li className="ml-8 border border-orange-500 rounded-md px-3 py-1 md:flex gap-2 items-center cursor-pointer hidden">
+              <li className="ml-8">
+                {" "}
+                <img
+                  alt=""
+                  src="/images/icons8-light-mode-78.png"
+                  className="w-10 h-auto cursor-pointer"
+                />
+              </li>
+              <li className="border border-orange-500 rounded-md px-3 py-1 md:flex gap-2 items-center cursor-pointer hidden">
                 <img
                   alt="calendar"
                   src="/images/icons8-great-britain-48.png"
@@ -100,6 +110,11 @@ const Header = () => {
             </ul>
           </div>
 
+          <img
+            alt=""
+            src="/images/icons8-light-mode-78.png"
+            className="w-8 h-auto cursor-pointer md:hidden absolute top-4 right-12"
+          />
           <img
             src="/images/icons8-search-64.png"
             alt=""
