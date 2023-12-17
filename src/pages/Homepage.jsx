@@ -32,8 +32,20 @@ const Homepage = () => {
               </div>
             </div>
           </div>
-          <div className="w-[30%] min-w-[200px] bg-[#1d2732] h-[400px] rounded-lg hidden lg:block p-4">
-            <h1 className="text-[.75rem]">ADVERTISEMENT</h1>
+          <div className="w-[30%] min-w-[200px] bg-[#1d2732] h-auto rounded-lg hidden lg:block p-4 ">
+            <div className=" w-full bg-[#1d2732] h-[400px] ">
+              <div className=" flex items-center justify-between md:border md:border-neutral-100/20 cursor-pointer py-2 px-2 mb-4 rounded-lg ">
+                <p className=" text-[1.2rem] font-bold ">Featured News</p>
+                <img src="/images/icons8-right-arrow-30.png" alt="" className=" w-5 h-5 " />
+              </div>
+              <div className=" w-full ">
+                <img src="/images/K1.jpg" alt="" className=" w-full h-[200px] rounded-lg " />
+                <h1>Will be back soon!</h1>
+              </div>
+            </div> 
+            <div className="w-full bg-inherit h-[200px] mt-5 ">
+              <h1 className="text-[.75rem]">ADVERTISEMENT</h1>
+            </div>
           </div>
         </div>
       </div>
