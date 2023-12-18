@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import LeagueSchedule from "../components/LeagueSchedule";
 import CountriesTray from "../components/CountriesTray";
 import BottomBar from "../components/BottomBar";
+import schedule from "../data/schedule.json";
 
 const Homepage = () => {
   return (
@@ -26,9 +27,12 @@ const Homepage = () => {
               </h1>
 
               <div className="w-full flex flex-col text-neutral-100">
+                {schedule?.map((item, index) => {
+                  return <LeagueSchedule key={index} item={item} />;
+                })}
+                {/* <LeagueSchedule />
                 <LeagueSchedule />
-                <LeagueSchedule />
-                <LeagueSchedule />
+                <LeagueSchedule /> */}
               </div>
             </div>
           </div>
