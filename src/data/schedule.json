@@ -2,7 +2,94 @@
   {
     "league_name": "Premier League",
     "country_name": "England",
-    "country_flag": "/images/",
-    "fixtures": []
+    "country_flag": "/images/icons8-england-circular-48.png",
+    "fixtures": [
+      {
+        "id": 1,
+        "time": "13:30",
+        "home": "West Ham",
+        "away": "Manchester Utd",
+        "home_crest": "/images/westham.png",
+        "away_crest": "/images/manutd.png"
+      },
+      {
+        "id": 2,
+        "time": "16:00",
+        "home": "Fulham",
+        "away": "Burnley",
+        "home_crest": "/images/fulham.png",
+        "away_crest": "/images/burnley.png"
+      },
+      {
+        "id": 3,
+        "time": "16:00",
+        "home": "Newcastle Utd",
+        "away": "Chelsea",
+        "home_crest": "/images/newcastle.png",
+        "away_crest": "/images/chelsea.png"
+      }
+    ]
+  },
+  {
+    "league_name": "Premier League",
+    "country_name": "England",
+    "country_flag": "/images/icons8-england-circular-48.png",
+    "fixtures": [
+      {
+        "id": 1,
+        "time": "13:30",
+        "home": "West Ham",
+        "away": "Manchester Utd",
+        "home_crest": "/images/westham.png",
+        "away_crest": "/images/manutd.png"
+      },
+      {
+        "id": 2,
+        "time": "16:00",
+        "home": "Fulham",
+        "away": "Burnley",
+        "home_crest": "/images/fulham.png",
+        "away_crest": "/images/burnley.png"
+      },
+      {
+        "id": 3,
+        "time": "16:00",
+        "home": "Newcastle Utd",
+        "away": "Chelsea",
+        "home_crest": "/images/newcastle.png",
+        "away_crest": "/images/chelsea.png"
+      }
+    ]
+  },
+  {
+    "league_name": "Premier League",
+    "country_name": "England",
+    "country_flag": "/images/icons8-england-circular-48.png",
+    "fixtures": [
+      {
+        "id": 1,
+        "time": "13:30",
+        "home": "West Ham",
+        "away": "Manchester Utd",
+        "home_crest": "/images/westham.png",
+        "away_crest": "/images/manutd.png"
+      },
+      {
+        "id": 2,
+        "time": "16:00",
+        "home": "Fulham",
+        "away": "Burnley",
+        "home_crest": "/images/fulham.png",
+        "away_crest": "/images/burnley.png"
+      },
+      {
+        "id": 3,
+        "time": "16:00",
+        "home": "Newcastle Utd",
+        "away": "Chelsea",
+        "home_crest": "/images/newcastle.png",
+        "away_crest": "/images/chelsea.png"
+      }
+    ]
   }
 ]

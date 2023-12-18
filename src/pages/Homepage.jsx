@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import LeagueSchedule from "../components/LeagueSchedule";
 import CountriesTray from "../components/CountriesTray";
 import BottomBar from "../components/BottomBar";
+import schedule from "../data/schedule.json";
 
 const Homepage = () => {
   return (
@@ -26,16 +27,19 @@ const Homepage = () => {
               </h1>
 
               <div className="w-full flex flex-col text-neutral-100">
+                {schedule?.map((item, index) => {
+                  return <LeagueSchedule key={index} item={item} />;
+                })}
+                {/* <LeagueSchedule />
                 <LeagueSchedule />
-                <LeagueSchedule />
-                <LeagueSchedule />
+                <LeagueSchedule /> */}
               </div>
             </div>
           </div>
           <div className="w-[30%] min-w-[200px] bg-[#1d2732] h-auto rounded-lg hidden lg:block p-4 ">
             <div className=" w-full bg-[#1d2732] h-[700px] ">
               <div className=" flex items-center justify-between md:border md:border-neutral-100/20 cursor-pointer py-2 px-2 mb-4 rounded-lg ">
-                <p className=" text-[1.2rem] font-bold ">Featured News</p>
+                <p className=" text-[.85rem] font-bold ">Featured News</p>
                 <img
                   src="/images/icons8-right-arrow-30.png"
                   alt=""
@@ -45,32 +49,48 @@ const Homepage = () => {
               <div className=" w-full h-auto relative border border-neutral-100/20 rounded-lg ">
                 <div className=" w-full h-auto opacity-90">
                   <img
-                  src="/images/fayas.jpg"
-                  alt=""
-                  className=" w-full h-[200px] rounded-lg  "
-                />
+                    src="/images/fayas.jpg"
+                    alt=""
+                    className=" w-full h-[200px] rounded-lg  object-cover"
+                  />
                 </div>
-                <div className=" w-full h-[200px] opacity-90 p-3 absolute top-0 left-0 ">
-                  <p className=" w-[85%] mt-[130px] text-left font-bold text-white text-[1rem] ">Five talking points as Liverpool are held to United stalemate</p>
+                <div className=" w-full h-[200px] opacity-90 p-3 absolute top-0 left-0 bg-black/40">
+                  <p className=" w-[85%] mt-[130px] text-left font-bold text-white text-[1rem] ">
+                    Five talking points as Liverpool are held to United
+                    stalemate
+                  </p>
                 </div>
               </div>
               <div className=" w-full h-auto relative border border-neutral-100/20 my-4 rounded-lg ">
                 <div className=" w-full h-auto opacity-90">
-                  <img src="/images/sven.jpg" alt="" className=" w-full h-[200px] rounded-lg  " />
+                  <img
+                    src="/images/sven.jpg"
+                    alt=""
+                    className=" w-full h-[200px] rounded-lg  object-cover"
+                  />
                 </div>
-                <div className=" w-full h-[200px] opacity-90 p-3 absolute top-0 left-0 ">
-                  <p className=" w-[85%] mt-[130px] text-left font-bold text-white text-[1rem] ">Five talking points as Liverpool are held to United stalemate</p>
+                <div className=" w-full h-[200px] opacity-90 p-3 absolute top-0 left-0 bg-black/40">
+                  <p className=" w-[85%] mt-[130px] text-left font-bold text-white text-[1rem] ">
+                    Five talking points as Liverpool are held to United
+                    stalemate
+                  </p>
                 </div>
               </div>
               <div className=" w-full h-auto relative border border-neutral-100/20 rounded-lg ">
                 <div className=" w-full h-auto opacity-90 ">
-                  <img src="/images/vienna.jpg" alt="" className=" w-full h-[200px] rounded-lg  " />
+                  <img
+                    src="/images/vienna.jpg"
+                    alt=""
+                    className=" w-full h-[200px] rounded-lg  object-cover"
+                  />
                 </div>
-                <div className=" w-full h-[200px] opacity-90 p-3 absolute top-0 left-0 ">
-                  <p className=" w-[85%] mt-[130px] text-left font-bold text-white text-[1rem] ">Five talking points as Liverpool are held to United stalemate</p>
+                <div className=" w-full h-[200px] opacity-90 p-3 absolute top-0 left-0 bg-black/40">
+                  <p className=" w-[85%] mt-[130px] text-left font-bold text-white text-[1rem] ">
+                    Five talking points as Liverpool are held to United
+                    stalemate
+                  </p>
                 </div>
               </div>
-             
             </div>
             <div className="w-full bg-inherit h-[200px] mt-5 ">
               <h1 className="text-[.75rem]">ADVERTISEMENT</h1>
