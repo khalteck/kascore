@@ -41,7 +41,7 @@ const Homepage = () => {
                   alt=""
                   className=" w-5 h-5 "
                 />
-              </div>
+              </div> 
               <div className=" w-full h-auto relative border border-neutral-100/20 rounded-lg ">
                 <div className=" w-full h-auto opacity-90">
                   <img
