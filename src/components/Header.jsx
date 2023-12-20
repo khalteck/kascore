@@ -154,27 +154,32 @@ const Header = () => {
             </div>
 
             <img
-              onClick={toggleMode}
-              alt=""
-              src={
-                !isDarkMode
-                  ? "/images/icons8-light-mode-78.png"
-                  : "/images/icons8-dark-mode-100.png"
-              }
-              className={`h-auto cursor-pointer md:hidden mr-2 ${
-                isDarkMode ? "w-7" : "w-[35px]"
-              }`}
-            />
-            <img
               src={
                 !isDarkMode
                   ? "/images/icons8-search-64.png"
                   : "/images/icons8-search-black.png"
               }
               alt=""
-              className="w-7 h-7 md:hidden"
+              className="w-7 h-7 md:hidden mr-3"
               onClick={toggleSearch}
             />
+
+            <div
+              onClick={toggleMode}
+              className={`p-1 rounded-md bg-gray-200 dark:bg-[#1d2732]`}
+            >
+              <img
+                alt=""
+                src={
+                  !isDarkMode
+                    ? "/images/icons8-light-mode-78.png"
+                    : "/images/icons8-dark-mode-100.png"
+                }
+                className={`h-auto cursor-pointer md:hidden ${
+                  isDarkMode ? "w-7" : "w-[35px]"
+                }`}
+              />
+            </div>
           </div>
 
           <SportListCont />
@@ -182,16 +187,21 @@ const Header = () => {
       </header>
 
       {openSearch && (
-        <div className="w-full h-screen overflow-y-auto fixed top-0 left-0 pt-4 pb-[80px] bg-[#1d2732] z-40 text-neutral-100">
+        <div className="w-full h-screen overflow-y-auto fixed top-0 left-0 pt-4 pb-[80px] bg-white dark:bg-[#1d2732] z-40 dark:text-neutral-100">
           <div className="w-full flex gap-3 items-center px-3 mb-3">
             <input
               type="text"
               placeholder="Search by country..."
-              className="w-full border border-neutral-100/30 rounded-md bg-inherit outline-none px-2 py-1 placeholder:text-[.85rem]"
+              className="w-full border border-black/20 dark:border-neutral-100/30 rounded-md bg-inherit outline-none px-2 py-1 placeholder:text-[.85rem]"
             />
             <img
               alt="calendar"
-              src="/images/icons8-close-50.png"
+              // src="/images/icons8-close-50.png"
+              src={
+                !isDarkMode
+                  ? "/images/icons8-close-50.png"
+                  : "/images/icons8-close-black.png"
+              }
               className="w-6 h-auto"
               onClick={toggleSearch}
             />
@@ -202,7 +212,7 @@ const Header = () => {
           </div>
 
           <div className="w-full">
-            <CountriesTray />
+            <CountriesTray isDarkMode={isDarkMode} />
           </div>
         </div>
       )}

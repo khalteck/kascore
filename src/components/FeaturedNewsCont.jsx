@@ -11,7 +11,9 @@ const FeaturedNewsCont = ({ isDarkMode }) => {
     >
       <div
         onClick={() => navigate("/news")}
-        className=" flex items-center justify-between md:border md:border-neutral-100/20 cursor-pointer py-2 px-2 mb-4 rounded-lg "
+        className={`flex items-center justify-between md:border cursor-pointer py-2 px-2 mb-4 rounded-lg ${
+          !isDarkMode ? "md:border-neutral-100/20" : "border-black/20"
+        }`}
       >
         <p className=" text-[.85rem] font-bold ">Featured News</p>
         <img

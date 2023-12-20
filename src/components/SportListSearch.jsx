@@ -1,6 +1,6 @@
 const SportListSearch = () => {
   return (
-    <ul className="bg-[#121a20]/50 w-full pl-[120px] md:pl-0 lg:px-[10%] md:h-[60px] gap-3 md:gap-6 items-center justify-center flex overflow-x-auto whitespace-nowrap">
+    <ul className="bg-[#121a20]/50 w-full pl-[120px] md:pl-0 lg:px-[10%] md:h-[60px] gap-3 md:gap-6 items-center justify-center flex overflow-x-auto whitespace-nowrap no-scrollbar">
       <li
         // onClick={() => navigate("/")}
         className={`w-fit cursor-pointer hover:bg-[#2a3543] text-orange-500 lg:bg-white/10 transition-all duration-300 text-[.8rem] md:text-[.9rem] px-3 py-[6px] lg:rounded-md flex lg:flex-row flex-col lg:gap-2 items-center `}
