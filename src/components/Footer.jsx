@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="h-auto w-full block bg-[#2a3543] md:bg-gradient-to-r from-[#5a636b] to-[#2a3543] text-white mb-[60px] md:mb-0 py-5 px-5 lg:py-10 lg:px-32 lg:flex items-center justify-between ">
+    <footer className="h-auto w-full block dark:bg-[#2a3543] md:dark:bg-gradient-to-r from-[#5a636b] to-[#2a3543] bg-[#2a3543]/60 text-white dark:text-[#d1d5db] mb-[60px] md:mb-0 py-5 px-5 lg:py-10 lg:px-32 lg:flex items-center justify-between ">
       <div className=" w-full lg:w-1/3 my-10 lg:my-0 ">
         <div
           // onClick={() => navigate("/")}

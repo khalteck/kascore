@@ -1,14 +1,20 @@
 /* eslint-disable react/prop-types */
 import { useNavigate } from "react-router-dom";
 
-const MatchCard = ({ itm, currentLeague }) => {
+const MatchCard = ({ itm, currentLeague, isDarkMode }) => {
   const navigate = useNavigate();
   return (
     <div
       onClick={() => navigate(`/details/${currentLeague}/${itm?.id}`)}
-      className="flex gap-3 py-2 mb-2 pr-3 hover:bg-black/20 cursor-pointer"
+      className={`flex gap-3 py-2 mb-2 pr-3 cursor-pointer ${
+        !isDarkMode ? "hover:bg-black/20" : "hover:bg-orange-500/10"
+      }`}
     >
-      <div className="w-[60px] text-[.85rem] text-neutral-100/50 border-r border-neutral-100/30 flex flex-col justify-center items-center">
+      <div
+        className={`w-[60px] text-[.85rem] border-r flex flex-col justify-center items-center ${
+          isDarkMode ? "border-black" : "border-neutral-100/30"
+        }`}
+      >
         <p>{itm?.time}</p>
         <p>-</p>
       </div>

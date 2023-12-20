@@ -1,10 +1,14 @@
 /* eslint-disable react/prop-types */
 import MatchCard from "./MatchCard";
 
-const LeagueSchedule = ({ item }) => {
+const LeagueSchedule = ({ item, isDarkMode }) => {
   const currentLeague = item?.league_name;
   return (
-    <div className="w-full border-b border-neutral-100/20 pt-4">
+    <div
+      className={`w-full border-b border-neutral-100/20 pt-4 ${
+        isDarkMode ? "text-[#121a20]" : "text-neutral-100"
+      }`}
+    >
       <div className="flex">
         <div className="w-[60px] flex justify-center items-center">
           <img
@@ -15,7 +19,11 @@ const LeagueSchedule = ({ item }) => {
         </div>
         <div>
           <p className="font-medium leading-tight">{item?.league_name}</p>
-          <p className="text-neutral-100/50 text-[.85rem]">
+          <p
+            className={`text-[.85rem] ${
+              isDarkMode ? "text-[#121a20]/50" : "text-neutral-100/50"
+            }`}
+          >
             {item?.country_name}
           </p>
         </div>
@@ -24,7 +32,12 @@ const LeagueSchedule = ({ item }) => {
       <div className="w-full flex flex-col mt-4">
         {item?.fixtures?.map((itm, ind) => {
           return (
-            <MatchCard key={ind} itm={itm} currentLeague={currentLeague} />
+            <MatchCard
+              key={ind}
+              itm={itm}
+              currentLeague={currentLeague}
+              isDarkMode={isDarkMode}
+            />
           );
         })}
       </div>

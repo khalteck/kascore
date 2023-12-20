@@ -5,93 +5,67 @@ import LeagueSchedule from "../components/LeagueSchedule";
 import CountriesTray from "../components/CountriesTray";
 import BottomBar from "../components/BottomBar";
 import schedule from "../data/schedule.json";
+import FeaturedNewsCont from "../components/FeaturedNewsCont";
+import { useAppContext } from "../contexts/AppContext";
+import ScrollToTop from "../ScrollToTop";
 
 const Homepage = () => {
+  const { isDarkMode } = useAppContext();
+
   return (
     <>
       <Header />
-      <div className="w-full pt-[105px] md:pt-[170px] md:pb-12 md:px-[10%] bg-[#121a20] text-neutral-100/80">
+      <div
+        className={`w-full pt-[105px] md:pt-[170px] md:pb-12 md:px-[10%] bg-[#d1d5db] text-[#0f172a] dark:bg-[#2a3543] dark:text-gray-200 ${
+          isDarkMode ? "dark" : ""
+        }`}
+      >
         <div className="w-full h-full flex gap-8">
           <div className="w-[20%] min-w-[200px] hidden md:block">
-            <CountriesTray />
+            <CountriesTray isDarkMode={isDarkMode} />
           </div>
 
-          <div className="w-full md:w-[50%] md:min-w-[550px] bg-[#1d2732] h-full rounded-lg px-3 py-5">
+          <div
+            className={`w-full md:w-[50%] md:min-w-[550px] h-full rounded-lg px-3 py-5  ${
+              !isDarkMode ? "bg-[#1d2732]" : "bg-gray-100"
+            }`}
+          >
             <div className="w-full mb-4 md:mb-0">
-              <DateSlide />
+              <DateSlide isDarkMode={isDarkMode} />
             </div>
 
-            <div className="w-full bg-[#121a20]/50 md:mt-5 rounded-lg">
+            <div
+              className={`w-full md:mt-5 rounded-lg ${
+                !isDarkMode ? "bg-[#121a20]/50" : "bg-gray-200"
+              }`}
+            >
               <h1 className="font-medium text-[1.2rem] p-4 rounded-lg">
                 Featured Leagues
               </h1>
 
-              <div className="w-full flex flex-col text-neutral-100">
+              <div
+                className={`w-full flex flex-col ${
+                  !isDarkMode ? "text-[#121a20]" : "text-neutral-100"
+                }`}
+              >
                 {schedule?.map((item, index) => {
-                  return <LeagueSchedule key={index} item={item} />;
+                  return (
+                    <LeagueSchedule
+                      key={index}
+                      item={item}
+                      isDarkMode={isDarkMode}
+                    />
+                  );
                 })}
-                {/* <LeagueSchedule />
-                <LeagueSchedule />
-                <LeagueSchedule /> */}
               </div>
             </div>
           </div>
-          <div className="w-[30%] min-w-[200px] bg-[#1d2732] h-auto rounded-lg hidden lg:block p-4 ">
-            <div className=" w-full bg-[#1d2732] h-[700px] ">
-              <div className=" flex items-center justify-between md:border md:border-neutral-100/20 cursor-pointer py-2 px-2 mb-4 rounded-lg ">
-                <p className=" text-[.85rem] font-bold ">Featured News</p>
-                <img
-                  src="/images/icons8-right-arrow-30.png"
-                  alt=""
-                  className=" w-5 h-5 "
-                />
-              </div> 
-              <div className=" w-full h-auto relative border border-neutral-100/20 rounded-lg ">
-                <div className=" w-full h-auto opacity-90">
-                  <img
-                    src="/images/fayas.jpg"
-                    alt=""
-                    className=" w-full h-[200px] rounded-lg  object-cover"
-                  />
-                </div>
-                <div className=" w-full h-[200px] opacity-90 p-3 absolute top-0 left-0 bg-black/40">
-                  <p className=" w-[85%] mt-[130px] text-left font-bold text-white text-[1rem] ">
-                    Five talking points as Liverpool are held to United
-                    stalemate
-                  </p>
-                </div>
-              </div>
-              <div className=" w-full h-auto relative border border-neutral-100/20 my-4 rounded-lg ">
-                <div className=" w-full h-auto opacity-90">
-                  <img
-                    src="/images/sven.jpg"
-                    alt=""
-                    className=" w-full h-[200px] rounded-lg  object-cover"
-                  />
-                </div>
-                <div className=" w-full h-[200px] opacity-90 p-3 absolute top-0 left-0 bg-black/40">
-                  <p className=" w-[85%] mt-[130px] text-left font-bold text-white text-[1rem] ">
-                    Five talking points as Liverpool are held to United
-                    stalemate
-                  </p>
-                </div>
-              </div>
-              <div className=" w-full h-auto relative border border-neutral-100/20 rounded-lg ">
-                <div className=" w-full h-auto opacity-90 ">
-                  <img
-                    src="/images/vienna.jpg"
-                    alt=""
-                    className=" w-full h-[200px] rounded-lg  object-cover"
-                  />
-                </div>
-                <div className=" w-full h-[200px] opacity-90 p-3 absolute top-0 left-0 bg-black/40">
-                  <p className=" w-[85%] mt-[130px] text-left font-bold text-white text-[1rem] ">
-                    Five talking points as Liverpool are held to United
-                    stalemate
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div
+            className={`w-[30%] min-w-[200px] h-auto rounded-lg hidden lg:block p-4 ${
+              !isDarkMode ? "bg-[#1d2732]" : "bg-gray-100"
+            }`}
+          >
+            <FeaturedNewsCont isDarkMode={isDarkMode} />
             <div className="w-full bg-inherit h-[200px] mt-5 ">
               <h1 className="text-[.75rem]">ADVERTISEMENT</h1>
             </div>
@@ -99,6 +73,7 @@ const Homepage = () => {
         </div>
       </div>
 
+      <ScrollToTop />
       <Footer />
       <BottomBar />
     </>

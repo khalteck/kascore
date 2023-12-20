@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { createContext, useContext } from "react";
+import { createContext, useContext, useState } from "react";
 import { useLocation } from "react-router-dom";
 
 export const AppContext = createContext();
@@ -9,10 +9,21 @@ const AppContextProvider = ({ children }) => {
   const location = useLocation();
   let currentPage = location.pathname;
 
+  const [isDarkMode, setIsDarkMode] = useState(true);
+
+  const toggleMode = () => {
+    setIsDarkMode((prevMode) => !prevMode);
+    document.documentElement.classList.toggle("dark");
+    // If you prefer to toggle the class on 'body':
+    // document.body.classList.toggle('dark');
+  };
+
   return (
     <AppContext.Provider
       value={{
         currentPage,
+        isDarkMode,
+        toggleMode,
       }}
     >
       {children}

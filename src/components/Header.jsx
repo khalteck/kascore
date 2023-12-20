@@ -1,32 +1,14 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import SportListCont from "./SportListCont";
 import SportListSearch from "./SportListSearch";
 import CountriesTray from "./CountriesTray";
-// import { useAppContext } from "../contexts/AppContext";
+import { useAppContext } from "../contexts/AppContext";
 
 const Header = () => {
-  // const { currentPage } = useAppContext();
-
-  // const [openMenu, setOpenMenu] = useState(false);
-  const [scrollBackground, setScrollBackground] = useState(false);
+  const { currentPage, toggleMode, isDarkMode } = useAppContext();
 
   const navigate = useNavigate();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      const scrollThreshold = 500;
-
-      setScrollBackground(scrollY > scrollThreshold);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   const [openSearch, setOpenSearch] = useState(false);
   function toggleSearch() {
@@ -36,91 +18,164 @@ const Header = () => {
   return (
     <>
       <header
-        className={`w-full ${
-          scrollBackground
-            ? "bg-[#2a3543] text-gray-200"
-            : "bg-[#2a3543] text-gray-200"
-        } flex justify-between items-center transition-all duration-700 fixed top-0 left-0 z-30 font-mont`}
+        className={`w-full bg-[#d1d5db] text-[#0f172a] dark:bg-[#2a3543] dark:text-gray-200 flex justify-between items-center transition-all duration-700 fixed top-0 left-0 z-30 font-mont`}
       >
         <div className="w-full flex flex-col items-center justify-center">
-          <div className="w-full flex justify-between items-center gap-5 h-[60px] md:h-[70px] lg:px-[10%] px-3">
-            <div
-              onClick={() => navigate("/")}
-              className="flex items-center cursor-pointer"
-            >
-              <img
-                alt=""
-                src="/images/logo-white.png"
-                className="w-8 md:w-10 h-auto"
-              />
-              <h1 className="text-[1.75rem] md:text-[2rem] font-black">
-                Kascore
-              </h1>
-            </div>
-
-            <div className="hidden md:flex items-center bg-black/30 px-2 rounded-md">
-              <img
-                src="/images/icons8-search-64.png"
-                alt=""
-                className="w-7 h-7 opacity-70"
-              />
-              <input
-                type="text"
-                className="w-[300px] bg-transparent py-2 px-3 outline-none"
-                placeholder="Search"
-              />
-            </div>
-
-            <ul className="hidden md:flex gap-5 items-center">
-              <li
-                onClick={() => navigate("/favorites")}
-                className="flex gap-2 items-center hover:text-white cursor-pointer"
+          <div className="w-full flex flex-row md:flex-col items-center md:items-start pr-3 md:pr-0">
+            <div className="w-full flex justify-between items-center gap-5 h-[60px] md:h-[70px] lg:px-[10%] px-3">
+              <div
+                onClick={() => navigate("/")}
+                className="flex items-center cursor-pointer"
               >
                 <img
                   alt=""
-                  src="/images/icons8-basketball-50.png"
-                  className="w-5 h-auto"
+                  src={
+                    !isDarkMode
+                      ? "/images/logo-white.png"
+                      : "/images/logo-black.png"
+                  }
+                  className="w-8 md:w-10 h-auto"
                 />
-                <p>Favorites</p>
-              </li>
-              <li className="flex gap-2 items-center">
-                <img
-                  alt=""
-                  src="/images/icons8-basketball-50.png"
-                  className="w-5 h-auto"
-                />
-                <p className="whitespace-nowrap">Get the app</p>
-              </li>
-              <li className="ml-8">
-                {" "}
-                <img
-                  alt=""
-                  src="/images/icons8-light-mode-78.png"
-                  className="w-10 h-auto cursor-pointer"
-                />
-              </li>
-              <li className="border border-orange-500 rounded-md px-3 py-1 md:flex gap-2 items-center cursor-pointer hidden">
-                <img
-                  alt="calendar"
-                  src="/images/icons8-great-britain-48.png"
-                  className="w-6 h-auto"
-                />
-                <p>EN</p>
-              </li>
-            </ul>
-          </div>
+                <h1 className="text-[1.75rem] md:text-[2rem] font-black">
+                  Kascore
+                </h1>
+              </div>
 
-          <img
-            alt=""
-            src="/images/icons8-light-mode-78.png"
-            className="w-8 h-auto cursor-pointer md:hidden absolute top-4 right-12"
-          />
-          <img
-            src="/images/icons8-search-64.png"
-            alt=""
-            className="w-7 h-7 absolute top-4 right-2 opacity-70 md:hidden"
-            onClick={toggleSearch}
-          />
+              <div className="hidden md:flex items-center border border-[#334155] bg-[#d1d5db] dark:bg-black/30 px-2 rounded-md">
+                <img
+                  src={
+                    !isDarkMode
+                      ? "/images/icons8-search-64.png"
+                      : "/images/icons8-search-black.png"
+                  }
+                  alt=""
+                  className="w-7 h-7 opacity-70"
+                />
+                <input
+                  type="text"
+                  className="w-[300px] bg-[#d1d5db] dark:bg-transparent py-2 px-3 outline-none dark:placeholder:text-inherit placeholder:text-black/60"
+                  placeholder="Search"
+                />
+              </div>
+
+              <ul className="hidden md:flex gap-5 items-center">
+                <li
+                  onClick={() => navigate("/")}
+                  className="flex gap-2 items-center hover:text-orange-500 cursor-pointer transition-all duration-300"
+                >
+                  <img
+                    alt=""
+                    src={
+                      currentPage === "/"
+                        ? "/images/icons8-football-orange.png"
+                        : !isDarkMode
+                        ? "/images/icons8-football-50.png"
+                        : "/images/icons8-football-black.png"
+                    }
+                    className="w-5 h-auto"
+                  />
+                  <p className={`${currentPage === "/" && "text-orange-500"}`}>
+                    Scores
+                  </p>
+                </li>
+
+                <li
+                  onClick={() => navigate("/favorites")}
+                  className="flex gap-2 items-center hover:text-orange-500 cursor-pointer transition-all duration-300"
+                >
+                  <img
+                    alt=""
+                    src={
+                      currentPage === "/favorites"
+                        ? "/images/icons8-star-50.png"
+                        : !isDarkMode
+                        ? "/images/icons8-star-white.png"
+                        : "/images/icons8-star-black.png"
+                    }
+                    className={` ${!isDarkMode ? "w-5" : "w-6"} h-auto`}
+                  />
+                  <p
+                    className={`${
+                      currentPage === "/favorites" && "text-orange-500"
+                    }`}
+                  >
+                    Favorites
+                  </p>
+                </li>
+                <li
+                  onClick={() => navigate("/news")}
+                  className="flex gap-2 items-center hover:text-orange-500 cursor-pointer transition-all duration-300"
+                >
+                  <img
+                    alt=""
+                    src={
+                      currentPage === "/news"
+                        ? "/images/icons8-news-orange.png"
+                        : !isDarkMode
+                        ? "/images/icons8-news-64.png"
+                        : "/images/icons8-news-black.png"
+                    }
+                    className="w-5 h-auto"
+                  />
+                  <p
+                    className={`${
+                      currentPage === "/news" && "text-orange-500"
+                    }`}
+                  >
+                    News
+                  </p>
+                </li>
+
+                {/* darkmode toggle */}
+                <li className="ml-8">
+                  {" "}
+                  <img
+                    onClick={toggleMode}
+                    alt=""
+                    src={
+                      !isDarkMode
+                        ? "/images/icons8-light-mode-78.png"
+                        : "/images/icons8-dark-mode-100.png"
+                    }
+                    className={`h-auto cursor-pointer ${
+                      isDarkMode ? "w-7" : "w-10"
+                    }`}
+                  />
+                </li>
+                <li className="border border-orange-500 rounded-md px-3 py-1 md:flex gap-2 items-center cursor-pointer hidden">
+                  <img
+                    alt="calendar"
+                    src="/images/icons8-great-britain-48.png"
+                    className="w-6 h-auto"
+                  />
+                  <p>EN</p>
+                </li>
+              </ul>
+            </div>
+
+            <img
+              onClick={toggleMode}
+              alt=""
+              src={
+                !isDarkMode
+                  ? "/images/icons8-light-mode-78.png"
+                  : "/images/icons8-dark-mode-100.png"
+              }
+              className={`h-auto cursor-pointer md:hidden mr-2 ${
+                isDarkMode ? "w-7" : "w-[35px]"
+              }`}
+            />
+            <img
+              src={
+                !isDarkMode
+                  ? "/images/icons8-search-64.png"
+                  : "/images/icons8-search-black.png"
+              }
+              alt=""
+              className="w-7 h-7 md:hidden"
+              onClick={toggleSearch}
+            />
+          </div>
 
           <SportListCont />
         </div>
