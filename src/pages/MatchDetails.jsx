@@ -100,12 +100,12 @@ const MatchDetails = () => {
                 </div>
               </div>
 
-              <div className=" w-full my-4 pb-3 flex gap-2 md:gap-5 border-b border-black/20 dark:border-neutral-100/50 ">
+              <div className=" w-full my-4 pb-3 flex gap-5 border-b border-black/20 dark:border-neutral-100/50 ">
                 <a
                   href="#"
                   className=" hover:text-white text-[0.8rem] uppercase"
                 >
-                  Info
+                  Summary
                 </a>
                 {/* <a
                   href="#"
@@ -117,25 +117,25 @@ const MatchDetails = () => {
                   href="#"
                   className=" hover:text-white text-[0.8rem] uppercase"
                 >
-                  Line-ups
+                  Odds
                 </a>
-                {/* <a
-                  href="#"
-                  className=" hidden md:block hover:text-white text-[0.8rem] uppercase"
-                >
-                  Statistics
-                </a> */}
-                {/* <a
-                  href="#"
-                  className=" md:hidden text-[0.8rem] uppercase"
-                >
-                  Stats
-                </a> */}
                 <a
                   href="#"
                   className=" hover:text-white text-[0.8rem] uppercase"
                 >
-                  Standings
+                  H2H
+                </a>{" "}
+                <a
+                  href="#"
+                  className=" hover:text-white text-[0.8rem] uppercase"
+                >
+                  Draw
+                </a>
+                <a
+                  href="#"
+                  className=" hover:text-white text-[0.8rem] uppercase"
+                >
+                  News
                 </a>
                 {/* <a
                   href="#"
