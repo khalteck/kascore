@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { createContext, useContext, useState } from "react";
 import { useLocation } from "react-router-dom";
+import events from "../data/events.json";
 
 export const AppContext = createContext();
 
@@ -18,12 +19,29 @@ const AppContextProvider = ({ children }) => {
     // document.body.classList.toggle('dark');
   };
 
+  //==============================================================to get prem fixtures for 23/12/2023
+  const englandSchedule = events?.data?.filter(
+    (item) => item?.league?.slug === "england-premier-league"
+  );
+
+  const topLeagues = [
+    {
+      name: "Premier League",
+      logo: englandSchedule[0]?.league?.logo,
+      country: "England",
+      schedule: englandSchedule,
+    },
+  ];
+
+  console.log("topLeagues", topLeagues);
+
   return (
     <AppContext.Provider
       value={{
         currentPage,
         isDarkMode,
         toggleMode,
+        topLeagues,
       }}
     >
       {children}

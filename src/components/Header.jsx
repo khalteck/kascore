@@ -4,6 +4,7 @@ import SportListCont from "./SportListCont";
 import SportListSearch from "./SportListSearch";
 import CountriesTray from "./CountriesTray";
 import { useAppContext } from "../contexts/AppContext";
+import NewsListCont from "./NewsListCont";
 
 const Header = () => {
   const { currentPage, toggleMode, isDarkMode } = useAppContext();
@@ -80,29 +81,6 @@ const Header = () => {
                 </li>
 
                 <li
-                  onClick={() => navigate("/favorites")}
-                  className="flex gap-2 items-center hover:text-orange-500 cursor-pointer transition-all duration-300"
-                >
-                  <img
-                    alt=""
-                    src={
-                      currentPage === "/favorites"
-                        ? "/images/icons8-star-50.png"
-                        : !isDarkMode
-                        ? "/images/icons8-star-white.png"
-                        : "/images/icons8-star-black.png"
-                    }
-                    className={` ${!isDarkMode ? "w-5" : "w-6"} h-auto`}
-                  />
-                  <p
-                    className={`${
-                      currentPage === "/favorites" && "text-orange-500"
-                    }`}
-                  >
-                    Favorites
-                  </p>
-                </li>
-                <li
                   onClick={() => navigate("/news")}
                   className="flex gap-2 items-center hover:text-orange-500 cursor-pointer transition-all duration-300"
                 >
@@ -123,6 +101,30 @@ const Header = () => {
                     }`}
                   >
                     News
+                  </p>
+                </li>
+
+                <li
+                  onClick={() => navigate("/favorites")}
+                  className="flex gap-2 items-center hover:text-orange-500 cursor-pointer transition-all duration-300"
+                >
+                  <img
+                    alt=""
+                    src={
+                      currentPage === "/favorites"
+                        ? "/images/icons8-star-50.png"
+                        : !isDarkMode
+                        ? "/images/icons8-star-white.png"
+                        : "/images/icons8-star-black.png"
+                    }
+                    className={` ${!isDarkMode ? "w-5" : "w-6"} h-auto`}
+                  />
+                  <p
+                    className={`${
+                      currentPage === "/favorites" && "text-orange-500"
+                    }`}
+                  >
+                    Favorites
                   </p>
                 </li>
 
@@ -153,16 +155,18 @@ const Header = () => {
               </ul>
             </div>
 
-            <img
-              src={
-                !isDarkMode
-                  ? "/images/icons8-search-64.png"
-                  : "/images/icons8-search-black.png"
-              }
-              alt=""
-              className="w-7 h-7 md:hidden mr-3"
-              onClick={toggleSearch}
-            />
+            {currentPage !== "/news" && (
+              <img
+                src={
+                  !isDarkMode
+                    ? "/images/icons8-search-64.png"
+                    : "/images/icons8-search-black.png"
+                }
+                alt=""
+                className="w-7 h-7 md:hidden mr-3"
+                onClick={toggleSearch}
+              />
+            )}
 
             <div
               onClick={toggleMode}
@@ -182,7 +186,7 @@ const Header = () => {
             </div>
           </div>
 
-          <SportListCont />
+          {currentPage === "/news" ? <NewsListCont /> : <SportListCont />}
         </div>
       </header>
 

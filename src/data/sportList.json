@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Football",
+    "icon": "/images/icons8-football-50.png",
+    "icon_active": "/images/icons8-football-orange.png",
+    "link": "/"
+  },
+  {
+    "name": "Basketball",
+    "icon": "/images/icons8-basketball-50.png",
+    "icon_active": "/images/icons8-basketball-orange.png",
+    "link": "/basketball"
+  },
+  {
+    "name": "Tennis",
+    "icon": "/images/icons8-tennis-50.png",
+    "icon_active": "/images/icons8-tennis-orange.png",
+    "link": "/tennis"
+  },
+  {
+    "name": "Ice Hockey",
+    "icon": "/images/icons8-hockey-50.png",
+    "icon_active": "/images/icons8-hockey-orange.png",
+    "link": "/ice-hockey"
+  },
+  {
+    "name": "Cricket",
+    "icon": "/images/icons8-cricket-50.png",
+    "icon_active": "/images/icons8-cricket-orange.png",
+    "link": "/cricket"
+  },
+  {
+    "name": "Baseball",
+    "icon": "/images/icons8-baseball-50.png",
+    "icon_active": "/images/icons8-baseball-orange.png",
+    "link": "/baseball"
+  },
+  {
+    "name": "American Football",
+    "icon": "/images/icons8-american-football-50.png",
+    "icon_active": "/images/icons8-american-football-orange.png",
+    "link": "/american-football"
+  },
+  {
+    "name": "Volleyball",
+    "icon": "/images/icons8-volleyball-50.png",
+    "icon_active": "/images/icons8-volleyball-orange.png",
+    "link": "/volleyball"
+  },
+  {
+    "name": "Rugby",
+    "icon": "/images/icons8-rugby-64.png",
+    "icon_active": "/images/icons8-rugby-orange.png",
+    "link": "/rugby"
+  },
+  {
+    "name": "Handball",
+    "icon": "/images/icons8-handball-50.png",
+    "icon_active": "/images/icons8-handball-orange.png",
+    "link": "/handball"
+  },
+  {
+    "name": "Snooker",
+    "icon": "/images/icons8-snooker-24.png",
+    "icon_active": "/images/icons8-snooker-orange.png",
+    "link": "/snooker"
+  },
+  {
+    "name": "Darts",
+    "icon": "/images/icons8-darts-100.png",
+    "icon_active": "/images/icons8-darts-orange.png",
+    "link": "/darts"
+  },
+  {
+    "name": "Table Tennis",
+    "icon": "/images/icons8-table-tennis-64.png",
+    "icon_active": "/images/icons8-table-tennis-orange.png",
+    "link": "/table-tennis"
+  },
+  {
+    "name": "Badminton",
+    "icon": "/images/icons8-badminton-64.png",
+    "icon_active": "/images/icons8-badminton-orange.png",
+    "link": "/badminton"
+  }
+]

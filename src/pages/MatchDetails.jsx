@@ -3,20 +3,63 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import CountriesTray from "../components/CountriesTray";
 import BottomBar from "../components/BottomBar";
-import schedule from "../data/schedule.json";
+// import schedule from "../data/schedule.json";
 import { useParams } from "react-router-dom";
 import { useAppContext } from "../contexts/AppContext";
 import FeaturedNewsCont from "../components/FeaturedNewsCont";
 import ScrollToTop from "../ScrollToTop";
 
 const MatchDetails = () => {
-  const { isDarkMode } = useAppContext();
+  const { isDarkMode, topLeagues } = useAppContext();
 
   const { league_name, id } = useParams();
-  const currentLeague = schedule?.filter(
-    (x) => x?.league_name === league_name
+  const currentLeague = topLeagues?.filter((x) => x?.name === league_name)[0];
+  const currentMatch = currentLeague?.schedule?.filter(
+    (y) => y?.id == Number(id)
   )[0];
-  const currentMatch = currentLeague?.fixtures?.filter((y) => y?.id == id)[0];
+
+  function parseTime(originalTime) {
+    const dateObject = new Date(originalTime);
+
+    const hours = String(dateObject.getHours()).padStart(2, "0");
+    const minutes = String(dateObject.getMinutes()).padStart(2, "0");
+
+    const formattedTime = `${hours}:${minutes}`;
+
+    return formattedTime;
+  }
+
+  function getDate(originalTime) {
+    const today = new Date();
+    const dateObject = new Date(originalTime);
+
+    const todayDate = new Date(
+      today.getFullYear(),
+      today.getMonth(),
+      today.getDate()
+    );
+
+    const yesterday = new Date(todayDate);
+    yesterday.setDate(today.getDate() - 1);
+
+    if (
+      dateObject.getFullYear() === today.getFullYear() &&
+      dateObject.getMonth() === today.getMonth() &&
+      dateObject.getDate() === today.getDate()
+    ) {
+      return "Today";
+    } else if (
+      dateObject.getFullYear() === yesterday.getFullYear() &&
+      dateObject.getMonth() === yesterday.getMonth() &&
+      dateObject.getDate() === yesterday.getDate()
+    ) {
+      return "Yesterday";
+    } else {
+      // For any other date, return the formatted date
+      const options = { year: "numeric", month: "long", day: "numeric" };
+      return dateObject.toLocaleDateString(undefined, options);
+    }
+  }
 
   return (
     <>
@@ -35,19 +78,19 @@ const MatchDetails = () => {
             <div className="w-full bg-gray-100 dark:bg-[#121a20]/50 md:mt-5 rounded-lg px-3 py-5 min-h-screen md:min-h-fit">
               <div className=" w-full flex justify-between items-center ">
                 <div className=" flex gap-4 ">
-                  <div className=" flex justify-center items-center ">
+                  <div className="bg-gray-100 p-1 rounded-full flex justify-center items-center ">
                     <img
-                      src={currentLeague?.country_flag}
+                      src={currentLeague?.logo}
                       alt="league"
                       className=" w-8 h-8 rounded-full "
                     />
                   </div>
                   <div>
                     <p className=" font-medium leading-tight ">
-                      {currentLeague?.league_name}
+                      {currentLeague?.name}
                     </p>
                     <p className=" dark:text-neutral-100/50 text-[.85rem] ">
-                      {currentLeague?.country_name}
+                      {currentLeague?.country}
                     </p>
                   </div>
                 </div>
@@ -69,32 +112,34 @@ const MatchDetails = () => {
                 <div className="w-full md:w-[80%] bg-inherit flex justify-between items-center m-auto py-3">
                   <div className="w-[33%] flex flex-col items-center">
                     <img
-                      src={currentMatch?.home_crest}
+                      src={currentMatch?.home_team?.logo}
                       alt="arsenal"
                       className=" w-8 h-8 m-auto "
                     />
                     <p className=" text-[.85rem] font-bold mt-3 ">
-                      {currentMatch?.home}
+                      {currentMatch?.home_team?.name}
                     </p>
                   </div>
 
                   <div className="text-center">
-                    <p className=" w-full m-auto font-bold text-[1.2rem] md:text-[1.5rem] dark:text-white flex justify-center  ">
-                      {currentMatch?.time}
-                    </p>
+                    <div className=" w-full m-auto font-bold text-[1.2rem] md:text-[1.5rem] dark:text-white flex justify-center  ">
+                      {currentMatch?.home_score
+                        ? `${currentMatch?.home_score?.current} - ${currentMatch?.away_score?.current}`
+                        : parseTime(currentMatch?.start_at)}
+                    </div>
                     <p className=" dark:text-neutral-100/50 text-[0.75rem] md:text-[.85rem]">
-                      Today
+                      {getDate(currentMatch?.start_at)}
                     </p>
                   </div>
 
                   <div className="w-[33%] flex flex-col items-center">
                     <img
-                      src={currentMatch?.away_crest}
+                      src={currentMatch?.away_team?.logo}
                       alt="chelsea"
                       className=" w-8 h-8 m-auto "
                     />
                     <p className=" text-[.85rem] font-bold mt-3">
-                      {currentMatch?.away}
+                      {currentMatch?.home_team?.name}
                     </p>
                   </div>
                 </div>
@@ -160,7 +205,7 @@ const MatchDetails = () => {
                       }
                       className="w-4 h-auto"
                     />
-                    <p>18 Dec 2023</p>
+                    <p>{currentMatch?.start_at?.split(" ")[0]}</p>
                   </div>
 
                   <div className="flex gap-2 items-center cursor-pointer">

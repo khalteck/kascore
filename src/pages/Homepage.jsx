@@ -4,13 +4,15 @@ import Header from "../components/Header";
 import LeagueSchedule from "../components/LeagueSchedule";
 import CountriesTray from "../components/CountriesTray";
 import BottomBar from "../components/BottomBar";
-import schedule from "../data/schedule.json";
+// import schedule from "../data/schedule.json";
+// import events from "../data/events.json";
+
 import FeaturedNewsCont from "../components/FeaturedNewsCont";
 import { useAppContext } from "../contexts/AppContext";
 import ScrollToTop from "../ScrollToTop";
 
 const Homepage = () => {
-  const { isDarkMode } = useAppContext();
+  const { isDarkMode, topLeagues } = useAppContext();
 
   return (
     <>
@@ -48,7 +50,7 @@ const Homepage = () => {
                   !isDarkMode ? "text-[#121a20]" : "text-neutral-100"
                 }`}
               >
-                {schedule?.map((item, index) => {
+                {topLeagues?.map((item, index) => {
                   return (
                     <LeagueSchedule
                       key={index}

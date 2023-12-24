@@ -1,11 +1,89 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
 import CountryCard from "./CountryCard";
 import CountriesSkeleton from "./CountriesSkeleton";
+import competitions from "../data/competitions.json";
 
 const CountriesTray = ({ isDarkMode }) => {
-  const [countries, setCountries] = useState([]);
   const [loading, setLoading] = useState(false);
+
+  //=======================================================to handle top leagues
+  // const [englandLeagues, setenglandLeagues] = useState([]);
+  // const [spainLeagues, setspainLeagues] = useState([]);
+  // const [italyLeagues, setitalyLeagues] = useState([]);
+  // const [germanyLeagues, setgermanyLeagues] = useState([]);
+  // const [franceLeagues, setfranceLeagues] = useState([]);
+
+  const [topLeagues, settopLeagues] = useState([]);
+
+  // console.log("topLeagues", topLeagues);
+
+  useEffect(() => {
+    async function loadTopLeagues() {
+      try {
+        setLoading(true);
+        const topEngland = competitions
+          ?.filter((item) => {
+            return item?.category?.name?.toLowerCase()?.includes("england");
+          })
+          ?.slice(0, 6);
+        // setenglandLeagues(topEngland?.slice(0, 6));
+
+        const topSpain = competitions
+          ?.filter((item) => {
+            return item?.category?.name?.toLowerCase()?.includes("spain");
+          })
+          ?.slice(0, 5);
+        // setspainLeagues(topSpain?.slice(0, 5));
+
+        const topItaly = competitions
+          ?.filter((item) => {
+            return item?.category?.name?.toLowerCase()?.includes("italy");
+          })
+          ?.slice(0, 5);
+        // setitalyLeagues(topItaly?.slice(0, 5));
+
+        const topGermany = competitions
+          ?.filter((item) => {
+            return item?.category?.name?.toLowerCase()?.includes("germany");
+          })
+          ?.slice(0, 5);
+        // setgermanyLeagues(topGermany?.slice(0, 5));
+
+        const topFrance = competitions
+          ?.filter((item) => {
+            return item?.category?.name?.toLowerCase()?.includes("france");
+          })
+          ?.slice(0, 5);
+        // setfranceLeagues(topFrance?.slice(0, 5));
+
+        const topUefa = competitions
+          ?.filter((item) =>
+            item?.name?.toLowerCase()?.split(" ")[0]?.includes("uefa")
+          )
+          ?.slice(0, 6);
+
+        const top = [
+          ...topEngland,
+          topSpain[0],
+          topGermany[0],
+          topItaly[0],
+          topFrance[0],
+          ...topUefa,
+        ];
+        settopLeagues(top);
+      } catch (error) {
+        console.error("error loading comps =>", error);
+      } finally {
+        setLoading(false);
+      }
+    }
+    loadTopLeagues();
+  }, [competitions]);
+
+  //=======================================================to handle countries
+  const [countries, setCountries] = useState([]);
 
   useEffect(() => {
     setLoading(true);
@@ -58,79 +136,35 @@ const CountriesTray = ({ isDarkMode }) => {
       >
         <h1 className="text-[.95rem] font-medium">Top Leagues</h1>
         <div className="flex flex-col gap-2 mt-5">
-          <div className="flex gap-3 px-2 py-1 hover:bg-black/20 dark:hover:bg-orange-500/10 rounded-md cursor-pointer">
-            <img
-              alt=""
-              src={
-                !isDarkMode
-                  ? "/images/icons8-football-50.png"
-                  : "/images/icons8-football-black.png"
-              }
-              className="w-5 h-5"
-            />
-            <p className="text-[.8rem]">UEFA Chanpions League</p>
-          </div>
-          <div className="flex gap-3 px-2 py-1 hover:bg-black/20 dark:hover:bg-orange-500/10 rounded-md cursor-pointer">
-            <img
-              alt=""
-              src={
-                !isDarkMode
-                  ? "/images/icons8-football-50.png"
-                  : "/images/icons8-football-black.png"
-              }
-              className="w-5 h-5"
-            />
-            <p className="text-[.8rem]">UEFA Europa League</p>
-          </div>
-          <div className="flex gap-3 px-2 py-1 hover:bg-black/20 dark:hover:bg-orange-500/10 rounded-md cursor-pointer">
-            <img
-              alt=""
-              src={
-                !isDarkMode
-                  ? "/images/icons8-football-50.png"
-                  : "/images/icons8-football-black.png"
-              }
-              className="w-5 h-5"
-            />
-            <p className="text-[.8rem]">English Premier Leage</p>
-          </div>
-
-          <div className="flex gap-3 px-2 py-1 hover:bg-black/20 dark:hover:bg-orange-500/10 rounded-md cursor-pointer">
-            <img
-              alt=""
-              src={
-                !isDarkMode
-                  ? "/images/icons8-football-50.png"
-                  : "/images/icons8-football-black.png"
-              }
-              className="w-5 h-5"
-            />
-            <p className="text-[.8rem]">Laliga</p>
-          </div>
-          <div className="flex gap-3 px-2 py-1 hover:bg-black/20 dark:hover:bg-orange-500/10 rounded-md cursor-pointer">
-            <img
-              alt=""
-              src={
-                !isDarkMode
-                  ? "/images/icons8-football-50.png"
-                  : "/images/icons8-football-black.png"
-              }
-              className="w-5 h-5"
-            />
-            <p className="text-[.8rem]">Bundesliga</p>
-          </div>
-          <div className="flex gap-3 px-2 py-1 hover:bg-black/20 dark:hover:bg-orange-500/10 rounded-md cursor-pointer">
-            <img
-              alt=""
-              src={
-                !isDarkMode
-                  ? "/images/icons8-football-50.png"
-                  : "/images/icons8-football-black.png"
-              }
-              className="w-5 h-5"
-            />
-            <p className="text-[.8rem]">Serie A</p>
-          </div>
+          {topLeagues?.map((itm, ind) => {
+            return (
+              <div
+                key={ind}
+                className="w-full whitespace-nowrap truncate flex gap-3 px-2 py-1 hover:bg-black/20 dark:hover:bg-orange-500/10 rounded-md cursor-pointer"
+              >
+                <img
+                  alt=""
+                  src={
+                    itm?.category?.name === "England"
+                      ? "/images/icons8-england-48.png"
+                      : itm?.category?.name === "Spain"
+                      ? "/images/icons8-spain-48.png"
+                      : itm?.category?.name === "Italy"
+                      ? "/images/icons8-italy-48.png"
+                      : itm?.category?.name === "Germany"
+                      ? "/images/icons8-germany-48.png"
+                      : itm?.category?.name === "France"
+                      ? "/images/icons8-france-48.png"
+                      : !isDarkMode
+                      ? "/images/icons8-football-50.png"
+                      : "/images/icons8-football-black.png"
+                  }
+                  className="w-5 h-5"
+                />
+                <p className="text-[.8rem]">{itm?.name}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
 
