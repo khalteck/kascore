@@ -62,7 +62,7 @@ const BottomBar = () => {
         </p>
       </div>
 
-      <div
+      {/* <div
         onClick={() => navigate("/news")}
         className="flex flex-col items-center"
       >
@@ -80,7 +80,7 @@ const BottomBar = () => {
         <p className={`${currentPage === "/news" && "text-orange-500"}`}>
           News
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };

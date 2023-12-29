@@ -5,6 +5,7 @@ import SportListSearch from "./SportListSearch";
 import CountriesTray from "./CountriesTray";
 import { useAppContext } from "../contexts/AppContext";
 import NewsListCont from "./NewsListCont";
+import MobileScoresNewsTab from "./MobileScoresNewsTab";
 
 const Header = () => {
   const { currentPage, toggleMode, isDarkMode } = useAppContext();
@@ -186,6 +187,10 @@ const Header = () => {
             </div>
           </div>
 
+          <MobileScoresNewsTab
+            currentPage={currentPage}
+            isDarkMode={isDarkMode}
+          />
           {currentPage === "/news" ? <NewsListCont /> : <SportListCont />}
         </div>
       </header>

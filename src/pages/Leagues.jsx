@@ -11,7 +11,7 @@ const Leagues = () => {
     <>
       <Header />
       <div
-        className={`w-full pt-[85px] md:pt-[170px] md:pb-12 md:px-[10%] bg-white text-[#0f172a] dark:bg-[#2a3543] dark:text-gray-200 ${
+        className={`w-full pt-[130px] md:pt-[170px] md:pb-12 md:px-[10%] bg-white text-[#0f172a] dark:bg-[#2a3543] dark:text-gray-200 ${
           isDarkMode ? "dark" : ""
         }`}
       >

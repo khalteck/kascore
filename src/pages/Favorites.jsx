@@ -12,7 +12,7 @@ const Favorites = () => {
   return (
     <>
       <Header />
-      <div className="w-full pt-[85px] md:pt-[170px] md:pb-12 md:px-[10%] bg-white text-[#0f172a] dark:bg-[#2a3543] dark:text-gray-200">
+      <div className="w-full pt-[130px] md:pt-[170px] md:pb-12 md:px-[10%] bg-white text-[#0f172a] dark:bg-[#2a3543] dark:text-gray-200">
         <div className="w-full h-full min-h-screen flex gap-8">
           <div className="w-[20%] min-w-[200px] hidden md:block">
             <CountriesTray isDarkMode={isDarkMode} />

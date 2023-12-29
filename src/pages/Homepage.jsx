@@ -18,7 +18,7 @@ const Homepage = () => {
     <>
       <Header />
       <div
-        className={`w-full pt-[105px] md:pt-[170px] md:pb-12 md:px-[10%] bg-[#d1d5db] text-[#0f172a] dark:bg-[#2a3543] dark:text-gray-200 ${
+        className={`w-full pt-[150px] md:pt-[170px] md:pb-12 md:px-[10%] bg-[#d1d5db] text-[#0f172a] dark:bg-[#2a3543] dark:text-gray-200 ${
           isDarkMode ? "dark" : ""
         }`}
       >
