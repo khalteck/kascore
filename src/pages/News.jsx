@@ -107,7 +107,7 @@ const News = () => {
                     <p className=" w-fit bg-gray-300 dark:bg-[#121a20] py-1 px-1 text-[0.7rem] rounded-md font-bold ">
                       Football
                     </p>
-                    <p className=" text-[0.72rem] text-neutral-100/60 ">
+                    <p className=" text-[0.72rem] text-black/70 dark:text-neutral-100/60">
                       1 hour ago
                     </p>
                   </div>
@@ -130,7 +130,7 @@ const News = () => {
                     <p className=" w-fit bg-gray-300 dark:bg-[#121a20] py-1 px-1 text-[0.7rem] rounded-md font-bold ">
                       Football
                     </p>
-                    <p className=" text-[0.72rem] text-neutral-100/60 ">
+                    <p className=" text-[0.72rem] text-black/70 dark:text-neutral-100/60 ">
                       3 hours ago
                     </p>
                   </div>
@@ -155,7 +155,7 @@ const News = () => {
                     <p className=" w-fit bg-gray-300 dark:bg-[#121a20] py-1 px-1 text-[0.7rem] rounded-md font-bold ">
                       Football
                     </p>
-                    <p className=" text-[0.72rem] text-neutral-100/60 ">
+                    <p className=" text-[0.72rem] text-black/70 dark:text-neutral-100/60 ">
                       2 hours ago
                     </p>
                   </div>
@@ -178,7 +178,7 @@ const News = () => {
                     <p className=" w-fit bg-gray-300 dark:bg-[#121a20] py-1 px-1 text-[0.7rem] rounded-md font-bold ">
                       Football
                     </p>
-                    <p className=" text-[0.72rem] text-neutral-100/60 ">
+                    <p className=" text-[0.72rem] text-black/70 dark:text-neutral-100/60">
                       10 hours ago
                     </p>
                   </div>
@@ -203,7 +203,7 @@ const News = () => {
                     <p className=" w-fit bg-gray-300 dark:bg-[#121a20] py-1 px-1 text-[0.7rem] rounded-md font-bold ">
                       Football
                     </p>
-                    <p className=" text-[0.72rem] text-neutral-100/60 ">
+                    <p className=" text-[0.72rem] text-black/70 dark:text-neutral-100/60 ">
                       6 hours ago
                     </p>
                   </div>
@@ -226,7 +226,7 @@ const News = () => {
                     <p className=" w-fit bg-gray-300 dark:bg-[#121a20] py-1 px-1 text-[0.7rem] rounded-md font-bold ">
                       Football
                     </p>
-                    <p className=" text-[0.72rem] text-neutral-100/60 ">
+                    <p className=" text-[0.72rem] text-black/70 dark:text-neutral-100/60 ">
                       7 hours ago
                     </p>
                   </div>

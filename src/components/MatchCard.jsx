@@ -71,7 +71,7 @@ const MatchCard = ({ itm, league, isDarkMode }) => {
             alt="crest"
             src={itm?.away_team?.logo}
             className="w-4 h-4 rounded-full"
-          />
+          /> 
           <p>{itm?.away_team?.name}</p>
         </div>
       </div>

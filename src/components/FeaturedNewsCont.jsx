@@ -17,7 +17,11 @@ const FeaturedNewsCont = ({ isDarkMode }) => {
       >
         <p className=" text-[.85rem] font-bold ">Featured News</p>
         <img
-          src="/images/icons8-right-arrow-30.png"
+          src={
+            !isDarkMode
+              ? "/images/icons8-right-arrow-30.png"
+              : "/images/icons8-right-arrow-50.png"
+          }
           alt=""
           className=" w-5 h-5 "
         />

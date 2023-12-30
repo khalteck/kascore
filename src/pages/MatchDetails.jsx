@@ -77,8 +77,8 @@ const MatchDetails = () => {
 
             <div className="w-full bg-gray-100 dark:bg-[#121a20]/50 md:mt-5 rounded-lg px-3 py-5 min-h-screen md:min-h-fit">
               <div className=" w-full flex justify-between items-center ">
-                <div className=" flex gap-4 ">
-                  <div className="bg-gray-100 p-1 rounded-full flex justify-center items-center ">
+                <div className=" flex gap-4 "> 
+                  <div className="bg-gray-100 p-1 rounded-full flex justify-center items-center "> 
                     <img
                       src={currentLeague?.logo}
                       alt="league"
@@ -89,7 +89,7 @@ const MatchDetails = () => {
                     <p className=" font-medium leading-tight ">
                       {currentLeague?.name}
                     </p>
-                    <p className=" dark:text-neutral-100/50 text-[.85rem] ">
+                    <p className=" dark:text-neutral-100/50 text-[.85rem] "> 
                       {currentLeague?.country}
                     </p>
                   </div>
@@ -148,7 +148,7 @@ const MatchDetails = () => {
               <div className=" w-full my-4 pb-3 flex gap-5 border-b border-black/20 dark:border-neutral-100/50 ">
                 <a
                   href="#"
-                  className=" hover:text-white text-[0.8rem] uppercase"
+                  className=" hover:text-orange-500 text-[0.8rem] uppercase"
                 >
                   Summary
                 </a>
@@ -160,25 +160,25 @@ const MatchDetails = () => {
                 </a> */}
                 <a
                   href="#"
-                  className=" hover:text-white text-[0.8rem] uppercase"
+                  className=" hover:text-orange-500 text-[0.8rem] uppercase"
                 >
                   Odds
                 </a>
                 <a
                   href="#"
-                  className=" hover:text-white text-[0.8rem] uppercase"
+                  className=" hover:text-orange-500 text-[0.8rem] uppercase"
                 >
                   H2H
                 </a>{" "}
                 <a
                   href="#"
-                  className=" hover:text-white text-[0.8rem] uppercase"
+                  className=" hover:text-orange-500 text-[0.8rem] uppercase"
                 >
                   Draw
                 </a>
                 <a
                   href="#"
-                  className=" hover:text-white text-[0.8rem] uppercase"
+                  className=" hover:text-orange-500 text-[0.8rem] uppercase"
                 >
                   News
                 </a>

@@ -29,7 +29,7 @@ const SportListCont = () => {
               }
               className="w-4 md:w-5 h-auto"
             />
-            <p> {item?.name}</p>
+            <p> {item?.name}</p> 
           </li>
         );
       })}
