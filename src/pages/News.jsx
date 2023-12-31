@@ -21,7 +21,7 @@ const News = () => {
             {/* <div className="w-full mb-4 md:mb-0">
               <DateSlide />
             </div> */}
-            <h1 className="font-bold mb-2">News Page</h1>
+            <h1 className="font-bold mb-2">Top Stories</h1>
             <div className=" w-full h-[200px] flex gap-3 items-center rounded-lg overflow-x-scroll no-scrollbar overflow-y-hidden ">
               <div
                 onClick={() => navigate("/news-details")}
@@ -94,7 +94,7 @@ const News = () => {
             <div className=" w-full h-[50px] "></div>
 
             <div className=" py-5 md:border-y md:border-neutral-100/20 ">
-              <h1 className=" font-bold text-[1rem]">Top Stories</h1>
+              <h1 className=" font-bold text-[1rem]">More News</h1>
             </div>
 
             <div className=" w-full h-auto md:py-3 block md:flex gap-3 md:border-b md:border-neutral-100/20 ">
