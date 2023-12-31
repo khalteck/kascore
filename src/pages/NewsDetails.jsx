@@ -34,7 +34,7 @@ const NewsDetails = () => {
             >
               <h1 className=" text-[2rem] font-black mb-2 ">Aston Villa good but want to get better, says boss Unai Emery after stunning 2023</h1>
               <p className=" text-[0.8rem] ">Khalid, 2h ago</p>
-              <img src="/images/joppe.jpg" alt="" className=" w-full h-[550px] rounded-lg my-2 " /> 
+              <img src="/images/joppe.jpg" alt="" className=" w-full h-[550px] rounded-lg my-2 object-cover " /> 
               <p className=" text-[0.8rem] ">Emery has done a brilliant job at Villa</p>
               <h3 className=" font-bold text-[1.2rem] my-7 ">Aston Villa had a fantastic year, according to manager Unai Emery, but he said the Midlands club
                  still have plenty to work on heading into 2024 after moving level on points at the top of the 
@@ -48,7 +48,7 @@ const NewsDetails = () => {
                  followed by a 3-2 defeat at Manchester United on Boxing Day, but Emery's side managed to return to winning
                   ways in a hard-fought battle at Villa Park.
               </p>
-              <img src="/images/joppe.jpg" alt="" className=" w-full h-[550px] rounded-lg mb-2 " />
+              <img src="/images/joppe.jpg" alt="" className=" w-full h-[550px] rounded-lg mb-2 object-cover " />
               <p className=" text-[0.8rem] ">Villa are soaring in the Premier League</p>
               <p className=" text-[1.05rem] my-5 ">When asked if he thought the next year could be even better, Emery said: <strong>"Always the idea is to improve and
                  get better. It was really fantastic, the year we did – but I'm very excited for the next match.</strong> 

@@ -42,7 +42,9 @@ const News = () => {
                   </p>
                 </div>
               </div>
-              <div className=" min-w-[330px] h-auto rounded-lg relative ">
+              <div
+                onClick={() => navigate("/news-details")}
+                className=" min-w-[330px] h-auto rounded-lg relative cursor-pointer ">
                 <img
                   src="/images/vienna.jpg"
                   alt=""
@@ -58,7 +60,9 @@ const News = () => {
                   </p>
                 </div>
               </div>
-              <div className=" min-w-[330px] h-auto rounded-lg relative ">
+              <div
+                onClick={() => navigate("/news-details")} 
+                className=" min-w-[330px] h-auto rounded-lg relative cursor-pointer ">
                 <img
                   src="/images/shoot.jpg"
                   alt=""
@@ -74,7 +78,9 @@ const News = () => {
                   </p>
                 </div>
               </div>
-              <div className=" min-w-[330px] h-auto rounded-lg relative ">
+              <div 
+                onClick={() => navigate("/news-details")}
+                className=" min-w-[330px] h-auto rounded-lg relative cursor-pointer ">
                 <img
                   src="/images/sven.jpg"
                   alt=""
@@ -98,7 +104,9 @@ const News = () => {
             </div>
 
             <div className=" w-full h-auto md:py-3 block md:flex gap-3 md:border-b md:border-neutral-100/20 ">
-              <div className=" w-full md:w-1/2 flex gap-2 mb-4 md:mb-0">
+              <div 
+                onClick={() => navigate("/news-details")}
+                className=" w-full md:w-1/2 flex gap-2 mb-4 md:mb-0 cursor-pointer">
                 <div className=" w-[35%] ">
                   <img
                     src="/images/boots.jpg"
@@ -121,7 +129,9 @@ const News = () => {
                 </div>
               </div>
 
-              <div className=" w-full md:w-1/2 flex gap-2 mb-4 md:mb-0 ">
+              <div 
+                onClick={() => navigate("/news-details")}
+                className=" w-full md:w-1/2 flex gap-2 mb-4 md:mb-0 cursor-pointer ">
                 <div className=" w-[35%] ">
                   <img
                     src="/images/sven.jpg"
@@ -146,7 +156,9 @@ const News = () => {
             </div>
 
             <div className=" w-full h-auto md:py-3 block md:flex gap-3 md:border-b md:border-neutral-100/20 ">
-              <div className=" w-full md:w-1/2 flex gap-2 mb-4 md:mb-0">
+              <div 
+                onClick={() => navigate("/news-details")}
+                className=" w-full md:w-1/2 flex gap-2 mb-4 md:mb-0 cursor-pointer">
                 <div className=" w-[35%] ">
                   <img
                     src="/images/shoot.jpg"
@@ -169,7 +181,9 @@ const News = () => {
                 </div>
               </div>
 
-              <div className=" w-full md:w-1/2 flex gap-2 mb-4 md:mb-0 ">
+              <div 
+                onClick={() => navigate("/news-details")}
+                className=" w-full md:w-1/2 flex gap-2 mb-4 md:mb-0 cursor-pointer ">
                 <div className=" w-[35%] ">
                   <img
                     src="/images/connor.jpg"
@@ -194,7 +208,9 @@ const News = () => {
             </div>
 
             <div className=" w-full h-auto md:py-3 block md:flex gap-3 md:border-b md:border-neutral-100/20 ">
-              <div className=" w-full md:w-1/2 flex gap-2 mb-4 md:mb-0">
+              <div 
+                onClick={() => navigate("/news-details")}
+                className=" w-full md:w-1/2 flex gap-2 mb-4 md:mb-0 cursor-pointer">
                 <div className=" w-[35%] ">
                   <img
                     src="/images/keenan.jpg"
@@ -217,7 +233,9 @@ const News = () => {
                 </div>
               </div>
 
-              <div className=" w-full md:w-1/2 flex gap-2 mb-4 md:mb-0 ">
+              <div 
+                onClick={() => navigate("/news-details")}
+                className=" w-full md:w-1/2 flex gap-2 mb-4 md:mb-0 cursor-pointer ">
                 <div className=" w-[35%] ">
                   <img
                     src="/images/jack.jpg"
