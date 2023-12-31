@@ -2,8 +2,12 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import BottomBar from "../components/BottomBar";
 import ScrollToTop from "../ScrollToTop";
+import { useNavigate } from "react-router-dom";
 
 const News = () => {
+  // NEWS API KEY="8cbe94ecef2445ea9b78d1a803d05406"
+
+  const navigate = useNavigate();
   return (
     <>
       <Header />
@@ -19,7 +23,10 @@ const News = () => {
             </div> */}
             <h1 className="font-bold mb-2">News Page</h1>
             <div className=" w-full h-[200px] flex gap-3 items-center rounded-lg overflow-x-scroll no-scrollbar overflow-y-hidden ">
-              <div className=" min-w-[330px] h-auto rounded-lg relative cursor-pointer">
+              <div
+                onClick={() => navigate("/news-details")}
+                className=" min-w-[330px] h-auto rounded-lg relative cursor-pointer"
+              >
                 <img
                   src="/images/fayas.jpg"
                   alt=""
