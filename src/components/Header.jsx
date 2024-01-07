@@ -38,8 +38,8 @@ const Header = () => {
                   }
                   className="w-8 md:w-10 h-auto"
                 />
-                <h1 className="text-[1.75rem] md:text-[2rem] font-black">
-                  Kascore
+                <h1 className="text-[1.75rem] md:text-[2rem] font-bold font-exo">
+                  KASCORE
                 </h1>
               </div>
 
@@ -191,7 +191,7 @@ const Header = () => {
             currentPage={currentPage}
             isDarkMode={isDarkMode}
           />
-          {currentPage === "/news" ? <NewsListCont /> : <SportListCont />}
+          {currentPage?.includes("news") ? <NewsListCont /> : <SportListCont />}
         </div>
       </header>
 

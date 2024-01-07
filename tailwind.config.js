@@ -10,6 +10,9 @@ export default {
       lg: "1204px",
       xl: "1280px",
     },
+    fontFamily: {
+      exo: ["Exo 2", "sans-serif"],
+    },
     extend: {},
   },
   darkMode: "class", // Enable class-based dark mode
