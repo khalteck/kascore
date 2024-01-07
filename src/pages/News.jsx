@@ -18,7 +18,7 @@ const News = () => {
     getNews();
   }, []);
 
-  console.log("newsData", newsData);
+  // console.log("newsData", newsData);
   const featured = newsData?.featuredArticles;
   const topStories = newsData?.topStories;
 

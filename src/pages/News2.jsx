@@ -47,7 +47,7 @@ const News2 = () => {
 
   const newsData2 = categoryData?.data;
 
-  console.log("newsData2", newsData2);
+  //   console.log("newsData2", newsData2);
 
   return (
     <>
