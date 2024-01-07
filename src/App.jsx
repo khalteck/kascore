@@ -4,6 +4,8 @@ import { lazy, Suspense } from "react";
 import Loader from "./components/Loader";
 
 const Homepage = lazy(() => import("./pages/Homepage"));
+const BasketballPage = lazy(() => import("./pages/BasketballPage"));
+
 const Favorites = lazy(() => import("./pages/Favorites"));
 const MatchDetails = lazy(() => import("./pages/MatchDetails"));
 const Leagues = lazy(() => import("./pages/Leagues"));
@@ -15,6 +17,8 @@ function App() {
     <Suspense fallback={<Loader />}>
       <Routes>
         <Route path="/" element={<Homepage />} />
+        <Route path="/scores/basketball" element={<BasketballPage />} />
+
         <Route path="/scores/favorites" element={<Favorites />} />
         <Route
           path="/scores/details/:league_name/:id"
