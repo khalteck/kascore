@@ -15,9 +15,12 @@ function App() {
     <Suspense fallback={<Loader />}>
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/favorites" element={<Favorites />} />
-        <Route path="/details/:league_name/:id" element={<MatchDetails />} />
-        <Route path="/leagues" element={<Leagues />} />
+        <Route path="/scores/favorites" element={<Favorites />} />
+        <Route
+          path="/scores/details/:league_name/:id"
+          element={<MatchDetails />}
+        />
+        <Route path="/scores/leagues" element={<Leagues />} />
         <Route path="/news" element={<News />} />
         <Route path="/news-details" element={<NewsDetails />} />
       </Routes>

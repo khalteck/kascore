@@ -17,7 +17,7 @@ const MatchCard = ({ itm, league, isDarkMode }) => {
 
   return (
     <div
-      onClick={() => navigate(`/details/${league?.name}/${itm?.id}`)}
+      onClick={() => navigate(`/scores/details/${league?.name}/${itm?.id}`)}
       className={`flex gap-3 py-2 mb-2 pr-3 cursor-pointer ${
         !isDarkMode ? "hover:bg-black/20" : "hover:bg-orange-500/10"
       }`}
@@ -71,7 +71,7 @@ const MatchCard = ({ itm, league, isDarkMode }) => {
             alt="crest"
             src={itm?.away_team?.logo}
             className="w-4 h-4 rounded-full"
-          /> 
+          />
           <p>{itm?.away_team?.name}</p>
         </div>
       </div>

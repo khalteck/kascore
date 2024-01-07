@@ -23,13 +23,13 @@ const BottomBar = () => {
       </div>
 
       <div
-        onClick={() => navigate("/leagues")}
+        onClick={() => navigate("/scores/leagues")}
         className="flex flex-col items-center"
       >
         <img
           alt="icon"
           src={
-            currentPage === "/leagues"
+            currentPage === "/scores/leagues"
               ? "/images/icons8-trophy-orange.png"
               : !isDarkMode
               ? "/images/icons8-trophy-48.png"
@@ -37,19 +37,23 @@ const BottomBar = () => {
           }
           className="w-7 h-auto mb-[-4px]"
         />
-        <p className={`${currentPage === "/leagues" && "text-orange-500"}`}>
+        <p
+          className={`${
+            currentPage === "/scores/leagues" && "text-orange-500"
+          }`}
+        >
           Leagues
         </p>
       </div>
 
       <div
-        onClick={() => navigate("/favorites")}
+        onClick={() => navigate("/scores/favorites")}
         className="flex flex-col items-center"
       >
         <img
           alt="icon"
           src={
-            currentPage === "/favorites"
+            currentPage === "/scores/favorites"
               ? "/images/icons8-star-50.png"
               : !isDarkMode
               ? "/images/icons8-star-white.png"
@@ -57,7 +61,11 @@ const BottomBar = () => {
           }
           className="w-6 h-auto"
         />
-        <p className={`${currentPage === "/favorites" && "text-orange-500"}`}>
+        <p
+          className={`${
+            currentPage === "/scores/favorites" && "text-orange-500"
+          }`}
+        >
           Favorites
         </p>
       </div>

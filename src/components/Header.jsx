@@ -103,13 +103,13 @@ const Header = () => {
 
               <ul className="hidden md:flex items-center gap-3 ml-auto h-[40px]">
                 <li
-                  onClick={() => navigate("/favorites")}
+                  onClick={() => navigate("/scores/favorites")}
                   className="flex gap-2 items-center cursor-pointer transition-all duration-300 border border-[#334155] bg-[#d1d5db] dark:bg-black/30 px-2 h-full rounded-md"
                 >
                   <img
                     alt=""
                     src={
-                      currentPage === "/favorites"
+                      currentPage === "/scores/favorites"
                         ? "/images/icons8-star-50.png"
                         : !isDarkMode
                         ? "/images/icons8-star-white.png"
@@ -119,7 +119,7 @@ const Header = () => {
                   />
                   <p
                     className={`${
-                      currentPage === "/favorites" && "text-orange-500"
+                      currentPage === "/scores/favorites" && "text-orange-500"
                     }`}
                   >
                     Favorites
