@@ -31,7 +31,7 @@ const Header = () => {
                 <img
                   alt=""
                   src={
-                    !isDarkMode
+                    isDarkMode
                       ? "/images/logo-white.png"
                       : "/images/logo-black.png"
                   }
@@ -53,51 +53,33 @@ const Header = () => {
                   <img
                     alt=""
                     src={
-                      currentPage === "/"
-                        ? "/images/icons8-football-orange.png"
-                        : !isDarkMode
+                      isDarkMode
                         ? "/images/icons8-football-50.png"
                         : "/images/icons8-football-black.png"
                     }
                     className="w-5 h-auto"
                   />
-                  <p
-                    className={`${
-                      (currentPage === "/" ||
-                        currentPage?.includes("scores")) &&
-                      "dark:text-orange-500"
-                    }`}
-                  >
-                    Scores
-                  </p>
+                  <p className={``}>Scores</p>
                 </li>
 
                 <li
                   onClick={() => navigate("/news")}
                   className={`flex gap-2 items-center cursor-pointer transition-all duration-300 px-3 h-full ${
                     (currentPage === "/news" ||
-                      currentPage?.includes("news")) &&
+                      currentPage?.includes("/news")) &&
                     "bg-black/10 dark:bg-[#1d2732] border-x border-t border-orange-500"
                   }`}
                 >
                   <img
                     alt=""
                     src={
-                      currentPage === "/news"
-                        ? "/images/icons8-news-orange.png"
-                        : !isDarkMode
+                      isDarkMode
                         ? "/images/icons8-news-64.png"
                         : "/images/icons8-news-black.png"
                     }
                     className="w-5 h-auto"
                   />
-                  <p
-                    className={`${
-                      currentPage === "/news" && "dark:text-orange-500"
-                    }`}
-                  >
-                    News
-                  </p>
+                  <p className={``}>News</p>
                 </li>
               </ul>
 
@@ -111,11 +93,11 @@ const Header = () => {
                     src={
                       currentPage === "/scores/favorites"
                         ? "/images/icons8-star-50.png"
-                        : !isDarkMode
+                        : isDarkMode
                         ? "/images/icons8-star-white.png"
                         : "/images/icons8-star-black.png"
                     }
-                    className={` ${!isDarkMode ? "w-5" : "w-6"} h-auto`}
+                    className={` ${isDarkMode ? "w-5" : "w-6"} h-auto`}
                   />
                   <p
                     className={`${
@@ -133,7 +115,7 @@ const Header = () => {
                   >
                     <img
                       src={
-                        !isDarkMode
+                        isDarkMode
                           ? "/images/icons8-search-64.png"
                           : "/images/icons8-search-black.png"
                       }
@@ -153,7 +135,7 @@ const Header = () => {
                     <img
                       alt=""
                       src={
-                        !isDarkMode
+                        isDarkMode
                           ? "/images/icons8-light-mode-78.png"
                           : "/images/icons8-dark-mode-100.png"
                       }
@@ -181,7 +163,7 @@ const Header = () => {
               >
                 <img
                   src={
-                    !isDarkMode
+                    isDarkMode
                       ? "/images/icons8-search-64.png"
                       : "/images/icons8-search-black.png"
                   }
@@ -198,7 +180,7 @@ const Header = () => {
               <img
                 alt=""
                 src={
-                  !isDarkMode
+                  isDarkMode
                     ? "/images/icons8-light-mode-78.png"
                     : "/images/icons8-dark-mode-100.png"
                 }
@@ -229,7 +211,7 @@ const Header = () => {
               alt="calendar"
               // src="/images/icons8-close-50.png"
               src={
-                !isDarkMode
+                isDarkMode
                   ? "/images/icons8-close-50.png"
                   : "/images/icons8-close-black.png"
               }

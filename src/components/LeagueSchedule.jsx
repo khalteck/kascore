@@ -6,8 +6,8 @@ const LeagueSchedule = ({ item, isDarkMode }) => {
   return (
     <div
       className={`w-full border-b border-neutral-100/20 pt-4 ${
-        isDarkMode ? "text-[#121a20]" : "text-neutral-100"
-      }`}
+        isDarkMode ? "dark" : ""
+      } ${!isDarkMode ? "text-[#121a20]" : "text-neutral-100"}`}
     >
       <div className="flex">
         <div className="w-[60px] flex justify-center items-center">
@@ -21,7 +21,7 @@ const LeagueSchedule = ({ item, isDarkMode }) => {
           <p className="font-medium leading-tight">{item?.name}</p>
           <p
             className={`text-[.85rem] ${
-              isDarkMode ? "text-[#121a20]/50" : "text-neutral-100/50"
+              !isDarkMode ? "text-[#121a20]/50" : "text-neutral-100/50"
             }`}
           >
             {item?.country}

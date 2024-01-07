@@ -12,17 +12,15 @@ const Loader = () => {
             <img
               alt=""
               src={
-                !isDarkMode
-                  ? "/images/logo-white.png"
-                  : "/images/logo-black.png"
+                isDarkMode ? "/images/logo-white.png" : "/images/logo-black.png"
               }
               className="w-8 md:w-10 h-auto"
             />
-            <h1 className="text-[1.75rem] md:text-[2rem] font-black"> 
+            <h1 className="text-[1.75rem] md:text-[2rem] font-black">
               Kascore
             </h1>
           </div>
-          <ScaleLoader color={"#f97316"} size={100} /> 
+          <ScaleLoader color={"#f97316"} size={100} />
         </div>
       </div>
     </div>
