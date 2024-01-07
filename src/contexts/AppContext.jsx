@@ -2,6 +2,8 @@
 import { createContext, useContext, useState } from "react";
 import { useLocation } from "react-router-dom";
 import events from "../data/events.json";
+import axios from "axios";
+import moment from "moment";
 
 export const AppContext = createContext();
 
@@ -33,7 +35,60 @@ const AppContextProvider = ({ children }) => {
     },
   ];
 
-  console.log("topLeagues", topLeagues);
+  //==============================================================to get news headlines
+  // NEWS API KEY="8cbe94ecef2445ea9b78d1a803d05406"
+
+  const [othernewsData, setOtherNewsData] = useState();
+  const [newsData, setNewsData] = useState();
+
+  const [loading, setLoading] = useState(false);
+
+  const getNews = async () => {
+    const url =
+      "https://newsapi.org/v2/top-headlines?" +
+      "country=gb&" +
+      "category=sports&" +
+      "from=2023-12-31&" +
+      "pageSize=100&" +
+      "apiKey=8cbe94ecef2445ea9b78d1a803d05406";
+
+    try {
+      setLoading(true);
+      const response = await axios.get(url);
+      // console.log(response.data);
+      const articles = response?.data?.articles;
+      const sortedArray = articles?.sort(
+        (a, b) =>
+          new moment(b.publishedAt?.split("T")[0])?.format("YYYYMMDD") -
+          new moment(a.publishedAt?.split("T")[0])?.format("YYYYMMDD")
+      );
+
+      setNewsData(sortedArray);
+    } catch (error) {
+      console.error("Error fetching news:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // const getFootballNews = async () => {
+  //   const url =
+  //     "https://newsapi.org/v2/top-headlines?" +
+  //     "category=sports&" +
+  //     "from=2023-12-31&" +
+  //     "language=en&" +
+  //     "apiKey=8cbe94ecef2445ea9b78d1a803d05406";
+
+  //   try {
+  //     setLoading(true);
+  //     const response = await axios.get(url);
+  //     console.log(response.data);
+  //   } catch (error) {
+  //     console.error("Error fetching news:", error);
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
 
   return (
     <AppContext.Provider
@@ -42,6 +97,9 @@ const AppContextProvider = ({ children }) => {
         isDarkMode,
         toggleMode,
         topLeagues,
+        getNews,
+        loading,
+        newsData,
       }}
     >
       {children}

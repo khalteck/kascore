@@ -1,13 +1,24 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import BottomBar from "../components/BottomBar";
 import ScrollToTop from "../ScrollToTop";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import { useAppContext } from "../contexts/AppContext";
 
 const News = () => {
   // NEWS API KEY="8cbe94ecef2445ea9b78d1a803d05406"
 
   const navigate = useNavigate();
+  const { getNews, newsData } = useAppContext();
+
+  useEffect(() => {
+    getNews();
+  }, []);
+
+  console.log("newsData", newsData);
+
   return (
     <>
       <Header />
