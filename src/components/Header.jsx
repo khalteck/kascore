@@ -53,51 +53,33 @@ const Header = () => {
                   <img
                     alt=""
                     src={
-                      currentPage === "/"
-                        ? "/images/icons8-football-orange.png"
-                        : isDarkMode
+                      isDarkMode
                         ? "/images/icons8-football-50.png"
                         : "/images/icons8-football-black.png"
                     }
                     className="w-5 h-auto"
                   />
-                  <p
-                    className={`${
-                      (currentPage === "/" ||
-                        currentPage?.includes("scores")) &&
-                      "dark:text-orange-500"
-                    }`}
-                  >
-                    Scores
-                  </p>
+                  <p className={``}>Scores</p>
                 </li>
 
                 <li
                   onClick={() => navigate("/news")}
                   className={`flex gap-2 items-center cursor-pointer transition-all duration-300 px-3 h-full ${
                     (currentPage === "/news" ||
-                      currentPage?.includes("news")) &&
+                      currentPage?.includes("/news")) &&
                     "bg-black/10 dark:bg-[#1d2732] border-x border-t border-orange-500"
                   }`}
                 >
                   <img
                     alt=""
                     src={
-                      currentPage === "/news"
-                        ? "/images/icons8-news-orange.png"
-                        : isDarkMode
+                      isDarkMode
                         ? "/images/icons8-news-64.png"
                         : "/images/icons8-news-black.png"
                     }
                     className="w-5 h-auto"
                   />
-                  <p
-                    className={`${
-                      currentPage === "/news" && "dark:text-orange-500"
-                    }`}
-                  >
-                    News
-                  </p>
+                  <p className={``}>News</p>
                 </li>
               </ul>
 
