@@ -11,7 +11,7 @@ const SportListCont = () => {
         return (
           <li
             key={index}
-            onClick={() => navigate(`/scores${item?.link}`)}
+            // onClick={() => navigate(`/scores${item?.link}`)}
             className={`cursor-pointer hover:bg-white/30 dark:hover:bg-[#2a3543] text-white  transition-all duration-300 text-[.8rem] md:text-[.9rem] px-3 md:pl-3 md:pr-8 py-[6px] lg:rounded-md flex lg:flex-row flex-col lg:gap-2 items-center ${
               index === 0 && currentPage === "/"
                 ? "dark:bg-[#2a3543] bg-white/30"

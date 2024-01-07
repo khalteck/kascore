@@ -17,9 +17,9 @@ function App() {
     <Suspense fallback={<Loader />}>
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/scores/basketball" element={<BasketballPage />} />
-
         <Route path="/scores/favorites" element={<Favorites />} />
+        <Route path="/scores/basketball/details" element={<BasketballPage />} />
+
         <Route
           path="/scores/details/:league_name/:id"
           element={<MatchDetails />}

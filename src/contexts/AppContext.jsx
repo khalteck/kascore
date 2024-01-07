@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import events from "../data/events.json";
 import axios from "axios";
@@ -12,13 +12,19 @@ const AppContextProvider = ({ children }) => {
   const location = useLocation();
   let currentPage = location.pathname;
 
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(
+    JSON.parse(localStorage.getItem("mode")) || true
+  );
+
+  console.log("isDarkMode", isDarkMode);
+
+  useEffect(() => {
+    localStorage.setItem("mode", JSON.stringify(isDarkMode || true));
+  }, [isDarkMode]);
 
   const toggleMode = () => {
     setIsDarkMode((prevMode) => !prevMode);
     document.documentElement.classList.toggle("dark");
-    // If you prefer to toggle the class on 'body':
-    // document.body.classList.toggle('dark');
   };
 
   //==============================================================to get prem fixtures for 23/12/2023
