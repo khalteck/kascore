@@ -49,7 +49,7 @@ const BasketballPage = () => {
                   !isDarkMode ? "text-[#121a20]" : "text-neutral-100"
                 }`}
               >
-                ...
+                
               </div>
             </div>
           </div>
