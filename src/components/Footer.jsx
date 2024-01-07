@@ -11,7 +11,9 @@ const Footer = () => {
             src="/images/logo-white.png"
             className="w-8 md:w-10 h-auto"
           />
-          <h1 className="text-[1.75rem] md:text-[2rem] font-black">Kascore</h1>
+          <h1 className="text-[1.75rem] md:text-[2rem font-bold font-tek uppercase">
+            Kascore
+          </h1>
         </div>
       </div>
 

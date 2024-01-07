@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import SportListCont from "./SportListCont";
 import SportListSearch from "./SportListSearch";
@@ -8,11 +7,11 @@ import NewsListCont from "./NewsListCont";
 import MobileScoresNewsTab from "./MobileScoresNewsTab";
 
 const Header = () => {
-  const { currentPage, toggleMode, isDarkMode } = useAppContext();
+  const { currentPage, toggleMode, isDarkMode, setOpenSearch, openSearch } =
+    useAppContext();
 
   const navigate = useNavigate();
 
-  const [openSearch, setOpenSearch] = useState(false);
   function toggleSearch() {
     setOpenSearch((prev) => !prev);
   }
@@ -24,7 +23,7 @@ const Header = () => {
       >
         <div className="w-full flex flex-col items-center justify-center">
           <div className="w-full flex flex-row md:flex-col items-center md:items-start pr-3 md:pr-0">
-            <div className="w-full flex justify-between items-center gap-5 h-[60px] md:h-[70px] lg:px-[10%] px-3">
+            <div className="w-full flex items-center gap-5 h-[60px] md:h-[70px] lg:px-[10%] px-3">
               <div
                 onClick={() => navigate("/")}
                 className="flex items-center cursor-pointer"
@@ -38,32 +37,18 @@ const Header = () => {
                   }
                   className="w-8 md:w-10 h-auto"
                 />
-                <h1 className="text-[1.75rem] md:text-[2rem] font-bold font-exo">
+                <h1 className="text-[1.75rem] md:text-[2rem] font-bold font-tek">
                   KASCORE
                 </h1>
               </div>
 
-              <div className="hidden md:flex items-center border border-[#334155] bg-[#d1d5db] dark:bg-black/30 px-2 rounded-md">
-                <img
-                  src={
-                    !isDarkMode
-                      ? "/images/icons8-search-64.png"
-                      : "/images/icons8-search-black.png"
-                  }
-                  alt=""
-                  className="w-7 h-7 opacity-70"
-                />
-                <input
-                  type="text"
-                  className="w-[300px] bg-[#d1d5db] dark:bg-transparent py-2 px-3 outline-none dark:placeholder:text-inherit placeholder:text-black/60"
-                  placeholder="Search"
-                />
-              </div>
-
-              <ul className="hidden md:flex gap-5 items-center">
+              <ul className="hidden md:flex gap-3 items-center h-full ml-10">
                 <li
                   onClick={() => navigate("/")}
-                  className="flex gap-2 items-center hover:text-orange-500 cursor-pointer transition-all duration-300"
+                  className={`flex gap-2 items-center cursor-pointer transition-all duration-300 px-3 h-full ${
+                    (currentPage === "/" || currentPage?.includes("scores")) &&
+                    "bg-black/10 dark:bg-[#1d2732] border-x border-t border-orange-500"
+                  }`}
                 >
                   <img
                     alt=""
@@ -76,14 +61,24 @@ const Header = () => {
                     }
                     className="w-5 h-auto"
                   />
-                  <p className={`${currentPage === "/" && "text-orange-500"}`}>
+                  <p
+                    className={`${
+                      (currentPage === "/" ||
+                        currentPage?.includes("scores")) &&
+                      "dark:text-orange-500"
+                    }`}
+                  >
                     Scores
                   </p>
                 </li>
 
                 <li
                   onClick={() => navigate("/news")}
-                  className="flex gap-2 items-center hover:text-orange-500 cursor-pointer transition-all duration-300"
+                  className={`flex gap-2 items-center cursor-pointer transition-all duration-300 px-3 h-full ${
+                    (currentPage === "/news" ||
+                      currentPage?.includes("news")) &&
+                    "bg-black/10 dark:bg-[#1d2732] border-x border-t border-orange-500"
+                  }`}
                 >
                   <img
                     alt=""
@@ -98,16 +93,18 @@ const Header = () => {
                   />
                   <p
                     className={`${
-                      currentPage === "/news" && "text-orange-500"
+                      currentPage === "/news" && "dark:text-orange-500"
                     }`}
                   >
                     News
                   </p>
                 </li>
+              </ul>
 
+              <ul className="hidden md:flex items-center gap-3 ml-auto h-[40px]">
                 <li
                   onClick={() => navigate("/favorites")}
-                  className="flex gap-2 items-center hover:text-orange-500 cursor-pointer transition-all duration-300"
+                  className="flex gap-2 items-center cursor-pointer transition-all duration-300 border border-[#334155] bg-[#d1d5db] dark:bg-black/30 px-2 h-full rounded-md"
                 >
                   <img
                     alt=""
@@ -129,23 +126,44 @@ const Header = () => {
                   </p>
                 </li>
 
-                {/* darkmode toggle */}
-                <li className="ml-8">
-                  {" "}
-                  <img
-                    onClick={toggleMode}
-                    alt=""
-                    src={
-                      !isDarkMode
-                        ? "/images/icons8-light-mode-78.png"
-                        : "/images/icons8-dark-mode-100.png"
-                    }
-                    className={`h-auto cursor-pointer ${
-                      isDarkMode ? "w-7" : "w-10"
-                    }`}
-                  />
+                <li className="h-full">
+                  <div
+                    onClick={toggleSearch}
+                    className="hidden md:flex items-center border border-[#334155] bg-[#d1d5db] dark:bg-black/30 px-2 h-full rounded-md cursor-pointer"
+                  >
+                    <img
+                      src={
+                        !isDarkMode
+                          ? "/images/icons8-search-64.png"
+                          : "/images/icons8-search-black.png"
+                      }
+                      alt=""
+                      className="w-7 h-7 opacity-70"
+                    />
+                  </div>
                 </li>
-                <li className="border border-orange-500 rounded-md px-3 py-1 md:flex gap-2 items-center cursor-pointer hidden">
+
+                {/* darkmode toggle */}
+                <li className="h-full">
+                  {" "}
+                  <div
+                    onClick={toggleMode}
+                    className="hidden md:flex items-center border border-[#334155] bg-[#d1d5db] dark:bg-black/30 px-2 h-full rounded-md cursor-pointer"
+                  >
+                    <img
+                      alt=""
+                      src={
+                        !isDarkMode
+                          ? "/images/icons8-light-mode-78.png"
+                          : "/images/icons8-dark-mode-100.png"
+                      }
+                      className={`h-auto cursor-pointer ${
+                        isDarkMode ? "w-7" : "w-7"
+                      }`}
+                    />
+                  </div>
+                </li>
+                <li className="border border-orange-500 rounded-md px-3 h-full md:flex gap-2 items-center hidden">
                   <img
                     alt="calendar"
                     src="/images/icons8-great-britain-48.png"
@@ -157,21 +175,25 @@ const Header = () => {
             </div>
 
             {currentPage !== "/news" && (
-              <img
-                src={
-                  !isDarkMode
-                    ? "/images/icons8-search-64.png"
-                    : "/images/icons8-search-black.png"
-                }
-                alt=""
-                className="w-7 h-7 md:hidden mr-3"
+              <div
                 onClick={toggleSearch}
-              />
+                className={`px-2 h-[35px] flex justify-center items-center rounded-md bg-gray-200 dark:bg-[#1d2732] md:hidden`}
+              >
+                <img
+                  src={
+                    !isDarkMode
+                      ? "/images/icons8-search-64.png"
+                      : "/images/icons8-search-black.png"
+                  }
+                  alt=""
+                  className="w-7 h-auto"
+                />
+              </div>
             )}
 
             <div
               onClick={toggleMode}
-              className={`p-1 rounded-md bg-gray-200 dark:bg-[#1d2732]`}
+              className={`px-[5px] h-[35px] flex justify-center items-center rounded-md bg-gray-200 dark:bg-[#1d2732] ml-2 md:hidden`}
             >
               <img
                 alt=""
@@ -197,7 +219,7 @@ const Header = () => {
 
       {openSearch && (
         <div className="w-full h-screen overflow-y-auto fixed top-0 left-0 pt-4 pb-[80px] bg-white dark:bg-[#1d2732] z-40 dark:text-neutral-100">
-          <div className="w-full flex gap-3 items-center px-3 mb-3">
+          <div className="w-full md:w-[600px] md:mx-auto flex gap-3 items-center px-3 mb-3">
             <input
               type="text"
               placeholder="Search by country..."
@@ -211,7 +233,7 @@ const Header = () => {
                   ? "/images/icons8-close-50.png"
                   : "/images/icons8-close-black.png"
               }
-              className="w-6 h-auto"
+              className="w-6 h-auto cursor-pointer"
               onClick={toggleSearch}
             />
           </div>

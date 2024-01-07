@@ -4,8 +4,10 @@ import { useEffect, useState } from "react";
 import CountryCard from "./CountryCard";
 import CountriesSkeleton from "./CountriesSkeleton";
 import competitions from "../data/competitions.json";
+import { useAppContext } from "../contexts/AppContext";
 
 const CountriesTray = ({ isDarkMode }) => {
+  const { openSearch } = useAppContext();
   const [loading, setLoading] = useState(false);
 
   //=======================================================to handle top leagues
@@ -128,11 +130,14 @@ const CountriesTray = ({ isDarkMode }) => {
   }, []);
 
   return (
-    <div className={`flex flex-col gap-3`}>
+    <div className={`w-full flex flex-col gap-3`}>
       <div
-        className={`w-full h-fit rounded-lg flex flex-col p-3 ${
-          !isDarkMode ? " bg-[#1d2732]" : "bg-gray-100"
-        } ${isDarkMode ? "dark" : ""}`}
+        className={`w-full h-fit md:mx-auto  md:rounded-lg flex flex-col p-3 ${
+          openSearch &&
+          "md:w-[600px] border border-gray-300 dark:border-gray-600 md:mt-3"
+        } ${!isDarkMode ? " bg-[#1d2732]" : "bg-gray-100"} ${
+          isDarkMode ? "dark" : ""
+        }`}
       >
         <h1 className="text-[.95rem] font-medium">Top Leagues</h1>
         <div className="flex flex-col gap-2 mt-5">
@@ -169,9 +174,10 @@ const CountriesTray = ({ isDarkMode }) => {
       </div>
 
       <div
-        className={`w-full h-fit rounded-lg flex flex-col p-3 ${
-          !isDarkMode ? " bg-[#1d2732]" : "bg-gray-100"
-        }`}
+        className={`w-full h-fit md:mx-auto md:mb-3 md:rounded-lg flex flex-col p-3 ${
+          openSearch &&
+          "md:w-[600px] border border-gray-300 dark:border-gray-600"
+        } ${!isDarkMode ? " bg-[#1d2732]" : "bg-gray-100"}`}
       >
         <div className="w-full relative mb-3 hidden md:block">
           <input

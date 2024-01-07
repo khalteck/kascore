@@ -38,7 +38,7 @@ const AppContextProvider = ({ children }) => {
   //==============================================================to get news headlines
   // NEWS API KEY="8cbe94ecef2445ea9b78d1a803d05406"
 
-  const [othernewsData, setOtherNewsData] = useState();
+  // const [othernewsData, setOtherNewsData] = useState();
   const [newsData, setNewsData] = useState();
 
   const [loading, setLoading] = useState(false);
@@ -89,6 +89,7 @@ const AppContextProvider = ({ children }) => {
   //     setLoading(false);
   //   }
   // };
+  const [openSearch, setOpenSearch] = useState(false);
 
   return (
     <AppContext.Provider
@@ -100,6 +101,8 @@ const AppContextProvider = ({ children }) => {
         getNews,
         loading,
         newsData,
+        openSearch,
+        setOpenSearch,
       }}
     >
       {children}

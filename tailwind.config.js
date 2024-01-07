@@ -12,6 +12,7 @@ export default {
     },
     fontFamily: {
       exo: ["Exo 2", "sans-serif"],
+      tek: ["Tektur", "sans-serif"],
     },
     extend: {},
   },
