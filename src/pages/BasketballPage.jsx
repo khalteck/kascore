@@ -28,7 +28,7 @@ const BasketballPage = () => {
 
           <div
             className={`w-full md:w-[50%] md:min-w-[550px] h-full rounded-lg px-3 py-5  ${
-              !isDarkMode ? "bg-[#1d2732]" : "bg-gray-100"
+              isDarkMode ? "bg-[#1d2732]" : "bg-gray-100"
             }`}
           >
             <div className="w-full mb-4 md:mb-0">
@@ -37,7 +37,7 @@ const BasketballPage = () => {
 
             <div
               className={`w-full md:mt-5 rounded-lg ${
-                !isDarkMode ? "bg-[#121a20]/50" : "bg-gray-200"
+                isDarkMode ? "bg-[#121a20]/50" : "bg-gray-200"
               }`}
             >
               <h1 className="font-medium text-[1.2rem] p-4 rounded-lg">
@@ -46,7 +46,7 @@ const BasketballPage = () => {
 
               <div
                 className={`w-full flex flex-col ${
-                  !isDarkMode ? "text-[#121a20]" : "text-neutral-100"
+                  isDarkMode ? "text-[#121a20]" : "text-neutral-100"
                 }`}
               >
                 ...
@@ -55,7 +55,7 @@ const BasketballPage = () => {
           </div>
           <div
             className={`w-[30%] min-w-[200px] h-auto rounded-lg hidden lg:block p-4 ${
-              !isDarkMode ? "bg-[#1d2732]" : "bg-gray-100"
+              isDarkMode ? "bg-[#1d2732]" : "bg-gray-100"
             }`}
           >
             <FeaturedNewsCont isDarkMode={isDarkMode} />

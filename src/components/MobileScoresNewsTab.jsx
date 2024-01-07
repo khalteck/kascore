@@ -19,7 +19,7 @@ const MobileScoresNewsTab = ({ currentPage, isDarkMode }) => {
           src={
             currentPage === "/"
               ? "/images/icons8-football-orange.png"
-              : !isDarkMode
+              : isDarkMode
               ? "/images/icons8-football-50.png"
               : "/images/icons8-football-black.png"
           }
@@ -39,7 +39,7 @@ const MobileScoresNewsTab = ({ currentPage, isDarkMode }) => {
           src={
             currentPage === "/news"
               ? "/images/icons8-news-orange.png"
-              : !isDarkMode
+              : isDarkMode
               ? "/images/icons8-news-64.png"
               : "/images/icons8-news-black.png"
           }

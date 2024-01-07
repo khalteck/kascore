@@ -22,7 +22,7 @@ const Leagues = () => {
 
           <div
             className={`w-full md:w-[50%] md:min-w-[550px] min-h-screen rounded-lg px-3 py-5 mt-5  ${
-              !isDarkMode ? "bg-[#1d2732]" : "bg-white"
+              isDarkMode ? "bg-[#1d2732]" : "bg-white"
             }`}
           >
             {/* <div className="w-full mb-4 md:mb-0">
@@ -30,7 +30,7 @@ const Leagues = () => {
             </div> */}
             <div
               className={`w-full ${
-                !isDarkMode ? "bg-[#121a20]/50" : "bg-white"
+                isDarkMode ? "bg-[#121a20]/50" : "bg-white"
               }`}
             >
               <CountriesTray isDarkMode={isDarkMode} />

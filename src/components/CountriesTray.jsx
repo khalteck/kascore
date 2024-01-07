@@ -135,7 +135,7 @@ const CountriesTray = ({ isDarkMode }) => {
         className={`w-full h-fit md:mx-auto  md:rounded-lg flex flex-col p-3 ${
           openSearch &&
           "md:w-[600px] border border-gray-300 dark:border-gray-600 md:mt-3"
-        } ${!isDarkMode ? " bg-[#1d2732]" : "bg-gray-100"} ${
+        } ${isDarkMode ? " bg-[#1d2732]" : "bg-gray-100"} ${
           isDarkMode ? "dark" : ""
         }`}
       >
@@ -160,7 +160,7 @@ const CountriesTray = ({ isDarkMode }) => {
                       ? "/images/icons8-germany-48.png"
                       : itm?.category?.name === "France"
                       ? "/images/icons8-france-48.png"
-                      : !isDarkMode
+                      : isDarkMode
                       ? "/images/icons8-football-50.png"
                       : "/images/icons8-football-black.png"
                   }
@@ -177,7 +177,7 @@ const CountriesTray = ({ isDarkMode }) => {
         className={`w-full h-fit md:mx-auto md:mb-3 md:rounded-lg flex flex-col p-3 ${
           openSearch &&
           "md:w-[600px] border border-gray-300 dark:border-gray-600"
-        } ${!isDarkMode ? " bg-[#1d2732]" : "bg-gray-100"}`}
+        } ${isDarkMode ? " bg-[#1d2732]" : "bg-gray-100"}`}
       >
         <div className="w-full relative mb-3 hidden md:block">
           <input

@@ -31,7 +31,7 @@ const Header = () => {
                 <img
                   alt=""
                   src={
-                    !isDarkMode
+                    isDarkMode
                       ? "/images/logo-white.png"
                       : "/images/logo-black.png"
                   }
@@ -55,7 +55,7 @@ const Header = () => {
                     src={
                       currentPage === "/"
                         ? "/images/icons8-football-orange.png"
-                        : !isDarkMode
+                        : isDarkMode
                         ? "/images/icons8-football-50.png"
                         : "/images/icons8-football-black.png"
                     }
@@ -85,7 +85,7 @@ const Header = () => {
                     src={
                       currentPage === "/news"
                         ? "/images/icons8-news-orange.png"
-                        : !isDarkMode
+                        : isDarkMode
                         ? "/images/icons8-news-64.png"
                         : "/images/icons8-news-black.png"
                     }
@@ -111,11 +111,11 @@ const Header = () => {
                     src={
                       currentPage === "/scores/favorites"
                         ? "/images/icons8-star-50.png"
-                        : !isDarkMode
+                        : isDarkMode
                         ? "/images/icons8-star-white.png"
                         : "/images/icons8-star-black.png"
                     }
-                    className={` ${!isDarkMode ? "w-5" : "w-6"} h-auto`}
+                    className={` ${isDarkMode ? "w-5" : "w-6"} h-auto`}
                   />
                   <p
                     className={`${
@@ -133,7 +133,7 @@ const Header = () => {
                   >
                     <img
                       src={
-                        !isDarkMode
+                        isDarkMode
                           ? "/images/icons8-search-64.png"
                           : "/images/icons8-search-black.png"
                       }
@@ -153,7 +153,7 @@ const Header = () => {
                     <img
                       alt=""
                       src={
-                        !isDarkMode
+                        isDarkMode
                           ? "/images/icons8-light-mode-78.png"
                           : "/images/icons8-dark-mode-100.png"
                       }
@@ -181,7 +181,7 @@ const Header = () => {
               >
                 <img
                   src={
-                    !isDarkMode
+                    isDarkMode
                       ? "/images/icons8-search-64.png"
                       : "/images/icons8-search-black.png"
                   }
@@ -198,7 +198,7 @@ const Header = () => {
               <img
                 alt=""
                 src={
-                  !isDarkMode
+                  isDarkMode
                     ? "/images/icons8-light-mode-78.png"
                     : "/images/icons8-dark-mode-100.png"
                 }
@@ -229,7 +229,7 @@ const Header = () => {
               alt="calendar"
               // src="/images/icons8-close-50.png"
               src={
-                !isDarkMode
+                isDarkMode
                   ? "/images/icons8-close-50.png"
                   : "/images/icons8-close-black.png"
               }

@@ -53,7 +53,7 @@ const Favorites = () => {
                     Tap
                     <img
                       src={
-                        !isDarkMode
+                        isDarkMode
                           ? "/images/icons8-star-white.png"
                           : "/images/icons8-star-black.png"
                       }
@@ -69,7 +69,7 @@ const Favorites = () => {
 
           <div
             className={`w-[30%] min-w-[200px] h-auto rounded-lg hidden lg:block p-4 ${
-              !isDarkMode ? "bg-[#1d2732]" : "bg-gray-100"
+              isDarkMode ? "bg-[#1d2732]" : "bg-gray-100"
             }`}
           >
             <FeaturedNewsCont isDarkMode={isDarkMode} />

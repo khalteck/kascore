@@ -3,7 +3,7 @@ const DateSlide = ({ isDarkMode }) => {
   return (
     <ul
       className={`w-full flex gap-3 justify-between items-center p-3 rounded-lg ${
-        !isDarkMode
+        isDarkMode
           ? "bg-[#121a20]/50 text-neutral-100/80"
           : "bg-[#d1d5db] text-[#121a20]"
       }`}

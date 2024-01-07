@@ -13,19 +13,43 @@ const AppContextProvider = ({ children }) => {
   let currentPage = location.pathname;
 
   const [isDarkMode, setIsDarkMode] = useState(
-    JSON.parse(localStorage.getItem("mode")) || true
+    JSON.parse(localStorage.getItem("mode"))
   );
 
   console.log("isDarkMode", isDarkMode);
 
   useEffect(() => {
-    localStorage.setItem("mode", JSON.stringify(isDarkMode || true));
+    if (isDarkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
   }, [isDarkMode]);
 
   const toggleMode = () => {
-    setIsDarkMode((prevMode) => !prevMode);
-    document.documentElement.classList.toggle("dark");
+    const newMode = !isDarkMode;
+    setIsDarkMode(newMode);
+    localStorage.setItem("mode", JSON.stringify(newMode));
   };
+
+  // const [isDarkMode, setIsDarkMode] = useState(
+  //   !JSON.parse(localStorage.getItem("mode")) ? true : false
+  // );
+
+  // console.log("isDarkMode", isDarkMode);
+
+  // useEffect(() => {
+  //   if (isDarkMode === undefined) {
+  //     setIsDarkMode(true);
+  //     localStorage.setItem("mode", JSON.stringify(true));
+  //   }
+  //   localStorage.setItem("mode", JSON.stringify(isDarkMode));
+  // }, [isDarkMode]);
+
+  // const toggleMode = () => {
+  //   setIsDarkMode((prevMode) => !prevMode);
+  //   document.documentElement.classList.toggle("dark");
+  // };
 
   //==============================================================to get prem fixtures for 23/12/2023
   const englandSchedule = events?.data?.filter(

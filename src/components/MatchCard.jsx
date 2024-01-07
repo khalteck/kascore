@@ -19,13 +19,13 @@ const MatchCard = ({ itm, league, isDarkMode }) => {
     <div
       onClick={() => navigate(`/scores/details/${league?.name}/${itm?.id}`)}
       className={`flex gap-3 py-2 mb-2 pr-3 cursor-pointer ${
-        !isDarkMode ? "hover:bg-black/20" : "hover:bg-orange-500/10"
+        isDarkMode ? "hover:bg-black/20" : "hover:bg-orange-500/10"
       }`}
     >
       {itm?.status === "notstarted" ? (
         <div
           className={`w-[60px] text-[.85rem] border-r flex flex-col justify-center items-center ${
-            isDarkMode ? "border-black" : "border-neutral-100/30"
+            !isDarkMode ? "border-black" : "border-neutral-100/30"
           }`}
         >
           <p>{parseTime(itm?.start_at)}</p>
@@ -34,7 +34,7 @@ const MatchCard = ({ itm, league, isDarkMode }) => {
       ) : itm?.status === "finished" ? (
         <div
           className={`w-[60px] text-[.85rem] border-r flex flex-col justify-center items-center ${
-            isDarkMode ? "border-black" : "border-neutral-100/30"
+            !isDarkMode ? "border-black" : "border-neutral-100/30"
           }`}
         >
           <p>FT</p>
@@ -42,7 +42,7 @@ const MatchCard = ({ itm, league, isDarkMode }) => {
       ) : itm?.status === "postponed" ? (
         <div
           className={`w-[60px] text-[.85rem] border-r flex flex-col justify-center items-center ${
-            isDarkMode ? "border-black" : "border-neutral-100/30"
+            !isDarkMode ? "border-black" : "border-neutral-100/30"
           }`}
         >
           <p>PostP.</p>
@@ -50,7 +50,7 @@ const MatchCard = ({ itm, league, isDarkMode }) => {
       ) : (
         <div
           className={`w-[60px] text-[.85rem] border-r flex flex-col justify-center items-center ${
-            isDarkMode ? "border-black" : "border-neutral-100/30"
+            !isDarkMode ? "border-black" : "border-neutral-100/30"
           }`}
         >
           <p>-</p>
