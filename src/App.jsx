@@ -10,6 +10,7 @@ const Favorites = lazy(() => import("./pages/Favorites"));
 const MatchDetails = lazy(() => import("./pages/MatchDetails"));
 const Leagues = lazy(() => import("./pages/Leagues"));
 const News = lazy(() => import("./pages/News"));
+const News2 = lazy(() => import("./pages/News2"));
 const NewsDetails = lazy(() => import("./pages/NewsDetails"));
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         />
         <Route path="/scores/leagues" element={<Leagues />} />
         <Route path="/news" element={<News />} />
+        <Route path="/news/:category" element={<News2 />} />
         <Route path="/news-details" element={<NewsDetails />} />
       </Routes>
     </Suspense>

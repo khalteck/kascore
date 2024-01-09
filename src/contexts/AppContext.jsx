@@ -3,7 +3,6 @@ import { createContext, useContext, useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import events from "../data/events.json";
 import axios from "axios";
-import moment from "moment";
 
 export const AppContext = createContext();
 
@@ -13,18 +12,21 @@ const AppContextProvider = ({ children }) => {
   let currentPage = location.pathname;
 
   const [isDarkMode, setIsDarkMode] = useState(
-    JSON.parse(localStorage.getItem("mode")) || true
+    JSON.parse(localStorage.getItem("mode"))
   );
 
-  console.log("isDarkMode", isDarkMode);
-
   useEffect(() => {
-    localStorage.setItem("mode", JSON.stringify(isDarkMode || true));
+    if (isDarkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
   }, [isDarkMode]);
 
   const toggleMode = () => {
-    setIsDarkMode((prevMode) => !prevMode);
-    document.documentElement.classList.toggle("dark");
+    const newMode = !isDarkMode;
+    setIsDarkMode(newMode);
+    localStorage.setItem("mode", JSON.stringify(newMode));
   };
 
   //==============================================================to get prem fixtures for 23/12/2023
@@ -50,51 +52,55 @@ const AppContextProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
 
   const getNews = async () => {
-    const url =
-      "https://newsapi.org/v2/top-headlines?" +
-      "country=gb&" +
-      "category=sports&" +
-      "from=2023-12-31&" +
-      "pageSize=100&" +
-      "apiKey=8cbe94ecef2445ea9b78d1a803d05406";
+    const options = {
+      method: "GET",
+      url: "https://livescore6.p.rapidapi.com/news/v2/list",
+      headers: {
+        "X-RapidAPI-Key": "212912e40bmsh331c90cc55611e6p178f8djsna36fe9dec8b3",
+        "X-RapidAPI-Host": "livescore6.p.rapidapi.com",
+      },
+    };
 
     try {
       setLoading(true);
-      const response = await axios.get(url);
-      // console.log(response.data);
-      const articles = response?.data?.articles;
-      const sortedArray = articles?.sort(
-        (a, b) =>
-          new moment(b.publishedAt?.split("T")[0])?.format("YYYYMMDD") -
-          new moment(a.publishedAt?.split("T")[0])?.format("YYYYMMDD")
-      );
-
-      setNewsData(sortedArray);
+      const response = await axios.request(options);
+      setNewsData(response.data);
     } catch (error) {
-      console.error("Error fetching news:", error);
+      console.error(error);
     } finally {
       setLoading(false);
     }
   };
 
-  // const getFootballNews = async () => {
-  //   const url =
-  //     "https://newsapi.org/v2/top-headlines?" +
-  //     "category=sports&" +
-  //     "from=2023-12-31&" +
-  //     "language=en&" +
-  //     "apiKey=8cbe94ecef2445ea9b78d1a803d05406";
+  const [loading2, setLoading2] = useState(false);
 
-  //   try {
-  //     setLoading(true);
-  //     const response = await axios.get(url);
-  //     console.log(response.data);
-  //   } catch (error) {
-  //     console.error("Error fetching news:", error);
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // };
+  const [categoryData, setcategoryData] = useState();
+
+  const getNewsByCategory = async (categoryId, page) => {
+    const options = {
+      method: "GET",
+      url: "https://livescore6.p.rapidapi.com/news/v2/list-by-sport",
+      headers: {
+        "X-RapidAPI-Key": "212912e40bmsh331c90cc55611e6p178f8djsna36fe9dec8b3",
+        "X-RapidAPI-Host": "livescore6.p.rapidapi.com",
+      },
+      params: {
+        category: categoryId,
+        page: page,
+      },
+    };
+
+    try {
+      setLoading2(true);
+      const response = await axios.request(options);
+      setcategoryData(response.data);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading2(false);
+    }
+  };
+
   const [openSearch, setOpenSearch] = useState(false);
 
   return (
@@ -109,6 +115,9 @@ const AppContextProvider = ({ children }) => {
         newsData,
         openSearch,
         setOpenSearch,
+        categoryData,
+        getNewsByCategory,
+        loading2,
       }}
     >
       {children}

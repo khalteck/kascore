@@ -1,0 +1,2984 @@
+{
+  "layoutContext": {
+    "activeHeaderId": null
+  },
+  "adsTargeting": {
+    "category": "News",
+    "screen": "News",
+    "adUnitPathName": "newsList",
+    "environment": "production",
+    "sport": "News_Home"
+  },
+  "segmentTracking": {
+    "screenClass": "news_list",
+    "screenName": "News - List"
+  },
+  "topStories": [
+    {
+      "id": "2024010210224059836",
+      "mainMedia": [
+        {
+          "id": null,
+          "path": null,
+          "type": "image",
+          "gallery": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/02012024/9f028a75-619d-4e4b-9033-d0359f590d54.jpg?operations=fit(620:)&w=620&quality=100",
+            "alt": "Donny van de Beek has waved goodbye to Manchester United until the end of the season",
+            "height": 144,
+            "width": 240
+          },
+          "thumbnail": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/02012024/9f028a75-619d-4e4b-9033-d0359f590d54.jpg?operations=fit(260:)&w=260&quality=100",
+            "alt": "Donny van de Beek has waved goodbye to Manchester United until the end of the season",
+            "height": 80,
+            "width": 130
+          },
+          "original": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/02012024/9f028a75-619d-4e4b-9033-d0359f590d54.jpg",
+            "alt": "Donny van de Beek has waved goodbye to Manchester United until the end of the season"
+          }
+        }
+      ],
+      "categoryLabel": "Football",
+      "categoryUrl": "/en/native/news/football/",
+      "updatedAt": {
+        "time": "1",
+        "unit": "news.hour"
+      },
+      "publishedAt": "2024-01-07T13:33:00+00:00",
+      "title": "January transfer window 2024: Every confirmed Premier League deal",
+      "shortTitle": null,
+      "type": "news",
+      "url": "/en/native/news/january-transfer-window-2024-every-confirmed-premier-league-deal-2024010210224059836/",
+      "related": null,
+      "publishedRegions": [],
+      "isAdultContent": false
+    },
+    {
+      "id": "2024010212222099234",
+      "mainMedia": [
+        {
+          "id": null,
+          "path": null,
+          "type": "image",
+          "gallery": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/02012024/1545d75a-6ade-40dc-9f70-71186f7189b3.jpg?operations=fit(620:)&w=620&quality=100",
+            "alt": "Mary Earps has six months left on her Manchester United deal",
+            "height": 144,
+            "width": 240
+          },
+          "thumbnail": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/02012024/1545d75a-6ade-40dc-9f70-71186f7189b3.jpg?operations=fit(260:)&w=260&quality=100",
+            "alt": "Mary Earps has six months left on her Manchester United deal",
+            "height": 80,
+            "width": 130
+          },
+          "original": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/02012024/1545d75a-6ade-40dc-9f70-71186f7189b3.jpg",
+            "alt": "Mary Earps has six months left on her Manchester United deal"
+          }
+        }
+      ],
+      "categoryLabel": "Football",
+      "categoryUrl": "/en/native/news/football/",
+      "updatedAt": {
+        "time": "17",
+        "unit": "news.hours"
+      },
+      "publishedAt": "2024-01-06T17:00:00+00:00",
+      "title": "WSL transfer tracker: All the confirmed major January deals",
+      "shortTitle": null,
+      "type": "news",
+      "url": "/en/native/news/womens-super-league-transfer-tracker-confirmed-major-january-deals-2024010212222099234/",
+      "related": null,
+      "publishedRegions": [],
+      "isAdultContent": false
+    },
+    {
+      "id": "2024010710340645312",
+      "mainMedia": [
+        {
+          "id": null,
+          "path": null,
+          "type": "image",
+          "gallery": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/07012024/19a5aa05-0c30-4191-a613-9794e2937ff9.jpg?operations=fit(620:)&w=620&quality=100",
+            "alt": "Rafael Nadal will be missing the major tournament Down Under",
+            "height": 144,
+            "width": 240
+          },
+          "thumbnail": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/07012024/19a5aa05-0c30-4191-a613-9794e2937ff9.jpg?operations=fit(260:)&w=260&quality=100",
+            "alt": "Rafael Nadal will be missing the major tournament Down Under",
+            "height": 80,
+            "width": 130
+          },
+          "original": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/07012024/19a5aa05-0c30-4191-a613-9794e2937ff9.jpg",
+            "alt": "Rafael Nadal will be missing the major tournament Down Under"
+          }
+        }
+      ],
+      "categoryLabel": "Other sport",
+      "categoryUrl": "/en/native/news/sports-news-or-livescore/",
+      "updatedAt": {
+        "time": "4",
+        "unit": "news.hours"
+      },
+      "publishedAt": "2024-01-07T10:49:00+00:00",
+      "title": "Nadal to miss Australian Open following hip injury",
+      "shortTitle": null,
+      "type": "news",
+      "url": "/en/native/news/rafael-nadal-to-miss-australian-open-following-hip-injury-2024010710340645312/",
+      "related": null,
+      "publishedRegions": [],
+      "isAdultContent": false
+    },
+    {
+      "id": "2024010619422484098",
+      "mainMedia": [
+        {
+          "id": null,
+          "path": null,
+          "type": "image",
+          "gallery": {
+            "url": "https://image.assets.pressassociation.io/v2/image/production/1a065177150403ce0831207971ca7e7aY29udGVudHNlYXJjaGFwaSwxNzA0NjU0OTA4/2.75004715.jpg?rect=0,88,4662,2622&ext=.jpg&operations=fit(620:)&w=620&quality=100",
+            "alt": "Chelsea eased to a 4-0 win over Preston in the FA Cup third round",
+            "height": 144,
+            "width": 240
+          },
+          "thumbnail": {
+            "url": "https://image.assets.pressassociation.io/v2/image/production/1a065177150403ce0831207971ca7e7aY29udGVudHNlYXJjaGFwaSwxNzA0NjU0OTA4/2.75004715.jpg?rect=0,88,4662,2622&ext=.jpg&operations=fit(260:)&w=260&quality=100",
+            "alt": "Chelsea eased to a 4-0 win over Preston in the FA Cup third round",
+            "height": 80,
+            "width": 130
+          },
+          "original": {
+            "url": "https://image.assets.pressassociation.io/v2/image/production/1a065177150403ce0831207971ca7e7aY29udGVudHNlYXJjaGFwaSwxNzA0NjU0OTA4/2.75004715.jpg?rect=0,88,4662,2622&ext=.jpg",
+            "alt": "Chelsea eased to a 4-0 win over Preston in the FA Cup third round"
+          }
+        }
+      ],
+      "categoryLabel": "Match reports",
+      "categoryUrl": "/en/native/news/match-reports/",
+      "updatedAt": {
+        "time": "20",
+        "unit": "news.hours"
+      },
+      "publishedAt": "2024-01-06T19:39:18+00:00",
+      "title": "Chelsea 4-0 Preston: Blues produce second-half goal blitz to progress in FA Cup",
+      "shortTitle": null,
+      "type": null,
+      "url": "/en/native/news/chelsea-produce-second-half-goal-blitz-against-preston-to-progress-in-fa-cup-2024010619422484098/",
+      "related": null,
+      "publishedRegions": [],
+      "isAdultContent": false
+    },
+    {
+      "id": "2024010713493644772",
+      "mainMedia": [
+        {
+          "id": null,
+          "path": null,
+          "type": "image",
+          "gallery": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/07012024/a74a619c-3dcb-4958-87dd-3967e875ebb6.jpg?operations=fit(620:)&w=620&quality=100",
+            "alt": "Ashleigh Neville has been a key player for Tottenham this season",
+            "height": 144,
+            "width": 240
+          },
+          "thumbnail": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/07012024/a74a619c-3dcb-4958-87dd-3967e875ebb6.jpg?operations=fit(260:)&w=260&quality=100",
+            "alt": "Ashleigh Neville has been a key player for Tottenham this season",
+            "height": 80,
+            "width": 130
+          },
+          "original": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/07012024/a74a619c-3dcb-4958-87dd-3967e875ebb6.jpg",
+            "alt": "Ashleigh Neville has been a key player for Tottenham this season"
+          }
+        }
+      ],
+      "categoryLabel": "Football",
+      "categoryUrl": "/en/native/news/football/",
+      "updatedAt": {
+        "time": "1",
+        "unit": "news.hour"
+      },
+      "publishedAt": "2024-01-07T14:07:00+00:00",
+      "title": "Neville admits consistency the key to top form at Spurs",
+      "shortTitle": null,
+      "type": "news",
+      "url": "/en/native/news/ashleigh-neville-admits-consistency-key-to-top-form-at-tottenham-2024010713493644772/",
+      "related": null,
+      "publishedRegions": [],
+      "isAdultContent": false
+    },
+    {
+      "id": "2024010619472758089",
+      "mainMedia": [
+        {
+          "id": null,
+          "path": null,
+          "type": "image",
+          "gallery": {
+            "url": "https://image.assets.pressassociation.io/v2/image/production/6473980ef97f255ffd1784fe18e2a5fdY29udGVudHNlYXJjaGFwaSwxNzA0NjU1NjQz/2.75005022.jpg?rect=0,240,3016,1696&ext=.jpg&operations=fit(620:)&w=620&quality=100",
+            "alt": "Matty Cash scored Aston Villa’s winner",
+            "height": 144,
+            "width": 240
+          },
+          "thumbnail": {
+            "url": "https://image.assets.pressassociation.io/v2/image/production/6473980ef97f255ffd1784fe18e2a5fdY29udGVudHNlYXJjaGFwaSwxNzA0NjU1NjQz/2.75005022.jpg?rect=0,240,3016,1696&ext=.jpg&operations=fit(260:)&w=260&quality=100",
+            "alt": "Matty Cash scored Aston Villa’s winner",
+            "height": 80,
+            "width": 130
+          },
+          "original": {
+            "url": "https://image.assets.pressassociation.io/v2/image/production/6473980ef97f255ffd1784fe18e2a5fdY29udGVudHNlYXJjaGFwaSwxNzA0NjU1NjQz/2.75005022.jpg?rect=0,240,3016,1696&ext=.jpg",
+            "alt": "Matty Cash scored Aston Villa’s winner"
+          }
+        }
+      ],
+      "categoryLabel": "Match reports",
+      "categoryUrl": "/en/native/news/match-reports/",
+      "updatedAt": {
+        "time": "19",
+        "unit": "news.hours"
+      },
+      "publishedAt": "2024-01-06T19:43:29+00:00",
+      "title": "Middlesbrough 0-1 Aston Villa: Cash's late deflected strike earns Villa FA Cup win",
+      "shortTitle": null,
+      "type": null,
+      "url": "/en/native/news/matty-cashs-late-deflected-strike-earns-aston-villa-fa-cup-win-at-middlesbrough-2024010619472758089/",
+      "related": null,
+      "publishedRegions": [],
+      "isAdultContent": false
+    },
+    {
+      "id": "2024010619221511564",
+      "mainMedia": [
+        {
+          "id": null,
+          "path": null,
+          "type": "image",
+          "gallery": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/06012024/c08d36f2-8946-48d4-8873-2b27bbc6ffb6.jpg?operations=fit(620:)&w=620&quality=100",
+            "alt": "Roberto De Zerbi's Brighton avoided an FA Cup upset at Stoke",
+            "height": 144,
+            "width": 240
+          },
+          "thumbnail": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/06012024/c08d36f2-8946-48d4-8873-2b27bbc6ffb6.jpg?operations=fit(260:)&w=260&quality=100",
+            "alt": "Roberto De Zerbi's Brighton avoided an FA Cup upset at Stoke",
+            "height": 80,
+            "width": 130
+          },
+          "original": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/06012024/c08d36f2-8946-48d4-8873-2b27bbc6ffb6.jpg",
+            "alt": "Roberto De Zerbi's Brighton avoided an FA Cup upset at Stoke"
+          }
+        }
+      ],
+      "categoryLabel": "Football",
+      "categoryUrl": "/en/native/news/football/",
+      "updatedAt": {
+        "time": "20",
+        "unit": "news.hours"
+      },
+      "publishedAt": "2024-01-06T19:15:00+00:00",
+      "title": "De Zerbi admits he did not know Pedro before striker joined Brighton",
+      "shortTitle": null,
+      "type": "news",
+      "url": "/en/native/news/roberto-de-zerbi-joao-pedro-brighton-fa-cup-third-round-reaction-2024010619221511564/",
+      "related": null,
+      "publishedRegions": [],
+      "isAdultContent": false
+    },
+    {
+      "id": "2024010617220591774",
+      "mainMedia": [
+        {
+          "id": null,
+          "path": null,
+          "type": "image",
+          "gallery": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/06012024/76142993-e1b1-4ccc-832e-6e3a8312435c.jpg?operations=fit(620:)&w=620&quality=100",
+            "alt": "Joao Pedro made the difference for Brighton at Stoke",
+            "height": 144,
+            "width": 240
+          },
+          "thumbnail": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/06012024/76142993-e1b1-4ccc-832e-6e3a8312435c.jpg?operations=fit(260:)&w=260&quality=100",
+            "alt": "Joao Pedro made the difference for Brighton at Stoke",
+            "height": 80,
+            "width": 130
+          },
+          "original": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/06012024/76142993-e1b1-4ccc-832e-6e3a8312435c.jpg",
+            "alt": "Joao Pedro made the difference for Brighton at Stoke"
+          }
+        }
+      ],
+      "categoryLabel": "Match reports",
+      "categoryUrl": "/en/native/news/match-reports/",
+      "updatedAt": {
+        "time": "21",
+        "unit": "news.hours"
+      },
+      "publishedAt": "2024-01-06T17:17:46+00:00",
+      "title": "Stoke 2-4 Brighton: Pedro at the double as Seagulls made to battle for win",
+      "shortTitle": null,
+      "type": null,
+      "url": "/en/native/news/joao-pedro-at-the-double-as-brighton-made-to-battle-for-win-at-stoke-2024010617220591774/",
+      "related": null,
+      "publishedRegions": [],
+      "isAdultContent": false
+    },
+    {
+      "id": "2024010619472590267",
+      "mainMedia": [
+        {
+          "id": null,
+          "path": null,
+          "type": "image",
+          "gallery": {
+            "url": "https://image.assets.pressassociation.io/v2/image/production/e501a53408950fc4eabacccaa1aa958fY29udGVudHNlYXJjaGFwaSwxNzA0NjU1OTIw/2.74239207.jpg?rect=496,232,2480,1395&ext=.jpg&operations=fit(620:)&w=620&quality=100",
+            "alt": "Sheffield Wednesday goalkeeper Cameron Dawson was the star in their FA Cup win over Cardiff",
+            "height": 144,
+            "width": 240
+          },
+          "thumbnail": {
+            "url": "https://image.assets.pressassociation.io/v2/image/production/e501a53408950fc4eabacccaa1aa958fY29udGVudHNlYXJjaGFwaSwxNzA0NjU1OTIw/2.74239207.jpg?rect=496,232,2480,1395&ext=.jpg&operations=fit(260:)&w=260&quality=100",
+            "alt": "Sheffield Wednesday goalkeeper Cameron Dawson was the star in their FA Cup win over Cardiff",
+            "height": 80,
+            "width": 130
+          },
+          "original": {
+            "url": "https://image.assets.pressassociation.io/v2/image/production/e501a53408950fc4eabacccaa1aa958fY29udGVudHNlYXJjaGFwaSwxNzA0NjU1OTIw/2.74239207.jpg?rect=496,232,2480,1395&ext=.jpg",
+            "alt": "Sheffield Wednesday goalkeeper Cameron Dawson was the star in their FA Cup win over Cardiff"
+          }
+        }
+      ],
+      "categoryLabel": "Match reports",
+      "categoryUrl": "/en/native/news/match-reports/",
+      "updatedAt": {
+        "time": "19",
+        "unit": "news.hours"
+      },
+      "publishedAt": "2024-01-06T19:45:55+00:00",
+      "title": "Sheff Wed 4-0 Cardiff: Dawson saves two penalties as Owls march on",
+      "shortTitle": null,
+      "type": null,
+      "url": "/en/native/news/sheff-wed-4-0-cardiff-dawson-saves-two-penalties-as-owls-march-on-2024010619472590267/",
+      "related": null,
+      "publishedRegions": [],
+      "isAdultContent": false
+    },
+    {
+      "id": "2024010617405167434",
+      "mainMedia": [
+        {
+          "id": null,
+          "path": null,
+          "type": "image",
+          "gallery": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/06012024/9beb78b0-dba8-43fe-a45f-424f00cd3820.jpg?operations=fit(620:)&w=620&quality=100",
+            "alt": "Inter Milan midfielder Davide Frattesi scored a controversial late winner against Verona",
+            "height": 144,
+            "width": 240
+          },
+          "thumbnail": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/06012024/9beb78b0-dba8-43fe-a45f-424f00cd3820.jpg?operations=fit(260:)&w=260&quality=100",
+            "alt": "Inter Milan midfielder Davide Frattesi scored a controversial late winner against Verona",
+            "height": 80,
+            "width": 130
+          },
+          "original": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/06012024/9beb78b0-dba8-43fe-a45f-424f00cd3820.jpg",
+            "alt": "Inter Milan midfielder Davide Frattesi scored a controversial late winner against Verona"
+          }
+        }
+      ],
+      "categoryLabel": "Football",
+      "categoryUrl": "/en/native/news/football/",
+      "updatedAt": {
+        "time": "20",
+        "unit": "news.hours"
+      },
+      "publishedAt": "2024-01-06T17:45:00+00:00",
+      "title": "Verona chief slams 'shameful' VAR as Inter steal late victory at San Siro",
+      "shortTitle": null,
+      "type": "news",
+      "url": "/en/native/news/inter-milan-verona-var-serie-a-reaction-2024010617405167434/",
+      "related": null,
+      "publishedRegions": [],
+      "isAdultContent": false
+    },
+    {
+      "id": "2024010617271300012",
+      "mainMedia": [
+        {
+          "id": null,
+          "path": null,
+          "type": "image",
+          "gallery": {
+            "url": "https://image.assets.pressassociation.io/v2/image/production/4bc6bc89caa52a63865fcac446b0628fY29udGVudHNlYXJjaGFwaSwxNzA0NjQ3NzE5/2.75003149.jpg?rect=0,99,3008,1692&ext=.jpg&operations=fit(620:)&w=620&quality=100",
+            "alt": "Justin Kluivert netted the winner",
+            "height": 144,
+            "width": 240
+          },
+          "thumbnail": {
+            "url": "https://image.assets.pressassociation.io/v2/image/production/4bc6bc89caa52a63865fcac446b0628fY29udGVudHNlYXJjaGFwaSwxNzA0NjQ3NzE5/2.75003149.jpg?rect=0,99,3008,1692&ext=.jpg&operations=fit(260:)&w=260&quality=100",
+            "alt": "Justin Kluivert netted the winner",
+            "height": 80,
+            "width": 130
+          },
+          "original": {
+            "url": "https://image.assets.pressassociation.io/v2/image/production/4bc6bc89caa52a63865fcac446b0628fY29udGVudHNlYXJjaGFwaSwxNzA0NjQ3NzE5/2.75003149.jpg?rect=0,99,3008,1692&ext=.jpg",
+            "alt": "Justin Kluivert netted the winner"
+          }
+        }
+      ],
+      "categoryLabel": "Match reports",
+      "categoryUrl": "/en/native/news/match-reports/",
+      "updatedAt": {
+        "time": "22",
+        "unit": "news.hours"
+      },
+      "publishedAt": "2024-01-06T17:23:00+00:00",
+      "title": "QPR 2-3 Bournemouth: Cherries produce sensational second-half comeback",
+      "shortTitle": null,
+      "type": null,
+      "url": "/en/native/news/bournemouth-produce-sensational-second-half-comeback-to-beat-qpr-2024010617271300012/",
+      "related": null,
+      "publishedRegions": [],
+      "isAdultContent": false
+    },
+    {
+      "id": "2024010617270920630",
+      "mainMedia": [
+        {
+          "id": null,
+          "path": null,
+          "type": "image",
+          "gallery": {
+            "url": "https://image.assets.pressassociation.io/v2/image/production/7d433977932e9c93d757cdd1d0794edaY29udGVudHNlYXJjaGFwaSwxNzA0NjQ4MTI5/2.73011344.jpg?rect=611,311,1062,597&ext=.jpg&operations=fit(620:)&w=620&quality=100",
+            "alt": "Sheffield United’s Will Osula during a pre-season friendly match at the Technique Stadium",
+            "height": 144,
+            "width": 240
+          },
+          "thumbnail": {
+            "url": "https://image.assets.pressassociation.io/v2/image/production/7d433977932e9c93d757cdd1d0794edaY29udGVudHNlYXJjaGFwaSwxNzA0NjQ4MTI5/2.73011344.jpg?rect=611,311,1062,597&ext=.jpg&operations=fit(260:)&w=260&quality=100",
+            "alt": "Sheffield United’s Will Osula during a pre-season friendly match at the Technique Stadium",
+            "height": 80,
+            "width": 130
+          },
+          "original": {
+            "url": "https://image.assets.pressassociation.io/v2/image/production/7d433977932e9c93d757cdd1d0794edaY29udGVudHNlYXJjaGFwaSwxNzA0NjQ4MTI5/2.73011344.jpg?rect=611,311,1062,597&ext=.jpg",
+            "alt": "Sheffield United’s Will Osula during a pre-season friendly match at the Technique Stadium"
+          }
+        }
+      ],
+      "categoryLabel": "Match reports",
+      "categoryUrl": "/en/native/news/match-reports/",
+      "updatedAt": {
+        "time": "22",
+        "unit": "news.hours"
+      },
+      "publishedAt": "2024-01-06T17:24:00+00:00",
+      "title": "Gillingham 0-4 Sheff Utd: Blades sail past Gills into FA Cup fourth round",
+      "shortTitle": null,
+      "type": null,
+      "url": "/en/native/news/sheffield-united-sail-past-gillingham-into-fa-cup-fourth-round-2024010617270920630/",
+      "related": null,
+      "publishedRegions": [],
+      "isAdultContent": false
+    }
+  ],
+  "featuredArticles": [
+    {
+      "id": "2024010316262507795",
+      "mainMedia": [
+        {
+          "id": null,
+          "path": null,
+          "type": "image",
+          "gallery": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/03012024/47862f50-632a-4e51-b77e-9064cf95c6f9.jpg?operations=fit(620:)&w=620&quality=100",
+            "alt": "Victor Boniface has excelled for Bayer Leverkusen this season",
+            "height": 144,
+            "width": 240
+          },
+          "thumbnail": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/03012024/47862f50-632a-4e51-b77e-9064cf95c6f9.jpg?operations=fit(260:)&w=260&quality=100",
+            "alt": "Victor Boniface has excelled for Bayer Leverkusen this season",
+            "height": 80,
+            "width": 130
+          },
+          "original": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/03012024/47862f50-632a-4e51-b77e-9064cf95c6f9.jpg",
+            "alt": "Victor Boniface has excelled for Bayer Leverkusen this season"
+          }
+        }
+      ],
+      "categoryLabel": "Football",
+      "categoryUrl": "/en/native/news/football/",
+      "updatedAt": {
+        "time": "6",
+        "unit": "news.hours"
+      },
+      "publishedAt": "2024-01-07T09:23:00+00:00",
+      "title": "Transfer Talk: Attackers on Arsenal's radar in January transfer window",
+      "shortTitle": null,
+      "type": "news",
+      "url": "/en/native/news/arsenal-transfer-news-ivan-toney-victor-boniface-fa-cup-preview-2024010316262507795/",
+      "related": null,
+      "publishedRegions": [],
+      "isAdultContent": false
+    },
+    {
+      "id": "2024010709434777125",
+      "mainMedia": [
+        {
+          "id": null,
+          "path": null,
+          "type": "image",
+          "gallery": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/07012024/d05c47a4-5297-4301-8607-ba3def098dc1.jpg?operations=fit(620:)&w=620&quality=100",
+            "alt": "Donyell Malen could be on the move",
+            "height": 144,
+            "width": 240
+          },
+          "thumbnail": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/07012024/d05c47a4-5297-4301-8607-ba3def098dc1.jpg?operations=fit(260:)&w=260&quality=100",
+            "alt": "Donyell Malen could be on the move",
+            "height": 80,
+            "width": 130
+          },
+          "original": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/07012024/d05c47a4-5297-4301-8607-ba3def098dc1.jpg",
+            "alt": "Donyell Malen could be on the move"
+          }
+        }
+      ],
+      "categoryLabel": "Football",
+      "categoryUrl": "/en/native/news/football/",
+      "updatedAt": {
+        "time": "5",
+        "unit": "news.hours"
+      },
+      "publishedAt": "2024-01-07T10:07:00+00:00",
+      "title": "Transfer Talk: Man Utd weighing up Malen move",
+      "shortTitle": null,
+      "type": "news",
+      "url": "/en/native/news/transfer-news-january-7-2024-manchester-utd-donyell-malen-2024010709434777125/",
+      "related": null,
+      "publishedRegions": [],
+      "isAdultContent": false
+    },
+    {
+      "id": "2024010620263528127",
+      "mainMedia": [
+        {
+          "id": null,
+          "path": null,
+          "type": "image",
+          "gallery": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/06012024/b5ffa0cf-5679-4b01-8741-e8eb14b7e632.jpg?operations=fit(620:)&w=620&quality=100",
+            "alt": "Armando Broja opened the scoring in Chelsea's commanding win over Preston",
+            "height": 144,
+            "width": 240
+          },
+          "thumbnail": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/06012024/b5ffa0cf-5679-4b01-8741-e8eb14b7e632.jpg?operations=fit(260:)&w=260&quality=100",
+            "alt": "Armando Broja opened the scoring in Chelsea's commanding win over Preston",
+            "height": 80,
+            "width": 130
+          },
+          "original": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/06012024/b5ffa0cf-5679-4b01-8741-e8eb14b7e632.jpg",
+            "alt": "Armando Broja opened the scoring in Chelsea's commanding win over Preston"
+          }
+        }
+      ],
+      "categoryLabel": "Football",
+      "categoryUrl": "/en/native/news/football/",
+      "updatedAt": {
+        "time": "2",
+        "unit": "news.hours"
+      },
+      "publishedAt": "2024-01-06T20:30:00+00:00",
+      "title": "Blues boss Poch backs Broja to improve after ending scoring drought",
+      "shortTitle": null,
+      "type": "news",
+      "url": "/en/native/news/mauricio-pochettino-chelsea-armando-broja-fa-cup-reaction-2024010620263528127/",
+      "related": null,
+      "publishedRegions": [],
+      "isAdultContent": false
+    },
+    {
+      "id": "2024010620060791974",
+      "mainMedia": [
+        {
+          "id": null,
+          "path": null,
+          "type": "image",
+          "gallery": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/06012024/ecc76e57-d415-4d1e-9c96-5171d22518b0.jpg?operations=fit(620:)&w=620&quality=100",
+            "alt": "Matty Cash was Aston Villa's match winner at Middlesbrough",
+            "height": 144,
+            "width": 240
+          },
+          "thumbnail": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/06012024/ecc76e57-d415-4d1e-9c96-5171d22518b0.jpg?operations=fit(260:)&w=260&quality=100",
+            "alt": "Matty Cash was Aston Villa's match winner at Middlesbrough",
+            "height": 80,
+            "width": 130
+          },
+          "original": {
+            "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/06012024/ecc76e57-d415-4d1e-9c96-5171d22518b0.jpg",
+            "alt": "Matty Cash was Aston Villa's match winner at Middlesbrough"
+          }
+        }
+      ],
+      "categoryLabel": "Football",
+      "categoryUrl": "/en/native/news/football/",
+      "updatedAt": {
+        "time": "19",
+        "unit": "news.hours"
+      },
+      "publishedAt": "2024-01-06T20:00:00+00:00",
+      "title": "Cash happy with decisive strike as Villa reach FA Cup fourth round",
+      "shortTitle": null,
+      "type": "news",
+      "url": "/en/native/news/matty-cash-aston-villa-fa-cup-reaction-2024010620060791974/",
+      "related": null,
+      "publishedRegions": [],
+      "isAdultContent": false
+    }
+  ],
+  "categories": [
+    {
+      "id": "2021020913320920836",
+      "pathname": "/en/native/news/football/",
+      "description": null,
+      "active": true,
+      "listPosition": 1,
+      "title": "football",
+      "initialTitle": "Football",
+      "subs": [],
+      "media": [],
+      "createdAt": "2021-02-09T13:32:09+00:00",
+      "createdBy": {
+        "id": "2021012609124049126",
+        "name": "Livescore Admin"
+      },
+      "seo": {
+        "slug": "football",
+        "index": true,
+        "title": "Football News - Latest Football News & Transfer News | LiveScore",
+        "follow": true,
+        "keywords": [],
+        "description": "Click here for the latest in Football News from around the world in unmissable detail. From transfer news, to rumours, team news & stats, we cover it all.",
+        "redirect_type": null
+      },
+      "updatedAt": "2023-10-03T15:11:18+00:00",
+      "parentId": null
+    },
+    {
+      "id": "2023100315110781995",
+      "pathname": "/en/native/news/exclusives/",
+      "description": null,
+      "active": true,
+      "listPosition": 2,
+      "title": "exclusives",
+      "initialTitle": "Exclusives",
+      "subs": [],
+      "media": [],
+      "createdAt": "2023-10-03T15:11:07+00:00",
+      "createdBy": {
+        "id": "2021012711263747122",
+        "name": "Jim Munro"
+      },
+      "seo": {
+        "slug": "exclusives",
+        "index": true,
+        "title": "LiveScore Exclusives - Star interviews from Football and the world of sport",
+        "follow": true,
+        "jsonld": null,
+        "keywords": [],
+        "description": "Click here for the latest exclusive interviews featuring stars from Football, Cricket, Famous Fans, Boxing and other popular sports from around the world.",
+        "redirect_type": null
+      },
+      "updatedAt": "2023-10-03T17:01:26+00:00",
+      "parentId": null
+    },
+    {
+      "id": "2022010516022274132",
+      "pathname": "/en/native/news/football-transfer-news/",
+      "description": null,
+      "active": true,
+      "listPosition": 3,
+      "title": "transfer-news",
+      "initialTitle": "Transfer news",
+      "subs": [],
+      "media": [],
+      "createdAt": "2022-01-05T16:02:22+00:00",
+      "createdBy": {
+        "id": "2021012711263747122",
+        "name": "Jim Munro"
+      },
+      "seo": {
+        "slug": "football-transfer-news",
+        "index": true,
+        "title": "Transfer News - Latest Football News & Transfer News | LiveScore",
+        "follow": true,
+        "keywords": [],
+        "description": "Click here for the latest in Football Transfer News from the Premier League and around the world in unmissable detail",
+        "redirect_type": null
+      },
+      "updatedAt": "2023-10-03T17:01:26+00:00",
+      "parentId": null
+    },
+    {
+      "id": "2022062716001253418",
+      "pathname": "/en/native/news/predictions/",
+      "description": null,
+      "active": true,
+      "listPosition": 4,
+      "title": "predictions",
+      "initialTitle": "Predictions",
+      "subs": [],
+      "media": [],
+      "createdAt": "2022-06-27T16:00:12+00:00",
+      "createdBy": {
+        "id": "2021012711263747122",
+        "name": "Jim Munro"
+      },
+      "seo": {
+        "slug": "predictions",
+        "index": true,
+        "title": "LiveScore Predictions – Premier League, Cricket & Football Predictions",
+        "follow": true,
+        "jsonld": null,
+        "keywords": [],
+        "description": "Click here for the latest Football and sports predictions. Expert previews on all the latest football, horse racing, cricket and tennis from around the world.",
+        "redirect_type": null
+      },
+      "updatedAt": "2023-10-03T17:01:26+00:00",
+      "parentId": null
+    },
+    {
+      "id": "2021082315501532387",
+      "pathname": "/en/native/news/champions-league/",
+      "description": null,
+      "active": true,
+      "listPosition": 5,
+      "title": "champions-league",
+      "initialTitle": "Champions League",
+      "subs": [],
+      "media": [],
+      "createdAt": "2021-08-23T15:50:15+00:00",
+      "createdBy": {
+        "id": "2021012711263747122",
+        "name": "Jim Munro"
+      },
+      "seo": {
+        "slug": "champions-league",
+        "index": true,
+        "title": "Champions League - Latest UCL News, Previews & Reports | LiveScore",
+        "follow": true,
+        "keywords": [],
+        "description": "Champions League match previews, reports, latest form, team news, rumours, transfer  news and statistics, we cover it all.",
+        "redirect_type": null
+      },
+      "updatedAt": "2023-11-29T09:28:56+00:00",
+      "parentId": null
+    },
+    {
+      "id": "2023031015463245564",
+      "pathname": "/en/native/news/womens-football-wsl-lionesses/",
+      "description": null,
+      "active": true,
+      "listPosition": 6,
+      "title": "womens-football",
+      "initialTitle": "Women's football",
+      "subs": [],
+      "media": [],
+      "createdAt": "2023-03-10T15:46:32+00:00",
+      "createdBy": {
+        "id": "2021012711263747122",
+        "name": "Jim Munro"
+      },
+      "seo": {
+        "slug": "womens-football-wsl-lionesses",
+        "index": true,
+        "title": "Women's football",
+        "follow": true,
+        "jsonld": null,
+        "keywords": [],
+        "description": "Women's football news and features from the WSL, Women's Super League, Women's Champions League, England's Lionesses, Women's FA Cup and Women's League Cup",
+        "redirect_type": null
+      },
+      "updatedAt": "2023-10-03T17:01:39+00:00",
+      "parentId": null
+    },
+    {
+      "id": "2023091215011471770",
+      "pathname": "/en/native/news/sports-news-or-livescore/",
+      "description": null,
+      "active": true,
+      "listPosition": 7,
+      "title": "other-sport",
+      "initialTitle": "Other sport",
+      "subs": [],
+      "media": [],
+      "createdAt": "2023-09-12T15:01:14+00:00",
+      "createdBy": {
+        "id": "2021012711263747122",
+        "name": "Jim Munro"
+      },
+      "seo": {
+        "slug": "sports-news-or-livescore",
+        "index": true,
+        "title": "Sports News | LiveScore",
+        "follow": true,
+        "jsonld": null,
+        "keywords": [],
+        "description": "Cricket, Boxing, Golf, Tennis, F1, Motorsport and Rugby coverage from around the world of sport",
+        "redirect_type": null
+      },
+      "updatedAt": "2023-12-07T08:45:24+00:00",
+      "parentId": null
+    },
+    {
+      "id": "2022081113203185684",
+      "pathname": "/en/native/news/match-reports/",
+      "description": null,
+      "active": true,
+      "listPosition": 8,
+      "title": "match-reports",
+      "initialTitle": "Match reports",
+      "subs": [],
+      "media": [],
+      "createdAt": "2022-08-11T13:20:31+00:00",
+      "createdBy": {
+        "id": "2021012711285572252",
+        "name": "Tom Fairless"
+      },
+      "seo": {
+        "slug": "match-reports",
+        "index": true,
+        "title": "Match reports",
+        "follow": true,
+        "jsonld": null,
+        "keywords": [],
+        "description": null,
+        "redirect_type": null
+      },
+      "updatedAt": "2023-12-07T08:45:24+00:00",
+      "parentId": null
+    }
+  ],
+  "homepageArticles": [
+    {
+      "category": {
+        "id": "2021020913320920836",
+        "pathname": "/en/native/news/football/",
+        "description": null,
+        "active": true,
+        "listPosition": null,
+        "title": "football",
+        "initialTitle": "Football",
+        "subs": null,
+        "media": null,
+        "createdAt": "",
+        "createdBy": {
+          "id": null,
+          "name": null
+        },
+        "seo": {
+          "slug": "football",
+          "index": true,
+          "title": "Football News - Latest Football News & Transfer News | LiveScore",
+          "follow": true,
+          "jsonld": null,
+          "autoSlug": false,
+          "keywords": [],
+          "autoTitle": false,
+          "description": "Click here for the latest in Football News from around the world in unmissable detail. From transfer news, to rumours, team news & stats, we cover it all.",
+          "redirectType": null
+        },
+        "updatedAt": null,
+        "parentId": null,
+        "status": "active"
+      },
+      "meta": {
+        "pagination": {
+          "total": 10000,
+          "count": 40,
+          "per_page": 40,
+          "current_page": 1,
+          "total_pages": 250,
+          "links": {
+            "next": "http://content.api.uk1.sportal365.com/articles/search?query=%2A&status=active&optional_data=sports_related&category=2021020913320920836&limit=40&page=2"
+          }
+        }
+      },
+      "articles": [
+        {
+          "id": "2024010715101320832",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/07012024/ce2a6b1a-0830-4938-99e4-e96c68165074.jpg?operations=fit(620:)&w=620&quality=100",
+                "alt": "Sam Kerr is set for a prolonged time on the sidelines",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/07012024/ce2a6b1a-0830-4938-99e4-e96c68165074.jpg?operations=fit(260:)&w=260&quality=100",
+                "alt": "Sam Kerr is set for a prolonged time on the sidelines",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/07012024/ce2a6b1a-0830-4938-99e4-e96c68165074.jpg",
+                "alt": "Sam Kerr is set for a prolonged time on the sidelines"
+              }
+            }
+          ],
+          "categoryLabel": "Football",
+          "categoryUrl": "/en/native/news/football/",
+          "updatedAt": {
+            "time": "2",
+            "unit": "news.minutes"
+          },
+          "publishedAt": "2024-01-07T15:13:00+00:00",
+          "title": "Kerr suffers ACL injury during Chelsea training camp",
+          "shortTitle": null,
+          "type": "breaking news",
+          "url": "/en/native/news/sam-kerr-acl-injury-chelsea-wsl-breaking-news-2024010715101320832/",
+          "related": {
+            "relatedArticles": [],
+            "tags": [
+              {
+                "title": "Chelsea FC Women",
+                "type": "team",
+                "href": "/en/native/news/team/chelsea-fc-women-2021020913320920836-26191/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Women's Super League",
+                "type": "tournament",
+                "href": "/en/native/news/competition/womens-super-league-2021020913320920836-623/",
+                "provider": "football-api"
+              }
+            ]
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010620571672284",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/06012024/2f197774-3941-4096-a022-1d476cab7aa8.jpg?operations=fit(620:)&w=620&quality=100",
+                "alt": "Shaun Maloney's Wigan have forged a recent giant-killing reputation in the FA Cup",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/06012024/2f197774-3941-4096-a022-1d476cab7aa8.jpg?operations=fit(260:)&w=260&quality=100",
+                "alt": "Shaun Maloney's Wigan have forged a recent giant-killing reputation in the FA Cup",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/06012024/2f197774-3941-4096-a022-1d476cab7aa8.jpg",
+                "alt": "Shaun Maloney's Wigan have forged a recent giant-killing reputation in the FA Cup"
+              }
+            }
+          ],
+          "categoryLabel": "Predictions",
+          "categoryUrl": "/en/native/news/predictions/",
+          "updatedAt": {
+            "time": "4",
+            "unit": "news.hours"
+          },
+          "publishedAt": "2024-01-07T08:57:00+00:00",
+          "title": "Wigan vs Manchester United predictions: Latics likely to hold their own",
+          "shortTitle": null,
+          "type": "news",
+          "url": "/en/native/news/wigan-manchester-united-predictions-fa-cup-2024010620571672284/",
+          "related": {
+            "relatedArticles": [],
+            "tags": [
+              {
+                "title": "Wigan",
+                "type": "team",
+                "href": "/en/native/news/team/wigan-2021020913320920836-112/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Manchester United",
+                "type": "team",
+                "href": "/en/native/news/team/manchester-united-2021020913320920836-102/",
+                "provider": "football-api"
+              },
+              {
+                "title": "FA Cup",
+                "type": "tournament",
+                "href": "/en/native/news/competition/fa-cup-2021020913320920836-75/",
+                "provider": "football-api"
+              }
+            ]
+          },
+          "publishedRegions": [],
+          "isAdultContent": true
+        },
+        {
+          "id": "2024010619572895895",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/ed4850dde6413ab0422f05a7f85bc8ffY29udGVudHNlYXJjaGFwaSwxNzA0NjU1Mjgz/2.73778124.jpg?rect=0,131,3000,1687&ext=.jpg&operations=fit(620:)&w=620&quality=100",
+                "alt": "Charlie Patino was on the scoresheet for Swansea against Morecambe",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/ed4850dde6413ab0422f05a7f85bc8ffY29udGVudHNlYXJjaGFwaSwxNzA0NjU1Mjgz/2.73778124.jpg?rect=0,131,3000,1687&ext=.jpg&operations=fit(260:)&w=260&quality=100",
+                "alt": "Charlie Patino was on the scoresheet for Swansea against Morecambe",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/ed4850dde6413ab0422f05a7f85bc8ffY29udGVudHNlYXJjaGFwaSwxNzA0NjU1Mjgz/2.73778124.jpg?rect=0,131,3000,1687&ext=.jpg",
+                "alt": "Charlie Patino was on the scoresheet for Swansea against Morecambe"
+              }
+            }
+          ],
+          "categoryLabel": "Match reports",
+          "categoryUrl": "/en/native/news/match-reports/",
+          "updatedAt": {
+            "time": "19",
+            "unit": "news.hours"
+          },
+          "publishedAt": "2024-01-06T19:52:40+00:00",
+          "title": "Swansea 2-0 Morecambe: Swans progress in Williams' first match in charge",
+          "shortTitle": null,
+          "type": null,
+          "url": "/en/native/news/swansea-ease-past-morecambe-to-progress-in-luke-williams-first-match-in-charge-2024010619572895895/",
+          "related": {
+            "relatedArticles": [],
+            "tags": [
+              {
+                "title": "FA Cup",
+                "type": "tournament",
+                "href": "/en/native/news/competition/fa-cup-2021020913320920836-75/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Morecambe",
+                "type": "team",
+                "href": "/en/native/news/team/morecambe-2021020913320920836-3426/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Swansea",
+                "type": "team",
+                "href": "/en/native/news/team/swansea-2021020913320920836-120/",
+                "provider": "football-api"
+              }
+            ]
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010618272013608",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/2f140844ec6872203c4b41d9ff588ab9Y29udGVudHNlYXJjaGFwaSwxNzA0NjUxNDIy/2.74568331.jpg?rect=0,271,4986,2805&ext=.jpg&operations=fit(620:)&w=620&quality=100",
+                "alt": "Lee Bell led Crewe to victory at Mansfield",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/2f140844ec6872203c4b41d9ff588ab9Y29udGVudHNlYXJjaGFwaSwxNzA0NjUxNDIy/2.74568331.jpg?rect=0,271,4986,2805&ext=.jpg&operations=fit(260:)&w=260&quality=100",
+                "alt": "Lee Bell led Crewe to victory at Mansfield",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/2f140844ec6872203c4b41d9ff588ab9Y29udGVudHNlYXJjaGFwaSwxNzA0NjUxNDIy/2.74568331.jpg?rect=0,271,4986,2805&ext=.jpg",
+                "alt": "Lee Bell led Crewe to victory at Mansfield"
+              }
+            }
+          ],
+          "categoryLabel": "Football",
+          "categoryUrl": "/en/native/news/football/",
+          "updatedAt": {
+            "time": "20",
+            "unit": "news.hours"
+          },
+          "publishedAt": "2024-01-06T18:22:24+00:00",
+          "title": "Bell proud as his Crewe side end Mansfield’s long unbeaten home record",
+          "shortTitle": null,
+          "type": null,
+          "url": "/en/native/news/bell-proud-as-his-crewe-side-end-mansfields-long-unbeaten-home-record-2024010618272013608/",
+          "related": {
+            "relatedArticles": [],
+            "tags": [
+              {
+                "title": "League Two",
+                "type": "tournament",
+                "href": "/en/native/news/competition/league-two-2021020913320920836-55/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Crewe",
+                "type": "team",
+                "href": "/en/native/news/team/crewe-2021020913320920836-126/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Mansfield",
+                "type": "team",
+                "href": "/en/native/news/team/mansfield-2021020913320920836-3471/",
+                "provider": "football-api"
+              }
+            ]
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010617371736315",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/b41a3c320b13450eab2a4083ae13f507Y29udGVudHNlYXJjaGFwaSwxNzA0NjQyNDcx/2.25215178.jpg?rect=0,340,4928,2772&ext=.jpg&operations=fit(620:)&w=620&quality=100",
+                "alt": "Hartlepool returned to winning ways over Oxford City (Andrew Matthews/PA)",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/b41a3c320b13450eab2a4083ae13f507Y29udGVudHNlYXJjaGFwaSwxNzA0NjQyNDcx/2.25215178.jpg?rect=0,340,4928,2772&ext=.jpg&operations=fit(260:)&w=260&quality=100",
+                "alt": "Hartlepool returned to winning ways over Oxford City (Andrew Matthews/PA)",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/b41a3c320b13450eab2a4083ae13f507Y29udGVudHNlYXJjaGFwaSwxNzA0NjQyNDcx/2.25215178.jpg?rect=0,340,4928,2772&ext=.jpg",
+                "alt": "Hartlepool returned to winning ways over Oxford City (Andrew Matthews/PA)"
+              }
+            }
+          ],
+          "categoryLabel": "Match reports",
+          "categoryUrl": "/en/native/news/match-reports/",
+          "updatedAt": {
+            "time": "21",
+            "unit": "news.hours"
+          },
+          "publishedAt": "2024-01-06T17:34:46+00:00",
+          "title": "Hartlepool 2-1 Oxford City: Hosts beat fellow strugglers to end winless run",
+          "shortTitle": null,
+          "type": null,
+          "url": "/en/native/news/hartlepool-2-1-oxford-city-hosts-beat-fellow-strugglers-to-end-winless-run-2024010617371736315/",
+          "related": {
+            "relatedArticles": [],
+            "tags": [
+              {
+                "title": "National League",
+                "type": "tournament",
+                "href": "/en/native/news/competition/national-league-2021020913320920836-60/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Hartlepool",
+                "type": "team",
+                "href": "/en/native/news/team/hartlepool-2021020913320920836-3425/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Oxford City",
+                "type": "team",
+                "href": "/en/native/news/team/oxford-city-2021020913320920836-5475/",
+                "provider": "football-api"
+              }
+            ]
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010617090135256",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/06012024/fa5b76eb-5cc1-4e74-9620-2a142e8e186b.jpg?operations=fit(620:)&w=620&quality=100",
+                "alt": "Noelle Maritz has joined Aston Villa",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/06012024/fa5b76eb-5cc1-4e74-9620-2a142e8e186b.jpg?operations=fit(260:)&w=260&quality=100",
+                "alt": "Noelle Maritz has joined Aston Villa",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/06012024/fa5b76eb-5cc1-4e74-9620-2a142e8e186b.jpg",
+                "alt": "Noelle Maritz has joined Aston Villa"
+              }
+            }
+          ],
+          "categoryLabel": "Football",
+          "categoryUrl": "/en/native/news/football/",
+          "updatedAt": {
+            "time": "20",
+            "unit": "news.hours"
+          },
+          "publishedAt": "2024-01-06T17:29:00+00:00",
+          "title": "Villa snap up Swiss full-back Maritz from Arsenal",
+          "shortTitle": null,
+          "type": "news",
+          "url": "/en/native/news/aston-villa-snap-up-arsenal-veteran-noelle-maritz-wsl-2024010617090135256/",
+          "related": {
+            "relatedArticles": [],
+            "tags": [
+              {
+                "title": "Women's Super League",
+                "type": "tournament",
+                "href": "/en/native/news/competition/womens-super-league-2021020913320920836-623/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Aston Villa Women",
+                "type": "team",
+                "href": "/en/native/news/team/aston-villa-women-2021020913320920836-26189/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Arsenal Women",
+                "type": "team",
+                "href": "/en/native/news/team/arsenal-women-2021020913320920836-26188/",
+                "provider": "football-api"
+              }
+            ]
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010617321593400",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/0d96a166895f37fa9b0ff0ca0e75f649Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ2MTg1/2.70475654.jpg?rect=0,388,4880,2745&ext=.jpg&operations=fit(620:)&w=620&quality=100",
+                "alt": "Nikolay Todorov scored for Airdrieonians (Kieran Cleeves/PA)",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/0d96a166895f37fa9b0ff0ca0e75f649Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ2MTg1/2.70475654.jpg?rect=0,388,4880,2745&ext=.jpg&operations=fit(260:)&w=260&quality=100",
+                "alt": "Nikolay Todorov scored for Airdrieonians (Kieran Cleeves/PA)",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/0d96a166895f37fa9b0ff0ca0e75f649Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ2MTg1/2.70475654.jpg?rect=0,388,4880,2745&ext=.jpg",
+                "alt": "Nikolay Todorov scored for Airdrieonians (Kieran Cleeves/PA)"
+              }
+            }
+          ],
+          "categoryLabel": "Match reports",
+          "categoryUrl": "/en/native/news/match-reports/",
+          "updatedAt": {
+            "time": "21",
+            "unit": "news.hours"
+          },
+          "publishedAt": "2024-01-06T17:28:57+00:00",
+          "title": "Airdrieonians 1-0 Raith Rovers: Todorov nets winner",
+          "shortTitle": null,
+          "type": null,
+          "url": "/en/native/news/airdrieonians-1-0-raith-rovers-todorov-nets-winner-2024010617321593400/",
+          "related": {
+            "relatedArticles": [],
+            "tags": [
+              {
+                "title": "Championship",
+                "type": "tournament",
+                "href": "/en/native/news/competition/championship-2021020913320920836-66/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Airdrieonians",
+                "type": "team",
+                "href": "/en/native/news/team/airdrieonians-2021020913320920836-1691/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Raith Rovers",
+                "type": "team",
+                "href": "/en/native/news/team/raith-rovers-2021020913320920836-1710/",
+                "provider": "football-api"
+              }
+            ]
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010617321680645",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/f1e09756f6fd7acd84913c58793e571dY29udGVudHNlYXJjaGFwaSwxNzA0NjQ4Mjcz/2.75003327.jpg?rect=0,360,3560,2002&ext=.jpg&operations=fit(620:)&w=620&quality=100",
+                "alt": "Eastleigh forward Chris Maguire levelled with an 82nd-minute penalty at Newport",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/f1e09756f6fd7acd84913c58793e571dY29udGVudHNlYXJjaGFwaSwxNzA0NjQ4Mjcz/2.75003327.jpg?rect=0,360,3560,2002&ext=.jpg&operations=fit(260:)&w=260&quality=100",
+                "alt": "Eastleigh forward Chris Maguire levelled with an 82nd-minute penalty at Newport",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/f1e09756f6fd7acd84913c58793e571dY29udGVudHNlYXJjaGFwaSwxNzA0NjQ4Mjcz/2.75003327.jpg?rect=0,360,3560,2002&ext=.jpg",
+                "alt": "Eastleigh forward Chris Maguire levelled with an 82nd-minute penalty at Newport"
+              }
+            }
+          ],
+          "categoryLabel": "Match reports",
+          "categoryUrl": "/en/native/news/match-reports/",
+          "updatedAt": {
+            "time": "22",
+            "unit": "news.hours"
+          },
+          "publishedAt": "2024-01-06T17:28:51+00:00",
+          "title": "Newport County 1-1 Eastleigh: 10-man visitors fight back to earn FA Cup third round replay",
+          "shortTitle": null,
+          "type": null,
+          "url": "/en/native/news/ten-man-eastleigh-fight-back-to-earn-fa-cup-third-round-replay-against-newport-2024010617321680645/",
+          "related": {
+            "relatedArticles": [],
+            "tags": [
+              {
+                "title": "FA Cup",
+                "type": "tournament",
+                "href": "/en/native/news/competition/fa-cup-2021020913320920836-75/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Eastleigh",
+                "type": "team",
+                "href": "/en/native/news/team/eastleigh-2021020913320920836-2400/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Newport",
+                "type": "team",
+                "href": "/en/native/news/team/newport-2021020913320920836-2532/",
+                "provider": "football-api"
+              }
+            ]
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010617270899491",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/62ad4ab59d518ac9e52708cca2df54c6Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ4MTA2/2.19062380.jpg?rect=0,0,2503,1408&ext=.jpg&operations=fit(620:)&w=620&quality=100",
+                "alt": "Ebbsfleet won (Jeff Holmes/PA)",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/62ad4ab59d518ac9e52708cca2df54c6Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ4MTA2/2.19062380.jpg?rect=0,0,2503,1408&ext=.jpg&operations=fit(260:)&w=260&quality=100",
+                "alt": "Ebbsfleet won (Jeff Holmes/PA)",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/62ad4ab59d518ac9e52708cca2df54c6Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ4MTA2/2.19062380.jpg?rect=0,0,2503,1408&ext=.jpg",
+                "alt": "Ebbsfleet won (Jeff Holmes/PA)"
+              }
+            }
+          ],
+          "categoryLabel": "Match reports",
+          "categoryUrl": "/en/native/news/match-reports/",
+          "updatedAt": {
+            "time": "22",
+            "unit": "news.hours"
+          },
+          "publishedAt": "2024-01-06T17:25:56+00:00",
+          "title": "Ebbsfleet United 2-0 Wealdstone: Hosts win to boost survival hopes",
+          "shortTitle": null,
+          "type": null,
+          "url": "/en/native/news/ebbsfleet-united-2-0-wealdstone-hosts-win-to-boost-survival-hopes-2024010617270899491/",
+          "related": {
+            "relatedArticles": [],
+            "tags": [
+              {
+                "title": "National League",
+                "type": "tournament",
+                "href": "/en/native/news/competition/national-league-2021020913320920836-60/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Wealdstone",
+                "type": "team",
+                "href": "/en/native/news/team/wealdstone-2021020913320920836-5477/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Ebbsfleet United",
+                "type": "team",
+                "href": "/en/native/news/team/ebbsfleet-united-2021020913320920836-5467/",
+                "provider": "football-api"
+              }
+            ]
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010617271046187",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/71810c32727bfb0229d3591972416bb9Y29udGVudHNlYXJjaGFwaSwxNzA0NjQyNTc2/2.25215178.jpg?rect=0,340,4928,2772&ext=.jpg&operations=fit(620:)&w=620&quality=100",
+                "alt": "Bromley were held to a goalless draw at Maidenhead (Andrew Matthews/PA)",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/71810c32727bfb0229d3591972416bb9Y29udGVudHNlYXJjaGFwaSwxNzA0NjQyNTc2/2.25215178.jpg?rect=0,340,4928,2772&ext=.jpg&operations=fit(260:)&w=260&quality=100",
+                "alt": "Bromley were held to a goalless draw at Maidenhead (Andrew Matthews/PA)",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/71810c32727bfb0229d3591972416bb9Y29udGVudHNlYXJjaGFwaSwxNzA0NjQyNTc2/2.25215178.jpg?rect=0,340,4928,2772&ext=.jpg",
+                "alt": "Bromley were held to a goalless draw at Maidenhead (Andrew Matthews/PA)"
+              }
+            }
+          ],
+          "categoryLabel": "Match reports",
+          "categoryUrl": "/en/native/news/match-reports/",
+          "updatedAt": {
+            "time": "22",
+            "unit": "news.hours"
+          },
+          "publishedAt": "2024-01-06T17:23:34+00:00",
+          "title": "Maidenhead United 0-0 Bromley: Visitors frustrated by goalless draw",
+          "shortTitle": null,
+          "type": null,
+          "url": "/en/native/news/maidenhead-united-0-0-bromley-visitors-frustrated-by-goalless-draw-2024010617271046187/",
+          "related": {
+            "relatedArticles": [],
+            "tags": [
+              {
+                "title": "National League",
+                "type": "tournament",
+                "href": "/en/native/news/competition/national-league-2021020913320920836-60/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Bromley",
+                "type": "team",
+                "href": "/en/native/news/team/bromley-2021020913320920836-2397/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Maidenhead United",
+                "type": "team",
+                "href": "/en/native/news/team/maidenhead-united-2021020913320920836-5476/",
+                "provider": "football-api"
+              }
+            ]
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010617271162637",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/1b08c213a89793007387a9d9dfb24eeeY29udGVudHNlYXJjaGFwaSwxNzA0NjQ4MDUy/2.71755346.jpg?rect=0,481,6192,3483&ext=.jpg&operations=fit(620:)&w=620&quality=100",
+                "alt": "Grant Ward, left, earned Bristol Rovers a draw at Norwich",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/1b08c213a89793007387a9d9dfb24eeeY29udGVudHNlYXJjaGFwaSwxNzA0NjQ4MDUy/2.71755346.jpg?rect=0,481,6192,3483&ext=.jpg&operations=fit(260:)&w=260&quality=100",
+                "alt": "Grant Ward, left, earned Bristol Rovers a draw at Norwich",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/1b08c213a89793007387a9d9dfb24eeeY29udGVudHNlYXJjaGFwaSwxNzA0NjQ4MDUy/2.71755346.jpg?rect=0,481,6192,3483&ext=.jpg",
+                "alt": "Grant Ward, left, earned Bristol Rovers a draw at Norwich"
+              }
+            }
+          ],
+          "categoryLabel": "Match reports",
+          "categoryUrl": "/en/native/news/match-reports/",
+          "updatedAt": {
+            "time": "22",
+            "unit": "news.hours"
+          },
+          "publishedAt": "2024-01-06T17:23:21+00:00",
+          "title": "Norwich 1-1 Bristol Rovers: Pirates earn FA Cup replay after deserved draw",
+          "shortTitle": null,
+          "type": null,
+          "url": "/en/native/news/bristol-rovers-earn-fa-cup-replay-after-deserved-draw-at-norwich-2024010617271162637/",
+          "related": {
+            "relatedArticles": [],
+            "tags": [
+              {
+                "title": "FA Cup",
+                "type": "tournament",
+                "href": "/en/native/news/competition/fa-cup-2021020913320920836-75/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Bristol Rovers",
+                "type": "team",
+                "href": "/en/native/news/team/bristol-rovers-2021020913320920836-2448/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Norwich City",
+                "type": "team",
+                "href": "/en/native/news/team/norwich-city-2021020913320920836-111/",
+                "provider": "football-api"
+              }
+            ]
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010617220031612",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/b0c709de842689a60a225af986499df9Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ3NzA3/2.74769005.jpg?rect=0,514,5894,3315&ext=.jpg&operations=fit(620:)&w=620&quality=100",
+                "alt": "Altrincham clung on to beat Barnet 3-2 (Jane Barlow/PA)",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/b0c709de842689a60a225af986499df9Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ3NzA3/2.74769005.jpg?rect=0,514,5894,3315&ext=.jpg&operations=fit(260:)&w=260&quality=100",
+                "alt": "Altrincham clung on to beat Barnet 3-2 (Jane Barlow/PA)",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/b0c709de842689a60a225af986499df9Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ3NzA3/2.74769005.jpg?rect=0,514,5894,3315&ext=.jpg",
+                "alt": "Altrincham clung on to beat Barnet 3-2 (Jane Barlow/PA)"
+              }
+            }
+          ],
+          "categoryLabel": "Match reports",
+          "categoryUrl": "/en/native/news/match-reports/",
+          "updatedAt": {
+            "time": "22",
+            "unit": "news.hours"
+          },
+          "publishedAt": "2024-01-06T17:21:51+00:00",
+          "title": "Altrincham 3-2 Barnet: Hosts see off late fightback to end losing streak",
+          "shortTitle": null,
+          "type": null,
+          "url": "/en/native/news/altrincham-3-2-barnet-hosts-see-off-late-fightback-to-end-losing-streak-2024010617220031612/",
+          "related": {
+            "relatedArticles": [],
+            "tags": [
+              {
+                "title": "National League",
+                "type": "tournament",
+                "href": "/en/native/news/competition/national-league-2021020913320920836-60/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Altrincham",
+                "type": "team",
+                "href": "/en/native/news/team/altrincham-2021020913320920836-2393/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Barnet",
+                "type": "team",
+                "href": "/en/native/news/team/barnet-2021020913320920836-3395/",
+                "provider": "football-api"
+              }
+            ]
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010617220157246",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/deb19aa88237498bdfebdccfd862ab05Y29udGVudHNlYXJjaGFwaSwxNzA0NjQxOTAz/2.73801300.jpg?rect=0,485,5680,3195&ext=.jpg&operations=fit(620:)&w=620&quality=100",
+                "alt": "Partick took on Arbroath (Joe Giddens/PA)",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/deb19aa88237498bdfebdccfd862ab05Y29udGVudHNlYXJjaGFwaSwxNzA0NjQxOTAz/2.73801300.jpg?rect=0,485,5680,3195&ext=.jpg&operations=fit(260:)&w=260&quality=100",
+                "alt": "Partick took on Arbroath (Joe Giddens/PA)",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/deb19aa88237498bdfebdccfd862ab05Y29udGVudHNlYXJjaGFwaSwxNzA0NjQxOTAz/2.73801300.jpg?rect=0,485,5680,3195&ext=.jpg",
+                "alt": "Partick took on Arbroath (Joe Giddens/PA)"
+              }
+            }
+          ],
+          "categoryLabel": "Match reports",
+          "categoryUrl": "/en/native/news/match-reports/",
+          "updatedAt": {
+            "time": "22",
+            "unit": "news.hours"
+          },
+          "publishedAt": "2024-01-06T17:20:57+00:00",
+          "title": "Partick Thistle 4-0 Arbroath: Promotion-chasing hosts cruise to victory",
+          "shortTitle": null,
+          "type": null,
+          "url": "/en/native/news/partick-thistle-4-0-arbroath-promotion-chasing-hosts-cruise-to-victory-2024010617220157246/",
+          "related": {
+            "relatedArticles": [],
+            "tags": [
+              {
+                "title": "Championship",
+                "type": "tournament",
+                "href": "/en/native/news/competition/championship-2021020913320920836-66/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Arbroath",
+                "type": "team",
+                "href": "/en/native/news/team/arbroath-2021020913320920836-1695/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Partick Thistle",
+                "type": "team",
+                "href": "/en/native/news/team/partick-thistle-2021020913320920836-3415/",
+                "provider": "football-api"
+              }
+            ]
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010617220276277",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/dd51b24de611146094be4cb11d1a9c71Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ3ODI2/2.73490296.jpg?rect=0,207,2514,1414&ext=.jpg&operations=fit(620:)&w=620&quality=100",
+                "alt": "Tom Dele-Bashiru hit the late winner",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/dd51b24de611146094be4cb11d1a9c71Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ3ODI2/2.73490296.jpg?rect=0,207,2514,1414&ext=.jpg&operations=fit(260:)&w=260&quality=100",
+                "alt": "Tom Dele-Bashiru hit the late winner",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/dd51b24de611146094be4cb11d1a9c71Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ3ODI2/2.73490296.jpg?rect=0,207,2514,1414&ext=.jpg",
+                "alt": "Tom Dele-Bashiru hit the late winner"
+              }
+            }
+          ],
+          "categoryLabel": "Match reports",
+          "categoryUrl": "/en/native/news/match-reports/",
+          "updatedAt": {
+            "time": "22",
+            "unit": "news.hours"
+          },
+          "publishedAt": "2024-01-06T17:20:25+00:00",
+          "title": "Watford 2-1 Chesterfield: Last-gasp Dele-Bashiru winner edges Hornets past Spireites",
+          "shortTitle": null,
+          "type": null,
+          "url": "/en/native/news/last-gasp-tom-dele-bashiru-winner-edges-watford-past-chesterfield-2024010617220276277/",
+          "related": {
+            "relatedArticles": [],
+            "tags": [
+              {
+                "title": "FA Cup",
+                "type": "tournament",
+                "href": "/en/native/news/competition/fa-cup-2021020913320920836-75/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Chesterfield",
+                "type": "team",
+                "href": "/en/native/news/team/chesterfield-2021020913320920836-3468/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Watford",
+                "type": "team",
+                "href": "/en/native/news/team/watford-2021020913320920836-115/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Ayotomiwa Dele-Bashiru",
+                "type": "player",
+                "href": "/en/native/news/player/ayotomiwa-dele-bashiru-2021020913320920836-183461/",
+                "provider": "football-api"
+              }
+            ]
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010617220389687",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/1ffcac23ff15ff778abc9b74f0dd0f18Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ3NzQ3/2.64589289.jpg?rect=439,215,2455,1381&ext=.jpg&operations=fit(620:)&w=620&quality=100",
+                "alt": "Mark Beck wrapped up the three points for Solihull Moors against Woking (Zac Goodwin/PA)",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/1ffcac23ff15ff778abc9b74f0dd0f18Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ3NzQ3/2.64589289.jpg?rect=439,215,2455,1381&ext=.jpg&operations=fit(260:)&w=260&quality=100",
+                "alt": "Mark Beck wrapped up the three points for Solihull Moors against Woking (Zac Goodwin/PA)",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/1ffcac23ff15ff778abc9b74f0dd0f18Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ3NzQ3/2.64589289.jpg?rect=439,215,2455,1381&ext=.jpg",
+                "alt": "Mark Beck wrapped up the three points for Solihull Moors against Woking (Zac Goodwin/PA)"
+              }
+            }
+          ],
+          "categoryLabel": "Match reports",
+          "categoryUrl": "/en/native/news/match-reports/",
+          "updatedAt": {
+            "time": "22",
+            "unit": "news.hours"
+          },
+          "publishedAt": "2024-01-06T17:19:03+00:00",
+          "title": "Solihull Moors 3-0 Woking: Hosts ease to victory",
+          "shortTitle": null,
+          "type": null,
+          "url": "/en/native/news/solihull-moors-3-0-woking-hosts-ease-to-victory-2024010617220389687/",
+          "related": {
+            "relatedArticles": [],
+            "tags": [
+              {
+                "title": "National League",
+                "type": "tournament",
+                "href": "/en/native/news/competition/national-league-2021020913320920836-60/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Solihull Moors",
+                "type": "team",
+                "href": "/en/native/news/team/solihull-moors-2021020913320920836-5483/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Woking",
+                "type": "team",
+                "href": "/en/native/news/team/woking-2021020913320920836-2411/",
+                "provider": "football-api"
+              }
+            ]
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010617220478815",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/7521d6614996185dd3af2025c56d21fbY29udGVudHNlYXJjaGFwaSwxNzA0NjQ0MjI2/2.17303189.jpg?rect=0,549,6144,3456&ext=.jpg&operations=fit(620:)&w=620&quality=100",
+                "alt": "Dundee United played host to Morton (Peter Byrne/PA)",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/7521d6614996185dd3af2025c56d21fbY29udGVudHNlYXJjaGFwaSwxNzA0NjQ0MjI2/2.17303189.jpg?rect=0,549,6144,3456&ext=.jpg&operations=fit(260:)&w=260&quality=100",
+                "alt": "Dundee United played host to Morton (Peter Byrne/PA)",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/7521d6614996185dd3af2025c56d21fbY29udGVudHNlYXJjaGFwaSwxNzA0NjQ0MjI2/2.17303189.jpg?rect=0,549,6144,3456&ext=.jpg",
+                "alt": "Dundee United played host to Morton (Peter Byrne/PA)"
+              }
+            }
+          ],
+          "categoryLabel": "Match reports",
+          "categoryUrl": "/en/native/news/match-reports/",
+          "updatedAt": {
+            "time": "22",
+            "unit": "news.hours"
+          },
+          "publishedAt": "2024-01-06T17:18:40+00:00",
+          "title": "Dundee United 2-3 Greenock Morton: Oakley hat-trick gives visitors dramatic win",
+          "shortTitle": null,
+          "type": null,
+          "url": "/en/native/news/dundee-united-2-3-greenock-morton-oakley-hat-trick-gives-visitors-dramatic-win-2024010617220478815/",
+          "related": {
+            "relatedArticles": [],
+            "tags": [
+              {
+                "title": "Championship",
+                "type": "tournament",
+                "href": "/en/native/news/competition/championship-2021020913320920836-66/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Dundee United",
+                "type": "team",
+                "href": "/en/native/news/team/dundee-united-2021020913320920836-1060/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Greenock Morton",
+                "type": "team",
+                "href": "/en/native/news/team/greenock-morton-2021020913320920836-1706/",
+                "provider": "football-api"
+              }
+            ]
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010617220602366",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/45800798504bfa130f701d626ae7c23fY29udGVudHNlYXJjaGFwaSwxNzA0NjQ1ODM2/2.70504422.jpg?rect=0,163,6000,3375&ext=.jpg&operations=fit(620:)&w=620&quality=100",
+                "alt": "Karl Robinson was sent to the stands on his Salford debut (Nick Potts/PA)",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/45800798504bfa130f701d626ae7c23fY29udGVudHNlYXJjaGFwaSwxNzA0NjQ1ODM2/2.70504422.jpg?rect=0,163,6000,3375&ext=.jpg&operations=fit(260:)&w=260&quality=100",
+                "alt": "Karl Robinson was sent to the stands on his Salford debut (Nick Potts/PA)",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/45800798504bfa130f701d626ae7c23fY29udGVudHNlYXJjaGFwaSwxNzA0NjQ1ODM2/2.70504422.jpg?rect=0,163,6000,3375&ext=.jpg",
+                "alt": "Karl Robinson was sent to the stands on his Salford debut (Nick Potts/PA)"
+              }
+            }
+          ],
+          "categoryLabel": "Match reports",
+          "categoryUrl": "/en/native/news/match-reports/",
+          "updatedAt": {
+            "time": "22",
+            "unit": "news.hours"
+          },
+          "publishedAt": "2024-01-06T17:17:15+00:00",
+          "title": "Salford City 2-2 Forest Green: Robinson sees red as Ammies rescue a point",
+          "shortTitle": null,
+          "type": null,
+          "url": "/en/native/news/salford-city-2-2-forest-green-robinson-sees-red-as-ammies-rescue-a-point-2024010617220602366/",
+          "related": {
+            "relatedArticles": [],
+            "tags": [
+              {
+                "title": "League Two",
+                "type": "tournament",
+                "href": "/en/native/news/competition/league-two-2021020913320920836-55/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Forest Green",
+                "type": "team",
+                "href": "/en/native/news/team/forest-green-2021020913320920836-2401/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Salford City",
+                "type": "team",
+                "href": "/en/native/news/team/salford-city-2021020913320920836-4384/",
+                "provider": "football-api"
+              }
+            ]
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010617165405452",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/93361997bec0dac163d9b520d83f9ba3Y29udGVudHNlYXJjaGFwaSwxNzA0NjQwOTM2/2.74348291.jpg?rect=0,283,2104,1184&ext=.jpg&operations=fit(620:)&w=620&quality=100",
+                "alt": "Luke Cundle scored for Plymouth",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/93361997bec0dac163d9b520d83f9ba3Y29udGVudHNlYXJjaGFwaSwxNzA0NjQwOTM2/2.74348291.jpg?rect=0,283,2104,1184&ext=.jpg&operations=fit(260:)&w=260&quality=100",
+                "alt": "Luke Cundle scored for Plymouth",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/93361997bec0dac163d9b520d83f9ba3Y29udGVudHNlYXJjaGFwaSwxNzA0NjQwOTM2/2.74348291.jpg?rect=0,283,2104,1184&ext=.jpg",
+                "alt": "Luke Cundle scored for Plymouth"
+              }
+            }
+          ],
+          "categoryLabel": "Match reports",
+          "categoryUrl": "/en/native/news/match-reports/",
+          "updatedAt": {
+            "time": "22",
+            "unit": "news.hours"
+          },
+          "publishedAt": "2024-01-06T17:16:49+00:00",
+          "title": "Plymouth 3-1 Sutton United: Foster starts Argyle reign with FA Cup win",
+          "shortTitle": null,
+          "type": null,
+          "url": "/en/native/news/ian-foster-starts-plymouth-reign-with-fa-cup-win-over-sutton-2024010617165405452/",
+          "related": {
+            "relatedArticles": [],
+            "tags": [
+              {
+                "title": "FA Cup",
+                "type": "tournament",
+                "href": "/en/native/news/competition/fa-cup-2021020913320920836-75/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Plymouth",
+                "type": "team",
+                "href": "/en/native/news/team/plymouth-2021020913320920836-3411/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Sutton United",
+                "type": "team",
+                "href": "/en/native/news/team/sutton-united-2021020913320920836-5482/",
+                "provider": "football-api"
+              }
+            ]
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010617165568465",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/7e01642e2cd41c963b79e89a57a73a90Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ1NzEy/2.71525691.jpg?rect=806,263,2952,1660&ext=.jpg&operations=fit(620:)&w=620&quality=100",
+                "alt": "Duncan Ferguson’s side won at Ayr (Nigel French/PA)",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/7e01642e2cd41c963b79e89a57a73a90Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ1NzEy/2.71525691.jpg?rect=806,263,2952,1660&ext=.jpg&operations=fit(260:)&w=260&quality=100",
+                "alt": "Duncan Ferguson’s side won at Ayr (Nigel French/PA)",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/7e01642e2cd41c963b79e89a57a73a90Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ1NzEy/2.71525691.jpg?rect=806,263,2952,1660&ext=.jpg",
+                "alt": "Duncan Ferguson’s side won at Ayr (Nigel French/PA)"
+              }
+            }
+          ],
+          "categoryLabel": "Match reports",
+          "categoryUrl": "/en/native/news/match-reports/",
+          "updatedAt": {
+            "time": "22",
+            "unit": "news.hours"
+          },
+          "publishedAt": "2024-01-06T17:16:46+00:00",
+          "title": "Ayr 1-3 Inverness: Visitors win to leapfrog hosts in Championship table",
+          "shortTitle": null,
+          "type": null,
+          "url": "/en/native/news/ayr-1-3-inverness-visitors-win-to-leapfrog-hosts-in-championship-table-2024010617165568465/",
+          "related": {
+            "relatedArticles": [],
+            "tags": [
+              {
+                "title": "Championship",
+                "type": "tournament",
+                "href": "/en/native/news/competition/championship-2021020913320920836-66/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Ayr",
+                "type": "team",
+                "href": "/en/native/news/team/ayr-2021020913320920836-1696/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Inverness",
+                "type": "team",
+                "href": "/en/native/news/team/inverness-2021020913320920836-1254/",
+                "provider": "football-api"
+              }
+            ]
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010617165696404",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/4b3c64ee49c21adac35f69f95e44c497Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ3Njg5/2.73490991.jpg?rect=0,192,3000,1687&ext=.jpg&operations=fit(620:)&w=620&quality=100",
+                "alt": "Lukas Jutkiewicz put Birmingham ahead",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/4b3c64ee49c21adac35f69f95e44c497Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ3Njg5/2.73490991.jpg?rect=0,192,3000,1687&ext=.jpg&operations=fit(260:)&w=260&quality=100",
+                "alt": "Lukas Jutkiewicz put Birmingham ahead",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/4b3c64ee49c21adac35f69f95e44c497Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ3Njg5/2.73490991.jpg?rect=0,192,3000,1687&ext=.jpg",
+                "alt": "Lukas Jutkiewicz put Birmingham ahead"
+              }
+            }
+          ],
+          "categoryLabel": "Match reports",
+          "categoryUrl": "/en/native/news/match-reports/",
+          "updatedAt": {
+            "time": "22",
+            "unit": "news.hours"
+          },
+          "publishedAt": "2024-01-06T17:15:35+00:00",
+          "title": "Hull 1-1 Birmingham: Late Jacob strike earns Tigers a replay",
+          "shortTitle": null,
+          "type": null,
+          "url": "/en/native/news/late-matty-jacob-strike-earns-hull-a-replay-against-birmingham-2024010617165696404/",
+          "related": {
+            "relatedArticles": [],
+            "tags": [
+              {
+                "title": "FA Cup",
+                "type": "tournament",
+                "href": "/en/native/news/competition/fa-cup-2021020913320920836-75/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Birmingham",
+                "type": "team",
+                "href": "/en/native/news/team/birmingham-2021020913320920836-106/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Hull",
+                "type": "team",
+                "href": "/en/native/news/team/hull-2021020913320920836-116/",
+                "provider": "football-api"
+              }
+            ]
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010617165796402",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/e287f946f527e03294e5af47a7a36f29Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ3MTEx/2.74979653.jpg?rect=0,148,1401,788&ext=.jpg&operations=fit(620:)&w=620&quality=100",
+                "alt": "Sammie Szmodics hit a hat-trick",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/e287f946f527e03294e5af47a7a36f29Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ3MTEx/2.74979653.jpg?rect=0,148,1401,788&ext=.jpg&operations=fit(260:)&w=260&quality=100",
+                "alt": "Sammie Szmodics hit a hat-trick",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/e287f946f527e03294e5af47a7a36f29Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ3MTEx/2.74979653.jpg?rect=0,148,1401,788&ext=.jpg",
+                "alt": "Sammie Szmodics hit a hat-trick"
+              }
+            }
+          ],
+          "categoryLabel": "Match reports",
+          "categoryUrl": "/en/native/news/match-reports/",
+          "updatedAt": {
+            "time": "22",
+            "unit": "news.hours"
+          },
+          "publishedAt": "2024-01-06T17:14:34+00:00",
+          "title": "Blackburn 5-2 Cambridge: Szmodics hits hat-trick as Rovers breeze past visitors",
+          "shortTitle": null,
+          "type": null,
+          "url": "/en/native/news/sammie-szmodics-hits-hat-trick-as-blackburn-breeze-past-cambridge-in-fa-cup-2024010617165796402/",
+          "related": {
+            "relatedArticles": [],
+            "tags": [
+              {
+                "title": "FA Cup",
+                "type": "tournament",
+                "href": "/en/native/news/competition/fa-cup-2021020913320920836-75/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Blackburn",
+                "type": "team",
+                "href": "/en/native/news/team/blackburn-2021020913320920836-95/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Cambridge U",
+                "type": "team",
+                "href": "/en/native/news/team/cambridge-u-2021020913320920836-3475/",
+                "provider": "football-api"
+              }
+            ]
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010617165855907",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/7a6e8214b6816b13306310744ac8c625Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ3Mzg2/2.55851141.jpg?rect=508,91,2610,1468&ext=.jpg&operations=fit(620:)&w=620&quality=100",
+                "alt": "Conor Wilkinson scored a stoppage-time equaliser on his Colchester debut to earn new boss Danny Cowley an unlikely point at Swindon (Tess Derry/PA)",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/7a6e8214b6816b13306310744ac8c625Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ3Mzg2/2.55851141.jpg?rect=508,91,2610,1468&ext=.jpg&operations=fit(260:)&w=260&quality=100",
+                "alt": "Conor Wilkinson scored a stoppage-time equaliser on his Colchester debut to earn new boss Danny Cowley an unlikely point at Swindon (Tess Derry/PA)",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/7a6e8214b6816b13306310744ac8c625Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ3Mzg2/2.55851141.jpg?rect=508,91,2610,1468&ext=.jpg",
+                "alt": "Conor Wilkinson scored a stoppage-time equaliser on his Colchester debut to earn new boss Danny Cowley an unlikely point at Swindon (Tess Derry/PA)"
+              }
+            }
+          ],
+          "categoryLabel": "Match reports",
+          "categoryUrl": "/en/native/news/match-reports/",
+          "updatedAt": {
+            "time": "22",
+            "unit": "news.hours"
+          },
+          "publishedAt": "2024-01-06T17:14:08+00:00",
+          "title": "Swindon 2-2 Colchester: Debutant Wilkinson earns unlikely point for visitors",
+          "shortTitle": null,
+          "type": null,
+          "url": "/en/native/news/swindon-2-2-colchester-debutant-wilkinson-earns-unlikely-point-for-visitors-2024010617165855907/",
+          "related": {
+            "relatedArticles": [],
+            "tags": [
+              {
+                "title": "League Two",
+                "type": "tournament",
+                "href": "/en/native/news/competition/league-two-2021020913320920836-55/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Colchester",
+                "type": "team",
+                "href": "/en/native/news/team/colchester-2021020913320920836-3414/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Swindon",
+                "type": "team",
+                "href": "/en/native/news/team/swindon-2021020913320920836-127/",
+                "provider": "football-api"
+              }
+            ]
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010617165997982",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/764b945e074d13d0424028a629619a95Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ3NDcz/2.70901827.jpg?rect=0,117,3592,2021&ext=.jpg&operations=fit(620:)&w=620&quality=100",
+                "alt": "Danilo Orsi notched as Crawley triumphed at Bradford (Nigel French/PA)",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/764b945e074d13d0424028a629619a95Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ3NDcz/2.70901827.jpg?rect=0,117,3592,2021&ext=.jpg&operations=fit(260:)&w=260&quality=100",
+                "alt": "Danilo Orsi notched as Crawley triumphed at Bradford (Nigel French/PA)",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/764b945e074d13d0424028a629619a95Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ3NDcz/2.70901827.jpg?rect=0,117,3592,2021&ext=.jpg",
+                "alt": "Danilo Orsi notched as Crawley triumphed at Bradford (Nigel French/PA)"
+              }
+            }
+          ],
+          "categoryLabel": "Match reports",
+          "categoryUrl": "/en/native/news/match-reports/",
+          "updatedAt": {
+            "time": "22",
+            "unit": "news.hours"
+          },
+          "publishedAt": "2024-01-06T17:12:34+00:00",
+          "title": "Bradford 2-4 Crawley: Orsi on target as Reds complete comeback win",
+          "shortTitle": null,
+          "type": null,
+          "url": "/en/native/news/bradford-2-4-crawley-orsi-on-target-as-reds-complete-comeback-win-2024010617165997982/",
+          "related": {
+            "relatedArticles": [],
+            "tags": [
+              {
+                "title": "League Two",
+                "type": "tournament",
+                "href": "/en/native/news/competition/league-two-2021020913320920836-55/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Bradford",
+                "type": "team",
+                "href": "/en/native/news/team/bradford-2021020913320920836-86/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Crawley",
+                "type": "team",
+                "href": "/en/native/news/team/crawley-2021020913320920836-3441/",
+                "provider": "football-api"
+              }
+            ]
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010617114529486",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/32b65efb1c20dfcc6f990a000a588111Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ3NDA5/2.70721620.jpg?rect=0,756,4032,2268&ext=.jpg&operations=fit(620:)&w=620&quality=100",
+                "alt": "Rochdale got back to winning ways (Jamie Gardner/PA)",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/32b65efb1c20dfcc6f990a000a588111Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ3NDA5/2.70721620.jpg?rect=0,756,4032,2268&ext=.jpg&operations=fit(260:)&w=260&quality=100",
+                "alt": "Rochdale got back to winning ways (Jamie Gardner/PA)",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://image.assets.pressassociation.io/v2/image/production/32b65efb1c20dfcc6f990a000a588111Y29udGVudHNlYXJjaGFwaSwxNzA0NjQ3NDA5/2.70721620.jpg?rect=0,756,4032,2268&ext=.jpg",
+                "alt": "Rochdale got back to winning ways (Jamie Gardner/PA)"
+              }
+            }
+          ],
+          "categoryLabel": "Match reports",
+          "categoryUrl": "/en/native/news/match-reports/",
+          "updatedAt": {
+            "time": "22",
+            "unit": "news.hours"
+          },
+          "publishedAt": "2024-01-06T17:11:14+00:00",
+          "title": "Rochdale 2-0 Kidderminster: Hosts get back to winning ways",
+          "shortTitle": null,
+          "type": null,
+          "url": "/en/native/news/rochdale-2-0-kidderminster-hosts-get-back-to-winning-ways-2024010617114529486/",
+          "related": {
+            "relatedArticles": [],
+            "tags": [
+              {
+                "title": "National League",
+                "type": "tournament",
+                "href": "/en/native/news/competition/national-league-2021020913320920836-60/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Rochdale",
+                "type": "team",
+                "href": "/en/native/news/team/rochdale-2021020913320920836-3427/",
+                "provider": "football-api"
+              },
+              {
+                "title": "Kidderminster",
+                "type": "team",
+                "href": "/en/native/news/team/kidderminster-2021020913320920836-2405/",
+                "provider": "football-api"
+              }
+            ]
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        }
+      ]
+    },
+    {
+      "category": {
+        "id": "2023091215011471770",
+        "pathname": "/en/native/news/sports-news-or-livescore/",
+        "description": null,
+        "active": true,
+        "listPosition": null,
+        "title": "other-sport",
+        "initialTitle": "Other sport",
+        "subs": null,
+        "media": null,
+        "createdAt": "",
+        "createdBy": {
+          "id": null,
+          "name": null
+        },
+        "seo": {
+          "slug": "sports-news-or-livescore",
+          "index": true,
+          "title": "Sports News | LiveScore",
+          "follow": true,
+          "jsonld": null,
+          "autoSlug": true,
+          "keywords": [],
+          "autoTitle": false,
+          "description": "Cricket, Boxing, Golf, Tennis, F1, Motorsport and Rugby coverage from around the world of sport",
+          "redirectType": null
+        },
+        "updatedAt": null,
+        "parentId": null,
+        "status": "active"
+      },
+      "meta": {
+        "pagination": {
+          "total": 204,
+          "count": 28,
+          "per_page": 28,
+          "current_page": 1,
+          "total_pages": 8,
+          "links": {
+            "next": "http://content.api.uk1.sportal365.com/articles/search?query=%2A&status=active&optional_data=sports_related&category=2023091215011471770&limit=28&page=2"
+          }
+        }
+      },
+      "articles": [
+        {
+          "id": "2024010616175286963",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/06012024/3460de7f-fcfd-4272-b7f0-0c28d2b87c54.jpg?operations=fit(620:)&w=620&quality=100",
+                "alt": "David Warner bowed out of Test cricket with a win",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/06012024/3460de7f-fcfd-4272-b7f0-0c28d2b87c54.jpg?operations=fit(260:)&w=260&quality=100",
+                "alt": "David Warner bowed out of Test cricket with a win",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/06012024/3460de7f-fcfd-4272-b7f0-0c28d2b87c54.jpg",
+                "alt": "David Warner bowed out of Test cricket with a win"
+              }
+            }
+          ],
+          "categoryLabel": "Other sport",
+          "categoryUrl": "/en/native/news/sports-news-or-livescore/",
+          "updatedAt": {
+            "time": "23",
+            "unit": "news.hours"
+          },
+          "publishedAt": "2024-01-06T16:00:00+00:00",
+          "title": "Warner wants to be remembered as an 'entertainer' after victory in final Test",
+          "shortTitle": null,
+          "type": "news",
+          "url": "/en/native/news/cricket-news-david-warner-australia-retirement-test-match-reaction-2024010616175286963/",
+          "related": {
+            "relatedArticles": [],
+            "tags": []
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010523065532034",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/05012024/c50a2ab1-9669-4def-9773-e5aab77ae5d8.jpg?operations=fit(620:)&w=620&quality=100",
+                "alt": "Anthony Joshua will fight Francis Ngannou next",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/05012024/c50a2ab1-9669-4def-9773-e5aab77ae5d8.jpg?operations=fit(260:)&w=260&quality=100",
+                "alt": "Anthony Joshua will fight Francis Ngannou next",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/05012024/c50a2ab1-9669-4def-9773-e5aab77ae5d8.jpg",
+                "alt": "Anthony Joshua will fight Francis Ngannou next"
+              }
+            }
+          ],
+          "categoryLabel": "Other sport",
+          "categoryUrl": "/en/native/news/sports-news-or-livescore/",
+          "updatedAt": {
+            "time": "1",
+            "unit": "news.day"
+          },
+          "publishedAt": "2024-01-05T23:11:00+00:00",
+          "title": "Hearn confirms AJ will trade leather with Ngannou in Saudi Arabia",
+          "shortTitle": null,
+          "type": "news",
+          "url": "/en/native/news/boxing-news-eddie-hearn-confirms-anthony-joshua-vs-francis-ngannou-bout-2024010523065532034/",
+          "related": {
+            "relatedArticles": [],
+            "tags": []
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010416040051877",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/04012024/94c33a0e-bd5e-4ef1-86c9-69e0efd63607.jpg?operations=fit(620:)&w=620&quality=100",
+                "alt": "Luke Littler has been included in the 2024 Premier League Darts line-up",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/04012024/94c33a0e-bd5e-4ef1-86c9-69e0efd63607.jpg?operations=fit(260:)&w=260&quality=100",
+                "alt": "Luke Littler has been included in the 2024 Premier League Darts line-up",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/04012024/94c33a0e-bd5e-4ef1-86c9-69e0efd63607.jpg",
+                "alt": "Luke Littler has been included in the 2024 Premier League Darts line-up"
+              }
+            }
+          ],
+          "categoryLabel": "Other sport",
+          "categoryUrl": "/en/native/news/sports-news-or-livescore/",
+          "updatedAt": {
+            "time": "3",
+            "unit": "news.days"
+          },
+          "publishedAt": "2024-01-04T16:15:00+00:00",
+          "title": "Littler and Humphries lead all-star Premier League Darts line-up",
+          "shortTitle": null,
+          "type": "news",
+          "url": "/en/native/news/darts-luke-littler-included-premier-league-darts-2024-announcement-2024010416040051877/",
+          "related": {
+            "relatedArticles": [],
+            "tags": []
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010414095427150",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/04012024/c3287375-079b-4318-a197-5398fefb71c9.jpg?operations=fit(620:)&w=620&quality=100",
+                "alt": "Rohit Sharma captained India to victory in Cape Town",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/04012024/c3287375-079b-4318-a197-5398fefb71c9.jpg?operations=fit(260:)&w=260&quality=100",
+                "alt": "Rohit Sharma captained India to victory in Cape Town",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/04012024/c3287375-079b-4318-a197-5398fefb71c9.jpg",
+                "alt": "Rohit Sharma captained India to victory in Cape Town"
+              }
+            }
+          ],
+          "categoryLabel": "Other sport",
+          "categoryUrl": "/en/native/news/sports-news-or-livescore/",
+          "updatedAt": {
+            "time": "3",
+            "unit": "news.days"
+          },
+          "publishedAt": "2024-01-04T14:30:00+00:00",
+          "title": "Rohit calls out ICC after India's historic win over South Africa",
+          "shortTitle": null,
+          "type": "news",
+          "url": "/en/native/news/cricket-news-rohit-sharma-india-south-africa-reaction-2024010414095427150/",
+          "related": {
+            "relatedArticles": [],
+            "tags": []
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010321364829845",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/03012024/83f902d8-7310-4540-87f7-590aa9e58b0c.jpg?operations=fit(620:)&w=620&quality=100",
+                "alt": "Luke Humphries thinks Luke Littler will follow in his footsteps",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/03012024/83f902d8-7310-4540-87f7-590aa9e58b0c.jpg?operations=fit(260:)&w=260&quality=100",
+                "alt": "Luke Humphries thinks Luke Littler will follow in his footsteps",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/03012024/83f902d8-7310-4540-87f7-590aa9e58b0c.jpg",
+                "alt": "Luke Humphries thinks Luke Littler will follow in his footsteps"
+              }
+            }
+          ],
+          "categoryLabel": "Other sport",
+          "categoryUrl": "/en/native/news/sports-news-or-livescore/",
+          "updatedAt": {
+            "time": "3",
+            "unit": "news.days"
+          },
+          "publishedAt": "2024-01-03T22:20:00+00:00",
+          "title": "Humphries backs Littler to dominate darts after overcoming teen in final",
+          "shortTitle": null,
+          "type": "news",
+          "url": "/en/native/news/darts-news-2024010321364829845/",
+          "related": {
+            "relatedArticles": [],
+            "tags": []
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010310572900294",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/01012024/752445f0-94c4-4a1b-8245-97f4a8c6a950.jpg?operations=fit(620:)&w=620&quality=100",
+                "alt": "Luke Humphries has progressed to the final at Ally Pally after an outstanding season",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/01012024/752445f0-94c4-4a1b-8245-97f4a8c6a950.jpg?operations=fit(260:)&w=260&quality=100",
+                "alt": "Luke Humphries has progressed to the final at Ally Pally after an outstanding season",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/01012024/752445f0-94c4-4a1b-8245-97f4a8c6a950.jpg",
+                "alt": "Luke Humphries has progressed to the final at Ally Pally after an outstanding season"
+              }
+            }
+          ],
+          "categoryLabel": "Predictions",
+          "categoryUrl": "/en/native/news/predictions/",
+          "updatedAt": {
+            "time": "4",
+            "unit": "news.days"
+          },
+          "publishedAt": "2024-01-03T10:57:29+00:00",
+          "title": "Luke Littler vs Luke Humphries predictions: Cool Hand can grab dream title",
+          "shortTitle": null,
+          "type": "news",
+          "url": "/en/native/news/luke-littler-vs-luke-humphries-predictions-world-darts-championship-2024010310572900294/",
+          "related": {
+            "relatedArticles": [],
+            "tags": []
+          },
+          "publishedRegions": [],
+          "isAdultContent": true
+        },
+        {
+          "id": "2024010310471436222",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/21082023/33017679-11d0-43d4-8f3d-2b69c4e02810.jpg?operations=fit(620:)&w=620&quality=100",
+                "alt": "Xander Schauffele has a solid record at Kapalua Resort",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/21082023/33017679-11d0-43d4-8f3d-2b69c4e02810.jpg?operations=fit(260:)&w=260&quality=100",
+                "alt": "Xander Schauffele has a solid record at Kapalua Resort",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/21082023/33017679-11d0-43d4-8f3d-2b69c4e02810.jpg",
+                "alt": "Xander Schauffele has a solid record at Kapalua Resort"
+              }
+            }
+          ],
+          "categoryLabel": "Predictions",
+          "categoryUrl": "/en/native/news/predictions/",
+          "updatedAt": {
+            "time": "4",
+            "unit": "news.days"
+          },
+          "publishedAt": "2024-01-03T10:47:14+00:00",
+          "title": "The Sentry predictions: Schauffele in line for Hawaii success",
+          "shortTitle": null,
+          "type": "news",
+          "url": "/en/native/news/the-sentry-predictions-golf-2024010310471436222/",
+          "related": {
+            "relatedArticles": [],
+            "tags": []
+          },
+          "publishedRegions": [],
+          "isAdultContent": true
+        },
+        {
+          "id": "2024010222122423211",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/02012024/0b1ff140-f95b-4a0e-8f51-0894eb866149.jpg?operations=fit(620:)&w=620&quality=100",
+                "alt": "Luke Littler cruised into the PDC World Championship final",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/02012024/0b1ff140-f95b-4a0e-8f51-0894eb866149.jpg?operations=fit(260:)&w=260&quality=100",
+                "alt": "Luke Littler cruised into the PDC World Championship final",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/02012024/0b1ff140-f95b-4a0e-8f51-0894eb866149.jpg",
+                "alt": "Luke Littler cruised into the PDC World Championship final"
+              }
+            }
+          ],
+          "categoryLabel": "Other sport",
+          "categoryUrl": "/en/native/news/sports-news-or-livescore/",
+          "updatedAt": {
+            "time": "4",
+            "unit": "news.days"
+          },
+          "publishedAt": "2024-01-02T22:22:00+00:00",
+          "title": "Teenage sensation Littler storms into World Championship final",
+          "shortTitle": null,
+          "type": "news",
+          "url": "/en/native/news/luke-littler-rob-cross-pdc-world-championship-reaction-2024010222122423211/",
+          "related": {
+            "relatedArticles": [],
+            "tags": []
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010213064711196",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/13072023/dcd966c9-53f3-4971-81d0-30f8495820a9.jpg?operations=fit(620:)&w=620&quality=100",
+                "alt": "Luke Humphries is set for his semi-final showdown against Scott Williams",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/13072023/dcd966c9-53f3-4971-81d0-30f8495820a9.jpg?operations=fit(260:)&w=260&quality=100",
+                "alt": "Luke Humphries is set for his semi-final showdown against Scott Williams",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/13072023/dcd966c9-53f3-4971-81d0-30f8495820a9.jpg",
+                "alt": "Luke Humphries is set for his semi-final showdown against Scott Williams"
+              }
+            }
+          ],
+          "categoryLabel": "Predictions",
+          "categoryUrl": "/en/native/news/predictions/",
+          "updatedAt": {
+            "time": "5",
+            "unit": "news.days"
+          },
+          "publishedAt": "2024-01-02T13:06:47+00:00",
+          "title": "Scott Williams vs Luke Humphries predictions: Cool Hand to show his class",
+          "shortTitle": null,
+          "type": "news",
+          "url": "/en/native/news/scott-williams-vs-luke-humphries-predictions-world-darts-championship-2024010213064711196/",
+          "related": {
+            "relatedArticles": [],
+            "tags": []
+          },
+          "publishedRegions": [],
+          "isAdultContent": true
+        },
+        {
+          "id": "2024010212212227415",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/02012024/a971b5b4-0101-4ad9-99c0-381c9198a075.jpg?operations=fit(620:)&w=620&quality=100",
+                "alt": "David Warner is regarded as one of Australia's greatest openers",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/02012024/a971b5b4-0101-4ad9-99c0-381c9198a075.jpg?operations=fit(260:)&w=260&quality=100",
+                "alt": "David Warner is regarded as one of Australia's greatest openers",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/02012024/a971b5b4-0101-4ad9-99c0-381c9198a075.jpg",
+                "alt": "David Warner is regarded as one of Australia's greatest openers"
+              }
+            }
+          ],
+          "categoryLabel": "Other sport",
+          "categoryUrl": "/en/native/news/sports-news-or-livescore/",
+          "updatedAt": {
+            "time": "5",
+            "unit": "news.days"
+          },
+          "publishedAt": "2024-01-02T12:30:00+00:00",
+          "title": "Aussie star Warner pleads for return of baggy green cap",
+          "shortTitle": null,
+          "type": "news",
+          "url": "/en/native/news/cricket-news-david-warner-baggy-green-australia-pakistan-preview-2024010212212227415/",
+          "related": {
+            "relatedArticles": [],
+            "tags": []
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        },
+        {
+          "id": "2024010210322959582",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/02012024/d03bfe7f-85f1-48f4-8353-66407d9292bc.jpg?operations=fit(620:)&w=620&quality=100",
+                "alt": "Rob Cross may struggle to contain young sensation Luke Littler",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/02012024/d03bfe7f-85f1-48f4-8353-66407d9292bc.jpg?operations=fit(260:)&w=260&quality=100",
+                "alt": "Rob Cross may struggle to contain young sensation Luke Littler",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/02012024/d03bfe7f-85f1-48f4-8353-66407d9292bc.jpg",
+                "alt": "Rob Cross may struggle to contain young sensation Luke Littler"
+              }
+            }
+          ],
+          "categoryLabel": "Predictions",
+          "categoryUrl": "/en/native/news/predictions/",
+          "updatedAt": {
+            "time": "5",
+            "unit": "news.days"
+          },
+          "publishedAt": "2024-01-02T10:32:29+00:00",
+          "title": "Rob Cross vs Luke Littler predictions: Sensational Nuke set to overpower Voltage",
+          "shortTitle": null,
+          "type": "news",
+          "url": "/en/native/news/rob-cross-luke-littler-predictions-world-darts-championship-2024010210322959582/",
+          "related": {
+            "relatedArticles": [],
+            "tags": []
+          },
+          "publishedRegions": [],
+          "isAdultContent": true
+        },
+        {
+          "id": "2024010117232560589",
+          "mainMedia": [
+            {
+              "id": null,
+              "path": null,
+              "type": "image",
+              "gallery": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/01012024/4c881bad-c916-47b2-899d-edfd3a99bfde.jpg?operations=fit(620:)&w=620&quality=100",
+                "alt": "Luke Littler is into the PDC World Championship semi-finals",
+                "height": 144,
+                "width": 240
+              },
+              "thumbnail": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/01012024/4c881bad-c916-47b2-899d-edfd3a99bfde.jpg?operations=fit(260:)&w=260&quality=100",
+                "alt": "Luke Littler is into the PDC World Championship semi-finals",
+                "height": 80,
+                "width": 130
+              },
+              "original": {
+                "url": "https://uk1.sportal365images.com/process/smp-image-api/livescore.com/01012024/4c881bad-c916-47b2-899d-edfd3a99bfde.jpg",
+                "alt": "Luke Littler is into the PDC World Championship semi-finals"
+              }
+            }
+          ],
+          "categoryLabel": "Other sport",
+          "categoryUrl": "/en/native/news/sports-news-or-livescore/",
+          "updatedAt": {
+            "time": "6",
+            "unit": "news.days"
+          },
+          "publishedAt": "2024-01-01T22:15:00+00:00",
+          "title": "Littler to face Cross in semi-finals after Dolan demolition",
+          "shortTitle": null,
+          "type": "news",
+          "url": "/en/native/news/darts-luke-littler-to-face-rob-cross-pdc-world-championship-2024-2024010117232560589/",
+          "related": {
+            "relatedArticles": [],
+            "tags": []
+          },
+          "publishedRegions": [],
+          "isAdultContent": false
+        }
+      ]
+    }
+  ],
+  "isNetworkError": false
+}

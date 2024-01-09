@@ -13,7 +13,7 @@ const BottomBar = () => {
           src={
             currentPage === "/"
               ? "/images/icons8-football-orange.png"
-              : !isDarkMode
+              : isDarkMode
               ? "/images/icons8-football-50.png"
               : "/images/icons8-football-black.png"
           }
@@ -31,7 +31,7 @@ const BottomBar = () => {
           src={
             currentPage === "/scores/leagues"
               ? "/images/icons8-trophy-orange.png"
-              : !isDarkMode
+              : isDarkMode
               ? "/images/icons8-trophy-48.png"
               : "/images/icons8-trophy-black.png"
           }
@@ -55,7 +55,7 @@ const BottomBar = () => {
           src={
             currentPage === "/scores/favorites"
               ? "/images/icons8-star-50.png"
-              : !isDarkMode
+              : isDarkMode
               ? "/images/icons8-star-white.png"
               : "/images/icons8-star-black.png"
           }
@@ -79,7 +79,7 @@ const BottomBar = () => {
           src={
             currentPage === "/news"
               ? "/images/icons8-news-orange.png"
-              : !isDarkMode
+              : isDarkMode
               ? "/images/icons8-news-64.png"
               : "/images/icons8-news-black.png"
           }
