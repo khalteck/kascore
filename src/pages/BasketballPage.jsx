@@ -28,26 +28,27 @@ const BasketballPage = () => {
 
           <div
             className={`w-full md:w-[50%] md:min-w-[550px] h-full rounded-lg px-3 py-5  ${
-              isDarkMode ? "bg-[#1d2732]" : "bg-gray-100"
+              !isDarkMode ? "bg-[#1d2732]" : "bg-gray-100"
             }`}
           >
-            {/*<div className="w-full mb-4 md:mb-0">
+            { /*<div className="w-full mb-4 md:mb-0">
               <DateSlide isDarkMode={isDarkMode} />
-          </div>*/}
+          </div>*/ }
 
             <div
               className={`w-full rounded-lg p-2 md:px-5 md:py-6 ${
                 !isDarkMode ? "bg-[#121a20]/50" : "bg-gray-100"
+                
               }`}
             >
               <div
-                className={`w-full flex flex-col ${
-                  isDarkMode ? "text-[#121a20]" : "text-neutral-100"
+                className={`w-full  ${
+                  !isDarkMode ? "text-neutral-100" : "text-[#121a20]"
                 }`}
               >
-                <div className=" w-full flex justify-between items-center ">
-                  <div className=" w-full flex gap-4 ">
-                    <div className=" p-1 flex justify-center items-center ">
+                <div className=" w-full flex justify-between items-center " >
+                  <div className=" w-full flex gap-4 "> 
+                    <div className=" p-1 flex justify-center items-center "> 
                       <img
                         src="/images/icons8-usa-48.png"
                         alt="league"
@@ -58,7 +59,9 @@ const BasketballPage = () => {
                       <p className=" font-medium leading-tight ">
                         Regular Season
                       </p>
-                      <p className="  text-[.85rem] ">NBA</p>
+                      <p className="  text-[.85rem] "> 
+                        NBA
+                      </p>
                     </div>
                   </div>
                   <div className=" w-auto ">
@@ -71,10 +74,9 @@ const BasketballPage = () => {
                 </div>
               </div>
 
-              <div
-                className={`w-full my-3 flex justify-center items-center rounded-lg ${
-                  !isDarkMode ? "bg-[#121a20]" : "bg-gray-200"
-                }`}
+              <div className={`w-full my-3 flex justify-center items-center rounded-lg ${
+                !isDarkMode ? "bg-[#121a20]" : "bg-gray-200"
+              }`}
               >
                 <div className="w-full md:w-[80%] bg-inherit flex justify-between items-center rounded-lg m-auto py-3">
                   <div className="w-[33%] flex flex-col items-center">
@@ -83,7 +85,9 @@ const BasketballPage = () => {
                       alt="arsenal"
                       className=" w-8 h-8 m-auto "
                     />
-                    <p className=" text-[.85rem] font-bold mt-3 ">Arsenal</p>
+                    <p className=" text-[.85rem] font-bold mt-3 ">
+                      Arsenal
+                    </p>
                   </div>
 
                   <div className="text-center">
@@ -101,7 +105,9 @@ const BasketballPage = () => {
                       alt="spain"
                       className=" w-8 h-8 m-auto "
                     />
-                    <p className=" text-[.85rem] font-bold mt-3">Spain</p>
+                    <p className=" text-[.85rem] font-bold mt-3">
+                      Spain
+                    </p>
                   </div>
                 </div>
               </div>
@@ -113,7 +119,7 @@ const BasketballPage = () => {
                 >
                   Info
                 </a>
-
+                
                 <a
                   href="#"
                   className=" hover:text-orange-500 text-[0.8rem] uppercase"
@@ -154,11 +160,12 @@ const BasketballPage = () => {
                     </div>
                 </div>
               </div>
+
             </div>
           </div>
           <div
             className={`w-[30%] min-w-[200px] h-auto rounded-lg hidden lg:block p-4 ${
-              isDarkMode ? "bg-[#1d2732]" : "bg-gray-100"
+              !isDarkMode ? "bg-[#1d2732]" : "bg-gray-100"
             }`}
           >
             <FeaturedNewsCont isDarkMode={isDarkMode} />
