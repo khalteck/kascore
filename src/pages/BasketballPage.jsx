@@ -36,7 +36,7 @@ const BasketballPage = () => {
           </div>*/ }
 
             <div
-              className={`w-full rounded-lg px-5 py-6 ${
+              className={`w-full rounded-lg p-2 md:px-5 md:py-6 ${
                 !isDarkMode ? "bg-[#121a20]/50" : "bg-gray-100"
                 
               }`}
@@ -78,7 +78,7 @@ const BasketballPage = () => {
                 !isDarkMode ? "bg-[#121a20]" : "bg-gray-200"
               }`}
               >
-                <div className="w-full md:w-[80%] bg-inherit flex justify-between items-center m-auto py-3">
+                <div className="w-full md:w-[80%] bg-inherit flex justify-between items-center rounded-lg m-auto py-3">
                   <div className="w-[33%] flex flex-col items-center">
                     <img
                       src="/images/icons8-arsenal-48.png"
@@ -131,7 +131,7 @@ const BasketballPage = () => {
               <div className="w-full">
                 <h2 className="text-[.75rem]">MATCH INFO</h2>
 
-                <div className="w-full flex flex-col gap-3 p-3 border border-black/20 dark:border-white/30 rounded-lg text-[.75rem] mt-4">
+                <div className="w-full flex justify-center items-center gap-8 py-3 border border-black/20 dark:border-white/30 rounded-lg text-[.75rem] mt-4">
                   <div className="flex gap-2 items-center cursor-pointer">
                       <img
                         alt=""
@@ -141,11 +141,11 @@ const BasketballPage = () => {
                             ? "/images/icons8-calendar-64.png"
                             : "/images/icons8-calendar-black.png"
                         }
-                        className="w-4 h-auto"
+                        className="w-5 h-auto"
                       />
                       <p>2024-01-07</p>
                     </div>
-                    <div className="flex gap-2 items-center cursor-pointer">
+                    <div className="flex items-center gap-2 cursor-pointer">
                       <img
                         alt=""
                         // src="/images/icons8-stadium-64.png"
@@ -154,7 +154,7 @@ const BasketballPage = () => {
                             ? "/images/icons8-stadium-64.png"
                             : "/images/icons8-stadium-black.png"
                         }
-                        className="w-4 h-auto opacity-70"
+                        className="w-5 h-auto opacity-70"
                       />
                       <p>Estadi Municipal de Montilivi</p>
                     </div>
