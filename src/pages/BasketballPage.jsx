@@ -27,23 +27,23 @@ const BasketballPage = () => {
           </div>
 
           <div
-            className={`w-full md:w-[50%] md:min-w-[550px] h-full rounded-lg px-3 py-5  ${
-              !isDarkMode ? "bg-[#1d2732]" : "bg-gray-100"
-            }`}
+            className={`w-full md:w-[50%] md:min-w-[550px] h-full rounded-lg px-2 py-3 md:px-3 md:py-5  ${
+              !isDarkMode ? "bg-gray-100" : "bg-[#1d2732]"
+            }`} 
           >
             { /*<div className="w-full mb-4 md:mb-0">
               <DateSlide isDarkMode={isDarkMode} />
           </div>*/ }
 
             <div
-              className={`w-full rounded-lg p-2 md:px-5 md:py-6 ${
-                !isDarkMode ? "bg-[#121a20]/50" : "bg-gray-100"
+              className={`w-full rounded-lg px-2 py-2 md:px-5 md:py-6 ${
+                !isDarkMode ? "bg-gray-100" : "bg-[#121a20]/50"
                 
               }`}
             >
               <div
                 className={`w-full  ${
-                  !isDarkMode ? "text-neutral-100" : "text-[#121a20]"
+                  !isDarkMode ? "text-[#121a20]" : "text-neutral-100"
                 }`}
               >
                 <div className=" w-full flex justify-between items-center " >
@@ -75,7 +75,7 @@ const BasketballPage = () => {
               </div>
 
               <div className={`w-full my-3 flex justify-center items-center rounded-lg ${
-                !isDarkMode ? "bg-[#121a20]" : "bg-gray-200"
+                !isDarkMode ? "bg-gray-200" : "bg-[#121a20]"
               }`}
               >
                 <div className="w-full md:w-[80%] bg-inherit flex justify-between items-center rounded-lg m-auto py-3">
@@ -138,8 +138,8 @@ const BasketballPage = () => {
                         // src="/images/icons8-calendar-64.png"
                         src={
                           !isDarkMode
-                            ? "/images/icons8-calendar-64.png"
-                            : "/images/icons8-calendar-black.png"
+                            ? "/images/icons8-calendar-black.png"
+                            : "/images/icons8-calendar-64.png"
                         }
                         className="w-5 h-auto"
                       />
@@ -151,8 +151,8 @@ const BasketballPage = () => {
                         // src="/images/icons8-stadium-64.png"
                         src={
                           !isDarkMode
-                            ? "/images/icons8-stadium-64.png"
-                            : "/images/icons8-stadium-black.png"
+                            ? "/images/icons8-stadium-black.png"
+                            : "/images/icons8-stadium-64.png"
                         }
                         className="w-5 h-auto opacity-70"
                       />
@@ -165,7 +165,7 @@ const BasketballPage = () => {
           </div>
           <div
             className={`w-[30%] min-w-[200px] h-auto rounded-lg hidden lg:block p-4 ${
-              !isDarkMode ? "bg-[#1d2732]" : "bg-gray-100"
+              !isDarkMode ? "bg-gray-100" : "bg-[#1d2732]"
             }`}
           >
             <FeaturedNewsCont isDarkMode={isDarkMode} />
