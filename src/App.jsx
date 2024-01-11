@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import "./index.css";
 import { lazy, Suspense } from "react";
 import Loader from "./components/Loader";
+import TennisPage from "./pages/TennisPage";
 
 const Homepage = lazy(() => import("./pages/Homepage"));
 const BasketballPage = lazy(() => import("./pages/BasketballPage"));
@@ -20,7 +21,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/scores/favorites" element={<Favorites />} />
         <Route path="/scores/basketball/details" element={<BasketballPage />} />
-
+        <Route path="/scores/tennis" element={<TennisPage />} />
         <Route
           path="/scores/details/:league_name/:id"
           element={<MatchDetails />}
