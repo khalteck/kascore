@@ -50,7 +50,7 @@ const TennisPage = () => {
                   <div className=" w-full flex gap-2 md:gap-4 "> 
                     <div className=" p-1 flex justify-center items-center "> 
                       <img
-                        src="/images/icons8-usa-48.png"
+                        src="/images/icons8-tennis-48.png"
                         alt="league"
                         className=" w-9 h-9 "
                       />

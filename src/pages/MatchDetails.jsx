@@ -191,7 +191,7 @@ const MatchDetails = () => {
               </div>
 
               <div className="w-full">
-                <h2 className="text-[.75rem]">MATCH INFO</h2>
+                <h2 className="text-[.75rem]">MATCH INFO</h2> 
 
                 <div className="w-full flex flex-col gap-3 p-3 border border-black/20 dark:border-white/30 rounded-lg text-[.75rem] mt-4">
                   <div className="flex gap-2 items-center cursor-pointer">

@@ -10,7 +10,7 @@ import FeaturedNewsCont from "../components/FeaturedNewsCont";
 import { useAppContext } from "../contexts/AppContext";
 import ScrollToTop from "../ScrollToTop";
 
-const BasketballPage = () => {
+const HockeyPage = () => {
   const { isDarkMode } = useAppContext();
 
   return (
@@ -24,7 +24,7 @@ const BasketballPage = () => {
         <div className="w-full h-full flex gap-8">
           <div className="w-[20%] min-w-[200px] hidden md:block">
             <CountriesTray isDarkMode={isDarkMode} />
-          </div>
+          </div> 
 
           <div
             className={`w-full md:w-[50%] md:min-w-[550px] h-full rounded-lg px-2 py-3 md:px-3 md:py-5  ${
@@ -50,17 +50,17 @@ const BasketballPage = () => {
                   <div className=" w-full flex gap-4 "> 
                     <div className=" p-1 flex justify-center items-center "> 
                       <img
-                        src="/images/icons8-usa-48.png"
+                        src="/images/icons8-hockey-94.png"
                         alt="league"
                         className=" w-9 h-9 "
                       />
                     </div>
                     <div>
                       <p className=" font-medium leading-tight ">
-                        Regular Season
+                        NHL: Regular season
                       </p>
                       <p className="  text-[.85rem] "> 
-                        NBA
+                        NHL
                       </p>
                     </div>
                   </div>
@@ -86,16 +86,16 @@ const BasketballPage = () => {
                       className=" w-8 h-8 m-auto "
                     />
                     <p className=" text-[.85rem] font-bold mt-3 ">
-                      Cleveland Cavaliers
+                      Buffalo Sabres
                     </p>
                   </div>
 
                   <div className="text-center">
                     <div className=" w-full m-auto font-bold text-[1.2rem] md:text-[1.5rem] flex justify-center  ">
-                      <p>115 - 199</p>
+                      <p>19:00</p>
                     </div>
                     <p className=" text-[0.75rem] mt-2 md:text-[.85rem]">
-                      December 24, 2023
+                      Today
                     </p>
                   </div>
 
@@ -106,7 +106,7 @@ const BasketballPage = () => {
                       className=" w-8 h-8 m-auto "
                     />
                     <p className=" text-[.85rem] font-bold mt-3">
-                      Brooklyn Nets
+                      Ottawa Senators
                     </p>
                   </div>
                 </div>
@@ -119,7 +119,14 @@ const BasketballPage = () => {
                 >
                   Info
                 </a>
-                
+
+                <a
+                  href="#"
+                  className=" hover:text-orange-500 text-[0.8rem] uppercase"
+                >
+                  Summary
+                </a>
+
                 <a
                   href="#"
                   className=" hover:text-orange-500 text-[0.8rem] uppercase"
@@ -183,4 +190,4 @@ const BasketballPage = () => {
   );
 };
 
-export default BasketballPage;
+export default HockeyPage;
