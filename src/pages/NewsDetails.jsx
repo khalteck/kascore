@@ -5,8 +5,6 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import BottomBar from "../components/BottomBar";
 import { useAppContext } from "../contexts/AppContext";
-
-import newsDetails from "../data/newsDetails.json";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import NewsCard from "../components/NewsCard";
@@ -28,8 +26,6 @@ const NewsDetails = () => {
 
   const article = newsDetailsData?.article;
   const body = article?.body;
-
-  console.log("newsDetails", newsDetails);
 
   const defaultAvatar = isDarkMode
     ? "/images/logo-white.png"
