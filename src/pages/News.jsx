@@ -5,22 +5,24 @@ import BottomBar from "../components/BottomBar";
 import ScrollToTop from "../ScrollToTop";
 import { useEffect } from "react";
 import { useAppContext } from "../contexts/AppContext";
-// import newsData from "../data/news.json";
+import newsData from "../data/news.json";
 import FeaturedNewsCard from "../components/FeaturedNewsCard";
 import NewsCard from "../components/NewsCard";
 
 const News = () => {
   // NEWS API KEY="8cbe94ecef2445ea9b78d1a803d05406"
 
-  const { getNews, newsData } = useAppContext();
+  // const { getNews, newsData } = useAppContext();
 
-  useEffect(() => {
-    getNews();
-  }, []);
+  // useEffect(() => {
+  //   getNews();
+  // }, []);
 
   // console.log("newsData", newsData);
   const featured = newsData?.featuredArticles;
   const topStories = newsData?.topStories;
+
+  console.log("featured", featured);
 
   return (
     <>

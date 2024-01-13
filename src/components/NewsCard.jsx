@@ -7,14 +7,14 @@ const NewsCard = ({ item }) => {
 
   return (
     <div
-      //   onClick={() => navigate("/news-details")}
+      onClick={() => navigate(`/news-details/${item?.id}`)}
       className="w-full flex gap-2 mb-4 md:mb-0 cursor-pointer"
     >
-      <div className=" w-[180px] ">
+      <div className="w-[120px] md:w-[180px] ">
         <img
           src={item?.mainMedia?.[0]?.thumbnail?.url}
           alt={item?.mainMedia?.[0]?.thumbnail?.alt}
-          className=" w-full h-[120px] rounded-md object-cover "
+          className=" w-full md:h-[120px] h-[100px] rounded-md object-cover "
         />
       </div>
       <div className=" w-[65%] flex flex-col">

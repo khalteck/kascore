@@ -909,6 +909,11 @@ csstype@^3.0.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.2.tgz#1d4bf9d572f11c14031f0436e1c10bc1f571f50b"
   integrity sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==
 
+dangerous-html@^0.1.13:
+  version "0.1.13"
+  resolved "https://registry.yarnpkg.com/dangerous-html/-/dangerous-html-0.1.13.tgz#e568989a40a6a9b8f09f4267a918ab6e17c76f28"
+  integrity sha512-i+V3pZnwFOw5JWWEjE+ugvYryTmebCsiSwkTYzrzoVqoGrJAU3s5BkYs7ydTZ4cDxWe5jpRiLWjE+tWQSdpMxw==
+
 debug@0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-0.7.0.tgz#f5be05ec0434c992d79940e50b2695cfb2e01b08"

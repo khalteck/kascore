@@ -101,6 +101,31 @@ const AppContextProvider = ({ children }) => {
     }
   };
 
+  const [newsDetailsData, setnewsDetailsData] = useState({});
+  const getNewsDetails = async (newsId) => {
+    const options = {
+      method: "GET",
+      url: "https://livescore6.p.rapidapi.com/news/v2/detail",
+      headers: {
+        "X-RapidAPI-Key": "212912e40bmsh331c90cc55611e6p178f8djsna36fe9dec8b3",
+        "X-RapidAPI-Host": "livescore6.p.rapidapi.com",
+      },
+      params: {
+        id: newsId,
+      },
+    };
+
+    try {
+      setLoading2(true);
+      const response = await axios.request(options);
+      setnewsDetailsData(response.data);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading2(false);
+    }
+  };
+
   const [openSearch, setOpenSearch] = useState(false);
 
   return (
@@ -118,6 +143,8 @@ const AppContextProvider = ({ children }) => {
         categoryData,
         getNewsByCategory,
         loading2,
+        newsDetailsData,
+        getNewsDetails,
       }}
     >
       {children}

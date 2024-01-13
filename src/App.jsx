@@ -32,7 +32,7 @@ function App() {
         <Route path="/scores/leagues" element={<Leagues />} />
         <Route path="/news" element={<News />} />
         <Route path="/news/:category" element={<News2 />} />
-        <Route path="/news-details" element={<NewsDetails />} />
+        <Route path="/news-details/:id" element={<NewsDetails />} />
       </Routes>
     </Suspense>
   );

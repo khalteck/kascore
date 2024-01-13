@@ -7,7 +7,7 @@ const FeaturedNewsCard = ({ item }) => {
 
   return (
     <div
-      onClick={() => navigate("/news-details")}
+      onClick={() => navigate(`/news-details/${item?.id}`)}
       className="min-w-[320px] h-auto rounded-lg relative cursor-pointer"
     >
       <img
