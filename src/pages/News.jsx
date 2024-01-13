@@ -10,7 +10,7 @@ import NewsCard from "../components/NewsCard";
 import Loader from "../components/Loader";
 
 const News = () => {
-  const { getNews, newsData, loading2 } = useAppContext();
+  const { getNews, newsData, loading2, loading } = useAppContext();
 
   useEffect(() => {
     getNews();
@@ -25,7 +25,7 @@ const News = () => {
   return (
     <>
       <Header />
-      {loading2 && <Loader />}
+      {(loading2 || loading) && <Loader />}
 
       <div className="w-full pt-[130px] md:pt-[150px] md:pb-12 md:px-[10%] bg-white text-[#0f172a] dark:bg-[#2a3543] dark:text-gray-200">
         <div className="w-full h-full flex gap-8">

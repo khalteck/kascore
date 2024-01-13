@@ -62,7 +62,7 @@ const NewsDetails = () => {
               <img
                 src={article?.mainMedia[0]?.original?.url}
                 alt={article?.mainMedia[0]?.original?.alt}
-                className=" w-full h-auto rounded-lg my-b md:mb-2 mt-4 object-cover "
+                className=" w-full h-auto min-h-[250px] rounded-lg my-b md:mb-2 mt-4 object-cover "
               />
               <p className=" text-[0.8rem] mt-1">
                 {article?.mainMedia[0]?.original?.alt}
