@@ -5,28 +5,28 @@ import BottomBar from "../components/BottomBar";
 import ScrollToTop from "../ScrollToTop";
 import { useEffect } from "react";
 import { useAppContext } from "../contexts/AppContext";
-import newsData from "../data/news.json";
 import FeaturedNewsCard from "../components/FeaturedNewsCard";
 import NewsCard from "../components/NewsCard";
+import Loader from "../components/Loader";
 
 const News = () => {
-  // NEWS API KEY="8cbe94ecef2445ea9b78d1a803d05406"
+  const { getNews, newsData, loading2 } = useAppContext();
 
-  // const { getNews, newsData } = useAppContext();
-
-  // useEffect(() => {
-  //   getNews();
-  // }, []);
+  useEffect(() => {
+    getNews();
+  }, []);
 
   // console.log("newsData", newsData);
   const featured = newsData?.featuredArticles;
   const topStories = newsData?.topStories;
 
-  console.log("featured", featured);
+  // console.log("featured", featured);
 
   return (
     <>
       <Header />
+      {loading2 && <Loader />}
+
       <div className="w-full pt-[130px] md:pt-[150px] md:pb-12 md:px-[10%] bg-white text-[#0f172a] dark:bg-[#2a3543] dark:text-gray-200">
         <div className="w-full h-full flex gap-8">
           <div className="w-full md:w-[60%] md:min-w-[700px] md:max-w-[800px] min-h-screen md:border border-black/20 dark:border-neutral-100/10 rounded-lg px-3 py-5 mt-5">
