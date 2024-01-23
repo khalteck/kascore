@@ -41,9 +41,9 @@ const Homepage = () => {
                 isDarkMode ? "bg-[#121a20]/50" : "bg-gray-200"
               }`}
             >
-              <h1 className="font-medium text-[1.2rem] p-4 rounded-lg">
+              {/* <h1 className="font-medium text-[1.2rem] p-4 rounded-lg">
                 Featured Leagues
-              </h1>
+              </h1> */}
 
               <div
                 className={`w-full flex flex-col ${
