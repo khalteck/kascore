@@ -55,8 +55,12 @@ const AppContextProvider = ({ children }) => {
     const options = {
       method: "GET",
       url: "https://livescore6.p.rapidapi.com/news/v2/list",
+      // headers: {
+      //   "X-RapidAPI-Key": "212912e40bmsh331c90cc55611e6p178f8djsna36fe9dec8b3",
+      //   "X-RapidAPI-Host": "livescore6.p.rapidapi.com",
+      // },
       headers: {
-        "X-RapidAPI-Key": "212912e40bmsh331c90cc55611e6p178f8djsna36fe9dec8b3",
+        "X-RapidAPI-Key": "6204d52b01mshf43ae761a1d2815p157edejsn9d58f813da5a",
         "X-RapidAPI-Host": "livescore6.p.rapidapi.com",
       },
     };
@@ -80,8 +84,12 @@ const AppContextProvider = ({ children }) => {
     const options = {
       method: "GET",
       url: "https://livescore6.p.rapidapi.com/news/v2/list-by-sport",
+      // headers: {
+      //   "X-RapidAPI-Key": "212912e40bmsh331c90cc55611e6p178f8djsna36fe9dec8b3",
+      //   "X-RapidAPI-Host": "livescore6.p.rapidapi.com",
+      // },
       headers: {
-        "X-RapidAPI-Key": "212912e40bmsh331c90cc55611e6p178f8djsna36fe9dec8b3",
+        "X-RapidAPI-Key": "6204d52b01mshf43ae761a1d2815p157edejsn9d58f813da5a",
         "X-RapidAPI-Host": "livescore6.p.rapidapi.com",
       },
       params: {
@@ -106,8 +114,12 @@ const AppContextProvider = ({ children }) => {
     const options = {
       method: "GET",
       url: "https://livescore6.p.rapidapi.com/news/v2/detail",
+      // headers: {
+      //   "X-RapidAPI-Key": "212912e40bmsh331c90cc55611e6p178f8djsna36fe9dec8b3",
+      //   "X-RapidAPI-Host": "livescore6.p.rapidapi.com",
+      // },
       headers: {
-        "X-RapidAPI-Key": "212912e40bmsh331c90cc55611e6p178f8djsna36fe9dec8b3",
+        "X-RapidAPI-Key": "6204d52b01mshf43ae761a1d2815p157edejsn9d58f813da5a",
         "X-RapidAPI-Host": "livescore6.p.rapidapi.com",
       },
       params: {
