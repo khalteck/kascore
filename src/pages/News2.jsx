@@ -13,7 +13,6 @@ import FeaturedNewsCard from "../components/FeaturedNewsCard";
 
 import NewsCardByCat from "../components/NewsCardByCat";
 import { useParams } from "react-router-dom";
-import Loader from "../components/Loader";
 import NewsSkeleton from "../components/NewsSkeleton";
 
 const News2 = () => {
@@ -51,7 +50,6 @@ const News2 = () => {
 
   return (
     <>
-      {loading && <Loader />}
       <Header />
       <div className="w-full pt-[130px] md:pt-[150px] md:pb-12 md:px-[10%] bg-white text-[#0f172a] dark:bg-[#2a3543] dark:text-gray-200">
         <div className="w-full h-full flex gap-8">
@@ -61,6 +59,7 @@ const News2 = () => {
                 {featured?.map((item, index) => {
                   return <FeaturedNewsCard key={index} item={item} />;
                 })}
+                {(loading2 || loading) && <p>Loading...</p>}
               </div>
             )}
 
@@ -78,6 +77,7 @@ const News2 = () => {
                     </div>
                   );
                 })}
+              {(loading2 || loading) && <p>Loading...</p>}
             </div>
           </div>
         </div>

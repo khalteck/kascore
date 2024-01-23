@@ -7,7 +7,6 @@ import { useEffect } from "react";
 import { useAppContext } from "../contexts/AppContext";
 import FeaturedNewsCard from "../components/FeaturedNewsCard";
 import NewsCard from "../components/NewsCard";
-import Loader from "../components/Loader";
 
 const News = () => {
   const { getNews, newsData, loading2, loading } = useAppContext();
@@ -25,7 +24,6 @@ const News = () => {
   return (
     <>
       <Header />
-      {(loading2 || loading) && <Loader />}
 
       <div className="w-full pt-[130px] md:pt-[150px] md:pb-12 md:px-[10%] bg-white text-[#0f172a] dark:bg-[#2a3543] dark:text-gray-200">
         <div className="w-full h-full flex gap-8">
@@ -35,6 +33,7 @@ const News = () => {
               {featured?.map((item, index) => {
                 return <FeaturedNewsCard key={index} item={item} />;
               })}
+              {(loading2 || loading) && <p>Loading...</p>}
             </div>
 
             <div className=" w-full h-[50px] "></div>
@@ -53,6 +52,7 @@ const News = () => {
                   </div>
                 );
               })}
+              {(loading2 || loading) && <p>Loading...</p>}
             </div>
           </div>
         </div>
