@@ -24,21 +24,20 @@ const HockeyPage = () => {
         <div className="w-full h-full flex gap-8">
           <div className="w-[20%] min-w-[200px] hidden md:block">
             <CountriesTray isDarkMode={isDarkMode} />
-          </div> 
+          </div>
 
           <div
             className={`w-full md:w-[50%] md:min-w-[550px] h-full rounded-lg px-2 py-3 md:px-3 md:py-5  ${
               !isDarkMode ? "bg-gray-100" : "bg-[#1d2732]"
-            }`} 
+            }`}
           >
-            { /*<div className="w-full mb-4 md:mb-0">
+            {/*<div className="w-full mb-4 md:mb-0">
               <DateSlide isDarkMode={isDarkMode} />
-          </div>*/ }
+          </div>*/}
 
             <div
               className={`w-full rounded-lg px-2 py-2 md:px-5 md:py-6 ${
                 !isDarkMode ? "bg-gray-100" : "bg-[#121a20]/50"
-                
               }`}
             >
               <div
@@ -46,9 +45,9 @@ const HockeyPage = () => {
                   !isDarkMode ? "text-[#121a20]" : "text-neutral-100"
                 }`}
               >
-                <div className=" w-full flex justify-between items-center " >
-                  <div className=" w-full flex gap-4 "> 
-                    <div className=" p-1 flex justify-center items-center "> 
+                <div className=" w-full flex justify-between items-center ">
+                  <div className=" w-full flex gap-4 ">
+                    <div className=" p-1 flex justify-center items-center ">
                       <img
                         src="/images/icons8-hockey-94.png"
                         alt="league"
@@ -59,9 +58,7 @@ const HockeyPage = () => {
                       <p className=" font-medium leading-tight ">
                         NHL: Regular season
                       </p>
-                      <p className="  text-[.85rem] "> 
-                        NHL
-                      </p>
+                      <p className="  text-[.85rem] ">NHL</p>
                     </div>
                   </div>
                   <div className=" w-auto ">
@@ -74,9 +71,10 @@ const HockeyPage = () => {
                 </div>
               </div>
 
-              <div className={`w-full my-3 flex justify-center items-center rounded-lg ${
-                !isDarkMode ? "bg-gray-200" : "bg-[#121a20]"
-              }`}
+              <div
+                className={`w-full my-3 flex justify-center items-center rounded-lg ${
+                  !isDarkMode ? "bg-gray-200" : "bg-[#121a20]"
+                }`}
               >
                 <div className="w-full md:w-[80%] bg-inherit flex justify-between items-center rounded-lg m-auto py-3">
                   <div className="w-[33%] flex flex-col items-center">
@@ -140,38 +138,37 @@ const HockeyPage = () => {
 
                 <div className="w-full flex justify-center items-center gap-8 py-3 border border-black/20 dark:border-white/30 rounded-lg text-[.75rem] mt-4">
                   <div className="flex gap-2 items-center cursor-pointer">
-                      <img
-                        alt=""
-                        // src="/images/icons8-calendar-64.png"
-                        src={
-                          !isDarkMode
-                            ? "/images/icons8-calendar-black.png"
-                            : "/images/icons8-calendar-64.png"
-                        }
-                        className="w-5 h-auto"
-                      />
-                      <p>2024-01-07</p>
-                    </div>
-                    <div className="flex items-center gap-2 cursor-pointer">
-                      <img
-                        alt=""
-                        // src="/images/icons8-stadium-64.png"
-                        src={
-                          !isDarkMode
-                            ? "/images/icons8-stadium-black.png"
-                            : "/images/icons8-stadium-64.png"
-                        }
-                        className="w-5 h-auto opacity-70"
-                      />
-                      <p>Estadi Municipal de Montilivi</p>
-                    </div>
+                    <img
+                      alt=""
+                      // src="/images/icons8-calendar-64.png"
+                      src={
+                        !isDarkMode
+                          ? "/images/icons8-calendar-black.png"
+                          : "/images/icons8-calendar-64.png"
+                      }
+                      className="w-5 h-auto"
+                    />
+                    <p>2024-01-07</p>
+                  </div>
+                  <div className="flex items-center gap-2 cursor-pointer">
+                    <img
+                      alt=""
+                      // src="/images/icons8-stadium-64.png"
+                      src={
+                        !isDarkMode
+                          ? "/images/icons8-stadium-black.png"
+                          : "/images/icons8-stadium-64.png"
+                      }
+                      className="w-5 h-auto opacity-70"
+                    />
+                    <p>Estadi Municipal de Montilivi</p>
+                  </div>
                 </div>
               </div>
-
             </div>
           </div>
           <div
-            className={`w-[30%] min-w-[200px] h-auto rounded-lg hidden lg:block p-4 ${
+            className={`w-[30%] min-w-[200px] h-fit rounded-lg hidden lg:block p-4 ${
               !isDarkMode ? "bg-gray-100" : "bg-[#1d2732]"
             }`}
           >

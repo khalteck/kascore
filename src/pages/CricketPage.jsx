@@ -23,21 +23,20 @@ const CricketPage = () => {
         <div className="w-full h-full flex gap-8">
           <div className="w-[20%] min-w-[200px] hidden md:block">
             <CountriesTray isDarkMode={isDarkMode} />
-          </div> 
+          </div>
 
           <div
             className={`w-full md:w-[50%] md:min-w-[550px] h-full rounded-lg px-2 py-3 md:px-3 md:py-5  ${
               !isDarkMode ? "bg-gray-100" : "bg-[#1d2732]"
-            }`} 
+            }`}
           >
-            { /*<div className="w-full mb-4 md:mb-0">
+            {/*<div className="w-full mb-4 md:mb-0">
               <DateSlide isDarkMode={isDarkMode} />
-          </div>*/ }
+          </div>*/}
 
             <div
               className={`w-full rounded-lg px-2 py-2 md:px-5 md:py-6 ${
                 !isDarkMode ? "bg-gray-100" : "bg-[#121a20]/50"
-                
               }`}
             >
               <div
@@ -45,9 +44,9 @@ const CricketPage = () => {
                   !isDarkMode ? "text-[#121a20]" : "text-neutral-100"
                 }`}
               >
-                <div className=" w-full flex justify-between items-center " >
-                  <div className=" w-full flex gap-4 "> 
-                    <div className=" p-1 flex justify-center items-center "> 
+                <div className=" w-full flex justify-between items-center ">
+                  <div className=" w-full flex gap-4 ">
+                    <div className=" p-1 flex justify-center items-center ">
                       <img
                         src="/images/icons8-hockey-94.png"
                         alt="league"
@@ -58,9 +57,7 @@ const CricketPage = () => {
                       <p className=" font-medium leading-tight ">
                         NHL: Regular season
                       </p>
-                      <p className="  text-[.85rem] "> 
-                        NHL
-                      </p>
+                      <p className="  text-[.85rem] ">NHL</p>
                     </div>
                   </div>
                   <div className=" w-auto ">
@@ -73,24 +70,41 @@ const CricketPage = () => {
                 </div>
               </div>
 
-              <div className={`w-full my-3  rounded-lg  m-auto py-5 px-4 ${
-                !isDarkMode ? "bg-gray-200" : "bg-[#121a20]"
-              }`}
+              <div
+                className={`w-full my-3  rounded-lg  m-auto py-5 px-4 ${
+                  !isDarkMode ? "bg-gray-200" : "bg-[#121a20]"
+                }`}
               >
                 <div className=" flex justify-between dark:text-neutral-100/70 text-[0.7rem] ">
                   <p>Twenty20 (1st T20I)</p>
                   <p>11 Jan</p>
                 </div>
-                <p className=" dark:text-neutral-100/70 text-[0.63rem] my-2 ">Finished</p>
+                <p className=" dark:text-neutral-100/70 text-[0.63rem] my-2 ">
+                  Finished
+                </p>
                 <div className=" flex justify-between  ">
                   <p className=" font-bold text-[1.05rem] ">India</p>
-                  <p className=" font-bold text-[1.05rem] "> 159/4 <span className="text-[0.75rem] dark:text-neutral-100/70 ">(17.3)</span> </p>
+                  <p className=" font-bold text-[1.05rem] ">
+                    {" "}
+                    159/4{" "}
+                    <span className="text-[0.75rem] dark:text-neutral-100/70 ">
+                      (17.3)
+                    </span>{" "}
+                  </p>
                 </div>
                 <div className=" flex justify-between my-2 ">
                   <p className=" font-bold text-[1.05rem] ">Afghanistan</p>
-                  <p className=" font-bold text-[1.05rem] "> 158/5 <span className="text-[0.75rem] dark:text-neutral-100/70 ">(20.0)</span> </p>
+                  <p className=" font-bold text-[1.05rem] ">
+                    {" "}
+                    158/5{" "}
+                    <span className="text-[0.75rem] dark:text-neutral-100/70 ">
+                      (20.0)
+                    </span>{" "}
+                  </p>
                 </div>
-                <p className=" dark:text-neutral-100/70 text-[0.6rem] ">India win by 6 wickets</p>  
+                <p className=" dark:text-neutral-100/70 text-[0.6rem] ">
+                  India win by 6 wickets
+                </p>
               </div>
 
               <div className=" w-full my-4 pb-3 flex gap-5 border-b border-black/20 dark:border-white/30 ">
@@ -105,7 +119,7 @@ const CricketPage = () => {
                   className=" hover:text-orange-500 text-[0.8rem] uppercase"
                 >
                   Scorecard
-                </a>  
+                </a>
                 <a
                   href="#"
                   className=" hover:text-orange-500 text-[0.8rem] uppercase"
@@ -127,7 +141,9 @@ const CricketPage = () => {
                 <div className="w-full items-center gap-5 py-3 border border-black/20 dark:border-neutral-100/20 dark:text-neutral-100/70 rounded-lg text-[.7rem] md:text-[.85rem] mt-4">
                   <div className=" flex cursor-pointer pl-3 pb-3 border-b border-black/20 dark:border-neutral-100/20 ">
                     <p className=" w-[20%]">Event</p>
-                    <p className=" w-[80%] ">Cricket Australia XI v West Indies International Tours</p>
+                    <p className=" w-[80%] ">
+                      Cricket Australia XI v West Indies International Tours
+                    </p>
                   </div>
                   <div className=" flex  cursor-pointer pl-3 py-3 border-b border-black/20 dark:border-neutral-100/20">
                     <p className="w-[20%]">This Match</p>
@@ -143,7 +159,9 @@ const CricketPage = () => {
                   </div>
                   <div className=" flex  cursor-pointer pl-3 py-3 border-b border-black/20 dark:border-neutral-100/20">
                     <p className="w-[20%]">Toss</p>
-                    <p className=" w-[80%] ">West Indies won the toss and chose to bat</p>
+                    <p className=" w-[80%] ">
+                      West Indies won the toss and chose to bat
+                    </p>
                   </div>
                   <div className=" flex  cursor-pointer pl-3 py-3 border-b border-black/20 dark:border-neutral-100/20">
                     <p className="w-[20%]">Country</p>
@@ -171,11 +189,10 @@ const CricketPage = () => {
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
           <div
-            className={`w-[30%] min-w-[200px] h-auto rounded-lg hidden lg:block p-4 ${
+            className={`w-[30%] min-w-[200px] h-fit rounded-lg hidden lg:block p-4 ${
               !isDarkMode ? "bg-gray-100" : "bg-[#1d2732]"
             }`}
           >
@@ -190,7 +207,7 @@ const CricketPage = () => {
       <ScrollToTop />
       <Footer />
       <BottomBar />
-    </>  
+    </>
   );
 };
 

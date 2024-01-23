@@ -9,7 +9,7 @@ const FeaturedNewsCont = ({ isDarkMode }) => {
 
   return (
     <div
-      className={`w-full min-w-[300px] h-[700px] ${
+      className={`w-full min-w-[300px] h-fit ${
         isDarkMode ? " bg-[#1d2732]" : "bg-gray-100"
       }`}
     >
