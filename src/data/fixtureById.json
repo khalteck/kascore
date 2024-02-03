@@ -1,0 +1,68 @@
+{
+  "fixture": {
+    "id": 593197,
+    "referee": "J. Linington",
+    "timezone": "UTC",
+    "date": "2021-01-29T20:00:00+00:00",
+    "timestamp": 1611950400,
+    "periods": {
+      "first": 1611950400,
+      "second": 1611954000
+    },
+    "venue": {
+      "id": 576,
+      "name": "Madejski Stadium",
+      "city": "Reading, Berkshire"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90
+    }
+  },
+  "league": {
+    "id": 40,
+    "name": "Championship",
+    "country": "England",
+    "logo": "https://media.api-sports.io/football/leagues/40.png",
+    "flag": "https://media.api-sports.io/flags/gb.svg",
+    "season": 2020,
+    "round": "Regular Season - 27"
+  },
+  "teams": {
+    "home": {
+      "id": 53,
+      "name": "Reading",
+      "logo": "https://media.api-sports.io/football/teams/53.png",
+      "winner": true
+    },
+    "away": {
+      "id": 35,
+      "name": "Bournemouth",
+      "logo": "https://media.api-sports.io/football/teams/35.png",
+      "winner": false
+    }
+  },
+  "goals": {
+    "home": 3,
+    "away": 1
+  },
+  "score": {
+    "halftime": {
+      "home": 3,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 3,
+      "away": 1
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

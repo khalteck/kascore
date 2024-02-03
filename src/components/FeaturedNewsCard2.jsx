@@ -8,7 +8,7 @@ const FeaturedNewsCard2 = ({ item }) => {
   return (
     <div
       onClick={() => navigate(`/news-details/${item?.id}`)}
-      className="min-w-[180px] h-auto rounded-lg relative cursor-pointer"
+      className="min-w-[200px] h-auto rounded-lg relative cursor-pointer"
     >
       <img
         src={item?.mainMedia?.[0]?.thumbnail?.url}

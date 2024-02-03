@@ -3,20 +3,28 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import CountriesTray from "../components/CountriesTray";
 import BottomBar from "../components/BottomBar";
-// import schedule from "../data/schedule.json";
+import DetailsTab from "../components/matchDetails/DetailsTab";
+import fixtureById from "../data/fixtureById.json";
+import fixture112 from "../data/fixture112.json";
+
 import { useParams } from "react-router-dom";
 import { useAppContext } from "../contexts/AppContext";
 import FeaturedNewsCont from "../components/FeaturedNewsCont";
 import ScrollToTop from "../ScrollToTop";
+import { useState } from "react";
 
 const MatchDetails = () => {
-  const { isDarkMode, topLeagues } = useAppContext();
+  const { isDarkMode, topLeagues, fetchFixtureDetails, fixturesDetailsData } =
+    useAppContext();
 
-  const { league_name, id } = useParams();
-  const currentLeague = topLeagues?.filter((x) => x?.name === league_name)[0];
-  const currentMatch = currentLeague?.schedule?.filter(
-    (y) => y?.id == Number(id)
+  const { id } = useParams();
+
+  const currentMatch = fixture112?.response?.filter(
+    (x) => x?.fixture?.id === Number(id)
   )[0];
+
+  console.log("currentMatch", currentMatch);
+  const currentLeague = currentMatch?.league;
 
   function parseTime(originalTime) {
     const dateObject = new Date(originalTime);
@@ -60,6 +68,11 @@ const MatchDetails = () => {
       return dateObject.toLocaleDateString(undefined, options);
     }
   }
+
+  const inPlay = ["1H", "HT", "2H", "ET", "BT", "P", "SUSP", "INT", "LIVE"];
+  const finished = ["FT", "AET", "PEN"];
+
+  const [currentTab, setCurrentTab] = useState("summary");
 
   return (
     <>
@@ -112,83 +125,45 @@ const MatchDetails = () => {
                 <div className="w-full md:w-[80%] bg-inherit flex justify-between items-center m-auto py-3">
                   <div className="w-[33%] flex flex-col items-center">
                     <img
-                      src={currentMatch?.home_team?.logo}
+                      src={currentMatch?.teams?.home?.logo}
                       alt="arsenal"
                       className=" w-8 h-8 m-auto "
                     />
                     <p className=" text-[.85rem] font-bold mt-3 ">
-                      {currentMatch?.home_team?.name}
+                      {currentMatch?.teams?.home?.name}
                     </p>
                   </div>
 
                   <div className="text-center">
                     <div className=" w-full m-auto font-bold text-[1.2rem] md:text-[1.5rem] dark:text-white flex justify-center  ">
-                      {currentMatch?.home_score
-                        ? `${currentMatch?.home_score?.current} - ${currentMatch?.away_score?.current}`
-                        : parseTime(currentMatch?.start_at)}
+                      {inPlay?.includes(currentMatch?.fixture?.status?.short) ||
+                      finished?.includes(currentMatch?.fixture?.status?.short)
+                        ? `${currentMatch?.goals?.home} - ${currentMatch?.goals?.away}`
+                        : parseTime(currentMatch?.fixture?.date)}
                     </div>
                     <p className=" dark:text-neutral-100/50 text-[0.75rem] md:text-[.85rem]">
-                      {getDate(currentMatch?.start_at)}
+                      {getDate(currentMatch?.fixture?.date)}
                     </p>
                   </div>
 
                   <div className="w-[33%] flex flex-col items-center">
                     <img
-                      src={currentMatch?.away_team?.logo}
+                      src={currentMatch?.teams?.away?.logo}
                       alt="chelsea"
                       className=" w-8 h-8 m-auto "
                     />
                     <p className=" text-[.85rem] font-bold mt-3">
-                      {currentMatch?.home_team?.name}
+                      {currentMatch?.teams?.home?.name}
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className=" w-full my-4 pb-3 flex gap-5 border-b border-black/20 dark:border-neutral-100/50 ">
-                <a
-                  href="#"
-                  className=" hover:text-orange-500 text-[0.8rem] uppercase"
-                >
-                  Summary
-                </a>
-                {/* <a
-                  href="#"
-                  className=" hover:text-white text-[0.8rem] uppercase"
-                >
-                  Summary
-                </a> */}
-                <a
-                  href="#"
-                  className=" hover:text-orange-500 text-[0.8rem] uppercase"
-                >
-                  Odds
-                </a>
-                <a
-                  href="#"
-                  className=" hover:text-orange-500 text-[0.8rem] uppercase"
-                >
-                  H2H
-                </a>{" "}
-                <a
-                  href="#"
-                  className=" hover:text-orange-500 text-[0.8rem] uppercase"
-                >
-                  Draw
-                </a>
-                <a
-                  href="#"
-                  className=" hover:text-orange-500 text-[0.8rem] uppercase"
-                >
-                  News
-                </a>
-                {/* <a
-                  href="#"
-                  className=" hover:text-white text-[0.8rem] uppercase"
-                >
-                  Matches
-                </a> */}
-              </div>
+              <DetailsTab
+                currentTab={currentTab}
+                setCurrentTab={setCurrentTab}
+                isDarkMode={isDarkMode}
+              />
 
               <div className="w-full">
                 <h2 className="text-[.75rem]">MATCH INFO</h2>
@@ -205,7 +180,7 @@ const MatchDetails = () => {
                       }
                       className="w-4 h-auto"
                     />
-                    <p>{currentMatch?.start_at?.split(" ")[0]}</p>
+                    <p>{getDate(currentMatch?.fixture?.date)}</p>
                   </div>
 
                   <div className="flex gap-2 items-center cursor-pointer">
@@ -219,7 +194,7 @@ const MatchDetails = () => {
                       }
                       className="w-4 h-auto opacity-60"
                     />
-                    <p>Francisco Jose Hernandez (Spain)</p>
+                    <p>{currentMatch?.fixture?.referee}</p>
                   </div>
 
                   <div className="flex gap-2 items-center cursor-pointer">
@@ -233,7 +208,10 @@ const MatchDetails = () => {
                       }
                       className="w-4 h-auto opacity-70"
                     />
-                    <p>Estadi Municipal de Montilivi</p>
+                    <p>
+                      {currentMatch?.fixture?.venue?.name} (
+                      {currentMatch?.fixture?.venue?.city})
+                    </p>
                   </div>
                 </div>
               </div>

@@ -26,7 +26,7 @@ const SportListCont = () => {
           return (
             <li
               key={index}
-              className={`cursor-pointer hover:bg-white/50 dark:hover:bg-[#2a3543] transition-all duration-300 text-[.8rem] md:text-[.9rem] px-3 md:pl-3 pr-8 md:pr-[20px] py-[6px] rounded-full flex gap-2 items-center ${
+              className={`cursor-pointer hover:bg-white/50 dark:hover:bg-[#2a3543] transition-all duration-300 text-[.8rem] md:text-[.9rem] px-3 md:pl-3 pr-8 md:pr-10 py-[6px] rounded-full flex gap-2 items-center ${
                 index === 0 && currentPage === "/"
                   ? "dark:bg-[#2a3543] bg-[#d1d5db] text-black dark:text-white"
                   : index !== 0 && currentPage?.includes(item?.link)

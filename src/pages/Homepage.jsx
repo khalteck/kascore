@@ -15,7 +15,16 @@ import ScrollToTop from "../ScrollToTop";
 import LazyLoad from "react-lazyload";
 
 const Homepage = () => {
-  const { isDarkMode, topLeagues, fetchLeagues } = useAppContext();
+  const {
+    isDarkMode,
+    topLeagues,
+    fetchLeagues,
+    leaguesData,
+    fetchFixtures,
+    fixturesData: fixturesData2,
+    fetchFixtureDetails,
+    fixturesDetailsData,
+  } = useAppContext();
 
   const fixturesDataRaw = leagues?.response;
   const fixtures = fixture112?.response;

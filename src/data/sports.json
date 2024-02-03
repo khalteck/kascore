@@ -28,5 +28,35 @@
     "icon": "/images/icons8-cricket-50.png",
     "icon_active": "/images/icons8-cricket-orange.png",
     "link": "/scores/cricket"
+  },
+  {
+    "name": "Baseball",
+    "icon": "/images/icons8-baseball-50.png",
+    "icon_active": "/images/icons8-baseball-orange.png",
+    "link": "/scores/baseball"
+  },
+  {
+    "name": "American Football",
+    "icon": "/images/icons8-american-football-50.png",
+    "icon_active": "/images/icons8-american-football-orange.png",
+    "link": "/scores/american-football"
+  },
+  {
+    "name": "Volleyball",
+    "icon": "/images/icons8-volleyball-50.png",
+    "icon_active": "/images/icons8-volleyball-orange.png",
+    "link": "/scores/volleyball"
+  },
+  {
+    "name": "Rugby",
+    "icon": "/images/icons8-rugby-64.png",
+    "icon_active": "/images/icons8-rugby-orange.png",
+    "link": "/scores/rugby"
+  },
+  {
+    "name": "Handball",
+    "icon": "/images/icons8-handball-50.png",
+    "icon_active": "/images/icons8-handball-orange.png",
+    "link": "/scores/handball"
   }
 ]

@@ -140,7 +140,8 @@ const AppContextProvider = ({ children }) => {
 
   const [openSearch, setOpenSearch] = useState(false);
 
-  const [fixturesData, setfixturesData] = useState({});
+  //=========================================================to fetch leagues
+  const [leaguesData, setleaguesData] = useState({});
   const fetchLeagues = async () => {
     const options = {
       method: "GET",
@@ -154,7 +155,59 @@ const AppContextProvider = ({ children }) => {
     try {
       setLoading2(true);
       const response = await axios.request(options);
+      setleaguesData(response.data);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading2(false);
+    }
+  };
+
+  //=========================================================to fetch fixtures
+  const [fixturesData, setfixturesData] = useState({});
+  const fetchFixtures = async (date) => {
+    const options = {
+      method: "GET",
+      url: "https://v3.football.api-sports.io/fixtures",
+      headers: {
+        "X-RapidAPI-Key": "212912e40bmsh331c90cc55611e6p178f8djsna36fe9dec8b3",
+        "x-rapidapi-host": "v3.football.api-sports.io",
+      },
+      params: {
+        date: date,
+      },
+    };
+
+    try {
+      setLoading2(true);
+      const response = await axios.request(options);
       setfixturesData(response.data);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading2(false);
+    }
+  };
+
+  //=========================================================to fetch fixture details by id
+  const [fixturesDetailsData, setfixturesDetailsData] = useState({});
+  const fetchFixtureDetails = async (fixtureId) => {
+    const options = {
+      method: "GET",
+      url: "https://v3.football.api-sports.io/leagues",
+      headers: {
+        "X-RapidAPI-Key": "212912e40bmsh331c90cc55611e6p178f8djsna36fe9dec8b3",
+        "x-rapidapi-host": "v3.football.api-sports.io",
+      },
+      params: {
+        id: fixtureId,
+      },
+    };
+
+    try {
+      setLoading2(true);
+      const response = await axios.request(options);
+      setfixturesDetailsData(response.data);
     } catch (error) {
       console.error(error);
     } finally {
@@ -181,6 +234,10 @@ const AppContextProvider = ({ children }) => {
         getNewsDetails,
         fixturesData,
         fetchLeagues,
+        leaguesData,
+        fetchFixtures,
+        fixturesDetailsData,
+        fetchFixtureDetails,
       }}
     >
       {children}

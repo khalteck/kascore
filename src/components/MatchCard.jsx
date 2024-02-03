@@ -20,7 +20,7 @@ const MatchCard = ({ itm, league, isDarkMode }) => {
 
   return (
     <div
-      // onClick={() => navigate(`/scores/details/${itm?.fixture?.id}`)}
+      onClick={() => navigate(`/scores/details/${itm?.fixture?.id}`)}
       className={`flex gap-3 py-2 pb-2 pr-3 cursor-pointer border-b ${
         isDarkMode
           ? "hover:bg-black/20 border-gray-700"
@@ -42,40 +42,6 @@ const MatchCard = ({ itm, league, isDarkMode }) => {
           <p className="text-orange-500">{itm?.fixture?.status?.elapsed}'</p>
         )}
       </div>
-      {/* {itm?.status === "notstarted" ? (
-        <div
-          className={`w-[60px] text-[.85rem] border-r flex flex-col justify-center items-center ${
-            !isDarkMode ? "border-black/40" : "border-neutral-100/30"
-          }`}
-        >
-          <p>{parseTime(itm?.start_at)}</p>
-          <p>-</p>
-        </div>
-      ) : itm?.status === "finished" ? (
-        <div
-          className={`w-[60px] text-[.85rem] border-r flex flex-col justify-center items-center ${
-            !isDarkMode ? "border-black/40" : "border-neutral-100/30"
-          }`}
-        >
-          <p>FT</p>
-        </div>
-      ) : itm?.status === "postponed" ? (
-        <div
-          className={`w-[60px] text-[.85rem] border-r flex flex-col justify-center items-center ${
-            !isDarkMode ? "border-black/40" : "border-neutral-100/30"
-          }`}
-        >
-          <p>PostP.</p>
-        </div>
-      ) : (
-        <div
-          className={`w-[60px] text-[.85rem] border-r flex flex-col justify-center items-center ${
-            !isDarkMode ? "border-black/40" : "border-neutral-100/30"
-          }`}
-        >
-          <p>-</p>
-        </div>
-      )} */}
 
       <div className="flex flex-col text-[.9rem]">
         <div className="flex gap-2 items-center">
@@ -102,7 +68,7 @@ const MatchCard = ({ itm, league, isDarkMode }) => {
       <div className="flex gap-4 items-center ml-auto">
         {/* <p className="text-[.85rem]">{itm?.fixture?.status?.short}</p> */}
         <div
-          className={`h-full flex flex-col justify-between font-bold ${
+          className={`h-full flex flex-col justify-between items-center font-bold text-[.85rem] ${
             inPlay?.includes(itm?.fixture?.status?.short) && "text-orange-500"
           }`}
         >
