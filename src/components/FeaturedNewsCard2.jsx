@@ -2,13 +2,13 @@
 import { useNavigate } from "react-router-dom";
 import timeAgo from "../utils/timeAgo";
 
-const FeaturedNewsCard = ({ item }) => {
+const FeaturedNewsCard2 = ({ item }) => {
   const navigate = useNavigate();
 
   return (
     <div
       onClick={() => navigate(`/news-details/${item?.id}`)}
-      className="min-w-[300px] h-auto rounded-lg relative cursor-pointer"
+      className="min-w-[180px] h-auto rounded-lg relative cursor-pointer"
     >
       <img
         src={item?.mainMedia?.[0]?.thumbnail?.url}
@@ -30,4 +30,4 @@ const FeaturedNewsCard = ({ item }) => {
   );
 };
 
-export default FeaturedNewsCard;
+export default FeaturedNewsCard2;

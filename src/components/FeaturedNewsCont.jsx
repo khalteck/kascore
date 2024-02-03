@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useNavigate } from "react-router-dom";
 import newsData from "../data/news.json";
-import FeaturedNewsCard from "./FeaturedNewsCard";
+import FeaturedNewsCard2 from "./FeaturedNewsCard2";
 
 const FeaturedNewsCont = ({ isDarkMode }) => {
   const navigate = useNavigate();
@@ -9,9 +9,7 @@ const FeaturedNewsCont = ({ isDarkMode }) => {
 
   return (
     <div
-      className={`w-full min-w-[300px] h-fit ${
-        isDarkMode ? " bg-[#1d2732]" : "bg-gray-100"
-      }`}
+      className={`w-full h-fit ${isDarkMode ? " bg-[#1d2732]" : "bg-gray-100"}`}
     >
       <div
         onClick={() => navigate("/news")}
@@ -33,7 +31,7 @@ const FeaturedNewsCont = ({ isDarkMode }) => {
       <div className="flex flex-col gap-3">
         {" "}
         {featured?.map((item, index) => {
-          return <FeaturedNewsCard key={index} item={item} />;
+          return <FeaturedNewsCard2 key={index} item={item} />;
         })}
       </div>
     </div>

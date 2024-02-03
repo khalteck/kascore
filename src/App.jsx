@@ -7,7 +7,7 @@ import CricketPage from "./pages/CricketPage.jsx";
 
 const Homepage = lazy(() => import("./pages/Homepage"));
 const BasketballPage = lazy(() => import("./pages/BasketballPage"));
-const HockeyPage = lazy(() => import("./pages/HockeyPage.jsx"))
+const HockeyPage = lazy(() => import("./pages/HockeyPage.jsx"));
 const Favorites = lazy(() => import("./pages/Favorites"));
 const MatchDetails = lazy(() => import("./pages/MatchDetails"));
 const Leagues = lazy(() => import("./pages/Leagues"));
@@ -25,10 +25,7 @@ function App() {
         <Route path="/scores/tennis" element={<TennisPage />} />
         <Route path="/scores/hockey" element={<HockeyPage />} />
         <Route path="/scores/cricket" element={<CricketPage />} />
-        <Route
-          path="/scores/details/:league_name/:id"
-          element={<MatchDetails />}
-        />
+        <Route path="/scores/details/:id" element={<MatchDetails />} />
         <Route path="/scores/leagues" element={<Leagues />} />
         <Route path="/news" element={<News />} />
         <Route path="/news/:category" element={<News2 />} />

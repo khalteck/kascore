@@ -21,7 +21,7 @@ const HockeyPage = () => {
           isDarkMode ? "dark" : ""
         }`}
       >
-        <div className="w-full h-full flex gap-8">
+        <div className="w-full max-w-[1500px] mx-auto h-full flex gap-8">
           <div className="w-[20%] min-w-[200px] hidden md:block">
             <CountriesTray isDarkMode={isDarkMode} />
           </div>
@@ -168,7 +168,7 @@ const HockeyPage = () => {
             </div>
           </div>
           <div
-            className={`w-[30%] min-w-[200px] h-fit rounded-lg hidden lg:block p-4 ${
+            className={`w-[25%] min-w-[200px] h-fit rounded-lg hidden lg:block p-4 ${
               !isDarkMode ? "bg-gray-100" : "bg-[#1d2732]"
             }`}
           >

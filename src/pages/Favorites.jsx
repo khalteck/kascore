@@ -68,7 +68,7 @@ const Favorites = () => {
           </div>
 
           <div
-            className={`w-[30%] min-w-[200px] h-fit rounded-lg hidden lg:block p-4 ${
+            className={`w-[25%] min-w-[200px] h-fit rounded-lg hidden lg:block p-4 ${
               isDarkMode ? "bg-[#1d2732]" : "bg-gray-100"
             }`}
           >

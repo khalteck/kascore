@@ -140,6 +140,28 @@ const AppContextProvider = ({ children }) => {
 
   const [openSearch, setOpenSearch] = useState(false);
 
+  const [fixturesData, setfixturesData] = useState({});
+  const fetchLeagues = async () => {
+    const options = {
+      method: "GET",
+      url: "https://v3.football.api-sports.io/leagues",
+      headers: {
+        "X-RapidAPI-Key": "212912e40bmsh331c90cc55611e6p178f8djsna36fe9dec8b3",
+        "x-rapidapi-host": "v3.football.api-sports.io",
+      },
+    };
+
+    try {
+      setLoading2(true);
+      const response = await axios.request(options);
+      setfixturesData(response.data);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading2(false);
+    }
+  };
+
   return (
     <AppContext.Provider
       value={{
@@ -157,6 +179,8 @@ const AppContextProvider = ({ children }) => {
         loading2,
         newsDetailsData,
         getNewsDetails,
+        fixturesData,
+        fetchLeagues,
       }}
     >
       {children}

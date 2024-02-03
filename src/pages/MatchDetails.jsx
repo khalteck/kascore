@@ -65,7 +65,7 @@ const MatchDetails = () => {
     <>
       <Header />
       <div className="w-full pt-[150px] md:pt-[170px] md:pb-12 md:px-[10%] bg-white text-[#0f172a] dark:bg-[#2a3543] dark:text-gray-200">
-        <div className="w-full h-full flex gap-8">
+        <div className="w-full max-w-[1500px] mx-auto h-full flex gap-8">
           <div className="w-[20%] min-w-[200px] hidden md:block">
             <CountriesTray isDarkMode={isDarkMode} />
           </div>
@@ -498,7 +498,7 @@ const MatchDetails = () => {
           </div>
 
           <div
-            className={`w-[30%] min-w-[200px] h-fit rounded-lg hidden lg:block p-4 ${
+            className={`w-[25%] min-w-[200px] h-fit rounded-lg hidden lg:block p-4 ${
               isDarkMode ? "bg-[#1d2732]" : "bg-gray-100"
             }`}
           >

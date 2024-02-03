@@ -2,6 +2,7 @@
 import { useNavigate } from "react-router-dom";
 
 const MatchCard = ({ itm, league, isDarkMode }) => {
+  const teams = itm?.teams;
   const navigate = useNavigate();
 
   function parseTime(originalTime) {
@@ -15,17 +16,36 @@ const MatchCard = ({ itm, league, isDarkMode }) => {
     return formattedTime;
   }
 
+  const inPlay = ["1H", "HT", "2H", "ET", "BT", "P", "SUSP", "INT", "LIVE"];
+
   return (
     <div
-      onClick={() => navigate(`/scores/details/${league?.name}/${itm?.id}`)}
-      className={`flex gap-3 py-2 mb-2 pr-3 cursor-pointer ${
-        isDarkMode ? "hover:bg-black/20" : "hover:bg-orange-500/10"
+      // onClick={() => navigate(`/scores/details/${itm?.fixture?.id}`)}
+      className={`flex gap-3 py-2 pb-2 pr-3 cursor-pointer border-b ${
+        isDarkMode
+          ? "hover:bg-black/20 border-gray-700"
+          : "hover:bg-orange-500/10 border-gray-700/10"
       }`}
     >
-      {itm?.status === "notstarted" ? (
+      <div
+        className={`w-[60px] text-[.85rem] border-r flex flex-col justify-center items-center ${
+          !isDarkMode ? "border-black/40" : "border-neutral-100/30"
+        }`}
+      >
+        {itm?.fixture?.status?.short === "NS" ? (
+          <p>{parseTime(itm?.fixture?.date)}</p>
+        ) : (
+          <p>{itm?.fixture?.status?.short}</p>
+        )}
+
+        {inPlay?.includes(itm?.fixture?.status?.short) && (
+          <p className="text-orange-500">{itm?.fixture?.status?.elapsed}'</p>
+        )}
+      </div>
+      {/* {itm?.status === "notstarted" ? (
         <div
           className={`w-[60px] text-[.85rem] border-r flex flex-col justify-center items-center ${
-            !isDarkMode ? "border-black" : "border-neutral-100/30"
+            !isDarkMode ? "border-black/40" : "border-neutral-100/30"
           }`}
         >
           <p>{parseTime(itm?.start_at)}</p>
@@ -34,7 +54,7 @@ const MatchCard = ({ itm, league, isDarkMode }) => {
       ) : itm?.status === "finished" ? (
         <div
           className={`w-[60px] text-[.85rem] border-r flex flex-col justify-center items-center ${
-            !isDarkMode ? "border-black" : "border-neutral-100/30"
+            !isDarkMode ? "border-black/40" : "border-neutral-100/30"
           }`}
         >
           <p>FT</p>
@@ -42,7 +62,7 @@ const MatchCard = ({ itm, league, isDarkMode }) => {
       ) : itm?.status === "postponed" ? (
         <div
           className={`w-[60px] text-[.85rem] border-r flex flex-col justify-center items-center ${
-            !isDarkMode ? "border-black" : "border-neutral-100/30"
+            !isDarkMode ? "border-black/40" : "border-neutral-100/30"
           }`}
         >
           <p>PostP.</p>
@@ -50,37 +70,46 @@ const MatchCard = ({ itm, league, isDarkMode }) => {
       ) : (
         <div
           className={`w-[60px] text-[.85rem] border-r flex flex-col justify-center items-center ${
-            !isDarkMode ? "border-black" : "border-neutral-100/30"
+            !isDarkMode ? "border-black/40" : "border-neutral-100/30"
           }`}
         >
           <p>-</p>
         </div>
-      )}
+      )} */}
 
       <div className="flex flex-col text-[.9rem]">
         <div className="flex gap-2 items-center">
-          <img
-            alt="crest"
-            src={itm?.home_team?.logo}
-            className="w-4 h-4 rounded-full"
-          />
-          <p>{itm?.home_team?.name}</p>
+          {teams?.home?.logo ? (
+            <img
+              alt="crest"
+              src={teams?.home?.logo}
+              className="w-4 h-4 rounded-full"
+            />
+          ) : (
+            <div className="w-3 h-3 rounded-full dark:bg-white/10 bg-black/10"></div>
+          )}
+          <p>{teams?.home?.name}</p>
         </div>
         <div className="flex gap-2 items-center">
           <img
             alt="crest"
-            src={itm?.away_team?.logo}
+            src={teams?.away?.logo}
             className="w-4 h-4 rounded-full"
           />
-          <p>{itm?.away_team?.name}</p>
+          <p>{teams?.away?.name}</p>
         </div>
       </div>
       <div className="flex gap-4 items-center ml-auto">
-        <div className="h-full flex flex-col justify-between font-bold">
-          <p>{itm?.home_score?.current}</p>
-          <p>{itm?.away_score?.current}</p>
+        {/* <p className="text-[.85rem]">{itm?.fixture?.status?.short}</p> */}
+        <div
+          className={`h-full flex flex-col justify-between font-bold ${
+            inPlay?.includes(itm?.fixture?.status?.short) && "text-orange-500"
+          }`}
+        >
+          <p>{itm?.goals?.home}</p>
+          <p>{itm?.goals?.away}</p>
         </div>
-        <img alt="fave" src="/images/icons8-star-50.png" className="w-6 h-6" />
+        <img alt="fave" src="/images/icons8-star-50.png" className="w-5 h-5" />
       </div>
     </div>
   );
