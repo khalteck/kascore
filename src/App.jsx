@@ -6,6 +6,8 @@ import TennisPage from "./pages/TennisPage";
 import CricketPage from "./pages/CricketPage.jsx";
 
 const Homepage = lazy(() => import("./pages/Homepage"));
+const BaseballPage = lazy(() => import("./pages/BaseballPage"))
+const AmericanFPage = lazy(() => import("./pages/AmericanFPage"))
 const BasketballPage = lazy(() => import("./pages/BasketballPage"));
 const HockeyPage = lazy(() => import("./pages/HockeyPage.jsx"));
 const Favorites = lazy(() => import("./pages/Favorites"));
@@ -25,6 +27,8 @@ function App() {
         <Route path="/scores/tennis" element={<TennisPage />} />
         <Route path="/scores/hockey" element={<HockeyPage />} />
         <Route path="/scores/cricket" element={<CricketPage />} />
+        <Route path="/scores/baseball" element={<BaseballPage />} />
+        <Route path="/scores/americanfootball" element={<AmericanFPage />} /> 
         <Route path="/scores/details/:id" element={<MatchDetails />} />
         <Route path="/scores/leagues" element={<Leagues />} />
         <Route path="/news" element={<News />} />

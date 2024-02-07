@@ -10,7 +10,7 @@ import FeaturedNewsCont from "../components/FeaturedNewsCont";
 import { useAppContext } from "../contexts/AppContext";
 import ScrollToTop from "../ScrollToTop";
 
-const CricketPage = () => {
+const BaseballPage = () => {
   const { isDarkMode } = useAppContext();
   return (
     <>
@@ -211,4 +211,4 @@ const CricketPage = () => {
   );
 };
 
-export default CricketPage;
+export default BaseballPage;

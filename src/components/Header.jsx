@@ -86,7 +86,7 @@ const Header = () => {
               <ul className="hidden md:flex items-center gap-3 ml-auto h-[40px]">
                 <li
                   onClick={() => navigate("/scores/favorites")}
-                  className="flex gap-2 items-center cursor-pointer transition-all duration-300 border border-[#334155] bg-[#d1d5db] dark:bg-black/30 px-2 h-full rounded-md"
+                  className="flex gap-2 items-center cursor-pointer transition-all duration-300 border border-black/20 dark:border-[#334155] bg-[#d1d5db] dark:bg-black/30 px-2 h-full rounded-md"
                 >
                   <img
                     alt=""
@@ -111,7 +111,7 @@ const Header = () => {
                 <li className="h-full">
                   <div
                     onClick={toggleSearch}
-                    className="hidden md:flex items-center border border-[#334155] bg-[#d1d5db] dark:bg-black/30 px-2 h-full rounded-md cursor-pointer"
+                    className="hidden md:flex items-center border border-black/20 dark:border-[#334155] bg-[#d1d5db] dark:bg-black/30 px-2 h-full rounded-md cursor-pointer"
                   >
                     <img
                       src={
@@ -130,7 +130,7 @@ const Header = () => {
                   {" "}
                   <div
                     onClick={toggleMode}
-                    className="hidden md:flex items-center border border-[#334155] bg-[#d1d5db] dark:bg-black/30 px-2 h-full rounded-md cursor-pointer"
+                    className="hidden md:flex items-center border border-black/20 dark:border-[#334155] bg-[#d1d5db] dark:bg-black/30 px-2 h-full rounded-md cursor-pointer"
                   >
                     <img
                       alt=""
