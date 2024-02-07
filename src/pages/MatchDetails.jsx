@@ -12,6 +12,8 @@ import { useAppContext } from "../contexts/AppContext";
 import FeaturedNewsCont from "../components/FeaturedNewsCont";
 import ScrollToTop from "../ScrollToTop";
 import { useState } from "react";
+import SummaryCont from "../components/matchDetails/SummaryCont";
+import getDate from "../utils/getDate";
 
 const MatchDetails = () => {
   const { isDarkMode, topLeagues, fetchFixtureDetails, fixturesDetailsData } =
@@ -23,7 +25,7 @@ const MatchDetails = () => {
     (x) => x?.fixture?.id === Number(id)
   )[0];
 
-  console.log("currentMatch", currentMatch);
+  // console.log("currentMatch", currentMatch);
   const currentLeague = currentMatch?.league;
 
   function parseTime(originalTime) {
@@ -35,38 +37,6 @@ const MatchDetails = () => {
     const formattedTime = `${hours}:${minutes}`;
 
     return formattedTime;
-  }
-
-  function getDate(originalTime) {
-    const today = new Date();
-    const dateObject = new Date(originalTime);
-
-    const todayDate = new Date(
-      today.getFullYear(),
-      today.getMonth(),
-      today.getDate()
-    );
-
-    const yesterday = new Date(todayDate);
-    yesterday.setDate(today.getDate() - 1);
-
-    if (
-      dateObject.getFullYear() === today.getFullYear() &&
-      dateObject.getMonth() === today.getMonth() &&
-      dateObject.getDate() === today.getDate()
-    ) {
-      return "Today";
-    } else if (
-      dateObject.getFullYear() === yesterday.getFullYear() &&
-      dateObject.getMonth() === yesterday.getMonth() &&
-      dateObject.getDate() === yesterday.getDate()
-    ) {
-      return "Yesterday";
-    } else {
-      // For any other date, return the formatted date
-      const options = { year: "numeric", month: "long", day: "numeric" };
-      return dateObject.toLocaleDateString(undefined, options);
-    }
   }
 
   const inPlay = ["1H", "HT", "2H", "ET", "BT", "P", "SUSP", "INT", "LIVE"];
@@ -84,10 +54,6 @@ const MatchDetails = () => {
           </div>
 
           <div className="w-full md:w-[50%] md:min-w-[550px] md:bg-gray-100 dark:bg-[#1d2732] md:px-4 rounded-lg h-fit md:pb-5">
-            {/* <div className="w-full mb-4 md:mb-0">
-              <DateSlide />
-            </div> */}
-
             <div className="w-full bg-gray-100 dark:bg-[#121a20]/50 md:mt-5 rounded-lg px-3 py-5 min-h-screen md:min-h-fit">
               <div className=" w-full flex justify-between items-center ">
                 <div className=" flex gap-4 ">
@@ -126,7 +92,7 @@ const MatchDetails = () => {
                   <div className="w-[33%] flex flex-col items-center">
                     <img
                       src={currentMatch?.teams?.home?.logo}
-                      alt="arsenal"
+                      alt="home-team"
                       className=" w-8 h-8 m-auto "
                     />
                     <p className=" text-[.85rem] font-bold mt-3 ">
@@ -149,11 +115,11 @@ const MatchDetails = () => {
                   <div className="w-[33%] flex flex-col items-center">
                     <img
                       src={currentMatch?.teams?.away?.logo}
-                      alt="chelsea"
+                      alt="away-team"
                       className=" w-8 h-8 m-auto "
                     />
                     <p className=" text-[.85rem] font-bold mt-3">
-                      {currentMatch?.teams?.home?.name}
+                      {currentMatch?.teams?.away?.name}
                     </p>
                   </div>
                 </div>
@@ -165,56 +131,10 @@ const MatchDetails = () => {
                 isDarkMode={isDarkMode}
               />
 
-              <div className="w-full">
-                <h2 className="text-[.75rem]">MATCH INFO</h2>
-
-                <div className="w-full flex flex-col gap-3 p-3 border border-black/20 dark:border-white/30 rounded-lg text-[.75rem] mt-4">
-                  <div className="flex gap-2 items-center cursor-pointer">
-                    <img
-                      alt=""
-                      // src="/images/icons8-calendar-64.png"
-                      src={
-                        isDarkMode
-                          ? "/images/icons8-calendar-64.png"
-                          : "/images/icons8-calendar-black.png"
-                      }
-                      className="w-4 h-auto"
-                    />
-                    <p>{getDate(currentMatch?.fixture?.date)}</p>
-                  </div>
-
-                  <div className="flex gap-2 items-center cursor-pointer">
-                    <img
-                      alt=""
-                      // src="/images/icons8-whistle-100.png"
-                      src={
-                        isDarkMode
-                          ? "/images/icons8-whistle-100.png"
-                          : "/images/icons8-whistle-black.png"
-                      }
-                      className="w-4 h-auto opacity-60"
-                    />
-                    <p>{currentMatch?.fixture?.referee}</p>
-                  </div>
-
-                  <div className="flex gap-2 items-center cursor-pointer">
-                    <img
-                      alt=""
-                      // src="/images/icons8-stadium-64.png"
-                      src={
-                        isDarkMode
-                          ? "/images/icons8-stadium-64.png"
-                          : "/images/icons8-stadium-black.png"
-                      }
-                      className="w-4 h-auto opacity-70"
-                    />
-                    <p>
-                      {currentMatch?.fixture?.venue?.name} (
-                      {currentMatch?.fixture?.venue?.city})
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <SummaryCont
+                isDarkMode={isDarkMode}
+                currentMatch={currentMatch}
+              />
 
               {/* <div className=" flex gap-2">
                 <button className=" py-2 px-3 md:py-2 md:px-4 border rounded-full text-neutral-100/50 text-[0.7rem] md:text-[0.85rem] hover:text-white hover:border-neutral-100/50 ">

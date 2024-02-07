@@ -6367,13 +6367,13 @@
       },
       "teams": {
         "home": {
-          "id": 53,
+          "id": 11,
           "name": "Reading",
           "logo": "https://media.api-sports.io/football/teams/53.png",
           "winner": true
         },
         "away": {
-          "id": 35,
+          "id": 14,
           "name": "Bournemouth",
           "logo": "https://media.api-sports.io/football/teams/35.png",
           "winner": false
