@@ -22,7 +22,7 @@ const NewsListCont = () => {
     <>
       <ul
         id="list"
-        className="bg-[#2a3543]/60 text-white dark:text-[#d1d5db] dark:bg-[#5a636b] w-full px-3 lg:px-[10%] h-[50px] md:h-[60px] gap-3 md:gap-6 items-center justify-start flex overflow-x-auto whitespace-nowrap no-scrollbar border-t-2 border-orange-500"
+        className="bg-[#2a3543]/60 text-white dark:text-[#d1d5db] dark:bg-[#5a636b] w-full px-3 lg:px-[10%] h-[50px] md:h-[60px] gap-3 md:gap-6 items-center justify-start flex overflow-x-auto whitespace-nowrap no-scrollbar md:border-t-2 border-orange-500"
       >
         <li
           onClick={() => navigate("/news")}

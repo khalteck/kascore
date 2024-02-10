@@ -20,7 +20,7 @@ const SportListCont = () => {
     <>
       <ul
         id="list"
-        className="bg-[#2a3543]/60 dark:bg-[#5a636b] w-full lg:px-[10%] h-[50px] md:h-[60px] gap-3 md:gap-6 items-center justify-start flex overflow-x-auto whitespace-nowrap no-scrollbar border-t-2 border-orange-500 pl-3 pr-10 relative"
+        className="bg-[#2a3543]/60 dark:bg-[#5a636b] w-full lg:px-[10%] h-[50px] md:h-[60px] gap-3 md:gap-6 items-center justify-start flex overflow-x-auto whitespace-nowrap no-scrollbar md:border-t-2 border-orange-500 pl-3 pr-10 relative"
       >
         {sports?.map((item, index, arr) => {
           return (

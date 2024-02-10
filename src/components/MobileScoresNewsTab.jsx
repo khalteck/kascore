@@ -11,15 +11,13 @@ const MobileScoresNewsTab = ({ currentPage, isDarkMode }) => {
         onClick={() => navigate("/")}
         className={`w-full p-3 flex justify-center items-center gap-2 font-medium ${
           !currentPage?.includes("/news") &&
-          "border-t border-r border-orange-500 bg-black/10 dark:bg-black/20"
+          "border-b-[3px] border-orange-500 bg-black/10 dark:bg-black/20"
         }`}
       >
         <img
           alt="icon"
           src={
-            currentPage === "/"
-              ? "/images/icons8-football-orange.png"
-              : isDarkMode
+            isDarkMode
               ? "/images/icons8-football-50.png"
               : "/images/icons8-football-black.png"
           }
@@ -31,15 +29,13 @@ const MobileScoresNewsTab = ({ currentPage, isDarkMode }) => {
         onClick={() => navigate("/news")}
         className={`w-full p-3 flex justify-center items-center gap-2 font-medium ${
           currentPage?.includes("/news") &&
-          "border-t border-l border-orange-500 bg-black/10 dark:bg-black/20"
+          "border-b-[3px] border-orange-500 bg-black/10 dark:bg-black/20"
         }`}
       >
         <img
           alt="icon"
           src={
-            currentPage === "/news"
-              ? "/images/icons8-news-orange.png"
-              : isDarkMode
+            isDarkMode
               ? "/images/icons8-news-64.png"
               : "/images/icons8-news-black.png"
           }
