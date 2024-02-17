@@ -110,21 +110,28 @@ const LineupsCont = ({ isDarkMode, currentMatch }) => {
     });
   });
 
-  console.log("homeTeam", homeTeam);
-  console.log("awayTeam", awayTeam);
+  // console.log("homeLineup", homeLineup);
 
   return (
     <div className="w-full">
       <div className="w-full min-h-[300px]">
-        <p>
-          Formations{" "}
-          <span className="text-[.85rem] opacity-50">(scroll {">"})</span>
-        </p>
-        <div className="mt-5 overflow-x-auto no-scrollbar">
+        <div className="flex justify-between gap-3 items-center">
+          <div className="text-start text-[.85rem]">
+            <p className="font-bold uppercase">{homeLineup?.team?.name}</p>
+            <p>{homeLineup?.formation}</p>
+          </div>
+          <div className="text-end text-[.85rem]">
+            <p className="font-bold uppercase">{awayLineup?.team?.name}</p>
+            <p>{awayLineup?.formation}</p>
+          </div>
+        </div>
+        <p className="text-[.85rem] opacity-50 mt-5">Scroll to reveal {">"}</p>
+
+        <div className="mt-3 overflow-x-auto no-scrollbar">
           {/* <Pitch teamsData={teamsData} homeId={homeId} awayId={awayId} /> */}
           <SoccerLineUp
             size={"small"}
-            color={"#588f58"}
+            color={"#48b048"}
             pattern={"lines"}
             homeTeam={homeTeam}
             awayTeam={awayTeam}
