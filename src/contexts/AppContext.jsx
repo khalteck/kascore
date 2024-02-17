@@ -215,6 +215,58 @@ const AppContextProvider = ({ children }) => {
     }
   };
 
+  //=========================================================to fetch match events
+  const [matchEvents, setmatchEvents] = useState({});
+  const fetchMatchEvents = async (fixtureId) => {
+    const options = {
+      method: "GET",
+      url: "https://v3.football.api-sports.io/fixtures/events",
+      headers: {
+        "X-RapidAPI-Key": "212912e40bmsh331c90cc55611e6p178f8djsna36fe9dec8b3",
+        "x-rapidapi-host": "v3.football.api-sports.io",
+      },
+      params: {
+        fixture: fixtureId,
+      },
+    };
+
+    try {
+      setLoading2(true);
+      const response = await axios.request(options);
+      setmatchEvents(response.data);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading2(false);
+    }
+  };
+
+  //=========================================================to fetch match lineups
+  const [matchLineups, setmatchLineups] = useState({});
+  const fetchMatchLineups = async (fixtureId) => {
+    const options = {
+      method: "GET",
+      url: "https://v3.football.api-sports.io/fixtures/lineups",
+      headers: {
+        "X-RapidAPI-Key": "212912e40bmsh331c90cc55611e6p178f8djsna36fe9dec8b3",
+        "x-rapidapi-host": "v3.football.api-sports.io",
+      },
+      params: {
+        fixture: fixtureId,
+      },
+    };
+
+    try {
+      setLoading2(true);
+      const response = await axios.request(options);
+      setmatchLineups(response.data);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading2(false);
+    }
+  };
+
   return (
     <AppContext.Provider
       value={{

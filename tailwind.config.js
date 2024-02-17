@@ -14,7 +14,11 @@ export default {
       exo: ["Exo 2", "sans-serif"],
       tek: ["Tektur", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        pitch: "url('/images/pitch.jpg')",
+      },
+    },
   },
   darkMode: "class", // Enable class-based dark mode
   plugins: [

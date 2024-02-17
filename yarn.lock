@@ -2262,6 +2262,11 @@ react-router@6.19.0:
   dependencies:
     "@remix-run/router" "1.12.0"
 
+react-soccer-lineup@^0.4.3:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/react-soccer-lineup/-/react-soccer-lineup-0.4.3.tgz#b9b41f0befe10bfa37b3e464dedaf1c6221dacc7"
+  integrity sha512-MwGPJfmJl4IeDXBFi+BN3EXzzqOF3fLbl2er2BOBU0WGx6nYPB9GzKjIct4bt+aiDoQadbfKvZ6V0c/hPdTkzA==
+
 react-spinners@^0.13.8:
   version "0.13.8"
   resolved "https://registry.yarnpkg.com/react-spinners/-/react-spinners-0.13.8.tgz#5262571be0f745d86bbd49a1e6b49f9f9cb19acc"

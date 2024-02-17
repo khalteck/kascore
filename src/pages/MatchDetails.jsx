@@ -14,6 +14,7 @@ import ScrollToTop from "../ScrollToTop";
 import { useState } from "react";
 import SummaryCont from "../components/matchDetails/SummaryCont";
 import getDate from "../utils/getDate";
+import LineupsCont from "../components/matchDetails/LineupsCont";
 
 const MatchDetails = () => {
   const { isDarkMode, topLeagues, fetchFixtureDetails, fixturesDetailsData } =
@@ -131,10 +132,19 @@ const MatchDetails = () => {
                 isDarkMode={isDarkMode}
               />
 
-              <SummaryCont
-                isDarkMode={isDarkMode}
-                currentMatch={currentMatch}
-              />
+              {currentTab === "summary" && (
+                <SummaryCont
+                  isDarkMode={isDarkMode}
+                  currentMatch={currentMatch}
+                />
+              )}
+
+              {currentTab === "lineups" && (
+                <LineupsCont
+                  isDarkMode={isDarkMode}
+                  currentMatch={currentMatch}
+                />
+              )}
 
               {/* <div className=" flex gap-2">
                 <button className=" py-2 px-3 md:py-2 md:px-4 border rounded-full text-neutral-100/50 text-[0.7rem] md:text-[0.85rem] hover:text-white hover:border-neutral-100/50 ">
