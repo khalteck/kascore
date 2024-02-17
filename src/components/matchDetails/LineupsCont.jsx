@@ -29,9 +29,9 @@ const LineupsCont = ({ isDarkMode, currentMatch }) => {
       fw: [],
     },
     style: {
-      color: "black",
+      color: "white",
       nameColor: "white",
-      numberColor: "white",
+      numberColor: "black",
     },
   };
 
@@ -42,10 +42,11 @@ const LineupsCont = ({ isDarkMode, currentMatch }) => {
       cm: [],
       fw: [],
     },
+
     style: {
-      color: "white",
+      color: "black",
       nameColor: "white",
-      numberColor: "black",
+      numberColor: "white",
     },
   };
 
@@ -133,13 +134,13 @@ const LineupsCont = ({ isDarkMode, currentMatch }) => {
             size={"small"}
             color={"#48b048"}
             pattern={"lines"}
-            homeTeam={homeTeam}
-            awayTeam={awayTeam}
+            homeTeam={awayTeam}
+            awayTeam={homeTeam}
           />
         </div>
       </div>
 
-      <div className="w-full min-h-[400px] mt-14">
+      <div className="w-full min-h-[400px] mt-10">
         <div className="w-full bg-black/20 px-3 py-1 border-y border-black/20 dark:border-white/10 text-center">
           Starting XI
         </div>

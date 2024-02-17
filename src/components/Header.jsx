@@ -5,6 +5,7 @@ import CountriesTray from "./CountriesTray";
 import { useAppContext } from "../contexts/AppContext";
 import NewsListCont from "./NewsListCont";
 import MobileScoresNewsTab from "./MobileScoresNewsTab";
+import { useEffect, useState } from "react";
 
 const Header = () => {
   const { currentPage, toggleMode, isDarkMode, setOpenSearch, openSearch } =
@@ -15,6 +16,39 @@ const Header = () => {
   function toggleSearch() {
     setOpenSearch((prev) => !prev);
   }
+
+  const [isVisible, setIsVisible] = useState(true);
+  const threshold = 200;
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      const isScrollingDown = currentScrollPos > threshold;
+
+      setIsVisible(!isScrollingDown);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [threshold]);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 1024px)");
+    const handleResize = () => {
+      setIsSmallScreen(mediaQuery.matches);
+    };
+
+    mediaQuery.addListener(handleResize);
+    handleResize();
+
+    return () => {
+      mediaQuery.removeListener(handleResize);
+    };
+  }, []);
 
   return (
     <>
@@ -191,11 +225,32 @@ const Header = () => {
             </div>
           </div>
 
-          <MobileScoresNewsTab
-            currentPage={currentPage}
-            isDarkMode={isDarkMode}
-          />
-          {currentPage?.includes("news") ? <NewsListCont /> : <SportListCont />}
+          {isVisible && (
+            <>
+              <MobileScoresNewsTab
+                currentPage={currentPage}
+                isDarkMode={isDarkMode}
+              />
+            </>
+          )}
+
+          {isVisible && isSmallScreen && (
+            <>
+              {currentPage?.includes("news") ? (
+                <NewsListCont />
+              ) : (
+                <SportListCont />
+              )}
+            </>
+          )}
+
+          <div className="md:block hidden">
+            {currentPage?.includes("news") ? (
+              <NewsListCont />
+            ) : (
+              <SportListCont />
+            )}
+          </div>
         </div>
       </header>
 
