@@ -16,6 +16,8 @@ import SummaryCont from "../components/matchDetails/SummaryCont";
 import getDate from "../utils/getDate";
 import LineupsCont from "../components/matchDetails/LineupsCont";
 import StatsCont from "../components/matchDetails/StatsCont";
+import H2hCont from "../components/matchDetails/H2hCont";
+import StandingsCont from "../components/matchDetails/StandingsCont";
 
 const MatchDetails = () => {
   const { isDarkMode, topLeagues, fetchFixtureDetails, fixturesDetailsData } =
@@ -147,12 +149,11 @@ const MatchDetails = () => {
                 />
               )}
 
-              {currentTab === "statistics" && (
-                <StatsCont
-                  isDarkMode={isDarkMode}
-                  currentMatch={currentMatch}
-                />
-              )}
+              {currentTab === "statistics" && <StatsCont />}
+
+              {currentTab === "h2h" && <H2hCont />}
+
+              {currentTab === "standings" && <StandingsCont />}
             </div>
           </div>
 

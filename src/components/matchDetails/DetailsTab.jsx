@@ -56,14 +56,14 @@ const DetailsTab = ({ currentTab, setCurrentTab, isDarkMode }) => {
       >
         STANDINGS
       </div>
-      <div
+      {/* <div
         onClick={() => setCurrentTab("news")}
         className={`hover:text-orange-500 text-[0.8rem] uppercase cursor-pointer ${
           currentTab === "news" && "text-orange-500"
         }`}
       >
         News
-      </div>
+      </div> */}
       {/* <div
         onClick={scrollListToRight}
         className="w-[50px] h-[48px] md:h-[60px] bg-gradient-to-l from-[#d1d5db] dark:from-[#1d2732] to-transparent absolute top-0 right-0 md:hidden flex items-center justify-end px-1"

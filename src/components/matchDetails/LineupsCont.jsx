@@ -128,8 +128,9 @@ const LineupsCont = ({ isDarkMode, currentMatch }) => {
         </div>
         <p className="text-[.85rem] opacity-50 mt-5">Scroll to reveal {">"}</p>
 
+        {/* <Pitch teamsData={teamsData} homeId={homeId} awayId={awayId} /> */}
+
         <div className="mt-3 overflow-x-auto no-scrollbar">
-          {/* <Pitch teamsData={teamsData} homeId={homeId} awayId={awayId} /> */}
           <SoccerLineUp
             size={"small"}
             color={"#48b048"}

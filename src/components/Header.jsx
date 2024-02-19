@@ -18,7 +18,7 @@ const Header = () => {
   }
 
   const [isVisible, setIsVisible] = useState(true);
-  const threshold = 200;
+  const threshold = 150;
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {

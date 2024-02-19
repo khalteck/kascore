@@ -5,7 +5,7 @@ import eventsData from "../../data/events112.json";
 
 const SummaryCont = ({ isDarkMode, currentMatch }) => {
   const events = eventsData?.response;
-  console.log("events", events);
+  // console.log("events", events);
 
   const homeId = currentMatch?.teams?.home?.id;
   const awayId = currentMatch?.teams?.away?.id;
