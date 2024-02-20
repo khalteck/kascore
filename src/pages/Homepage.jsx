@@ -52,7 +52,7 @@ const Homepage = () => {
       return 0;
     }
   });
-  console.log("fixtures", fixtures);
+  // console.log("fixtures", fixtures);
 
   // useEffect(() => {
   //   fetchLeagues();

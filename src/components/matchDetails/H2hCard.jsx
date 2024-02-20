@@ -5,8 +5,8 @@ const H2hCard = ({ item }) => {
         {item?.league?.name}
       </div>
       <div className="w-full flex gap-4 bg-gray-500/10 dark:bg-black/20 p-3 rounded-md">
-        <div className="w-[80px] py-1 flex flex-col justify-between items-center text-[.75em]">
-          <p>{item?.fixture?.date?.split("T")[0]}</p>
+        <div className="w-[90px] py-2 flex flex-col justify-between items-center text-[.75em]">
+          <p className="text-center">{item?.fixture?.date?.split("T")[0]}</p>
           <p>{item?.fixture?.status?.short}</p>
         </div>
         <div className="w-full flex flex-col gap-2">

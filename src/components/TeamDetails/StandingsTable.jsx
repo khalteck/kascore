@@ -1,7 +1,7 @@
 import standingsData from "../../data/standings112.json";
 import { useNavigate } from "react-router-dom";
 
-const StandingsCont = () => {
+const StandingsTable = ({ teamId }) => {
   const standings = standingsData?.response[0]?.league?.standings[0];
   const navigate = useNavigate();
 
@@ -34,7 +34,6 @@ const StandingsCont = () => {
     x?.replace(/_/g, " ")
   );
 
-  // console.log("categorizedData", categorizedData);
   return (
     <div className="w-full min-h-[300px]">
       <div className="flex gap-2 items-center">
@@ -65,7 +64,6 @@ const StandingsCont = () => {
             const description =
               item.description?.replace(/ /g, "_") || "No_Description";
             const myCategoryColor = categorizedData[description]?.color;
-            // console.log("myCategoryColor", myCategoryColor);
 
             return (
               <div
@@ -73,7 +71,9 @@ const StandingsCont = () => {
                 onClick={() => {
                   navigate(`/scores/football/team/${item?.team?.id}`);
                 }}
-                className="w-full border border-black/10 dark:border-white/10 flex gap-3 items-center py-2 pr-2"
+                className={`w-full border border-black/10 dark:border-white/10 flex gap-3 items-center py-2 pr-2 cursor-pointer ${
+                  teamId === item?.team?.id && "bg-white/10 font-bold"
+                }`}
               >
                 <div className="flex gap-1 items-center">
                   <div
@@ -129,4 +129,4 @@ const StandingsCont = () => {
   );
 };
 
-export default StandingsCont;
+export default StandingsTable;

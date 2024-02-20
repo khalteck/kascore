@@ -91,7 +91,11 @@ const MatchDetails = () => {
                 </div>
               </div>
 
-              <div className=" w-full my-3 bg-gray-200 dark:bg-[#121a20] rounded-lg flex justify-center items-center ">
+              <div
+                className={`w-full my-3 rounded-lg flex justify-center items-center ${
+                  isDarkMode ? "bg-[#121a20] " : "bg-gray-200"
+                }`}
+              >
                 <div className="w-full md:w-[80%] bg-inherit flex justify-between items-center m-auto py-3">
                   <div className="w-[33%] flex flex-col items-center">
                     <img

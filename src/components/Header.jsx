@@ -6,6 +6,7 @@ import { useAppContext } from "../contexts/AppContext";
 import NewsListCont from "./NewsListCont";
 import MobileScoresNewsTab from "./MobileScoresNewsTab";
 import { useEffect, useState } from "react";
+import SearchCont from "./search/SearchCont";
 
 const Header = () => {
   const { currentPage, toggleMode, isDarkMode, setOpenSearch, openSearch } =
@@ -239,51 +240,22 @@ const Header = () => {
               {currentPage?.includes("news") ? (
                 <NewsListCont />
               ) : (
-                <SportListCont />
+                !openSearch && <SportListCont />
               )}
             </>
           )}
 
-          <div className="md:block hidden">
+          <div className="md:block hidden w-full">
             {currentPage?.includes("news") ? (
               <NewsListCont />
             ) : (
-              <SportListCont />
+              !openSearch && <SportListCont />
             )}
           </div>
         </div>
       </header>
 
-      {openSearch && (
-        <div className="w-full h-screen overflow-y-auto fixed top-0 left-0 pt-4 pb-[80px] bg-white dark:bg-[#1d2732] z-40 dark:text-neutral-100">
-          <div className="w-full md:w-[600px] md:mx-auto flex gap-3 items-center px-3 mb-3">
-            <input
-              type="text"
-              placeholder="Search by country..."
-              className="w-full border border-black/20 dark:border-neutral-100/30 rounded-md bg-inherit outline-none px-2 py-1 placeholder:text-[.85rem]"
-            />
-            <img
-              alt="calendar"
-              // src="/images/icons8-close-50.png"
-              src={
-                isDarkMode
-                  ? "/images/icons8-close-50.png"
-                  : "/images/icons8-close-black.png"
-              }
-              className="w-6 h-auto cursor-pointer"
-              onClick={toggleSearch}
-            />
-          </div>
-
-          <div>
-            <SportListSearch />
-          </div>
-
-          <div className="w-full">
-            <CountriesTray isDarkMode={isDarkMode} />
-          </div>
-        </div>
-      )}
+      {openSearch && <SearchCont toggleSearch={toggleSearch} />}
     </>
   );
 };

@@ -3,11 +3,13 @@ import sports from "../data/sports.json";
 // import { useNavigate } from "react-router-dom";
 
 const SportListCont = () => {
-  const { currentPage, isDarkMode } = useAppContext();
+  const { currentPage, isDarkMode, openSearch } = useAppContext();
   // const navigate = useNavigate();
 
   const scrollListToRight = () => {
-    const listElement = document.getElementById("list");
+    const id = openSearch ? "searchList" : "list";
+    const listElement = document.getElementById(id);
+
     if (listElement) {
       listElement.scrollTo({
         left: listElement.scrollLeft + 100,
@@ -19,7 +21,7 @@ const SportListCont = () => {
   return (
     <>
       <ul
-        id="list"
+        id={openSearch ? "searchList" : "list"}
         className="bg-[#2a3543]/60 dark:bg-[#5a636b] w-full lg:px-[10%] h-[50px] md:h-[60px] gap-3 md:gap-6 items-center justify-start flex overflow-x-auto whitespace-nowrap no-scrollbar md:border-t-2 border-orange-500 pl-3 pr-10 relative"
       >
         {sports?.map((item, index, arr) => {
@@ -52,7 +54,9 @@ const SportListCont = () => {
       </ul>
       <div
         onClick={scrollListToRight}
-        className="w-[50px] h-[48px] md:h-[60px] bg-gradient-to-l from-[#d1d5db] dark:from-[#1d2732] to-transparent absolute top-[107px] right-0 md:hidden flex items-center justify-end px-1"
+        className={`w-[50px] h-[48px] md:h-[60px] bg-gradient-to-l from-[#d1d5db] dark:from-[#1d2732] to-transparent absolute right-0 md:hidden flex items-center justify-end px-1 ${
+          openSearch ? "top-[62px]" : "top-[107px] "
+        }`}
       >
         <img
           alt=""
