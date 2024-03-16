@@ -19,7 +19,7 @@ const DetailsTab = ({ currentTab, setCurrentTab, isDarkMode }) => {
       <div
         onClick={() => setCurrentTab("summary")}
         className={`hover:text-orange-500 text-[0.8rem] uppercase cursor-pointer ${
-          currentTab === "summary" && "text-orange-500"
+          currentTab === "summary" && "text-orange-500 font-bold"
         }`}
       >
         Summary
@@ -27,7 +27,7 @@ const DetailsTab = ({ currentTab, setCurrentTab, isDarkMode }) => {
       <div
         onClick={() => setCurrentTab("lineups")}
         className={`hover:text-orange-500 text-[0.8rem] uppercase cursor-pointer ${
-          currentTab === "lineups" && "text-orange-500"
+          currentTab === "lineups" && "text-orange-500 font-bold"
         }`}
       >
         LINEUPS
@@ -35,7 +35,7 @@ const DetailsTab = ({ currentTab, setCurrentTab, isDarkMode }) => {
       <div
         onClick={() => setCurrentTab("statistics")}
         className={`hover:text-orange-500 text-[0.8rem] uppercase cursor-pointer ${
-          currentTab === "statistics" && "text-orange-500"
+          currentTab === "statistics" && "text-orange-500 font-bold"
         }`}
       >
         STATISTICS
@@ -43,7 +43,7 @@ const DetailsTab = ({ currentTab, setCurrentTab, isDarkMode }) => {
       <div
         onClick={() => setCurrentTab("h2h")}
         className={`hover:text-orange-500 text-[0.8rem] uppercase cursor-pointer ${
-          currentTab === "h2h" && "text-orange-500"
+          currentTab === "h2h" && "text-orange-500 font-bold"
         }`}
       >
         H2H
@@ -51,19 +51,19 @@ const DetailsTab = ({ currentTab, setCurrentTab, isDarkMode }) => {
       <div
         onClick={() => setCurrentTab("standings")}
         className={`hover:text-orange-500 text-[0.8rem] uppercase cursor-pointer ${
-          currentTab === "standings" && "text-orange-500"
+          currentTab === "standings" && "text-orange-500 font-bold"
         }`}
       >
         STANDINGS
       </div>
-      {/* <div
+      <div
         onClick={() => setCurrentTab("news")}
         className={`hover:text-orange-500 text-[0.8rem] uppercase cursor-pointer ${
-          currentTab === "news" && "text-orange-500"
+          currentTab === "news" && "text-orange-500 font-bold"
         }`}
       >
         News
-      </div> */}
+      </div>
       {/* <div
         onClick={scrollListToRight}
         className="w-[50px] h-[48px] md:h-[60px] bg-gradient-to-l from-[#d1d5db] dark:from-[#1d2732] to-transparent absolute top-0 right-0 md:hidden flex items-center justify-end px-1"

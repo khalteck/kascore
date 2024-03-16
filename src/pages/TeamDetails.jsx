@@ -32,7 +32,7 @@ const TeamDetails = () => {
     <>
       <Header />
       <div
-        className={`w-full pt-[150px] md:pt-[170px] md:pb-12 md:px-[10%] bg-[#d1d5db] text-[#0f172a] dark:bg-[#2a3543] dark:text-gray-200 ${
+        className={`w-full pt-[100px] md:pt-[170px] md:pb-12 md:px-[10%] bg-[#d1d5db] text-[#0f172a] dark:bg-[#2a3543] dark:text-gray-200 ${
           isDarkMode ? "dark" : ""
         }`}
       >
@@ -42,7 +42,7 @@ const TeamDetails = () => {
           </div>
 
           <div
-            className={`w-full md:w-[50%] md:min-w-[550px] h-full rounded-lg px-3 py-5  ${
+            className={`w-full md:w-[50%] md:min-w-[550px] h-full md:rounded-lg px-3 py-5  ${
               isDarkMode ? "bg-[#1d2732]" : "bg-gray-100"
             }`}
           >

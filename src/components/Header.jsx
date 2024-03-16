@@ -240,7 +240,7 @@ const Header = () => {
               {currentPage?.includes("news") ? (
                 <NewsListCont />
               ) : (
-                !openSearch && <SportListCont />
+                !openSearch && currentPage === "/" && <SportListCont />
               )}
             </>
           )}

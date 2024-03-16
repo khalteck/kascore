@@ -3,6 +3,7 @@ import { createContext, useContext, useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import events from "../data/events.json";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export const AppContext = createContext();
 
@@ -10,6 +11,8 @@ export const AppContext = createContext();
 const AppContextProvider = ({ children }) => {
   const location = useLocation();
   let currentPage = location.pathname;
+
+  const navigate = useNavigate();
 
   const [isDarkMode, setIsDarkMode] = useState(
     JSON.parse(localStorage.getItem("mode"))
@@ -290,6 +293,7 @@ const AppContextProvider = ({ children }) => {
         fetchFixtures,
         fixturesDetailsData,
         fetchFixtureDetails,
+        navigate,
       }}
     >
       {children}

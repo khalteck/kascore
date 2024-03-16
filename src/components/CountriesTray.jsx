@@ -7,7 +7,7 @@ import competitions from "../data/competitions.json";
 import { useAppContext } from "../contexts/AppContext";
 
 const CountriesTray = ({ isDarkMode }) => {
-  const { openSearch, setOpenSearch } = useAppContext();
+  const { openSearch, setOpenSearch, navigate } = useAppContext();
   const [loading, setLoading] = useState(false);
 
   function toggleSearch() {
@@ -173,6 +173,7 @@ const CountriesTray = ({ isDarkMode }) => {
             return (
               <div
                 key={ind}
+                onClick={() => navigate(`/scores/football/competition/1`)}
                 className="w-full whitespace-nowrap truncate flex gap-3 px-2 py-1 hover:bg-black/20 dark:hover:bg-orange-500/10 rounded-md cursor-pointer"
               >
                 <img

@@ -47,16 +47,6 @@ const Tab = ({ currentTab, setCurrentTab }) => {
         STANDINGS
       </div>{" "}
       <div
-        onClick={() => setCurrentTab("squad")}
-        className={`hover:text-orange-500 text-[0.8rem] uppercase cursor-pointer border-b-2 ${
-          currentTab === "squad"
-            ? "text-orange-500 border-orange-500 font-bold"
-            : "border-transparent"
-        }`}
-      >
-        SQUAD
-      </div>
-      <div
         onClick={() => setCurrentTab("news")}
         className={`hover:text-orange-500 text-[0.8rem] uppercase cursor-pointer border-b-2 ${
           currentTab === "news"

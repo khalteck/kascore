@@ -18,6 +18,7 @@ import LineupsCont from "../components/matchDetails/LineupsCont";
 import StatsCont from "../components/matchDetails/StatsCont";
 import H2hCont from "../components/matchDetails/H2hCont";
 import StandingsCont from "../components/matchDetails/StandingsCont";
+import NewsTeam from "../components/matchDetails/NewsTeam";
 
 const MatchDetails = () => {
   const { isDarkMode, topLeagues, fetchFixtureDetails, fixturesDetailsData } =
@@ -51,13 +52,13 @@ const MatchDetails = () => {
   return (
     <>
       <Header />
-      <div className="w-full pt-[150px] md:pt-[170px] md:pb-12 md:px-[10%] bg-white text-[#0f172a] dark:bg-[#2a3543] dark:text-gray-200">
+      <div className="w-full pt-[100px] md:pt-[170px] md:pb-12 md:px-[10%] bg-white text-[#0f172a] dark:bg-[#2a3543] dark:text-gray-200">
         <div className="w-full max-w-[1500px] mx-auto h-full flex gap-8">
           <div className="w-[20%] min-w-[200px] hidden md:block">
             <CountriesTray isDarkMode={isDarkMode} />
           </div>
 
-          <div className="w-full md:w-[50%] md:min-w-[550px] md:bg-gray-100 dark:bg-[#1d2732] md:px-4 rounded-lg h-fit md:pb-5">
+          <div className="w-full md:w-[50%] md:min-w-[550px] md:bg-gray-100 dark:bg-[#1d2732] md:px-4 md:rounded-lg h-fit md:pb-5">
             <div className="w-full bg-gray-100 dark:bg-[#121a20]/50 md:mt-5 rounded-lg px-3 py-5 min-h-screen md:min-h-fit">
               <div className=" w-full flex justify-between items-center ">
                 <div className=" flex gap-4 ">
@@ -158,6 +159,8 @@ const MatchDetails = () => {
               {currentTab === "h2h" && <H2hCont />}
 
               {currentTab === "standings" && <StandingsCont />}
+
+              {currentTab === "news" && <NewsTeam />}
             </div>
           </div>
 
