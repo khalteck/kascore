@@ -26,6 +26,11 @@ const Homepage = () => {
     fixturesDetailsData,
   } = useAppContext();
 
+  useEffect(() => {
+    fetchLeagues();
+  }, []);
+  console.log("leaguesData", leaguesData);
+
   const fixturesDataRaw = leagues?.response;
   const fixtures = fixture112?.response;
 
