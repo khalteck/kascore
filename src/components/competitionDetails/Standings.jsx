@@ -4,11 +4,11 @@
 import StandingsTable from "./StandingsTable";
 import ScrollToTop from "../../ScrollToTop";
 
-const Standings = ({}) => {
+const Standings = ({ standings }) => {
   return (
     <>
       <div className="w-full">
-        <StandingsTable />
+        <StandingsTable standings={standings} />
       </div>
       <ScrollToTop />
     </>

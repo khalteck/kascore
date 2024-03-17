@@ -71,9 +71,10 @@ const CountriesTray = ({ isDarkMode }) => {
             return (
               <div
                 key={ind}
-                onClick={() =>
-                  navigate(`/scores/football/competition/${itm?.league?.id}`)
-                }
+                onClick={() => {
+                  navigate(`/scores/football/competition/${itm?.league?.id}`);
+                  setOpenSearch(false);
+                }}
                 className="w-full whitespace-nowrap truncate flex gap-3 px-2 py-1 hover:bg-black/20 dark:hover:bg-orange-500/10 rounded-md cursor-pointer"
               >
                 <img

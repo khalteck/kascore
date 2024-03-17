@@ -28,6 +28,7 @@ const CompetitionDetails = () => {
     fetchResult,
     fixtureDetailsData,
     fetchFixtureDetailsData,
+    currentPage,
   } = useAppContext();
 
   const [currentTab, setCurrentTab] = useState("overview");
@@ -48,7 +49,7 @@ const CompetitionDetails = () => {
     fetchStandings(leagueId, year);
     fetchResult(leagueId, year, 3);
     fetchFixtureDetailsData(leagueId, year, 3);
-  }, [currentComp]);
+  }, [currentComp, currentPage]);
 
   const standings = standingsData?.response?.[0]?.league?.standings[0];
 
@@ -99,7 +100,9 @@ const CompetitionDetails = () => {
                 )}
                 {currentTab === "fixtures" && <Fixtures />}
                 {currentTab === "results" && <Results />}
-                {currentTab === "standings" && <Standings />}
+                {currentTab === "standings" && (
+                  <Standings standings={standings} />
+                )}
                 {currentTab === "news" && <NewsTeam />}
               </div>
             )}

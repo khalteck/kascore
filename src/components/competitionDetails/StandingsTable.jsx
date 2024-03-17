@@ -1,8 +1,8 @@
 import standingsData from "../../data/standings112.json";
 import { useNavigate } from "react-router-dom";
 
-const StandingsTable = ({ teamId }) => {
-  const standings = standingsData?.response[0]?.league?.standings[0];
+const StandingsTable = ({ teamId, standings }) => {
+  // const standings = standingsData?.response[0]?.league?.standings[0];
   const navigate = useNavigate();
 
   // console.log("standings", standings);
