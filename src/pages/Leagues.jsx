@@ -5,13 +5,16 @@ import BottomBar from "../components/BottomBar";
 import { useAppContext } from "../contexts/AppContext";
 
 const Leagues = () => {
-  const { isDarkMode } = useAppContext();
+  const { isDarkMode, setOpenSearch } = useAppContext();
+  function toggleSearch() {
+    setOpenSearch((prev) => !prev);
+  }
 
   return (
     <>
       <Header />
       <div
-        className={`w-full pt-[130px] md:pt-[170px] md:pb-12 md:px-[10%] bg-white text-[#0f172a] dark:bg-[#2a3543] dark:text-gray-200 ${
+        className={`w-full pt-[100px] md:pt-[170px] md:pb-12 md:px-[10%] bg-white text-[#0f172a] dark:bg-[#2a3543] dark:text-gray-200 ${
           isDarkMode ? "dark" : ""
         }`}
       >
@@ -21,7 +24,7 @@ const Leagues = () => {
           </div> */}
 
           <div
-            className={`w-full md:w-[50%] md:min-w-[550px] min-h-screen rounded-lg px-3 py-5 mt-5  ${
+            className={`w-full md:w-[50%] md:min-w-[550px] min-h-screen md:rounded-lg px-3 py-5 md:mt-5  ${
               isDarkMode ? "bg-[#1d2732]" : "bg-white"
             }`}
           >

@@ -27,6 +27,7 @@ const SearchCont = ({ toggleSearch }) => {
           type="text"
           placeholder="Search"
           onChange={handleChange}
+          autoFocus
           className="w-full border border-black/20 dark:border-neutral-100/30 rounded-md bg-inherit outline-none px-2 py-1 placeholder:text-[.85rem]"
         />
         <img

@@ -36,7 +36,7 @@ const CountriesTray = ({ isDarkMode }) => {
       <div
         className={`w-full h-fit md:mx-auto  md:rounded-lg flex flex-col p-3 ${
           openSearch &&
-          "md:w-[600px] border border-gray-300 dark:border-gray-600 md:mt-3"
+          "md:w-[600px] md:border border-gray-300 dark:border-gray-600 md:mt-3"
         } ${isDarkMode ? " bg-[#1d2732]" : "bg-gray-100"} ${
           isDarkMode ? "dark" : ""
         }`}
@@ -44,9 +44,12 @@ const CountriesTray = ({ isDarkMode }) => {
         <h1 className="text-[.95rem] font-medium">Top Leagues</h1>
 
         {!openSearch && (
-          <div className="w-full relative mt-3 hidden md:block">
-            <input
+          <div className="w-full relative mt-3 block">
+            <div
               onClick={toggleSearch}
+              className="w-full h-full cursor-pointer absolute top-0 left-0"
+            ></div>
+            <input
               type="text"
               placeholder="Search"
               className={`w-full border rounded-md bg-inherit outline-none px-2 py-1 placeholder:text-[.85rem] ${
