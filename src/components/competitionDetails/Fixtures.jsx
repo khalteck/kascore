@@ -33,7 +33,7 @@ const Fixtures = () => {
   //   fetchFixtureDetailsData(leagueId, year, 10);
   // }, [currentComp, currentPage]);
 
-  const fixtures = fixtureDetailsData?.response;
+  const fixtures = fixtureDetailsData?.response || [];
 
   // const fixturesDataRaw = leagues?.response;
   // const fixtures = fixture112?.response?.slice(50, 100);

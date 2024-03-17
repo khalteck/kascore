@@ -29,7 +29,7 @@ const Results = () => {
   //   console.log("loading2", loading2);
   // }, [currentComp]);
 
-  const results = resultData?.response;
+  const results = resultData?.response || [];
 
   // const fixturesDataRaw = leagues?.response;
   // const fixtures = fixture112?.response?.slice(0, 50);
