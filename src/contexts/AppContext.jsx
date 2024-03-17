@@ -59,7 +59,7 @@ const AppContextProvider = ({ children }) => {
       method: "GET",
       url: "https://livescore6.p.rapidapi.com/news/v2/list",
       // headers: {
-      //   "X-RapidAPI-Key": "212912e40bmsh331c90cc55611e6p178f8djsna36fe9dec8b3",
+      //   "X-RapidAPI-Key": "6204d52b01mshf43ae761a1d2815p157edejsn9d58f813da5a",
       //   "X-RapidAPI-Host": "livescore6.p.rapidapi.com",
       // },
       headers: {
@@ -88,7 +88,7 @@ const AppContextProvider = ({ children }) => {
       method: "GET",
       url: "https://livescore6.p.rapidapi.com/news/v2/list-by-sport",
       // headers: {
-      //   "X-RapidAPI-Key": "212912e40bmsh331c90cc55611e6p178f8djsna36fe9dec8b3",
+      //   "X-RapidAPI-Key": "6204d52b01mshf43ae761a1d2815p157edejsn9d58f813da5a",
       //   "X-RapidAPI-Host": "livescore6.p.rapidapi.com",
       // },
       headers: {
@@ -118,7 +118,7 @@ const AppContextProvider = ({ children }) => {
       method: "GET",
       url: "https://livescore6.p.rapidapi.com/news/v2/detail",
       // headers: {
-      //   "X-RapidAPI-Key": "212912e40bmsh331c90cc55611e6p178f8djsna36fe9dec8b3",
+      //   "X-RapidAPI-Key": "6204d52b01mshf43ae761a1d2815p157edejsn9d58f813da5a",
       //   "X-RapidAPI-Host": "livescore6.p.rapidapi.com",
       // },
       headers: {
@@ -166,14 +166,96 @@ const AppContextProvider = ({ children }) => {
     }
   };
 
-  //=========================================================to fetch fixtures
+  //=========================================================to fetch standings
+  const [standingsData, setstandingsData] = useState({});
+  const fetchStandings = async (leagueId, year) => {
+    const options = {
+      method: "GET",
+      url: "https://api-football-v1.p.rapidapi.com/v3/standings",
+      headers: {
+        "X-RapidAPI-Key": "6204d52b01mshf43ae761a1d2815p157edejsn9d58f813da5a",
+        "X-RapidAPI-Host": "api-football-v1.p.rapidapi.com",
+      },
+      params: {
+        league: leagueId,
+        season: year,
+      },
+    };
+
+    try {
+      setLoading2(true);
+      const response = await axios.request(options);
+      setstandingsData(response.data);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading2(false);
+    }
+  };
+
+  //=========================================================to results
+  const [resultData, setresultData] = useState({});
+  const fetchResult = async (leagueId, year, number) => {
+    const options = {
+      method: "GET",
+      url: "https://api-football-v1.p.rapidapi.com/v3/fixtures",
+      headers: {
+        "X-RapidAPI-Key": "6204d52b01mshf43ae761a1d2815p157edejsn9d58f813da5a",
+        "X-RapidAPI-Host": "api-football-v1.p.rapidapi.com",
+      },
+      params: {
+        league: leagueId,
+        season: year,
+        last: number,
+      },
+    };
+
+    try {
+      setLoading2(true);
+      const response = await axios.request(options);
+      setresultData(response.data);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading2(false);
+    }
+  };
+
+  //=========================================================to results
+  const [fixtureDetailsData, setfixtureDetailsData] = useState({});
+  const fetchFixtureDetailsData = async (leagueId, year, number) => {
+    const options = {
+      method: "GET",
+      url: "https://api-football-v1.p.rapidapi.com/v3/fixtures",
+      headers: {
+        "X-RapidAPI-Key": "6204d52b01mshf43ae761a1d2815p157edejsn9d58f813da5a",
+        "X-RapidAPI-Host": "api-football-v1.p.rapidapi.com",
+      },
+      params: {
+        league: leagueId,
+        season: year,
+      },
+    };
+
+    try {
+      setLoading2(true);
+      const response = await axios.request(options);
+      setfixtureDetailsData(response.data);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading2(false);
+    }
+  };
+
+  //=========================================================to fetch fixtures by date
   const [fixturesData, setfixturesData] = useState({});
   const fetchFixtures = async (date) => {
     const options = {
       method: "GET",
       url: "https://v3.football.api-sports.io/fixtures",
       headers: {
-        "X-RapidAPI-Key": "212912e40bmsh331c90cc55611e6p178f8djsna36fe9dec8b3",
+        "X-RapidAPI-Key": "6204d52b01mshf43ae761a1d2815p157edejsn9d58f813da5a",
         "x-rapidapi-host": "v3.football.api-sports.io",
       },
       params: {
@@ -199,7 +281,7 @@ const AppContextProvider = ({ children }) => {
       method: "GET",
       url: "https://v3.football.api-sports.io/leagues",
       headers: {
-        "X-RapidAPI-Key": "212912e40bmsh331c90cc55611e6p178f8djsna36fe9dec8b3",
+        "X-RapidAPI-Key": "6204d52b01mshf43ae761a1d2815p157edejsn9d58f813da5a",
         "x-rapidapi-host": "v3.football.api-sports.io",
       },
       params: {
@@ -225,7 +307,7 @@ const AppContextProvider = ({ children }) => {
       method: "GET",
       url: "https://v3.football.api-sports.io/fixtures/events",
       headers: {
-        "X-RapidAPI-Key": "212912e40bmsh331c90cc55611e6p178f8djsna36fe9dec8b3",
+        "X-RapidAPI-Key": "6204d52b01mshf43ae761a1d2815p157edejsn9d58f813da5a",
         "x-rapidapi-host": "v3.football.api-sports.io",
       },
       params: {
@@ -251,7 +333,7 @@ const AppContextProvider = ({ children }) => {
       method: "GET",
       url: "https://v3.football.api-sports.io/fixtures/lineups",
       headers: {
-        "X-RapidAPI-Key": "212912e40bmsh331c90cc55611e6p178f8djsna36fe9dec8b3",
+        "X-RapidAPI-Key": "6204d52b01mshf43ae761a1d2815p157edejsn9d58f813da5a",
         "x-rapidapi-host": "v3.football.api-sports.io",
       },
       params: {
@@ -294,6 +376,12 @@ const AppContextProvider = ({ children }) => {
         fixturesDetailsData,
         fetchFixtureDetails,
         navigate,
+        fetchStandings,
+        standingsData,
+        fetchResult,
+        resultData,
+        fixtureDetailsData,
+        fetchFixtureDetailsData,
       }}
     >
       {children}

@@ -1,8 +1,8 @@
 import standingsData from "../../data/standings112.json";
 import { useNavigate } from "react-router-dom";
 
-const StandingsHalf = ({ teamId }) => {
-  const standings = standingsData?.response[0]?.league?.standings[0];
+const StandingsHalf = ({ teamId, standings }) => {
+  // const standings = standingsData?.response[0]?.league?.standings[0];
   const navigate = useNavigate();
 
   // console.log("standings", standings);
@@ -18,17 +18,18 @@ const StandingsHalf = ({ teamId }) => {
     }
   };
 
-  const categorizedData = standings.reduce((acc, curr) => {
-    const description =
-      curr.description?.replace(/ /g, "_") || "No_Description";
-    const color = getColorFromDescription(description);
+  const categorizedData =
+    standings?.reduce((acc, curr) => {
+      const description =
+        curr.description?.replace(/ /g, "_") || "No_Description";
+      const color = getColorFromDescription(description);
 
-    if (!acc[description]) {
-      acc[description] = { teams: [], color };
-    }
-    acc[description]?.teams.push(curr);
-    return acc;
-  }, {});
+      if (!acc[description]) {
+        acc[description] = { teams: [], color };
+      }
+      acc[description]?.teams.push(curr);
+      return acc;
+    }, {}) || {};
 
   const categories = Object?.keys(categorizedData)?.map((x) =>
     x?.replace(/_/g, " ")

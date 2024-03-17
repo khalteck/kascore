@@ -15,16 +15,44 @@ import NewsTeam from "../components/competitionDetails/NewsTeam";
 import { useState } from "react";
 import leaguesData from "../data/leagues112.json";
 import { useParams } from "react-router-dom";
+import { useEffect } from "react";
+import { ClipLoader } from "react-spinners";
 
 const CompetitionDetails = () => {
-  const { isDarkMode } = useAppContext();
+  const {
+    isDarkMode,
+    standingsData,
+    fetchStandings,
+    loading2,
+    resultData,
+    fetchResult,
+    fixtureDetailsData,
+    fetchFixtureDetailsData,
+  } = useAppContext();
 
   const [currentTab, setCurrentTab] = useState("overview");
 
   const { id } = useParams();
   const leagues = leaguesData?.response;
   const currentComp = leagues?.filter((x) => x?.league?.id === Number(id))[0];
-  console.log("currentComp", currentComp);
+
+  function getCurrentYear() {
+    const currentYear = new Date().getFullYear();
+    return currentYear.toString();
+  }
+  const currentYear = getCurrentYear();
+  const year = "2020";
+
+  useEffect(() => {
+    const leagueId = currentComp?.league?.id?.toString();
+    fetchStandings(leagueId, year);
+    fetchResult(leagueId, year, 3);
+    fetchFixtureDetailsData(leagueId, year, 3);
+  }, [currentComp]);
+
+  const standings = standingsData?.response?.[0]?.league?.standings[0];
+
+  // console.log("standingsData", standingsData);
 
   return (
     <>
@@ -52,18 +80,29 @@ const CompetitionDetails = () => {
               currentComp={currentComp}
             />
 
-            <div className="flex flex-col gap-10">
-              {currentTab === "overview" && (
-                <Overview
-                  setCurrentTab={setCurrentTab}
-                  currentComp={currentComp}
-                />
-              )}
-              {currentTab === "fixtures" && <Fixtures />}
-              {currentTab === "results" && <Results />}
-              {currentTab === "standings" && <Standings />}
-              {currentTab === "news" && <NewsTeam />}
-            </div>
+            {loading2 && (
+              <div className="w-full h-[300px] border border-black/20 dark:border-white/20 flex justify-center items-center rounded-lg">
+                <ClipLoader color={"#f97316"} size={30} />
+              </div>
+            )}
+
+            {!loading2 && (
+              <div className="flex flex-col gap-10">
+                {currentTab === "overview" && (
+                  <Overview
+                    setCurrentTab={setCurrentTab}
+                    currentComp={currentComp}
+                    standings={standings}
+                    resultData={resultData}
+                    fixtureDetailsData={fixtureDetailsData}
+                  />
+                )}
+                {currentTab === "fixtures" && <Fixtures />}
+                {currentTab === "results" && <Results />}
+                {currentTab === "standings" && <Standings />}
+                {currentTab === "news" && <NewsTeam />}
+              </div>
+            )}
           </div>
 
           <div

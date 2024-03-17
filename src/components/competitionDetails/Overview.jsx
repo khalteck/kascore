@@ -5,7 +5,13 @@ import newsData from "../../data/news.json";
 import ScrollToTop from "../../ScrollToTop";
 import StandingsHalf from "./StandingsHalf";
 
-const Overview = ({ setCurrentTab, currentComp }) => {
+const Overview = ({
+  setCurrentTab,
+  currentComp,
+  standings,
+  resultData,
+  fixtureDetailsData,
+}) => {
   const news = newsData?.featuredArticles?.slice(0, 3);
 
   function handleViewMoreStandings() {
@@ -24,12 +30,16 @@ const Overview = ({ setCurrentTab, currentComp }) => {
     setCurrentTab("results");
   }
 
+  // console.log("fixtureDetailsData", fixtureDetailsData);
+  const results = resultData?.response;
+  const fixtures = fixtureDetailsData?.response;
+
   return (
     <>
       {currentComp?.league?.type === "League" && (
         <div className="w-full">
           <h2 className="text-[.85rem] mb-3">STANDINGS</h2>
-          <StandingsHalf />
+          <StandingsHalf standings={standings} />
 
           <FullBorderButton action={handleViewMoreStandings} />
         </div>
@@ -38,9 +48,9 @@ const Overview = ({ setCurrentTab, currentComp }) => {
       <div className="w-full">
         <h2 className="text-[.85rem] mb-3">RESULTS</h2>
         <div className="flex flex-col gap-3 mb-5">
-          <ResultsCard type={"result"} />
-          <ResultsCard type={"result"} />
-          <ResultsCard type={"result"} />
+          {results?.map((item, index) => {
+            return <ResultsCard key={index} item={item} type={"result"} />;
+          })}
         </div>
 
         <FullBorderButton action={handleViewMoreResults} />
@@ -49,9 +59,9 @@ const Overview = ({ setCurrentTab, currentComp }) => {
       <div className="w-full">
         <h2 className="text-[.85rem] mb-3">FIXTURES</h2>
         <div className="flex flex-col gap-3 mb-5">
-          <ResultsCard type={"fixture"} />
-          <ResultsCard type={"fixture"} />
-          <ResultsCard type={"fixture"} />
+          {fixtures?.slice(0, 3)?.map((item, index) => {
+            return <ResultsCard key={index} item={item} type={"fixture"} />;
+          })}
         </div>
 
         <FullBorderButton action={handleViewMoreFixtures} />
