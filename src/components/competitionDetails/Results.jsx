@@ -103,6 +103,11 @@ const Results = () => {
           })}
         </div>
       )}
+      {!loading2 && results?.length === 0 && (
+        <div className="w-full h-[300px] border border-black/20 dark:border-white/20 flex justify-center items-center rounded-lg">
+          <p>Rate limt reached (Basic plan)</p>
+        </div>
+      )}
       <ScrollToTop />
     </>
   );
