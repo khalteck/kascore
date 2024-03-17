@@ -148,10 +148,10 @@ const AppContextProvider = ({ children }) => {
   const fetchLeagues = async () => {
     const options = {
       method: "GET",
-      url: "https://v3.football.api-sports.io/leagues",
+      url: "https://api-football-v1.p.rapidapi.com/v3/leagues",
       headers: {
-        "X-RapidAPI-Key": "212912e40bmsh331c90cc55611e6p178f8djsna36fe9dec8b3",
-        "x-rapidapi-host": "v3.football.api-sports.io",
+        "X-RapidAPI-Key": "6204d52b01mshf43ae761a1d2815p157edejsn9d58f813da5a",
+        "x-rapidapi-host": "api-football-v1.p.rapidapi.com",
       },
     };
 

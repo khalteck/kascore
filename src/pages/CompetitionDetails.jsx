@@ -13,11 +13,18 @@ import Fixtures from "../components/competitionDetails/Fixtures";
 import Standings from "../components/competitionDetails/Standings";
 import NewsTeam from "../components/competitionDetails/NewsTeam";
 import { useState } from "react";
+import leaguesData from "../data/leagues112.json";
+import { useParams } from "react-router-dom";
 
 const CompetitionDetails = () => {
   const { isDarkMode } = useAppContext();
 
   const [currentTab, setCurrentTab] = useState("overview");
+
+  const { id } = useParams();
+  const leagues = leaguesData?.response;
+  const currentComp = leagues?.filter((x) => x?.league?.id === Number(id))[0];
+  console.log("currentComp", currentComp);
 
   return (
     <>
@@ -37,13 +44,20 @@ const CompetitionDetails = () => {
               isDarkMode ? "bg-[#1d2732]" : "bg-gray-100"
             }`}
           >
-            <TopSection />
+            <TopSection currentComp={currentComp} />
 
-            <Tab currentTab={currentTab} setCurrentTab={setCurrentTab} />
+            <Tab
+              currentTab={currentTab}
+              setCurrentTab={setCurrentTab}
+              currentComp={currentComp}
+            />
 
             <div className="flex flex-col gap-10">
               {currentTab === "overview" && (
-                <Overview setCurrentTab={setCurrentTab} />
+                <Overview
+                  setCurrentTab={setCurrentTab}
+                  currentComp={currentComp}
+                />
               )}
               {currentTab === "fixtures" && <Fixtures />}
               {currentTab === "results" && <Results />}

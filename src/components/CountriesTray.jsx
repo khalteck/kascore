@@ -5,6 +5,8 @@ import CountryCard from "./CountryCard";
 import CountriesSkeleton from "./CountriesSkeleton";
 import competitions from "../data/competitions.json";
 import { useAppContext } from "../contexts/AppContext";
+import leaguesData from "../data/leagues112.json";
+import leaguesIds from "../data/topLeaguesIds.json";
 
 const CountriesTray = ({ isDarkMode }) => {
   const { openSearch, setOpenSearch, navigate } = useAppContext();
@@ -14,124 +16,20 @@ const CountriesTray = ({ isDarkMode }) => {
     setOpenSearch((prev) => !prev);
   }
 
-  //=======================================================to handle top leagues
-  // const [englandLeagues, setenglandLeagues] = useState([]);
-  // const [spainLeagues, setspainLeagues] = useState([]);
-  // const [italyLeagues, setitalyLeagues] = useState([]);
-  // const [germanyLeagues, setgermanyLeagues] = useState([]);
-  // const [franceLeagues, setfranceLeagues] = useState([]);
-
-  const [topLeagues, settopLeagues] = useState([]);
+  const ids = leaguesIds;
+  const leagues = leaguesData?.response;
+  const topLeagues = leagues
+    ?.filter((item) => {
+      if (ids?.includes(item?.league?.id)) {
+        return item;
+      }
+    })
+    ?.sort((a, b) => ids?.indexOf(a?.league?.id) - ids?.indexOf(b?.league?.id));
+  const defalutFlag = isDarkMode
+    ? "/images/icons8-football-50.png"
+    : "/images/icons8-football-black.png";
 
   // console.log("topLeagues", topLeagues);
-
-  useEffect(() => {
-    async function loadTopLeagues() {
-      try {
-        setLoading(true);
-        const topEngland = competitions
-          ?.filter((item) => {
-            return item?.category?.name?.toLowerCase()?.includes("england");
-          })
-          ?.slice(0, 6);
-        // setenglandLeagues(topEngland?.slice(0, 6));
-
-        const topSpain = competitions
-          ?.filter((item) => {
-            return item?.category?.name?.toLowerCase()?.includes("spain");
-          })
-          ?.slice(0, 5);
-        // setspainLeagues(topSpain?.slice(0, 5));
-
-        const topItaly = competitions
-          ?.filter((item) => {
-            return item?.category?.name?.toLowerCase()?.includes("italy");
-          })
-          ?.slice(0, 5);
-        // setitalyLeagues(topItaly?.slice(0, 5));
-
-        const topGermany = competitions
-          ?.filter((item) => {
-            return item?.category?.name?.toLowerCase()?.includes("germany");
-          })
-          ?.slice(0, 5);
-        // setgermanyLeagues(topGermany?.slice(0, 5));
-
-        const topFrance = competitions
-          ?.filter((item) => {
-            return item?.category?.name?.toLowerCase()?.includes("france");
-          })
-          ?.slice(0, 5);
-        // setfranceLeagues(topFrance?.slice(0, 5));
-
-        const topUefa = competitions
-          ?.filter((item) =>
-            item?.name?.toLowerCase()?.split(" ")[0]?.includes("uefa")
-          )
-          ?.slice(0, 6);
-
-        const top = [
-          ...topEngland,
-          topSpain[0],
-          topGermany[0],
-          topItaly[0],
-          topFrance[0],
-          ...topUefa,
-        ];
-        settopLeagues(top);
-      } catch (error) {
-        console.error("error loading comps =>", error);
-      } finally {
-        setLoading(false);
-      }
-    }
-    loadTopLeagues();
-  }, [competitions]);
-
-  //=======================================================to handle countries
-  const [countries, setCountries] = useState([]);
-
-  useEffect(() => {
-    setLoading(true);
-    fetch("https://restcountries.com/v3.1/all")
-      .then((response) => response.json())
-      .then((data) => {
-        const requiredCountries = [
-          "England",
-          "Spain",
-          "Italy",
-          "France",
-          "Germany",
-          "Netherlands",
-        ];
-
-        const filteredCountries = data.reduce((acc, country) => {
-          const countryName = country.name.common;
-          if (requiredCountries.includes(countryName)) {
-            acc.unshift({
-              countryName: countryName,
-              flagImageUrl: country.flags.png,
-            });
-          } else {
-            acc.push({
-              countryName: countryName,
-              flagImageUrl: country.flags.png,
-            });
-          }
-          return acc;
-        }, []);
-
-        filteredCountries?.unshift({
-          countryName: "England",
-          flagImageUrl: "/images/icons8-england-48.png",
-        });
-        setCountries(filteredCountries?.slice(0, 51));
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.error("Error fetching country data:", error);
-      });
-  }, []);
 
   return (
     <div className={`w-full flex flex-col gap-3`}>
@@ -173,29 +71,17 @@ const CountriesTray = ({ isDarkMode }) => {
             return (
               <div
                 key={ind}
-                onClick={() => navigate(`/scores/football/competition/1`)}
+                onClick={() =>
+                  navigate(`/scores/football/competition/${itm?.league?.id}`)
+                }
                 className="w-full whitespace-nowrap truncate flex gap-3 px-2 py-1 hover:bg-black/20 dark:hover:bg-orange-500/10 rounded-md cursor-pointer"
               >
                 <img
                   alt=""
-                  src={
-                    itm?.category?.name === "England"
-                      ? "/images/icons8-england-48.png"
-                      : itm?.category?.name === "Spain"
-                      ? "/images/icons8-spain-48.png"
-                      : itm?.category?.name === "Italy"
-                      ? "/images/icons8-italy-48.png"
-                      : itm?.category?.name === "Germany"
-                      ? "/images/icons8-germany-48.png"
-                      : itm?.category?.name === "France"
-                      ? "/images/icons8-france-48.png"
-                      : isDarkMode
-                      ? "/images/icons8-football-50.png"
-                      : "/images/icons8-football-black.png"
-                  }
+                  src={itm?.country?.flag || defalutFlag}
                   className="w-5 h-5"
                 />
-                <p className="text-[.8rem]">{itm?.name}</p>
+                <p className="text-[.8rem]">{itm?.league?.name}</p>
               </div>
             );
           })}

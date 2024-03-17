@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 
-const Tab = ({ currentTab, setCurrentTab }) => {
+const Tab = ({ currentTab, setCurrentTab, currentComp }) => {
   return (
     <div
       id="list2"
@@ -36,16 +36,18 @@ const Tab = ({ currentTab, setCurrentTab }) => {
       >
         FIXTURES
       </div>
-      <div
-        onClick={() => setCurrentTab("standings")}
-        className={`hover:text-orange-500 text-[0.8rem] uppercase cursor-pointer border-b-2 ${
-          currentTab === "standings"
-            ? "text-orange-500 border-orange-500 font-bold"
-            : "border-transparent"
-        }`}
-      >
-        STANDINGS
-      </div>{" "}
+      {currentComp?.league?.type === "League" && (
+        <div
+          onClick={() => setCurrentTab("standings")}
+          className={`hover:text-orange-500 text-[0.8rem] uppercase cursor-pointer border-b-2 ${
+            currentTab === "standings"
+              ? "text-orange-500 border-orange-500 font-bold"
+              : "border-transparent"
+          }`}
+        >
+          STANDINGS
+        </div>
+      )}
       <div
         onClick={() => setCurrentTab("news")}
         className={`hover:text-orange-500 text-[0.8rem] uppercase cursor-pointer border-b-2 ${

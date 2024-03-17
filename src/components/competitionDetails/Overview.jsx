@@ -5,7 +5,7 @@ import newsData from "../../data/news.json";
 import ScrollToTop from "../../ScrollToTop";
 import StandingsHalf from "./StandingsHalf";
 
-const Overview = ({ setCurrentTab }) => {
+const Overview = ({ setCurrentTab, currentComp }) => {
   const news = newsData?.featuredArticles?.slice(0, 3);
 
   function handleViewMoreStandings() {
@@ -26,12 +26,14 @@ const Overview = ({ setCurrentTab }) => {
 
   return (
     <>
-      <div className="w-full">
-        <h2 className="text-[.85rem] mb-3">STANDINGS</h2>
-        <StandingsHalf />
+      {currentComp?.league?.type === "League" && (
+        <div className="w-full">
+          <h2 className="text-[.85rem] mb-3">STANDINGS</h2>
+          <StandingsHalf />
 
-        <FullBorderButton action={handleViewMoreStandings} />
-      </div>
+          <FullBorderButton action={handleViewMoreStandings} />
+        </div>
+      )}
 
       <div className="w-full">
         <h2 className="text-[.85rem] mb-3">RESULTS</h2>
