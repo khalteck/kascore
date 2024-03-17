@@ -1,7 +1,9 @@
 /* eslint-disable react/prop-types */
+import { useAppContext } from "../contexts/AppContext";
 import MatchCard from "./MatchCard";
 
 const LeagueSchedule = ({ item, isDarkMode, fixtures }) => {
+  const { navigate } = useAppContext();
   // const currentLeague = item?.league_name;
   const info = item?.league;
   const countryInfo = item?.country;
@@ -23,11 +25,17 @@ const LeagueSchedule = ({ item, isDarkMode, fixtures }) => {
           <img
             alt="league-image"
             src={countryInfo?.flag || info?.logo || defaultFlag}
-            className="w-8 h-8 rounded-full"
+            className="w-8 h-8 rounded-full cursor-pointer"
+            onClick={() => navigate(`/scores/football/competition/${info?.id}`)}
           />
         </div>
         <div>
-          <p className="font-medium leading-tight">{info?.name}</p>
+          <p
+            onClick={() => navigate(`/scores/football/competition/${info?.id}`)}
+            className="font-medium leading-tight hover:underline cursor-pointer"
+          >
+            {info?.name}
+          </p>
           <p
             className={`text-[.85rem] ${
               !isDarkMode ? "text-[#121a20]/50" : "text-neutral-100/50"

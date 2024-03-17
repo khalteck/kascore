@@ -21,8 +21,13 @@ import StandingsCont from "../components/matchDetails/StandingsCont";
 import NewsTeam from "../components/matchDetails/NewsTeam";
 
 const MatchDetails = () => {
-  const { isDarkMode, topLeagues, fetchFixtureDetails, fixturesDetailsData } =
-    useAppContext();
+  const {
+    isDarkMode,
+    topLeagues,
+    fetchFixtureDetails,
+    fixturesDetailsData,
+    navigate,
+  } = useAppContext();
 
   const { id } = useParams();
 
@@ -66,11 +71,23 @@ const MatchDetails = () => {
                     <img
                       src={currentLeague?.logo}
                       alt="league"
-                      className=" w-8 h-8 rounded-full "
+                      className=" w-8 h-8 rounded-full cursor-pointer"
+                      onClick={() =>
+                        navigate(
+                          `/scores/football/competition/${currentLeague?.id}`
+                        )
+                      }
                     />
                   </div>
                   <div>
-                    <p className=" font-medium leading-tight ">
+                    <p
+                      onClick={() =>
+                        navigate(
+                          `/scores/football/competition/${currentLeague?.id}`
+                        )
+                      }
+                      className=" font-medium leading-tight cursor-pointer hover:underline"
+                    >
                       {currentLeague?.name}
                     </p>
                     <p className=" dark:text-neutral-100/50 text-[.85rem] ">
@@ -98,13 +115,20 @@ const MatchDetails = () => {
                 }`}
               >
                 <div className="w-full md:w-[80%] bg-inherit flex justify-between items-center m-auto py-3">
-                  <div className="w-[33%] flex flex-col items-center">
+                  <div
+                    onClick={() => {
+                      navigate(
+                        `/scores/football/team/${currentMatch?.teams?.home?.id}`
+                      );
+                    }}
+                    className="w-[33%] flex flex-col items-center cursor-pointer"
+                  >
                     <img
                       src={currentMatch?.teams?.home?.logo}
                       alt="home-team"
                       className=" w-8 h-8 m-auto "
                     />
-                    <p className=" text-[.85rem] font-bold mt-3 ">
+                    <p className=" text-[.85rem] font-bold mt-3 hover:underline">
                       {currentMatch?.teams?.home?.name}
                     </p>
                   </div>
@@ -121,13 +145,20 @@ const MatchDetails = () => {
                     </p>
                   </div>
 
-                  <div className="w-[33%] flex flex-col items-center">
+                  <div
+                    onClick={() => {
+                      navigate(
+                        `/scores/football/team/${currentMatch?.teams?.away?.id}`
+                      );
+                    }}
+                    className="w-[33%] flex flex-col items-center cursor-pointer"
+                  >
                     <img
                       src={currentMatch?.teams?.away?.logo}
                       alt="away-team"
                       className=" w-8 h-8 m-auto "
                     />
-                    <p className=" text-[.85rem] font-bold mt-3">
+                    <p className=" text-[.85rem] font-bold mt-3 hover:underline">
                       {currentMatch?.teams?.away?.name}
                     </p>
                   </div>
